@@ -16,6 +16,8 @@ Glass
 {"format": "Chapbook", "format-version": "2.3.0", "ifid": "C67460F1-5CAD-42EC-AF08-E1A7249DBCE8", "start": "Start"}
 
 :: Start
+skipPrologue: true
+--
 The Prince sits awkwardly on the couch, holding his glass slipper and trying to keep it from crushing. Lucinda and Theodora have the ends of the same couch, and the old lady leans toward him: 'Do tell me about your father's health.' It is your business to steer the talk.
 
 Choose how to guide the conversation:
@@ -24,10 +26,13 @@ Choose how to guide the conversation:
 [[Ask about the ball|Prologue-Ball]]  
 [[Mention the glass slipper|Prologue-Shoe]]  
 
-<<set $skip_prologue to true>>
+[if skipPrologue]
 [[Skip the prologue|Wondering-Shoe]]  
+[continue]
 
 :: Prologue-Marriage
+skipPrologue: true
+--
 'Now I have heard a rumor,' says the old lady, pretending that this conversation topic just now occurred to her, rather than being the object of her determined pursuit for the last half hour. 'A rumor that you yourself were planning to wed, in the very near future.'
 
 The humans take this in, and wait for the talk to turn once more.
@@ -35,10 +40,13 @@ The humans take this in, and wait for the talk to turn once more.
 [[What drew him?|Prologue-Marriage-Enchantment]]  
 [[The law of the kingdom|Prologue-Marriage-Law]]  
 
-<<set $skip_prologue to true>>
+[if skipPrologue]
 [[Skip the prologue|Wondering-Marriage]]  
+[continue]
 
 :: Prologue-Marriage-Enchantment
+prologueEnchantment: true
+--
 'But tell me,' says the old lady, her voice dropping to something almost conspiratorial, 'did you feel it—the pull? Some men speak of it as if it were destiny, others as if it were a spell. I wonder which you would call it.'
 
 She watches him carefully. The Prince hesitates.
@@ -49,12 +57,13 @@ The old lady nods slowly. 'There are powers in this world that are not spells, b
 
 The humans take this in, and wait for the talk to turn once more.
 
-<<set $prologue_enchantment to true>>
 [[What is she?|Wondering-Marriage]]  
 [[What does the law say?|Wondering-Ball]]  
 [[Enough of this for now|Wondering-Shoe]]  
 
 :: Prologue-Marriage-Law
+prologueLaw: true
+--
 'It will not be easy,' the old lady says, her expression growing grave. 'Your father's views on certain matters are... well. You know what they are.'
 
 The Prince stiffens. 'I know what he says. I have not had the opportunity to study his reasoning.'
@@ -67,12 +76,13 @@ The Prince says nothing. His grip tightens on the slipper.
 
 The humans take this in, and wait for the talk to turn once more.
 
-<<set $prologue_law to true>>
 [[What drew him?|Wondering-Marriage]]  
 [[About the ball|Wondering-Ball]]  
 [[The glass slipper|Wondering-Shoe]]  
 
 :: Prologue-Ball
+skipPrologue: true
+--
 'It's true, you know,' the Prince says, 'that my father threw the ball in the hope that I would— that is, that it would lead to a greater acquaintance—' He stops again, rattled, and glares down at the small shoe cradled in his hands. 'I had not been very attentive to ladies in my youth.'
 
 The old lady looks at him with an expression he cannot quite read. 'Well— my dear boy—' she begins. Then she seems to reconsider her words.
@@ -82,10 +92,13 @@ The humans take this in, and wait for the talk to turn once more.
 [[The nature of beauty|Prologue-Ball-Beauty]]  
 [[The nature of memory|Prologue-Ball-Memory]]  
 
-<<set $skip_prologue to true>>
+[if skipPrologue]
 [[Skip the prologue|Wondering-Shoe]]  
+[continue]
 
 :: Prologue-Ball-Beauty
+prologueBeauty: true
+--
 'You met her in candlelight,' the old lady says carefully. 'But tell me—was it her beauty that struck you? Or was it something that her beauty revealed?'
 
 The Prince considers this. 'They were the same thing,' he says at last. 'But not in the way you might think. It was not merely that she was beautiful. It was that her beauty seemed to... illuminate everything around her. The candles, the room, the other people. As if she were the source of light, not merely its reflection.'
@@ -98,12 +111,13 @@ The old lady is quiet for a long moment. 'It depends on what you mean by magic,'
 
 The humans take this in, and wait for the talk to turn once more.
 
-<<set $prologue_beauty to true>>
 [[About the ball|Wondering-Ball]]  
 [[About the slipper|Wondering-Marriage]]  
 [[Enough of this for now|Wondering-Shoe]]  
 
 :: Prologue-Ball-Memory
+prologueMemory: true
+--
 'You said she left at midnight,' the old lady observes. 'But you remember her face. You remember her voice. You remember everything you said to her.'
 
 'I do,' says the Prince. 'I wrote down some notes at the end of the evening. Everything I could remember about her, everything I recalled her saying to me. I believe I noted that she was pretty.'
@@ -116,12 +130,13 @@ The Prince frowns. 'That is the trouble. I would have thought I would know. If s
 
 The humans take this in, and wait for the talk to turn once more.
 
-<<set $prologue_memory to true>>
 [[About the slipper|Wondering-Shoe]]  
 [[What is she?|Wondering-Marriage]]  
 [[Enough of this for now|Wondering-Ball]]  
 
 :: Prologue-Shoe
+skipPrologue: true
+--
 'I'm sure it's nothing surprising,' remarks the old lady, 'if you didn't meet anyone at the ball that you felt immediately you could marry. Such short acquaintances... there's much more to an alliance than that. One must feel at ease with the family, for instance.'
 
 The Prince opens his mouth, then closes it again. 'I did meet someone,' he admits. 'But I know nothing of her family. It hardly matters to me, however. It will be the woman who can wear this shoe.'
@@ -133,10 +148,13 @@ The humans take this in, and wait for the talk to turn once more.
 [[The nature of the glass|Prologue-Shoe-Nature]]  
 [[The truth it holds|Prologue-Shoe-Truth]]  
 
-<<set $skip_prologue to true>>
+[if skipPrologue]
 [[Skip the prologue|Wondering-Marriage]]  
+[continue]
 
 :: Prologue-Shoe-Nature
+prologueNature: true
+--
 'Glass,' the old lady says, looking at the slipper. 'An unusual choice. Gold would have been the natural material for a royal token. Silver, even. But glass—'
 
 She pauses, studying the Prince's face.
@@ -149,12 +167,13 @@ The Prince stares at the slipper. 'I never thought of it that way.'
 
 The humans take this in, and wait for the talk to turn once more.
 
-<<set $prologue_nature to true>>
 [[What is she?|Wondering-Marriage]]  
 [[The truth it holds|Wondering-Shoe]]  
 [[Enough of this for now|Wondering-Ball]]  
 
 :: Prologue-Shoe-Truth
+prologueTruth: true
+--
 'You took the shoe from the stairs,' the old lady says. 'When she ran off. She left it behind, willingly or not.'
 
 'I managed to rescue it when she ran off,' says the Prince. 'It was the only thing I had of her.'
@@ -167,43 +186,42 @@ The old lady nods, and there is something like respect in her eyes. 'Then you ar
 
 The humans take this in, and wait for the talk to turn once more.
 
-<<set $prologue_truth to true>>
 [[About the ball|Wondering-Ball]]  
 [[The nature of glass|Wondering-Shoe]]  
 [[Enough of this for now|Wondering-Marriage]]  
 
 :: Wondering-Marriage
-<<if $skip_prologue>>
+[if skipPrologue]
 'You skipped the small talk,' the old lady says. 'Good. It means you know what matters.'
-<</if>>
-<<ifnot $skip_prologue>>
+[continue]
+[unless skipPrologue]
 'It's marvelous that you were so drawn to a young lady that you want to marry her even though you can't remember what she looks like,' remarks the old woman.
-<</if>>
+[continue]
 
 'There was something about her,' the Prince says. 'Something I cannot explain. Not enchantment, exactly. More like—recognition. As if I had known her all my life and only just realized it.'
 
 The old lady's expression shifts almost imperceptibly. 'Recognition,' she repeats. 'Yes. That is a powerful thing. More powerful than any spell.'
 
-<<if $prologue_enchantment>>
+[if prologueEnchantment]
 'You felt it, then,' she says quietly. 'Not a spell, but something deeper. That is what makes this dangerous—not that she is enchanted, but that she is not. It means the power is hers, not something cast upon her. Your father would call that witchcraft.'
-<</if>>
-<<if $prologue_law>>
+[continue]
+[if prologueLaw]
 'Your father's law,' the old lady says, 'does not distinguish between a spell that compels and a nature that reveals. To him, both are unpredictable. Both are death.'
-<</if>>
-<<if $prologue_nature>>
+[continue]
+[if prologueNature]
 'Glass is transparent,' she says, glancing at the slipper in his hands. 'It shows everything. She is much the same—what you see is what she is, nothing hidden behind a glamour or a disguise.'
-<</if>>
-<<if $prologue_truth>>
+[continue]
+[if prologueTruth]
 'The shoe will show the truth,' the old lady says. 'No deception, no alteration. The question is whether you are ready to face what it reveals.'
-<</if>>
+[continue]
 
 [[Proceed to the fitting|Fitting-Marriage]]  
 
 :: Wondering-Ball
-<<if $skip_prologue>>
+[if skipPrologue]
 'You skipped the small talk,' the old lady says. 'Good. It means you know what matters.'
-<</if>>
-<<ifnot $skip_prologue>>
+[continue]
+[unless skipPrologue]
 'It wasn't a masked ball,' the old lady says. 'It wasn't even badly lit. Your father did not stint on the candles at all.'
 
 The Prince opens his mouth.
@@ -215,22 +233,22 @@ The Prince opens his mouth.
 The effect of this comment is like the shattering of glass: for a moment you wonder if he dropped the shoe...? No. It is merely that he has admitted, or near-as-admitted, that his chosen bride is one who appeared to him under a glamor, a magical enchantment. A crime punishable by death under his father's law.
 
 Everyone remains very very quiet.
-<</if>>
+[continue]
 
-<<if $prologue_beauty>>
+[if prologueBeauty]
 'You said her beauty illuminated the room,' the old lady observes. 'Not that she was beautiful—that she made everything around her luminous. That is not a trick of the light, my dear boy. That is a nature, not a spell.'
-<</if>>
-<<if $prologue_memory>>
+[continue]
+[if prologueMemory]
 'You wrote down everything you could remember about her,' the old lady says. 'And yet you cannot place her. There is a difference between forgetting and never having known. Which, do you think, is your burden?'
-<</if>>
+[continue]
 
 [[Proceed to the fitting|Fitting-Ball]]  
 
 :: Wondering-Shoe
-<<if $skip_prologue>>
+[if skipPrologue]
 'You skipped the small talk,' the old lady says. 'Good. It means you know what matters.'
-<</if>>
-<<ifnot $skip_prologue>>
+[continue]
+[unless skipPrologue]
 'I-- managed to rescue the shoe when she ran off,' says the Prince, a little embarrassed-looking.
 
 'It's fortunate she left behind such a distinctive token,' says the old lady, her eyebrows raised in mischief. 'Though I wonder—do you think she intended to be found by it?'
@@ -238,14 +256,14 @@ Everyone remains very very quiet.
 The Prince considers this. 'I don't know. Perhaps she hoped I would find it. Perhaps she hoped I would look for her.' He looks down at the slipper. 'Or perhaps she intended for no one to find it at all.'
 
 The old lady says nothing. She does not need to. The silence says everything.
-<</if>>
+[continue]
 
-<<if $prologue_nature>>
+[if prologueNature]
 'You noted the honesty of glass,' she says. 'Transparent, fragile, unable to conceal. That is why it was chosen for this purpose. Not because it is royal, but because it cannot lie.'
-<</if>>
-<<if $prologue_truth>>
+[continue]
+[if prologueTruth]
 'The shoe will show the truth of the foot that fits it,' the old lady says. 'No deception. Only truth. The question is whether you are prepared for what it might be.'
-<</if>>
+[continue]
 
 [[Proceed to the fitting|Fitting-Shoe]]  
 
