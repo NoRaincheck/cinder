@@ -71,13 +71,12 @@ editorial review, never silently rewritten.
 ## Known deviations
 
 - **Bird layer removed:** no `squawk`/`awwk`/`parrot`/`polly`/`feathers`
-  wording anywhere in play — labels are subject display names, bodies use
-  `say`/`speak`/`sing`, the Polly joke is a nameless cracker joke.
-  Deliberately kept: 2 story-dialogue lines where NPCs mention the parrot
-  (shoe-wearer joke, Lucinda's `Yes, Parrot?`) and the plot-bearing
-  birds-topic paths (possession thread, Cinderella's warm beat).
-  Cut as flavor: 3 birds-topic passages (Lucinda's quip, Prince's aviary
-  joke, Theo's jealous one-liner) — audited as `user-cut` rows in
-  `data/prune-list.json`. Also kept: the wing chair (furniture).
+  framing and no birds topic — no `The birds` links, no `S-Hub-birds`, none
+  of the 9 birds-topic passages remain (3 flavor cuts + 6 topic rows, all
+  audited as `user-cut` in `data/prune-list.json`).
+  Still present, awaiting your call: 5 story-dialogue lines containing the
+  word "bird" (`For a bird…`, `Stupid bird`, `Your bird, madam…`,
+  `bird school`, `One at a time, bird`) — see `docs/bird-paths-review.md`.
+  Also kept: the wing chair (furniture).
   (`data/graph.json` still mirrors the original text verbatim as the
   extraction source.)

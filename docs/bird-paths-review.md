@@ -9,6 +9,12 @@ exactly what they are so you can decide: keep, or take the nuclear option
 > cut (passages + hub links deleted, `user-cut` entries in
 > `data/prune-list.json`); §A3, §A4, §A6, §B kept. Coverage and fidelity
 > tests consult the prune list per row, so the audit trail is enforced.
+>
+> **Nuclear follow-up executed 2026-09-15:** the birds topic is gone
+> entirely — `S-Hub-birds`, all `The birds` links, and §A3/§A4/§A6 rows
+> deleted (also `user-cut`). Remaining "bird" words: 5 story-dialogue
+> lines (§A3's shoe-wearer joke went with its passage; `Yes, Parrot?`
+> has no bird word) — open question below.
 
 > Note: two passages below show truncated dialogue (magic-birds, marriage-
 > birds). That is the known extractor-truncation issue, not the de-birding —

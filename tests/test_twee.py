@@ -7,7 +7,7 @@ LINKS = {name: re.findall(r"\[\[(?:[^|\]]+\|)?([^\]]+)\]\]", body) for name, bod
 GRAPH = json.load(open("data/graph.json"))
 PRUNE = json.load(open("data/prune-list.json"))
 SUBJECTS = ["kings-health", "heirs", "marriage", "ball", "shoe", "cinderella",
-            "theo", "lucinda", "stepmother", "love", "blood", "magic", "god", "birds"]
+            "theo", "lucinda", "stepmother", "love", "blood", "magic", "god"]
 # Twee metadata passages carry no game links by definition; exempt from link/body rules.
 META = {"StoryTitle", "StoryData"}
 

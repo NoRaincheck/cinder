@@ -20,7 +20,7 @@ def var_of(n):
 
 def test_row_passages_set_seen_flag():
     rows = [n for n in PASSAGES if is_row(n)]
-    assert len(rows) == 107
+    assert len(rows) == 104
     bad = [n for n in rows
            if not PASSAGES[n].startswith(f"{var_of(n)}: true\n--\n")]
     assert bad == [], f"row passages missing leading vars section: {bad[:5]}"
@@ -37,7 +37,7 @@ def test_row_links_guarded():
                 if prev != f"[unless {var_of(m.group(1))}]":
                     bad.append(f"{name}: {line.strip()[:60]}")
             prev = line.strip()
-    assert count == 110, f"guarded row links changed: {count}"
+    assert count == 104, f"guarded row links changed: {count}"
     assert bad == [], f"unguarded row links: {bad[:5]}"
 
 

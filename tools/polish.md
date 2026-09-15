@@ -14,7 +14,7 @@ plus the current twee passage body for that row.
 
 - A subject display name as the choice label (King's health, Heirs, Marriage,
   The ball, The shoe, Cinderella, Theo, Lucinda, Stepmother, Love, Blood,
-  Magic, God, The birds). No bird-cries in labels.
+  Magic, God). No bird-cries in labels.
 - A passage body that is ~95% verbatim from the source row: keep every
   line of dialogue and narration exactly as written. Fix only the
   parser artifacts listed below. Never invent plot, dialogue, or stage
