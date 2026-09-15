@@ -52,8 +52,10 @@ dist/                 Build output (gitignored) — deploy artifact for Pages
    faithful to the original's "uncomfortable silence").
 3. One-shot links: each row passage sets a `seen_*` flag in a leading vars
    section, and links to visited rows hide behind `[unless seen_*]` guards —
-   like the original blanking each remark after use. Hub/ending links stay
-   unconditional so navigation can never vanish.
+   like the original blanking each remark after use. Subject-hub links show
+   visited hubs struck-through instead of hiding (hub pages must never
+   empty out). Hub/ending links stay unconditional so navigation can never
+   vanish.
 4. Scene gating: the start opens only the Prologue; Wondering unlocks behind
    the shoe discussion, Fitting behind the ball, the Checking scenes behind
    Theo, and each ending lives in exactly one scene — so the evening always

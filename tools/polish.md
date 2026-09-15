@@ -52,6 +52,14 @@ plus the current twee passage body for that row.
 - Hub / ending / intro links stay unconditional. Never guard those.
 - Never nest conditionals; never invent new flag names (additive only).
 
+## Visited-state hub links (anti-loop, 2026-09-15)
+
+- Subject-hub links are never hidden (that would empty hub pages). Instead
+  each renders as an `[if seen_hub_*]` / `~~struck label~~` / `[else]` /
+  link quad, so visited hubs show struck-through. Each `S-Hub-*` passage
+  sets its flag in a leading vars section. Scene hubs, intro, endings, and
+  funnels stay unconditional — audited in `tests/test_hubstrike.py`.
+
 ## Scene gating (progression, 2026-09-15)
 
 - Arc: Prologue -> Wondering -> Fitting -> Checking T/L/C -> Endgames.

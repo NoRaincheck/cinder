@@ -43,7 +43,7 @@ def test_row_links_guarded():
 
 def test_guards_reference_defined_vars():
     defined = {var_of(n) for n in PASSAGES if is_row(n)}
-    used = set(re.findall(r"^\[(?:unless|if) (seen_[a-z0-9_]+)\]$", TWEE, flags=re.M))
+    used = set(re.findall(r"^\[(?:unless|if) (seen_s\d[a-z0-9_]+)\]$", TWEE, flags=re.M))
     assert used - defined == set(), f"guards with no defining passage: {sorted(used - defined)[:5]}"
     assert defined - used == set(), f"flags set but never used: {sorted(defined - used)[:5]}"
 
@@ -51,12 +51,15 @@ def test_guards_reference_defined_vars():
 def test_hubs_endings_intro_unguarded():
     # Designated Continue links are the one exception: they must be guarded
     # (scene gating) and are audited in test_progression.py instead.
+    # S-Hub-* links are the other exception: visited-state quads audited in
+    # test_hubstrike.py. Everything else hub/ending-bound stays unconditional.
     bad = []
     for name, body in PASSAGES.items():
         prev = ""
         for line in body.splitlines():
             m = re.fullmatch(r"\[\[(?:[^|\]]+\|)?([^\]]+)\]\]", line.strip())
-            if m and m.group(1) in PASSAGES and not is_row(m.group(1)):
+            if m and m.group(1) in PASSAGES and not is_row(m.group(1)) \
+                    and not m.group(1).startswith("S-Hub-"):
                 lm = re.match(r"\[\[([^\]|]+)\|", line.strip())
                 label = lm.group(1) if lm else ""
                 guarded = (prev.startswith("[unless ") or prev.startswith("[if ")) \
@@ -70,23 +73,28 @@ def test_hubs_endings_intro_unguarded():
 def test_guard_scope_terminated():
     """Chapbook applies a modifier to ALL following text until the next
     modifier (engine render loop resets its accumulator only per text
-    block). So a trailing [unless] would hide every unguarded link below
-    it. Every guard's scope must therefore hold exactly its own link:
-    guards come in guard+link pairs, and runs end with the always-true
-    `[if 2 + 2 === 4]` terminator before any unguarded content."""
+    block). So a trailing guard would hide every unguarded link below it.
+    Legal shapes and their exact scopes:
+    - `[unless seen_*]` / `[if seen_*]` + one link line (row/continue gates)
+    - `[if seen_hub_*]` + one struck-text line, then `[else]` + one link
+      (visited-state hub quads)
+    - `[if 2 + 2 === 4]` scope terminator before trailing unguarded content.
+    """
     LINK = re.compile(r"^\[\[(?:[^|\]]+\|)?([^\]]+)\]\]$")
     SENTINEL = "[if 2 + 2 === 4]"
     bad = []
     for name, body in PASSAGES.items():
-        lines = body.splitlines()
-        n_guards = sum(1 for l in lines if l.strip().startswith("[unless ")
-                       or (l.strip().startswith("[if ") and l.strip() != SENTINEL))
-        if n_guards:
-            assert sum(1 for l in lines if l.strip() == SENTINEL) == 1, \
-                f"{name}: guarded passage without exactly one scope terminator"
-        for i, line in enumerate(lines):
-            s = line.strip()
-            if s == SENTINEL or not (s.startswith("[unless ") or s.startswith("[if ")):
+        lines = [l for l in body.splitlines()]
+
+        def is_mod(s):
+            return s.startswith("[") and not s.startswith("[[")
+
+        i = 0
+        while i < len(lines):
+            s = lines[i].strip()
+            if s == SENTINEL or not (s.startswith("[unless ") or s.startswith("[if ")
+                                    or s == "[else]"):
+                i += 1
                 continue
             scope, k = [], i + 1
             while k < len(lines):
@@ -94,10 +102,20 @@ def test_guard_scope_terminated():
                 if t == "":
                     k += 1
                     continue
-                if t.startswith("[") and not t.startswith("[["):
+                if is_mod(t):
                     break
                 scope.append(t)
                 k += 1
-            if len(scope) != 1 or not LINK.match(scope[0]):
-                bad.append(f"{name}: {s} scope={scope[:2]}")
+            if re.match(r"\[if (seen_hub_[a-z0-9_]+)\]$", s):
+                if len(scope) != 1 or LINK.match(scope[0]):
+                    bad.append(f"{name}: {s} scope={scope[:2]}")
+                    i += 1
+                    continue
+                nxt = lines[k].strip() if k < len(lines) else ""
+                if not nxt == "[else]":
+                    bad.append(f"{name}: {s} not followed by [else]: {nxt[:40]}")
+            else:
+                if len(scope) != 1 or not LINK.match(scope[0]):
+                    bad.append(f"{name}: {s} scope={scope[:2]}")
+            i += 1
     assert bad == [], f"leaking guard scopes: {bad[:5]}"
