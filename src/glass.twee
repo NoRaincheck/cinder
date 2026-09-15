@@ -15,7 +15,7 @@ Choose how to guide the conversation:
 [[Ask about the ball|Prologue-Ball]]  
 [[Mention the glass slipper|Prologue-Shoe]]  
 
-[ifnot skipPrologue]
+[if !skipPrologue]
 [[Skip the prologue|Wondering-Shoe]]  
 [JavaScript] engine.state.set('skipPrologue', true)
 [continue]
@@ -29,7 +29,7 @@ The humans take this in, and wait for the talk to turn once more.
 [[What drew him?|Prologue-Marriage-Enchantment]]  
 [[The law of the kingdom|Prologue-Marriage-Law]]  
 
-[ifnot skipPrologue]
+[if !skipPrologue]
 [[Skip the prologue|Wondering-Marriage]]  
 [JavaScript] engine.state.set('skipPrologue', true)
 [continue]
@@ -81,7 +81,7 @@ The humans take this in, and wait for the talk to turn once more.
 [[The nature of beauty|Prologue-Ball-Beauty]]  
 [[The nature of memory|Prologue-Ball-Memory]]  
 
-[ifnot skipPrologue]
+[if !skipPrologue]
 [[Skip the prologue|Wondering-Shoe]]  
 [JavaScript] engine.state.set('skipPrologue', true)
 [continue]
@@ -137,7 +137,7 @@ The humans take this in, and wait for the talk to turn once more.
 [[The nature of the glass|Prologue-Shoe-Nature]]  
 [[The truth it holds|Prologue-Shoe-Truth]]  
 
-[ifnot skipPrologue]
+[if !skipPrologue]
 [[Skip the prologue|Wondering-Marriage]]  
 [JavaScript] engine.state.set('skipPrologue', true)
 [continue]
