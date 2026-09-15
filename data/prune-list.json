@@ -1,0 +1,27 @@
+[
+  {
+    "table": "Bad Bird Excuses",
+    "reason": "loop",
+    "detail": "0 rows collapsed to one representative passage"
+  },
+  {
+    "table": "Waiting",
+    "reason": "loop",
+    "detail": "5 rows collapsed to one representative passage"
+  },
+  {
+    "table": "Awwkwardness",
+    "reason": "loop",
+    "detail": "20 rows collapsed to one representative passage"
+  },
+  {
+    "table": "Insults",
+    "reason": "loop",
+    "detail": "3 rows collapsed to one representative passage"
+  },
+  {
+    "table": "Flattery",
+    "reason": "loop",
+    "detail": "4 rows collapsed to one representative passage"
+  }
+]

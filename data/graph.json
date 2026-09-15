@@ -1,0 +1,525 @@
+{
+  "Reactions": [
+    {
+      "topic": "\"[obscenity]\"",
+      "response": "\"\"",
+      "reaction rule": "obscenity reaction rule"
+    },
+    {
+      "topic": "\"[mild obscenity]\"",
+      "response": "\"\"",
+      "reaction rule": "mild reaction rule"
+    },
+    {
+      "topic": "\"cracker/polly\" or \"polly wanna cracker\"",
+      "response": "\"'Polly wanna cracker!' you announce. But they've grown tired of that one.\""
+    },
+    {
+      "topic": "\"um seven\" or \"seven\"",
+      "response": "\"'Um, seven?' you inquire brightly. Everyone pretends you didn't speak.\""
+    },
+    {
+      "topic": "\"silence\"",
+      "response": "\"'Silence!' you squawk."
+    },
+    {
+      "topic": "\"wisdom/thought/thinking\"",
+      "response": "\"'Wisdom,' you intone."
+    },
+    {
+      "topic": "No one seems to think you know much about that.\"",
+      "response": ""
+    },
+    {
+      "topic": "\"kindness\"",
+      "response": "\"'[awwk]! Kindness!'"
+    },
+    {
+      "topic": "\"corknut/corknuts/almond/almonds/cork nut\" or \"candied almond\"",
+      "response": "\"'Almond!' you hint. No one takes you up on it.\""
+    },
+    {
+      "topic": "\"pirate/pirates/piracy\" or \"pieces of eight\"",
+      "response": "\"You squawk a short piratical ditty, not quite fit for polite company..."
+    },
+    {
+      "topic": "'Cut that out,' says Lucinda.\"",
+      "response": "obscenity reaction rule"
+    },
+    {
+      "topic": "\"cheese\"",
+      "response": "\"Everyone turns to look at you."
+    },
+    {
+      "topic": "\"fire/help/earthquake/flood/famine\" or \"stock market crash\"",
+      "response": "\"The prince looks puzzled."
+    },
+    {
+      "topic": "\"cleavage\"",
+      "response": "\"'[Nice word] cleavage!' you squawk. '[Nice word]!'"
+    },
+    {
+      "topic": "\"prying/pry\"",
+      "response": "\"'Prying!' you awwk. 'Inquire impertinently, be curious, ferret out, nose around!'"
+    },
+    {
+      "topic": "",
+      "response": "say \"[A random visible woman] giggles faintly.\""
+    },
+    {
+      "topic": "Understand \"bother\" or \"curses\" or \"drat\" or \"darn\" as \"[mild obscenity]\".",
+      "response": ""
+    },
+    {
+      "topic": "",
+      "response": "now the player is disgraced;"
+    },
+    {
+      "topic": "",
+      "response": "say \"You squawk very loudly."
+    },
+    {
+      "topic": "",
+      "response": "if asking someone to try speech, continue the action;"
+    },
+    {
+      "topic": "",
+      "response": "say \"No one in this house obeys you at all.\""
+    },
+    {
+      "topic": "",
+      "response": "say \"'Right,' says the old lady. And she rings for a servant to remove you from the room.\";"
+    },
+    {
+      "topic": "",
+      "response": "end the story saying \"You are sold to pirates and have a glorious career on the open sea\"."
+    },
+    {
+      "topic": "",
+      "response": "say \"'Oops!' you squawk. 'Sorry! Oops, sorry!'"
+    },
+    {
+      "topic": "",
+      "response": "say \"'[awwk]! Yes!'\""
+    },
+    {
+      "topic": "",
+      "response": "say \"'No!' you squawk. 'No no!'"
+    },
+    {
+      "topic": "",
+      "response": "if turn count is 1"
+    },
+    {
+      "topic": "",
+      "response": "begin;"
+    },
+    {
+      "topic": "",
+      "response": "",
+      "reaction rule": "say paragraph break;"
+    },
+    {
+      "topic": "",
+      "response": "",
+      "reaction rule": "say \"The Prince sits awkwardly on the couch, holding his glass slipper and trying to keep it from crushing. Lucinda and Theodora have the ends of the same couch, and they are taking turns seeing who can bend lowest and show off the most cleavage; while the old lady, in her wing chair, carries on about nonsense. For instance:"
+    },
+    {
+      "topic": "",
+      "response": "end if."
+    },
+    {
+      "topic": "",
+      "response": "say \"You give the place a once-over with your right eye. Then you turn your head and look at everything through your left eye. It doesn't make any difference. The farther parts of the room remain out of focus.\""
+    },
+    {
+      "topic": "",
+      "response": "say \"It's hard to have a good look at the moment, but everything feels in order, properly preened, feathers lying as they ought.\""
+    },
+    {
+      "topic": "",
+      "response": "choose a random row in the Table of Waiting;"
+    },
+    {
+      "topic": "",
+      "response": "say \"[response entry][paragraph break]\"."
+    }
+  ],
+  "Prologue Remarks": [
+    {
+      "starting": "king's health",
+      "final": "heirs",
+      "comment": "\"'It's so fortunate,' says the old lady. 'That you're of an age -- that is, that the King has been so blessed with an heir who can follow in his footsteps when the time comes, which we all hope will be--'"
+    },
+    {
+      "starting": "king's health",
+      "final": "heirs",
+      "comment": "\"'When the time comes, which will be when God wills it, you will be a fine King,' says the old lady firmly.\""
+    },
+    {
+      "starting": "blank",
+      "final": "king's health",
+      "comment": "\"'I think the king is less concerned than the rest of us are,' says the Prince. 'But he has always been very brave, and philosophical. I believe he would meet death with a Socratic--'"
+    },
+    {
+      "starting": "blank",
+      "final": "king's health",
+      "comment": "\"'I know very well how hard it will be to emulate my father's command,' says the Prince. 'He has a knowledge of how to speak to people which I do not.'"
+    },
+    {
+      "starting": "blank",
+      "final": "king's health",
+      "comment": "\"'May he live long,' says Lucinda softly.\""
+    },
+    {
+      "starting": "blank",
+      "final": "king's health",
+      "comment": "\"'You must try not to worry too desperately,' Lucinda says to the Prince in a comforting tone. 'I have heard only the best things about the doctors.'"
+    },
+    {
+      "starting": "heirs",
+      "final": "king's health",
+      "comment": "\"'It would have been better for us all if I had siblings,' says the Prince. 'My father feels it, I know.'\""
+    },
+    {
+      "starting": "heirs",
+      "final": "marriage",
+      "comment": "\"'Now I have heard a rumor,' says the old lady, pretending that this conversation topic just now occurred to her, rather than being the object of her determined pursuit for the last half hour. 'A rumor that you yourself were planning to wed, in the very near future.'"
+    },
+    {
+      "starting": "heirs",
+      "final": "marriage",
+      "comment": "\"'I think I am not expressing a unique opinion,' says the old lady, brushing at her skirt with her gloves, 'when I say that the whole kingdom will be delighted to see your family increase yet further.'\""
+    },
+    {
+      "starting": "marriage",
+      "final": "ball",
+      "comment": "\"'It's true, you know, that my father threw the ball in the hope that I would-- that is, that it would lead to a greater acquaintance--' The Prince stops again, rattled, and glares down at the small shoe cradled in his hands. 'I had not been very attentive to ladies in my youth.'"
+    },
+    {
+      "starting": "blank",
+      "final": "love",
+      "comment": "\"A look of unexpected sweetness crosses the face of the Prince. The old lady watches this with interest.\""
+    },
+    {
+      "starting": "blank",
+      "final": "shoe",
+      "comment": "\"[if not mentioning shoe]'I'm sure it's nothing surprising,' remarks the old lady, 'if you didn't meet anyone at the ball that you felt immediately you could marry. Such short acquaintances... there's much more to an alliance than that. One must feel at ease with the family, for instance.'"
+    },
+    {
+      "starting": "blank",
+      "final": "ball",
+      "comment": "\"The Prince sighs. 'Yes,' he says. 'The ball, I meant to tell you...'"
+    },
+    {
+      "starting": "marriage",
+      "final": "Theo",
+      "comment": "\"Theodora blushes with sudden consciousness. The Prince glances at her piercingly."
+    },
+    {
+      "starting": "marriage",
+      "final": "birds",
+      "comment": "\"'Do you suppose it means that marriage is for the birds?' asks Lucinda."
+    },
+    {
+      "starting": "blank",
+      "final": "birds",
+      "comment": "\"'I suppose it wishes to advocate a greater interest in aviary concerns?' the Prince asks, looking at you with curiosity."
+    },
+    {
+      "starting": "Theo",
+      "final": "heirs",
+      "comment": "\"'Ah, Theodora... I'm so fortunate in my own children,' the old lady goes on. 'You can never understand what a great pleasure there is in them until you have your own.'"
+    },
+    {
+      "starting": "God",
+      "final": "Lucinda",
+      "comment": "\"'Lucinda is thinking about becoming a nun,' says Theodora."
+    },
+    {
+      "starting": "blank",
+      "final": "heirs",
+      "comment": "\"'How sad that your dear mother did not live along enough to give you siblings,' says the old lady, dabbing the edge of her eye with one finger."
+    },
+    {
+      "starting": "love",
+      "final": "marriage",
+      "comment": "\"'It is a pity,' says the old lady. 'But love and marriage often have so little to do with one another, at the upper levels of society. And certainly when matters of state intervene.'"
+    },
+    {
+      "starting": "blank",
+      "final": "love",
+      "comment": "\"'I think the feelings at the outset of a marriage are nearly irrelevant,' says Lucinda. 'If there is commitment and good intention, then you can learn to live with the person, and if there isn't... no amount of affection, or, or...'"
+    },
+    {
+      "starting": "blank",
+      "final": "stepmother",
+      "comment": "\"The old lady glares at you.\""
+    },
+    {
+      "starting": "",
+      "final": "say \"The old woman laughs slightly. 'How beautifully romantic! But -- she didn't give you her name?'"
+    }
+  ],
+  "Wondering Remarks": [
+    {
+      "starting": "blank",
+      "final": "birds",
+      "comment": "\"'At least we can rule out the parrot as a possible wearer of the shoe,' says the old lady, twinkling.\""
+    },
+    {
+      "starting": "blank",
+      "final": "shoe",
+      "comment": "\"'I-- managed to rescue the shoe when she ran off,' says the Prince, a little embarrassed-looking."
+    },
+    {
+      "starting": "blank",
+      "final": "magic",
+      "comment": "\"Unless you are mistaken, the old lady flinches.\""
+    },
+    {
+      "starting": "blank",
+      "final": "Theodora",
+      "comment": "\"Theodora starts. 'I didn't have anything to do with it,' she remarks. 'That is--'"
+    },
+    {
+      "starting": "blank",
+      "final": "Lucinda",
+      "comment": "\"'Yes, Parrot?' asks Lucinda, looking up at you rather coldly. She's always made it clear she thinks you possessed. Theo is much nicer.\""
+    },
+    {
+      "starting": "blank",
+      "final": "heirs",
+      "comment": "\"'And I suppose this is a suitable young woman for -- that is, your father will think her a good mother to his grandchildren?'"
+    },
+    {
+      "starting": "blank",
+      "final": "marriage",
+      "comment": "\"'It's marvelous that you were so drawn to a young lady that you want to marry her even though you can't remember what she looks like,' remarks the old woman."
+    },
+    {
+      "starting": "blank",
+      "final": "love",
+      "comment": "\"'Do you--' begins the old lady. 'Oh, dear, this is such a delicate question, and there is no tactful way to put it. Do you have reason to think she reciprocates your regard?'"
+    },
+    {
+      "starting": "love",
+      "final": "marriage",
+      "comment": "\"'If she does love you,' Lucinda says, 'I wonder why she was not more straightforward? Deception has no part in true love.'"
+    },
+    {
+      "starting": "marriage",
+      "final": "stepmother",
+      "comment": "\"'I was so fortunate in my own alliances,' says the old lady, startled into a reminiscent mood. 'The dear captain -- Lucinda and Theodora's father -- was so handsome! and then...'"
+    },
+    {
+      "starting": "blank",
+      "final": "ball",
+      "comment": "\"'It wasn't a masked ball,' the old lady says. 'It wasn't even badly lit. Your father did not stint on the candles at all.'"
+    }
+  ],
+  "Fitting Remarks": [
+    {
+      "starting": "ball",
+      "final": "shoe",
+      "comment": "\"'Midnight,' repeats the old lady. 'Well, well.' She smiles at the Prince. 'Good luck to you. It was quick thinking taking the shoe.'"
+    },
+    {
+      "starting": "shoe",
+      "final": "ball",
+      "comment": "\"'That was a good ball,' says Theodora, out of nowhere. 'It was the nicest ball I've ever been to.'"
+    },
+    {
+      "starting": "blank",
+      "final": "stepmother",
+      "comment": "\"The old lady starts. 'That is a good point,' she says. 'For a bird. Are you intending to interview the older ladies as well? Oh, I don't mean myself, of course!' She manages an almost natural laugh. 'But how do you know that your intended is a young lady?'"
+    },
+    {
+      "starting": "blank",
+      "final": "Theo",
+      "comment": "\"[if mentioning Theodora]Theodora blushes. 'Stupid bird,' she says."
+    },
+    {
+      "starting": "blank",
+      "final": "Lucinda",
+      "comment": "\"[if mentioning Lucinda]'Might as well start there as anywhere,' says the Prince, shrugging. [otherwise]The Prince licks his lips. [end if]'Miss Lucinda, would you mind trying the slipper? You needn't -- that is, please do not regard this in the nature of a royal request, if you would rather not.'"
+    },
+    {
+      "starting": "ball",
+      "final": "magic",
+      "comment": "\"[if mentioning magic]The Prince's eye goes to you. 'Your bird, madam, is freakishly percipient. Positively unnatural.'"
+    },
+    {
+      "starting": "magic",
+      "final": "shoe",
+      "comment": "\"'Perhaps the shoe itself is--' begins Theo thoughtfully."
+    },
+    {
+      "starting": "magic",
+      "final": "birds",
+      "comment": "\"All eyes turn to you. 'I have heard,' the Prince says tentatively, 'about creatures who are possessed...'"
+    },
+    {
+      "starting": "blank",
+      "final": "magic",
+      "comment": "\"'The creature gets redundant,' says the old lady. 'I'm afraid it has a taste for melodrama.'\""
+    },
+    {
+      "starting": "magic",
+      "final": "ball",
+      "comment": "\"'I have considered the problem,' says the Prince. 'Very closely. I have not been able to sleep for considering it.'"
+    },
+    {
+      "starting": "ball",
+      "final": "marriage",
+      "comment": "\"'Maybe,' Lucinda suggests, 'she thought it would be wrong to deceive you about what she was, and chose this way to, to make it known.'"
+    },
+    {
+      "starting": "blank",
+      "final": "marriage",
+      "comment": "\"'It seems to me,' says the old lady, after a long thoughtful moment, 'that you have no choice but to try this shoe on every eligible young woman, and determine who she was. And if I were you, I would also invent an explanation for this extraordinary method of bride-selection that will satisfy the people at large.'"
+    },
+    {
+      "starting": "marriage",
+      "final": "shoe",
+      "comment": "\"'Yes, the shoe,' says Lucinda to you; and to her mother: 'Do you think we could send it back to bird school?'"
+    },
+    {
+      "starting": "blank",
+      "final": "love",
+      "comment": "\"'Are you sure that it wasn't just an infatuation?' the old lady asks gently. 'Such a short acquaintance-- forgive me, but you've always seemed so level-headed.'"
+    },
+    {
+      "starting": "blank",
+      "final": "magic",
+      "comment": "\"'Do you agree with your father's views?' asks Theodora. 'On magic, I mean.'"
+    },
+    {
+      "starting": "",
+      "final": "",
+      "comment": "now left hand status line is \"Trying the slipper on Lucinda\";"
+    },
+    {
+      "starting": "",
+      "final": "",
+      "comment": "now last subject is current subject; now the current subject is Lucinda; now the target subject is Lucinda; now the conversation set is Table of Lucinda Checking Remarks."
+    },
+    {
+      "starting": "",
+      "final": "repeat through Table of Lucinda Checks"
+    },
+    {
+      "starting": "",
+      "final": "begin;"
+    },
+    {
+      "starting": "",
+      "final": "",
+      "comment": "say \"[response entry][paragraph break]\";"
+    },
+    {
+      "starting": "",
+      "final": "",
+      "comment": "blank out the whole row;"
+    },
+    {
+      "starting": "",
+      "final": "",
+      "comment": "rule succeeds;"
+    },
+    {
+      "starting": "",
+      "final": "end repeat."
+    },
+    {
+      "starting": "",
+      "final": "say \"The Prince stares at the shoe. Then he looks up. 'You?' he repeats. 'I mean -- you seemed -- I thought for certain that you weren't -- the way you -- I thought you would be good practice because--'"
+    }
+  ],
+  "Lucinda Checking Remarks": [
+    {
+      "starting": "blank",
+      "final": "Theodora",
+      "comment": "\"'I'll get to her later,' the Prince says. 'If necessary,' he adds, under his breath.\""
+    },
+    {
+      "starting": "blank",
+      "final": "birds",
+      "comment": "\"'I do believe the parrot is jealous,' remarks Theo."
+    }
+  ],
+  "Theodora Checking Remarks": [
+    {
+      "starting": "blank",
+      "final": "Lucinda",
+      "comment": "\"'One at a time, bird,' mutters the Prince. Theodora giggles.\""
+    },
+    {
+      "starting": "blank",
+      "final": "shoe",
+      "comment": "\"'Yes,' says Lucinda to you. 'You're very smart.'\""
+    }
+  ],
+  "Cinderella Checking Remarks": [
+    {
+      "starting": "blank",
+      "final": "Theodora",
+      "comment": "\"'No time for that now,' says the Prince.\""
+    },
+    {
+      "starting": "blank",
+      "final": "Lucinda",
+      "comment": "\"The Prince shakes his head, ignoring you.\""
+    },
+    {
+      "starting": "blank",
+      "final": "ball",
+      "comment": "\"The Prince frowns at Cinderella. 'I don't recall seeing you at the ball.'"
+    },
+    {
+      "starting": "blank",
+      "final": "ball",
+      "comment": "\"'In any case,' says the Prince. 'This ball -- I should check, you see, I'm having everyone try on a shoe...'"
+    },
+    {
+      "starting": "blank",
+      "final": "marriage",
+      "comment": "\"'I held the ball to look for someone to-- someone that I might marry,' the Prince explains to Cinderella."
+    },
+    {
+      "starting": "blank",
+      "final": "love",
+      "comment": "\"The Prince and Cinderella both look up at you. Cinderella puts one little finger to her lips, and winks, but you are afraid."
+    },
+    {
+      "starting": "blank",
+      "final": "birds",
+      "comment": "\"Cinderella smiles, and comes over to where you are, and pets the top of your head and whispers cossetting things in a language only you understand. Your heart is filled with sweetness.\""
+    },
+    {
+      "starting": "blank",
+      "final": "magic",
+      "comment": "\"[if mentioning magic]'Magic magic magic,' you sing. 'Witch, enchantress...'"
+    },
+    {
+      "starting": "",
+      "final": "if Fitting is happening and Cinderella is the current subject, yes;"
+    },
+    {
+      "starting": "",
+      "final": "otherwise no."
+    },
+    {
+      "starting": "",
+      "final": "say \"'Cinde--'"
+    },
+    {
+      "starting": "",
+      "final": "say \"This story may strike you as familiar, which means that you already have some idea of the ways it can end up."
+    },
+    {
+      "starting": "",
+      "final": "say \"Inform 7 is the work of Graham Nelson, and [story title] was compiled using Andrew Hunter's compiler for Mac OS X."
+    }
+  ]
+}
