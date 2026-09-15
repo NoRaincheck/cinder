@@ -8,13 +8,6 @@ Twee-Glass
 The Prince sits awkwardly on the couch, holding his glass slipper and trying to keep it from crushing. Lucinda and Theodora have the ends of the same couch, and the old lady leans toward him: 'Do tell me about your father's health.' It is your business to steer the talk.
 
 [[Take up the Prologue talk|S1-Prologue-Hub]]
-[[Take up the Wondering talk|S2-Wondering-Hub]]
-[[Take up the Fitting talk|S3-Fitting-Hub]]
-[[Take up the Checking-Theodora talk|S4-Checking-Theodora-Hub]]
-[[Take up the Checking-Lucinda talk|S5-Checking-Lucinda-Hub]]
-[[Take up the Checking-Cinderella talk|S6-Checking-Cinderella-Hub]]
-[[Take up the Theodora-Endgame talk|S7-Theodora-Endgame-Hub]]
-[[Take up the Lucinda-Endgame talk|S8-Lucinda-Endgame-Hub]]
 [[King's health|S-Hub-kings-health]]
 [[Heirs|S-Hub-heirs]]
 [[Marriage|S-Hub-marriage]]
@@ -2775,6 +2768,8 @@ This is the Prologue stretch of the evening. The Prince fidgets, the old lady st
 [[Steer toward stepmother|S1-Prologue-blank-stepmother-1]]
 [unless seen_s1_prologue_say_the_old_woman_laughs_slightly_how_beautifully_romantic_but_she_didn_t_give_you_her_name_1]
 [[Steer toward say "The old woman laughs slightly. 'How|S1-Prologue-say-the-old-woman-laughs-slightly-how-beautifully-romantic-but-she-didn-t-give-you-her-name-1]]
+[unless seen_s1_prologue_blank_shoe_1]
+[[Continue to the Wondering talk|S2-Wondering-Hub]]
 [if 2 + 2 === 4]
 [[King's health|S-Hub-kings-health]]
 [[Heirs|S-Hub-heirs]]
@@ -2790,13 +2785,6 @@ This is the Prologue stretch of the evening. The Prince fidgets, the old lady st
 [[Magic|S-Hub-magic]]
 [[God|S-Hub-god]]
 [[The birds|S-Hub-birds]]
-[[Press on toward S9-End-Theodora-Marriage|S9-End-Theodora-Marriage]]
-[[Press on toward S9-End-Lucinda-Marriage|S9-End-Lucinda-Marriage]]
-[[Press on toward S9-End-Peace|S9-End-Peace]]
-[[Press on toward S9-End-Disaster|S9-End-Disaster]]
-[[Press on toward S9-End-Prince-Departs|S9-End-Prince-Departs]]
-[[Press on toward S9-End-Cinderella-Executed|S9-End-Cinderella-Executed]]
-[[Press on toward S9-End-Cinderella-Wed|S9-End-Cinderella-Wed]]
 [[Press on toward S9-End-Pirates|S9-End-Pirates]]
 :: S2-Wondering-Hub
 This is the Wondering stretch of the evening. The Prince fidgets, the old lady steers, Lucinda sighs, and Theodora giggles at all the wrong moments. You may speak on any subject you please, or press on toward an ending.
@@ -2823,6 +2811,8 @@ This is the Wondering stretch of the evening. The Prince fidgets, the old lady s
 [[Steer toward stepmother|S2-Wondering-marriage-stepmother-1]]
 [unless seen_s2_wondering_blank_ball_1]
 [[Steer toward ball|S2-Wondering-blank-ball-1]]
+[unless seen_s2_wondering_blank_ball_1]
+[[Continue to the Fitting talk|S3-Fitting-Hub]]
 [if 2 + 2 === 4]
 [[King's health|S-Hub-kings-health]]
 [[Heirs|S-Hub-heirs]]
@@ -2838,14 +2828,7 @@ This is the Wondering stretch of the evening. The Prince fidgets, the old lady s
 [[Magic|S-Hub-magic]]
 [[God|S-Hub-god]]
 [[The birds|S-Hub-birds]]
-[[Press on toward S9-End-Theodora-Marriage|S9-End-Theodora-Marriage]]
-[[Press on toward S9-End-Lucinda-Marriage|S9-End-Lucinda-Marriage]]
-[[Press on toward S9-End-Peace|S9-End-Peace]]
-[[Press on toward S9-End-Disaster|S9-End-Disaster]]
 [[Press on toward S9-End-Prince-Departs|S9-End-Prince-Departs]]
-[[Press on toward S9-End-Cinderella-Executed|S9-End-Cinderella-Executed]]
-[[Press on toward S9-End-Cinderella-Wed|S9-End-Cinderella-Wed]]
-[[Press on toward S9-End-Pirates|S9-End-Pirates]]
 :: S3-Fitting-Hub
 This is the Fitting stretch of the evening. The Prince fidgets, the old lady steers, Lucinda sighs, and Theodora giggles at all the wrong moments. You may speak on any subject you please, or press on toward an ending.
 
@@ -2897,6 +2880,12 @@ This is the Fitting stretch of the evening. The Prince fidgets, the old lady ste
 [[Steer toward end repeat.|S3-Fitting-end-repeat-1]]
 [unless seen_s3_fitting_say_the_prince_stares_at_the_shoe_then_he_looks_up_you_he_repeats_i_mean_you_seemed_i_thought_for_certain_that_you_weren_t_the_way_you_i_thought_you_would_be_good_practice_because_1]
 [[Steer toward say "The Prince stares at the shoe. Then|S3-Fitting-say-the-prince-stares-at-the-shoe-then-he-looks-up-you-he-repeats-i-mean-you-seemed-i-thought-for-certain-that-you-weren-t-the-way-you-i-thought-you-would-be-good-practice-because-1]]
+[unless seen_s3_fitting_blank_theo_1]
+[[Continue to Checking Theodora|S4-Checking-Theodora-Hub]]
+[unless seen_s3_fitting_blank_theo_1]
+[[Continue to Checking Lucinda|S5-Checking-Lucinda-Hub]]
+[unless seen_s3_fitting_blank_theo_1]
+[[Continue to Checking Cinderella|S6-Checking-Cinderella-Hub]]
 [if 2 + 2 === 4]
 [[King's health|S-Hub-kings-health]]
 [[Heirs|S-Hub-heirs]]
@@ -2912,16 +2901,11 @@ This is the Fitting stretch of the evening. The Prince fidgets, the old lady ste
 [[Magic|S-Hub-magic]]
 [[God|S-Hub-god]]
 [[The birds|S-Hub-birds]]
-[[Press on toward S9-End-Theodora-Marriage|S9-End-Theodora-Marriage]]
-[[Press on toward S9-End-Lucinda-Marriage|S9-End-Lucinda-Marriage]]
-[[Press on toward S9-End-Peace|S9-End-Peace]]
 [[Press on toward S9-End-Disaster|S9-End-Disaster]]
-[[Press on toward S9-End-Prince-Departs|S9-End-Prince-Departs]]
-[[Press on toward S9-End-Cinderella-Executed|S9-End-Cinderella-Executed]]
-[[Press on toward S9-End-Cinderella-Wed|S9-End-Cinderella-Wed]]
-[[Press on toward S9-End-Pirates|S9-End-Pirates]]
 :: S4-Checking-Theodora-Hub
 This is the Checking-Theodora stretch of the evening. The Prince fidgets, the old lady steers, Lucinda sighs, and Theodora giggles at all the wrong moments. You may speak on any subject you please, or press on toward an ending.
+
+[[Continue to Theodora's endgame|S7-Theodora-Endgame-Hub]]
 
 [unless seen_s4_checking_theodora_blank_lucinda_1]
 [[Steer toward Lucinda|S4-Checking-Theodora-blank-lucinda-1]]
@@ -2942,16 +2926,10 @@ This is the Checking-Theodora stretch of the evening. The Prince fidgets, the ol
 [[Magic|S-Hub-magic]]
 [[God|S-Hub-god]]
 [[The birds|S-Hub-birds]]
-[[Press on toward S9-End-Theodora-Marriage|S9-End-Theodora-Marriage]]
-[[Press on toward S9-End-Lucinda-Marriage|S9-End-Lucinda-Marriage]]
-[[Press on toward S9-End-Peace|S9-End-Peace]]
-[[Press on toward S9-End-Disaster|S9-End-Disaster]]
-[[Press on toward S9-End-Prince-Departs|S9-End-Prince-Departs]]
-[[Press on toward S9-End-Cinderella-Executed|S9-End-Cinderella-Executed]]
-[[Press on toward S9-End-Cinderella-Wed|S9-End-Cinderella-Wed]]
-[[Press on toward S9-End-Pirates|S9-End-Pirates]]
 :: S5-Checking-Lucinda-Hub
 This is the Checking-Lucinda stretch of the evening. The Prince fidgets, the old lady steers, Lucinda sighs, and Theodora giggles at all the wrong moments. You may speak on any subject you please, or press on toward an ending.
+
+[[Continue to Lucinda's endgame|S8-Lucinda-Endgame-Hub]]
 
 [unless seen_s5_checking_lucinda_blank_theodora_1]
 [[Steer toward Theodora|S5-Checking-Lucinda-blank-theodora-1]]
@@ -2970,14 +2948,6 @@ This is the Checking-Lucinda stretch of the evening. The Prince fidgets, the old
 [[Magic|S-Hub-magic]]
 [[God|S-Hub-god]]
 [[The birds|S-Hub-birds]]
-[[Press on toward S9-End-Theodora-Marriage|S9-End-Theodora-Marriage]]
-[[Press on toward S9-End-Lucinda-Marriage|S9-End-Lucinda-Marriage]]
-[[Press on toward S9-End-Peace|S9-End-Peace]]
-[[Press on toward S9-End-Disaster|S9-End-Disaster]]
-[[Press on toward S9-End-Prince-Departs|S9-End-Prince-Departs]]
-[[Press on toward S9-End-Cinderella-Executed|S9-End-Cinderella-Executed]]
-[[Press on toward S9-End-Cinderella-Wed|S9-End-Cinderella-Wed]]
-[[Press on toward S9-End-Pirates|S9-End-Pirates]]
 :: S6-Checking-Cinderella-Hub
 This is the Checking-Cinderella stretch of the evening. The Prince fidgets, the old lady steers, Lucinda sighs, and Theodora giggles at all the wrong moments. You may speak on any subject you please, or press on toward an ending.
 
@@ -3022,14 +2992,9 @@ This is the Checking-Cinderella stretch of the evening. The Prince fidgets, the 
 [[Magic|S-Hub-magic]]
 [[God|S-Hub-god]]
 [[The birds|S-Hub-birds]]
-[[Press on toward S9-End-Theodora-Marriage|S9-End-Theodora-Marriage]]
-[[Press on toward S9-End-Lucinda-Marriage|S9-End-Lucinda-Marriage]]
 [[Press on toward S9-End-Peace|S9-End-Peace]]
-[[Press on toward S9-End-Disaster|S9-End-Disaster]]
-[[Press on toward S9-End-Prince-Departs|S9-End-Prince-Departs]]
 [[Press on toward S9-End-Cinderella-Executed|S9-End-Cinderella-Executed]]
 [[Press on toward S9-End-Cinderella-Wed|S9-End-Cinderella-Wed]]
-[[Press on toward S9-End-Pirates|S9-End-Pirates]]
 :: S7-Theodora-Endgame-Hub
 This is the Theodora-Endgame stretch of the evening. The Prince fidgets, the old lady steers, Lucinda sighs, and Theodora giggles at all the wrong moments. You may speak on any subject you please, or press on toward an ending.
 
@@ -3048,13 +3013,6 @@ This is the Theodora-Endgame stretch of the evening. The Prince fidgets, the old
 [[God|S-Hub-god]]
 [[The birds|S-Hub-birds]]
 [[Press on toward S9-End-Theodora-Marriage|S9-End-Theodora-Marriage]]
-[[Press on toward S9-End-Lucinda-Marriage|S9-End-Lucinda-Marriage]]
-[[Press on toward S9-End-Peace|S9-End-Peace]]
-[[Press on toward S9-End-Disaster|S9-End-Disaster]]
-[[Press on toward S9-End-Prince-Departs|S9-End-Prince-Departs]]
-[[Press on toward S9-End-Cinderella-Executed|S9-End-Cinderella-Executed]]
-[[Press on toward S9-End-Cinderella-Wed|S9-End-Cinderella-Wed]]
-[[Press on toward S9-End-Pirates|S9-End-Pirates]]
 :: S8-Lucinda-Endgame-Hub
 This is the Lucinda-Endgame stretch of the evening. The Prince fidgets, the old lady steers, Lucinda sighs, and Theodora giggles at all the wrong moments. You may speak on any subject you please, or press on toward an ending.
 
@@ -3072,14 +3030,7 @@ This is the Lucinda-Endgame stretch of the evening. The Prince fidgets, the old 
 [[Magic|S-Hub-magic]]
 [[God|S-Hub-god]]
 [[The birds|S-Hub-birds]]
-[[Press on toward S9-End-Theodora-Marriage|S9-End-Theodora-Marriage]]
 [[Press on toward S9-End-Lucinda-Marriage|S9-End-Lucinda-Marriage]]
-[[Press on toward S9-End-Peace|S9-End-Peace]]
-[[Press on toward S9-End-Disaster|S9-End-Disaster]]
-[[Press on toward S9-End-Prince-Departs|S9-End-Prince-Departs]]
-[[Press on toward S9-End-Cinderella-Executed|S9-End-Cinderella-Executed]]
-[[Press on toward S9-End-Cinderella-Wed|S9-End-Cinderella-Wed]]
-[[Press on toward S9-End-Pirates|S9-End-Pirates]]
 :: S9-End-Theodora-Marriage
 The Prince pulls Theodora toward him. 'You are a woman of unexpected depths,' he says softly. She blinks at him, then says, 'I hope you are not angry.' He laughs, and touches her cheek; and she kisses him. 'Well,' says the old lady briskly, standing. 'How many unexpected turns life brings to us.' Theodora and the Prince are married.
 

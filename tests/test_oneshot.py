@@ -49,15 +49,19 @@ def test_guards_reference_defined_vars():
 
 
 def test_hubs_endings_intro_unguarded():
+    # Designated Continue links are the one exception: they must be guarded
+    # (scene gating) and are audited in test_progression.py instead.
     bad = []
     for name, body in PASSAGES.items():
         prev = ""
         for line in body.splitlines():
             m = re.fullmatch(r"\[\[(?:[^|\]]+\|)?([^\]]+)\]\]", line.strip())
             if m and m.group(1) in PASSAGES and not is_row(m.group(1)):
-                # The always-true scope terminator is not a guard.
-                if (prev.startswith("[unless ") or prev.startswith("[if ")) \
-                        and prev != "[if 2 + 2 === 4]":
+                lm = re.match(r"\[\[([^\]|]+)\|", line.strip())
+                label = lm.group(1) if lm else ""
+                guarded = (prev.startswith("[unless ") or prev.startswith("[if ")) \
+                    and prev != "[if 2 + 2 === 4]"
+                if guarded and not label.startswith("Continue to "):
                     bad.append(f"{name}: {line.strip()[:60]}")
             prev = line.strip()
     assert bad == [], f"guarded hub/ending/intro links (dead-end risk): {bad[:5]}"

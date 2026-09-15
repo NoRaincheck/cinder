@@ -54,6 +54,10 @@ dist/                 Build output (gitignored) — deploy artifact for Pages
    section, and links to visited rows hide behind `[unless seen_*]` guards —
    like the original blanking each remark after use. Hub/ending links stay
    unconditional so navigation can never vanish.
+4. Scene gating: the start opens only the Prologue; Wondering unlocks behind
+   the shoe discussion, Fitting behind the ball, the Checking scenes behind
+   Theo, and each ending lives in exactly one scene — so the evening always
+   moves forward and every ending stays reachable.
 3. `just build` compiles to a single `index.html`; pushing `main` deploys it
    to GitHub Pages via `.github/workflows/pages.yml` (pytest gate included).
 

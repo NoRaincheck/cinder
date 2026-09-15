@@ -52,6 +52,18 @@ plus the current twee passage body for that row.
 - Hub / ending / intro links stay unconditional. Never guard those.
 - Never nest conditionals; never invent new flag names (additive only).
 
+## Scene gating (progression, 2026-09-15)
+
+- Arc: Prologue -> Wondering -> Fitting -> Checking T/L/C -> Endgames.
+  The start passage opens only the Prologue hub; every ending is homed to
+  exactly one scene (S1 Pirates / S2 Prince-Departs / S3 Disaster /
+  S6 Peace+Executed+Wed / S7 Theodora-Marriage / S8 Lucinda-Marriage).
+- Continue links unlock behind key-row flags (`[unless seen_s1_prologue_blank_shoe_1]`
+  etc.); checking->endgame funnels stay unconditional. Never add an ending
+  or cross-scene link outside this map — `tests/test_progression.py` enforces it.
+- Guarded continue links live with the guarded block (before the scope
+  terminator); never leave unguarded content after a guard without one.
+
 ## Attribution
 
 `Prologue-Intro` ends with this footer, verbatim:
