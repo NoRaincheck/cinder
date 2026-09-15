@@ -46,7 +46,6 @@ preview: build
     @echo "Playing Twee-Glass at http://localhost:{{port}} (Ctrl-C to stop)..."
     python3 -m http.server {{port}} --directory dist
 
-# Remove gitignored build outputs and caches.
-clean:
-    rm -rf dist build .pytest_cache
-    find . -name __pycache__ -type d -prune -exec rm -rf {} +
+# Format src/glass.twee: append two spaces after any line ending in ]] (Chapbook link rule).
+fmt:
+	@sed -i '' -E 's/\]\][ ]?$/]]  /' src/glass.twee
