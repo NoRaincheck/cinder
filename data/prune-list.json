@@ -1,0 +1,567 @@
+[
+  {
+    "table": "Bad Bird Excuses",
+    "reason": "loop",
+    "detail": "0 rows, dropped (no representative passage)"
+  },
+  {
+    "table": "Waiting",
+    "reason": "loop",
+    "detail": "5 rows collapsed to one representative passage"
+  },
+  {
+    "table": "Awwkwardness",
+    "reason": "loop",
+    "detail": "20 rows collapsed to one representative passage"
+  },
+  {
+    "table": "Insults",
+    "reason": "loop",
+    "detail": "3 rows collapsed to one representative passage"
+  },
+  {
+    "table": "Flattery",
+    "reason": "loop",
+    "detail": "4 rows collapsed to one representative passage"
+  },
+  {
+    "table": "Prologue Remarks",
+    "slug": "marriage-birds",
+    "reason": "user-cut",
+    "detail": "2026-09-15 bird-paths review \u00a7A1 (flavor, no plot); passage + hub links deleted"
+  },
+  {
+    "table": "Prologue Remarks",
+    "slug": "blank-birds",
+    "reason": "user-cut",
+    "detail": "2026-09-15 bird-paths review \u00a7A2 (flavor, no plot); passage + hub links deleted"
+  },
+  {
+    "table": "Lucinda Checking Remarks",
+    "slug": "blank-birds",
+    "reason": "user-cut",
+    "detail": "2026-09-15 bird-paths review \u00a7A5 (one-line Theo beat); passage + hub links deleted"
+  },
+  {
+    "table": "Wondering Remarks",
+    "slug": "blank-birds",
+    "reason": "user-cut",
+    "detail": "2026-09-15 birds-topic removal (\u00a7A3 shoe-wearer joke); passage + hub links deleted"
+  },
+  {
+    "table": "Fitting Remarks",
+    "slug": "magic-birds",
+    "reason": "user-cut",
+    "detail": "2026-09-15 birds-topic removal (\u00a7A4 possession talk); passage + hub links deleted"
+  },
+  {
+    "table": "Cinderella Checking Remarks",
+    "slug": "blank-birds",
+    "reason": "user-cut",
+    "detail": "2026-09-15 birds-topic removal (\u00a7A6 Cinderella warm beat); passage + hub links deleted"
+  },
+  {
+    "table": "Reactions",
+    "slug": "obscenity-obscenity-reaction-rule",
+    "reason": "user-cut",
+    "detail": "2026-09-15 curated-3 superset cut"
+  },
+  {
+    "table": "Reactions",
+    "slug": "mild-obscenity-mild-reaction-rule",
+    "reason": "user-cut",
+    "detail": "2026-09-15 curated-3 superset cut"
+  },
+  {
+    "table": "Reactions",
+    "slug": "cracker-polly-or-polly-wanna-cracker-polly-wanna-cracker-you-announce-but-they-ve-grown-tired-of-that-one",
+    "reason": "user-cut",
+    "detail": "2026-09-15 curated-3 superset cut"
+  },
+  {
+    "table": "Reactions",
+    "slug": "um-seven-or-seven-um-seven-you-inquire-brightly-everyone-pretends-you-didn-t-speak",
+    "reason": "user-cut",
+    "detail": "2026-09-15 curated-3 superset cut"
+  },
+  {
+    "table": "Reactions",
+    "slug": "silence-silence-you-squawk",
+    "reason": "user-cut",
+    "detail": "2026-09-15 curated-3 superset cut"
+  },
+  {
+    "table": "Reactions",
+    "slug": "wisdom-thought-thinking-wisdom-you-intone",
+    "reason": "user-cut",
+    "detail": "2026-09-15 curated-3 superset cut"
+  },
+  {
+    "table": "Reactions",
+    "slug": "no-one-seems-to-think-you-know-much-about-that",
+    "reason": "user-cut",
+    "detail": "2026-09-15 curated-3 superset cut"
+  },
+  {
+    "table": "Reactions",
+    "slug": "kindness-awwk-kindness",
+    "reason": "user-cut",
+    "detail": "2026-09-15 curated-3 superset cut"
+  },
+  {
+    "table": "Reactions",
+    "slug": "corknut-corknuts-almond-almonds-cork-nut-or-candied-almond-almond-you-hint-no-one-takes-you-up-on-it",
+    "reason": "user-cut",
+    "detail": "2026-09-15 curated-3 superset cut"
+  },
+  {
+    "table": "Reactions",
+    "slug": "pirate-pirates-piracy-or-pieces-of-eight-you-squawk-a-short-piratical-ditty-not-quite-fit-for-polite-company",
+    "reason": "user-cut",
+    "detail": "2026-09-15 curated-3 superset cut"
+  },
+  {
+    "table": "Reactions",
+    "slug": "cut-that-out-says-lucinda-obscenity-reaction-rule",
+    "reason": "user-cut",
+    "detail": "2026-09-15 curated-3 superset cut"
+  },
+  {
+    "table": "Reactions",
+    "slug": "cheese-everyone-turns-to-look-at-you",
+    "reason": "user-cut",
+    "detail": "2026-09-15 curated-3 superset cut"
+  },
+  {
+    "table": "Reactions",
+    "slug": "fire-help-earthquake-flood-famine-or-stock-market-crash-the-prince-looks-puzzled",
+    "reason": "user-cut",
+    "detail": "2026-09-15 curated-3 superset cut"
+  },
+  {
+    "table": "Reactions",
+    "slug": "cleavage-nice-word-cleavage-you-squawk-nice-word",
+    "reason": "user-cut",
+    "detail": "2026-09-15 curated-3 superset cut"
+  },
+  {
+    "table": "Reactions",
+    "slug": "prying-pry-prying-you-awwk-inquire-impertinently-be-curious-ferret-out-nose-around",
+    "reason": "user-cut",
+    "detail": "2026-09-15 curated-3 superset cut"
+  },
+  {
+    "table": "Reactions",
+    "slug": "say-a-random-visible-woman-giggles-faintly",
+    "reason": "user-cut",
+    "detail": "2026-09-15 curated-3 superset cut"
+  },
+  {
+    "table": "Reactions",
+    "slug": "understand-bother-or-curses-or-drat-or-darn-as-mild-obscenity",
+    "reason": "user-cut",
+    "detail": "2026-09-15 curated-3 superset cut"
+  },
+  {
+    "table": "Reactions",
+    "slug": "now-the-player-is-disgraced",
+    "reason": "user-cut",
+    "detail": "2026-09-15 curated-3 superset cut"
+  },
+  {
+    "table": "Reactions",
+    "slug": "say-you-squawk-very-loudly",
+    "reason": "user-cut",
+    "detail": "2026-09-15 curated-3 superset cut"
+  },
+  {
+    "table": "Reactions",
+    "slug": "if-asking-someone-to-try-speech-continue-the-action",
+    "reason": "user-cut",
+    "detail": "2026-09-15 curated-3 superset cut"
+  },
+  {
+    "table": "Reactions",
+    "slug": "say-no-one-in-this-house-obeys-you-at-all",
+    "reason": "user-cut",
+    "detail": "2026-09-15 curated-3 superset cut"
+  },
+  {
+    "table": "Reactions",
+    "slug": "say-right-says-the-old-lady-and-she-rings-for-a-servant-to-remove-you-from-the-room",
+    "reason": "user-cut",
+    "detail": "2026-09-15 curated-3 superset cut"
+  },
+  {
+    "table": "Reactions",
+    "slug": "end-the-story-saying-you-are-sold-to-pirates-and-have-a-glorious-career-on-the-open-sea",
+    "reason": "user-cut",
+    "detail": "2026-09-15 curated-3 superset cut"
+  },
+  {
+    "table": "Reactions",
+    "slug": "say-oops-you-squawk-sorry-oops-sorry",
+    "reason": "user-cut",
+    "detail": "2026-09-15 curated-3 superset cut"
+  },
+  {
+    "table": "Reactions",
+    "slug": "say-awwk-yes",
+    "reason": "user-cut",
+    "detail": "2026-09-15 curated-3 superset cut"
+  },
+  {
+    "table": "Reactions",
+    "slug": "say-no-you-squawk-no-no",
+    "reason": "user-cut",
+    "detail": "2026-09-15 curated-3 superset cut"
+  },
+  {
+    "table": "Reactions",
+    "slug": "if-turn-count-is-1",
+    "reason": "user-cut",
+    "detail": "2026-09-15 curated-3 superset cut"
+  },
+  {
+    "table": "Reactions",
+    "slug": "say-paragraph-break",
+    "reason": "user-cut",
+    "detail": "2026-09-15 curated-3 superset cut"
+  },
+  {
+    "table": "Reactions",
+    "slug": "say-the-prince-sits-awkwardly-on-the-couch-holding-his-glass-slipper-and-trying-to-keep-it-from-crushing-lucinda-and-theodora-have-the-ends-of-the-same-couch-and-they-are-taking-turns-seeing-who-can-bend-lowest-and-show-off-the-most-cleavage-while-the-old-lady-in-her-wing-chair-carries-on-about-nonsense-for-instance",
+    "reason": "user-cut",
+    "detail": "2026-09-15 curated-3 superset cut"
+  },
+  {
+    "table": "Reactions",
+    "slug": "end-if",
+    "reason": "user-cut",
+    "detail": "2026-09-15 curated-3 superset cut"
+  },
+  {
+    "table": "Reactions",
+    "slug": "say-you-give-the-place-a-once-over-with-your-right-eye-then-you-turn-your-head-and-look-at-everything-through-your-left-eye-it-doesn-t-make-any-difference-the-farther-parts-of-the-room-remain-out-of-focus",
+    "reason": "user-cut",
+    "detail": "2026-09-15 curated-3 superset cut"
+  },
+  {
+    "table": "Reactions",
+    "slug": "say-it-s-hard-to-have-a-good-look-at-the-moment-but-everything-feels-in-order-properly-preened-feathers-lying-as-they-ought",
+    "reason": "user-cut",
+    "detail": "2026-09-15 curated-3 superset cut"
+  },
+  {
+    "table": "Reactions",
+    "slug": "choose-a-random-row-in-the-table-of-waiting",
+    "reason": "user-cut",
+    "detail": "2026-09-15 curated-3 superset cut"
+  },
+  {
+    "table": "Reactions",
+    "slug": "say-response-entry-paragraph-break",
+    "reason": "user-cut",
+    "detail": "2026-09-15 curated-3 superset cut"
+  },
+  {
+    "table": "Prologue Remarks",
+    "slug": "king-s-health-heirs",
+    "reason": "user-cut",
+    "detail": "2026-09-15 curated-3 superset cut"
+  },
+  {
+    "table": "Prologue Remarks",
+    "slug": "king-s-health-heirs",
+    "reason": "user-cut",
+    "detail": "2026-09-15 curated-3 superset cut"
+  },
+  {
+    "table": "Prologue Remarks",
+    "slug": "blank-king-s-health",
+    "reason": "user-cut",
+    "detail": "2026-09-15 curated-3 superset cut"
+  },
+  {
+    "table": "Prologue Remarks",
+    "slug": "blank-king-s-health",
+    "reason": "user-cut",
+    "detail": "2026-09-15 curated-3 superset cut"
+  },
+  {
+    "table": "Prologue Remarks",
+    "slug": "blank-king-s-health",
+    "reason": "user-cut",
+    "detail": "2026-09-15 curated-3 superset cut"
+  },
+  {
+    "table": "Prologue Remarks",
+    "slug": "blank-king-s-health",
+    "reason": "user-cut",
+    "detail": "2026-09-15 curated-3 superset cut"
+  },
+  {
+    "table": "Prologue Remarks",
+    "slug": "heirs-king-s-health",
+    "reason": "user-cut",
+    "detail": "2026-09-15 curated-3 superset cut"
+  },
+  {
+    "table": "Prologue Remarks",
+    "slug": "marriage-theo",
+    "reason": "user-cut",
+    "detail": "2026-09-15 curated-3 superset cut"
+  },
+  {
+    "table": "Prologue Remarks",
+    "slug": "theo-heirs",
+    "reason": "user-cut",
+    "detail": "2026-09-15 curated-3 superset cut"
+  },
+  {
+    "table": "Prologue Remarks",
+    "slug": "god-lucinda",
+    "reason": "user-cut",
+    "detail": "2026-09-15 curated-3 superset cut"
+  },
+  {
+    "table": "Prologue Remarks",
+    "slug": "blank-heirs",
+    "reason": "user-cut",
+    "detail": "2026-09-15 curated-3 superset cut"
+  },
+  {
+    "table": "Prologue Remarks",
+    "slug": "love-marriage",
+    "reason": "user-cut",
+    "detail": "2026-09-15 curated-3 superset cut"
+  },
+  {
+    "table": "Prologue Remarks",
+    "slug": "blank-stepmother",
+    "reason": "user-cut",
+    "detail": "2026-09-15 curated-3 superset cut"
+  },
+  {
+    "table": "Prologue Remarks",
+    "slug": "say-the-old-woman-laughs-slightly-how-beautifully-romantic-but-she-didn-t-give-you-her-name",
+    "reason": "user-cut",
+    "detail": "2026-09-15 curated-3 superset cut"
+  },
+  {
+    "table": "Wondering Remarks",
+    "slug": "blank-magic",
+    "reason": "user-cut",
+    "detail": "2026-09-15 curated-3 superset cut"
+  },
+  {
+    "table": "Wondering Remarks",
+    "slug": "blank-heirs",
+    "reason": "user-cut",
+    "detail": "2026-09-15 curated-3 superset cut"
+  },
+  {
+    "table": "Wondering Remarks",
+    "slug": "love-marriage",
+    "reason": "user-cut",
+    "detail": "2026-09-15 curated-3 superset cut"
+  },
+  {
+    "table": "Wondering Remarks",
+    "slug": "marriage-stepmother",
+    "reason": "user-cut",
+    "detail": "2026-09-15 curated-3 superset cut"
+  },
+  {
+    "table": "Fitting Remarks",
+    "slug": "shoe-ball",
+    "reason": "user-cut",
+    "detail": "2026-09-15 curated-3 superset cut"
+  },
+  {
+    "table": "Fitting Remarks",
+    "slug": "blank-stepmother",
+    "reason": "user-cut",
+    "detail": "2026-09-15 curated-3 superset cut"
+  },
+  {
+    "table": "Fitting Remarks",
+    "slug": "ball-magic",
+    "reason": "user-cut",
+    "detail": "2026-09-15 curated-3 superset cut"
+  },
+  {
+    "table": "Fitting Remarks",
+    "slug": "magic-shoe",
+    "reason": "user-cut",
+    "detail": "2026-09-15 curated-3 superset cut"
+  },
+  {
+    "table": "Fitting Remarks",
+    "slug": "blank-magic",
+    "reason": "user-cut",
+    "detail": "2026-09-15 curated-3 superset cut"
+  },
+  {
+    "table": "Fitting Remarks",
+    "slug": "magic-ball",
+    "reason": "user-cut",
+    "detail": "2026-09-15 curated-3 superset cut"
+  },
+  {
+    "table": "Fitting Remarks",
+    "slug": "ball-marriage",
+    "reason": "user-cut",
+    "detail": "2026-09-15 curated-3 superset cut"
+  },
+  {
+    "table": "Fitting Remarks",
+    "slug": "marriage-shoe",
+    "reason": "user-cut",
+    "detail": "2026-09-15 curated-3 superset cut"
+  },
+  {
+    "table": "Fitting Remarks",
+    "slug": "blank-magic",
+    "reason": "user-cut",
+    "detail": "2026-09-15 curated-3 superset cut"
+  },
+  {
+    "table": "Fitting Remarks",
+    "slug": "repeat-through-table-of-lucinda-checks",
+    "reason": "user-cut",
+    "detail": "2026-09-15 curated-3 superset cut"
+  },
+  {
+    "table": "Fitting Remarks",
+    "slug": "end-repeat",
+    "reason": "user-cut",
+    "detail": "2026-09-15 curated-3 superset cut"
+  },
+  {
+    "table": "Fitting Remarks",
+    "slug": "say-the-prince-stares-at-the-shoe-then-he-looks-up-you-he-repeats-i-mean-you-seemed-i-thought-for-certain-that-you-weren-t-the-way-you-i-thought-you-would-be-good-practice-because",
+    "reason": "user-cut",
+    "detail": "2026-09-15 curated-3 superset cut"
+  },
+  {
+    "table": "Cinderella Checking Remarks",
+    "slug": "blank-magic",
+    "reason": "user-cut",
+    "detail": "2026-09-15 curated-3 superset cut"
+  },
+  {
+    "table": "Cinderella Checking Remarks",
+    "slug": "if-fitting-is-happening-and-cinderella-is-the-current-subject-yes",
+    "reason": "user-cut",
+    "detail": "2026-09-15 curated-3 superset cut"
+  },
+  {
+    "table": "Cinderella Checking Remarks",
+    "slug": "otherwise-no",
+    "reason": "user-cut",
+    "detail": "2026-09-15 curated-3 superset cut"
+  },
+  {
+    "table": "Cinderella Checking Remarks",
+    "slug": "say-cinde",
+    "reason": "user-cut",
+    "detail": "2026-09-15 curated-3 superset cut"
+  },
+  {
+    "table": "Cinderella Checking Remarks",
+    "slug": "say-this-story-may-strike-you-as-familiar-which-means-that-you-already-have-some-idea-of-the-ways-it-can-end-up",
+    "reason": "user-cut",
+    "detail": "2026-09-15 curated-3 superset cut"
+  },
+  {
+    "table": "Cinderella Checking Remarks",
+    "slug": "say-inform-7-is-the-work-of-graham-nelson-and-story-title-was-compiled-using-andrew-hunter-s-compiler-for-mac-os-x",
+    "reason": "user-cut",
+    "detail": "2026-09-15 curated-3 superset cut"
+  },
+  {
+    "table": "Reactions",
+    "slug": "begin",
+    "reason": "invalid-input",
+    "detail": "2026-09-15 curated-3 audit: Inform 7 engine scaffolding row (begin/rule succeeds/blank-row), never story content, no passage by design"
+  },
+  {
+    "table": "Fitting Remarks",
+    "slug": "begin",
+    "reason": "invalid-input",
+    "detail": "2026-09-15 curated-3 audit: Inform 7 engine scaffolding row (begin/rule succeeds/blank-row), never story content, no passage by design"
+  },
+  {
+    "table": "Fitting Remarks",
+    "slug": "row",
+    "reason": "invalid-input",
+    "detail": "2026-09-15 curated-3 audit: Inform 7 engine scaffolding row (begin/rule succeeds/blank-row), never story content, no passage by design"
+  },
+  {
+    "table": "Prologue Remarks",
+    "slug": "heirs-marriage",
+    "reason": "user-cut",
+    "detail": "2026-09-15 curated-3 superset cut (same-slug variant from another scene; kept passage holds the KEEP-table variant only)"
+  },
+  {
+    "table": "Prologue Remarks",
+    "slug": "blank-love",
+    "reason": "user-cut",
+    "detail": "2026-09-15 curated-3 superset cut (same-slug variant from another scene; kept passage holds the KEEP-table variant only)"
+  },
+  {
+    "table": "Prologue Remarks",
+    "slug": "blank-ball",
+    "reason": "user-cut",
+    "detail": "2026-09-15 curated-3 superset cut (same-slug variant from another scene; kept passage holds the KEEP-table variant only)"
+  },
+  {
+    "table": "Wondering Remarks",
+    "slug": "blank-theodora",
+    "reason": "user-cut",
+    "detail": "2026-09-15 curated-3 superset cut (same-slug variant from another scene; kept passage holds the KEEP-table variant only)"
+  },
+  {
+    "table": "Wondering Remarks",
+    "slug": "blank-lucinda",
+    "reason": "user-cut",
+    "detail": "2026-09-15 curated-3 superset cut (same-slug variant from another scene; kept passage holds the KEEP-table variant only)"
+  },
+  {
+    "table": "Wondering Remarks",
+    "slug": "blank-love",
+    "reason": "user-cut",
+    "detail": "2026-09-15 curated-3 superset cut (same-slug variant from another scene; kept passage holds the KEEP-table variant only)"
+  },
+  {
+    "table": "Fitting Remarks",
+    "slug": "blank-lucinda",
+    "reason": "user-cut",
+    "detail": "2026-09-15 curated-3 superset cut (same-slug variant from another scene; kept passage holds the KEEP-table variant only)"
+  },
+  {
+    "table": "Fitting Remarks",
+    "slug": "blank-love",
+    "reason": "user-cut",
+    "detail": "2026-09-15 curated-3 superset cut (same-slug variant from another scene; kept passage holds the KEEP-table variant only)"
+  },
+  {
+    "table": "Cinderella Checking Remarks",
+    "slug": "blank-theodora",
+    "reason": "user-cut",
+    "detail": "2026-09-15 curated-3 superset cut (same-slug variant from another scene; kept passage holds the KEEP-table variant only)"
+  },
+  {
+    "table": "Cinderella Checking Remarks",
+    "slug": "blank-lucinda",
+    "reason": "user-cut",
+    "detail": "2026-09-15 curated-3 superset cut (same-slug variant from another scene; kept passage holds the KEEP-table variant only)"
+  },
+  {
+    "table": "Cinderella Checking Remarks",
+    "slug": "blank-ball",
+    "reason": "user-cut",
+    "detail": "2026-09-15 curated-3 superset cut (same-slug variant from another scene; kept passage holds the KEEP-table variant only)"
+  }
+]

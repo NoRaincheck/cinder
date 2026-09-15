@@ -1,0 +1,20 @@
+name: pages
+on: {push: {branches: [main]}}
+permissions: {pages: write, id-token: write}
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: pip install -r requirements.txt
+      - run: python3 -m pytest tests/
+      - run: tools/setup-tweego.sh
+      - run: mkdir -p dist && build/tweego/tweego src -o dist/index.html && ls -la dist
+      - uses: actions/upload-pages-artifact@v3
+        with: {path: dist}
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment: {name: github-pages}
+    steps:
+      - uses: actions/deploy-pages@v4
