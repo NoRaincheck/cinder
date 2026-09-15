@@ -1,2 +1,6 @@
 # roborev snapshots
 /.roborev/
+dist/
+build/
+.pytest_cache/
+__pycache__/
