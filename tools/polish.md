@@ -12,7 +12,9 @@ plus the current twee passage body for that row.
 
 ## Output
 
-- A choice label of at most 6 words, in the parrot's voice.
+- A subject display name as the choice label (King's health, Heirs, Marriage,
+  The ball, The shoe, Cinderella, Theo, Lucinda, Stepmother, Love, Blood,
+  Magic, God, The birds). No bird-cries in labels.
 - A passage body that is ~95% verbatim from the source row: keep every
   line of dialogue and narration exactly as written. Fix only the
   parser artifacts listed below. Never invent plot, dialogue, or stage
@@ -29,8 +31,8 @@ plus the current twee passage body for that row.
 | Artifact | Resolution | Grounding |
 |---|---|---|
 | `{set currentSubject to '...'}` whole line | Delete the line. Chapbook 2.3.0 has no `set` insert or modifier (`build/tweego/storyformats/chapbook-2/format.js`: 15 inserts, 8 modifiers, none named `set`); unknown `{...}` renders literally into the page, and nothing ever reads the variable. | engine source + `dist/index.html` leak |
-| `[awwk]` | `Awwk` (first row of the Table of Awwkwardness) | `story.ni` Table of Awwkwardness |
-| `you awwk` (bare, in parrot table text) | `you squawk` | `To say awwk` say-phrase; plain-text reading |
+| `[awwk]` (cry word, e.g. `'Awwk! Kindness!'`) | Drop the cry, keep the topic (`'Kindness!'`). All bird-cries removed per 2026-09-15 decision. | squawk removal |
+| `you awwk` / `you squawk` (bare, in parrot table text) | `you say` (`You squawk very loudly` → `You speak very loudly`; `squawk a ... ditty` → `sing a ... ditty`) | 2026-09-15 squawk removal |
 | `[Nice word]` / `[nice word]` | `Darling` (first row of the Table of Flattery) | `story.ni` `To say nice word` |
 | `[if ...]` guard with a single branch | Drop the marker, keep the visible text (the extractor already selected this path's text; no Chapbook equivalent exists) | remark rows in `story.ni` |
 | `[if mentioning Lucinda]A[otherwise]B[end if]C` | `AC` when the passage subject is Lucinda (true-branch); drop the false-branch | `story.ni` Fitting Remarks |

@@ -18,7 +18,7 @@ just preview
 This installs the pinned toolchain (Tweego 2.1.1 + Chapbook 2.3.0), compiles
 `src/*.twee` to `dist/index.html`, and serves it. Open the printed URL
 (default <http://localhost:8080>) and play — start at *Prologue-Intro*,
-squawk about heirs, and follow the conversation to one of 8 endings.
+pick a subject like Heirs, and follow the conversation to one of 8 endings.
 
 Other recipes (`just` with no args lists them):
 
@@ -60,13 +60,10 @@ choice adaptation with light polish — dialogue kept verbatim except parser
 artifacts; see the footer on the start passage. Dated content is flagged for
 editorial review, never silently rewritten.
 
-## Known deviations (parked)
+## Known deviations
 
-- **Bird-cry labels:** every subject link reads `Squawk of X`. In the
-  original, `squawk` is only ever the narration verb for the act of speaking
-  (`'Silence!' you squawk`) or an understood command; the bird's speech
-  content is a per-utterance roll from five cries (`Awwk`, `Awk`, `Awwwk`,
-  `Squawk`, `Squaw-awk`) plus the topic words. Faithfully modeling that
-  (`Awwk! Heirs!`, rotating cries, or bare topics) is deliberately deferred —
-  current labels are generator wording, revisited when squawk paths are back
-  in scope.
+- **Bird-cries removed:** no `squawk`/`awwk` wording anywhere in the game —
+  link labels are subject display names, bodies use `say`/`speak`/`sing`.
+  (In the original, `squawk` is the narration verb for the act of speaking
+  and the bird's content is a per-utterance roll of five cries; that whole
+  layer was cut per decision, including 8 verbatim `you squawk` lines.)

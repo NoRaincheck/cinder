@@ -20,12 +20,18 @@ def slug_of(r):
     slug = re.sub(r"[^a-z0-9]+", "-", raw.lower()).strip("-")
     return slug or "row"
 
+def norm(s):
+    # 2026-09-15 squawk removal: passage slugs use say/cry where the
+    # source-derived slug has squawk/awwk. Normalize both sides alike;
+    # row keys below stay raw so exemption lists are unchanged.
+    return s.replace("squawk", "say").replace("awwk", "cry")
+
 def test_no_missing_rows():
     missing = []
     for table, rows in GRAPH.items():
         for r in rows:
             slug = slug_of(r)
-            if not any(slug in p.lower() for p in PASSAGES):
+            if not any(norm(slug) in norm(p.lower()) for p in PASSAGES):
                 missing.append(f"{table}:{slug}")
     pruned_slugs = json.dumps(PRUNE)
     missing = [m for m in missing if m.split(":")[0] not in pruned_slugs]
@@ -69,8 +75,7 @@ def test_fidelity_verbatim():
         # Task-6 report: label junction; whole-string match required.
         "Reactions:cheese-everyone-turns-to-look-at-you",
     }
-    ISSUE2_EXEMPT = {
-        # Engine-code junk row (Issue 2 follow-up).
+    ISSUE2_EXEMPT = {        # Engine-code junk row (Issue 2 follow-up).
         "Reactions:say-response-entry-paragraph-break",
         # Engine-code junk row `say "[response entry][paragraph break]";`
         # (Issue 2 follow-up). Slug collides with two short-source rows
@@ -118,8 +123,13 @@ def test_fidelity_verbatim():
         # Empty comment (engine-code row; Issue-2 surface, exempt under (a)).
         "Cinderella Checking Remarks:say-inform-7-is-the-work-of-graham-nelson-and-story-title-was-compiled-using-andrew-hunter-s-compiler-for-mac-os-x",
     }
-    EXPECTED_EXEMPT = POLISH_EXEMPT | ISSUE2_EXEMPT | SHORT_EXEMPT
-    EXPECTED_VIOLATOR_INSTANCES = 33  # 31 unique keys; Fitting Remarks:row x3
+    SQUAWK_REMOVED_EXEMPT = {
+        # 2026-09-15 squawk removal: this row's only >= 40-char verbatim run
+        # contained "you squawk" (now "you say"). Content otherwise intact.
+        "Reactions:say-oops-you-squawk-sorry-oops-sorry",
+    }
+    EXPECTED_EXEMPT = POLISH_EXEMPT | ISSUE2_EXEMPT | SHORT_EXEMPT | SQUAWK_REMOVED_EXEMPT
+    EXPECTED_VIOLATOR_INSTANCES = 34  # 32 unique keys; Fitting Remarks:row x3
     exempt = {}  # unique key -> reason
     viol_instances = 0
     unexpected = []
@@ -129,7 +139,7 @@ def test_fidelity_verbatim():
             if not slug:
                 continue
             cands = [p for p in PASSAGES
-                     if p.startswith("S") and p not in META and slug in p.lower()]
+                     if p.startswith("S") and p not in META and norm(slug) in norm(p.lower())]
             if not cands:
                 continue  # row-to-passage coverage is asserted by test_no_missing_rows
             key = f"{table}:{slug}"
@@ -154,6 +164,8 @@ def test_fidelity_verbatim():
                 exempt.setdefault(key, "polish")
             elif key in ISSUE2_EXEMPT:
                 exempt.setdefault(key, "issue-2-followup")
+            elif key in SQUAWK_REMOVED_EXEMPT:
+                exempt.setdefault(key, "squawk-removed")
             else:
                 unexpected.append(key)
     assert unexpected == [], f"non-exempt rows lacking a >=40-char verbatim run: {unexpected[:10]} (total {len(unexpected)})"
