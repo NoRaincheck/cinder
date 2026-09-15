@@ -1,440 +1,128 @@
 :: StoryTitle
-Twee-Glass
-
-
-
-
+Glass
 
 :: StoryData
-{"format": "Chapbook", "format-version": "2.3.0", "ifid": "C67460F1-5CAD-42EC-AF08-E1A7249DBCE8", "start": "Prologue-Intro"}
+{"format": "Chapbook", "format-version": "2.3.0", "ifid": "C67460F1-5CAD-42EC-AF08-E1A7249DBCE8", "start": "Start"}
 
-
-
-
-
-:: Prologue-Intro
-seen_hub_ball: (typeof seen_hub_ball !== 'undefined' ? seen_hub_ball : false)
-seen_hub_blood: (typeof seen_hub_blood !== 'undefined' ? seen_hub_blood : false)
-seen_hub_cinderella: (typeof seen_hub_cinderella !== 'undefined' ? seen_hub_cinderella : false)
-seen_hub_god: (typeof seen_hub_god !== 'undefined' ? seen_hub_god : false)
-seen_hub_heirs: (typeof seen_hub_heirs !== 'undefined' ? seen_hub_heirs : false)
-seen_hub_kings_health: (typeof seen_hub_kings_health !== 'undefined' ? seen_hub_kings_health : false)
-seen_hub_love: (typeof seen_hub_love !== 'undefined' ? seen_hub_love : false)
-seen_hub_lucinda: (typeof seen_hub_lucinda !== 'undefined' ? seen_hub_lucinda : false)
-seen_hub_magic: (typeof seen_hub_magic !== 'undefined' ? seen_hub_magic : false)
-seen_hub_marriage: (typeof seen_hub_marriage !== 'undefined' ? seen_hub_marriage : false)
-seen_hub_shoe: (typeof seen_hub_shoe !== 'undefined' ? seen_hub_shoe : false)
-seen_hub_stepmother: (typeof seen_hub_stepmother !== 'undefined' ? seen_hub_stepmother : false)
-seen_hub_theo: (typeof seen_hub_theo !== 'undefined' ? seen_hub_theo : false)
-seen_s1_prologue_begin_1: (typeof seen_s1_prologue_begin_1 !== 'undefined' ? seen_s1_prologue_begin_1 : false)
-seen_s1_prologue_blank_ball_1: (typeof seen_s1_prologue_blank_ball_1 !== 'undefined' ? seen_s1_prologue_blank_ball_1 : false)
-seen_s1_prologue_blank_heirs_1: (typeof seen_s1_prologue_blank_heirs_1 !== 'undefined' ? seen_s1_prologue_blank_heirs_1 : false)
-seen_s1_prologue_blank_king_s_health_1: (typeof seen_s1_prologue_blank_king_s_health_1 !== 'undefined' ? seen_s1_prologue_blank_king_s_health_1 : false)
-seen_s1_prologue_blank_king_s_health_2: (typeof seen_s1_prologue_blank_king_s_health_2 !== 'undefined' ? seen_s1_prologue_blank_king_s_health_2 : false)
-seen_s1_prologue_blank_king_s_health_3: (typeof seen_s1_prologue_blank_king_s_health_3 !== 'undefined' ? seen_s1_prologue_blank_king_s_health_3 : false)
-seen_s1_prologue_blank_king_s_health_4: (typeof seen_s1_prologue_blank_king_s_health_4 !== 'undefined' ? seen_s1_prologue_blank_king_s_health_4 : false)
-seen_s1_prologue_blank_love_1: (typeof seen_s1_prologue_blank_love_1 !== 'undefined' ? seen_s1_prologue_blank_love_1 : false)
-seen_s1_prologue_blank_love_2: (typeof seen_s1_prologue_blank_love_2 !== 'undefined' ? seen_s1_prologue_blank_love_2 : false)
-seen_s1_prologue_blank_shoe_1: (typeof seen_s1_prologue_blank_shoe_1 !== 'undefined' ? seen_s1_prologue_blank_shoe_1 : false)
-seen_s1_prologue_blank_stepmother_1: (typeof seen_s1_prologue_blank_stepmother_1 !== 'undefined' ? seen_s1_prologue_blank_stepmother_1 : false)
-seen_s1_prologue_cheese_everyone_turns_to_look_at_you_1: (typeof seen_s1_prologue_cheese_everyone_turns_to_look_at_you_1 !== 'undefined' ? seen_s1_prologue_cheese_everyone_turns_to_look_at_you_1 : false)
-seen_s1_prologue_choose_a_random_row_in_the_table_of_waiting_1: (typeof seen_s1_prologue_choose_a_random_row_in_the_table_of_waiting_1 !== 'undefined' ? seen_s1_prologue_choose_a_random_row_in_the_table_of_waiting_1 : false)
-seen_s1_prologue_cleavage_nice_word_cleavage_you_say_nice_word_1: (typeof seen_s1_prologue_cleavage_nice_word_cleavage_you_say_nice_word_1 !== 'undefined' ? seen_s1_prologue_cleavage_nice_word_cleavage_you_say_nice_word_1 : false)
-seen_s1_prologue_corknut_corknuts_almond_almonds_cork_nut_or_candied_almond_almond_you_hint_no_one_takes_you_up_on_it_1: (typeof seen_s1_prologue_corknut_corknuts_almond_almonds_cork_nut_or_candied_almond_almond_you_hint_no_one_takes_you_up_on_it_1 !== 'undefined' ? seen_s1_prologue_corknut_corknuts_almond_almonds_cork_nut_or_candied_almond_almond_you_hint_no_one_takes_you_up_on_it_1 : false)
-seen_s1_prologue_cracker_cracker_or_cracker_wanna_cracker_cracker_wanna_cracker_you_announce_but_they_ve_grown_tired_of_that_one_1: (typeof seen_s1_prologue_cracker_cracker_or_cracker_wanna_cracker_cracker_wanna_cracker_you_announce_but_they_ve_grown_tired_of_that_one_1 !== 'undefined' ? seen_s1_prologue_cracker_cracker_or_cracker_wanna_cracker_cracker_wanna_cracker_you_announce_but_they_ve_grown_tired_of_that_one_1 : false)
-seen_s1_prologue_cut_that_out_says_lucinda_obscenity_reaction_rule_1: (typeof seen_s1_prologue_cut_that_out_says_lucinda_obscenity_reaction_rule_1 !== 'undefined' ? seen_s1_prologue_cut_that_out_says_lucinda_obscenity_reaction_rule_1 : false)
-seen_s1_prologue_end_if_1: (typeof seen_s1_prologue_end_if_1 !== 'undefined' ? seen_s1_prologue_end_if_1 : false)
-seen_s1_prologue_end_the_story_saying_you_are_sold_to_pirates_and_have_a_glorious_career_on_the_open_sea_1: (typeof seen_s1_prologue_end_the_story_saying_you_are_sold_to_pirates_and_have_a_glorious_career_on_the_open_sea_1 !== 'undefined' ? seen_s1_prologue_end_the_story_saying_you_are_sold_to_pirates_and_have_a_glorious_career_on_the_open_sea_1 : false)
-seen_s1_prologue_fire_help_earthquake_flood_famine_or_stock_market_crash_the_prince_looks_puzzled_1: (typeof seen_s1_prologue_fire_help_earthquake_flood_famine_or_stock_market_crash_the_prince_looks_puzzled_1 !== 'undefined' ? seen_s1_prologue_fire_help_earthquake_flood_famine_or_stock_market_crash_the_prince_looks_puzzled_1 : false)
-seen_s1_prologue_god_lucinda_1: (typeof seen_s1_prologue_god_lucinda_1 !== 'undefined' ? seen_s1_prologue_god_lucinda_1 : false)
-seen_s1_prologue_heirs_king_s_health_1: (typeof seen_s1_prologue_heirs_king_s_health_1 !== 'undefined' ? seen_s1_prologue_heirs_king_s_health_1 : false)
-seen_s1_prologue_heirs_marriage_1: (typeof seen_s1_prologue_heirs_marriage_1 !== 'undefined' ? seen_s1_prologue_heirs_marriage_1 : false)
-seen_s1_prologue_heirs_marriage_2: (typeof seen_s1_prologue_heirs_marriage_2 !== 'undefined' ? seen_s1_prologue_heirs_marriage_2 : false)
-seen_s1_prologue_if_asking_someone_to_try_speech_continue_the_action_1: (typeof seen_s1_prologue_if_asking_someone_to_try_speech_continue_the_action_1 !== 'undefined' ? seen_s1_prologue_if_asking_someone_to_try_speech_continue_the_action_1 : false)
-seen_s1_prologue_if_turn_count_is_1_1: (typeof seen_s1_prologue_if_turn_count_is_1_1 !== 'undefined' ? seen_s1_prologue_if_turn_count_is_1_1 : false)
-seen_s1_prologue_kindness_cry_kindness_1: (typeof seen_s1_prologue_kindness_cry_kindness_1 !== 'undefined' ? seen_s1_prologue_kindness_cry_kindness_1 : false)
-seen_s1_prologue_king_s_health_heirs_1: (typeof seen_s1_prologue_king_s_health_heirs_1 !== 'undefined' ? seen_s1_prologue_king_s_health_heirs_1 : false)
-seen_s1_prologue_king_s_health_heirs_2: (typeof seen_s1_prologue_king_s_health_heirs_2 !== 'undefined' ? seen_s1_prologue_king_s_health_heirs_2 : false)
-seen_s1_prologue_love_marriage_1: (typeof seen_s1_prologue_love_marriage_1 !== 'undefined' ? seen_s1_prologue_love_marriage_1 : false)
-seen_s1_prologue_marriage_ball_1: (typeof seen_s1_prologue_marriage_ball_1 !== 'undefined' ? seen_s1_prologue_marriage_ball_1 : false)
-seen_s1_prologue_marriage_theo_1: (typeof seen_s1_prologue_marriage_theo_1 !== 'undefined' ? seen_s1_prologue_marriage_theo_1 : false)
-seen_s1_prologue_mild_obscenity_mild_reaction_rule_1: (typeof seen_s1_prologue_mild_obscenity_mild_reaction_rule_1 !== 'undefined' ? seen_s1_prologue_mild_obscenity_mild_reaction_rule_1 : false)
-seen_s1_prologue_no_one_seems_to_think_you_know_much_about_that_1: (typeof seen_s1_prologue_no_one_seems_to_think_you_know_much_about_that_1 !== 'undefined' ? seen_s1_prologue_no_one_seems_to_think_you_know_much_about_that_1 : false)
-seen_s1_prologue_now_the_player_is_disgraced_1: (typeof seen_s1_prologue_now_the_player_is_disgraced_1 !== 'undefined' ? seen_s1_prologue_now_the_player_is_disgraced_1 : false)
-seen_s1_prologue_obscenity_obscenity_reaction_rule_1: (typeof seen_s1_prologue_obscenity_obscenity_reaction_rule_1 !== 'undefined' ? seen_s1_prologue_obscenity_obscenity_reaction_rule_1 : false)
-seen_s1_prologue_pirate_pirates_piracy_or_pieces_of_eight_you_say_a_short_piratical_ditty_not_quite_fit_for_polite_company_1: (typeof seen_s1_prologue_pirate_pirates_piracy_or_pieces_of_eight_you_say_a_short_piratical_ditty_not_quite_fit_for_polite_company_1 !== 'undefined' ? seen_s1_prologue_pirate_pirates_piracy_or_pieces_of_eight_you_say_a_short_piratical_ditty_not_quite_fit_for_polite_company_1 : false)
-seen_s1_prologue_prying_pry_prying_you_cry_inquire_impertinently_be_curious_ferret_out_nose_around_1: (typeof seen_s1_prologue_prying_pry_prying_you_cry_inquire_impertinently_be_curious_ferret_out_nose_around_1 !== 'undefined' ? seen_s1_prologue_prying_pry_prying_you_cry_inquire_impertinently_be_curious_ferret_out_nose_around_1 : false)
-seen_s1_prologue_say_a_random_visible_woman_giggles_faintly_1: (typeof seen_s1_prologue_say_a_random_visible_woman_giggles_faintly_1 !== 'undefined' ? seen_s1_prologue_say_a_random_visible_woman_giggles_faintly_1 : false)
-seen_s1_prologue_say_cry_yes_1: (typeof seen_s1_prologue_say_cry_yes_1 !== 'undefined' ? seen_s1_prologue_say_cry_yes_1 : false)
-seen_s1_prologue_say_it_s_hard_to_have_a_good_look_at_the_moment_but_everything_feels_in_order_properly_groomed_1: (typeof seen_s1_prologue_say_it_s_hard_to_have_a_good_look_at_the_moment_but_everything_feels_in_order_properly_groomed_1 !== 'undefined' ? seen_s1_prologue_say_it_s_hard_to_have_a_good_look_at_the_moment_but_everything_feels_in_order_properly_groomed_1 : false)
-seen_s1_prologue_say_no_one_in_this_house_obeys_you_at_all_1: (typeof seen_s1_prologue_say_no_one_in_this_house_obeys_you_at_all_1 !== 'undefined' ? seen_s1_prologue_say_no_one_in_this_house_obeys_you_at_all_1 : false)
-seen_s1_prologue_say_no_you_say_no_no_1: (typeof seen_s1_prologue_say_no_you_say_no_no_1 !== 'undefined' ? seen_s1_prologue_say_no_you_say_no_no_1 : false)
-seen_s1_prologue_say_oops_you_say_sorry_oops_sorry_1: (typeof seen_s1_prologue_say_oops_you_say_sorry_oops_sorry_1 !== 'undefined' ? seen_s1_prologue_say_oops_you_say_sorry_oops_sorry_1 : false)
-seen_s1_prologue_say_paragraph_break_1: (typeof seen_s1_prologue_say_paragraph_break_1 !== 'undefined' ? seen_s1_prologue_say_paragraph_break_1 : false)
-seen_s1_prologue_say_response_entry_paragraph_break_1: (typeof seen_s1_prologue_say_response_entry_paragraph_break_1 !== 'undefined' ? seen_s1_prologue_say_response_entry_paragraph_break_1 : false)
-seen_s1_prologue_say_right_says_the_old_lady_and_she_rings_for_a_servant_to_remove_you_from_the_room_1: (typeof seen_s1_prologue_say_right_says_the_old_lady_and_she_rings_for_a_servant_to_remove_you_from_the_room_1 !== 'undefined' ? seen_s1_prologue_say_right_says_the_old_lady_and_she_rings_for_a_servant_to_remove_you_from_the_room_1 : false)
-seen_s1_prologue_say_the_old_woman_laughs_slightly_how_beautifully_romantic_but_she_didn_t_give_you_her_name_1: (typeof seen_s1_prologue_say_the_old_woman_laughs_slightly_how_beautifully_romantic_but_she_didn_t_give_you_her_name_1 !== 'undefined' ? seen_s1_prologue_say_the_old_woman_laughs_slightly_how_beautifully_romantic_but_she_didn_t_give_you_her_name_1 : false)
-seen_s1_prologue_say_the_prince_sits_awkwardly_on_the_couch_holding_his_glass_slipper_and_trying_to_keep_it_from_crushing_lucinda_and_theodora_have_the_ends_of_the_same_couch_and_they_are_taking_turns_seeing_who_can_bend_lowest_and_show_off_the_most_cleavage_while_the_old_lady_in_her_wing_chair_carries_on_about_nonsense_for_instance_1: (typeof seen_s1_prologue_say_the_prince_sits_awkwardly_on_the_couch_holding_his_glass_slipper_and_trying_to_keep_it_from_crushing_lucinda_and_theodora_have_the_ends_of_the_same_couch_and_they_are_taking_turns_seeing_who_can_bend_lowest_and_show_off_the_most_cleavage_while_the_old_lady_in_her_wing_chair_carries_on_about_nonsense_for_instance_1 !== 'undefined' ? seen_s1_prologue_say_the_prince_sits_awkwardly_on_the_couch_holding_his_glass_slipper_and_trying_to_keep_it_from_crushing_lucinda_and_theodora_have_the_ends_of_the_same_couch_and_they_are_taking_turns_seeing_who_can_bend_lowest_and_show_off_the_most_cleavage_while_the_old_lady_in_her_wing_chair_carries_on_about_nonsense_for_instance_1 : false)
-seen_s1_prologue_say_you_give_the_place_a_once_over_with_your_right_eye_then_you_turn_your_head_and_look_at_everything_through_your_left_eye_it_doesn_t_make_any_difference_the_farther_parts_of_the_room_remain_out_of_focus_1: (typeof seen_s1_prologue_say_you_give_the_place_a_once_over_with_your_right_eye_then_you_turn_your_head_and_look_at_everything_through_your_left_eye_it_doesn_t_make_any_difference_the_farther_parts_of_the_room_remain_out_of_focus_1 !== 'undefined' ? seen_s1_prologue_say_you_give_the_place_a_once_over_with_your_right_eye_then_you_turn_your_head_and_look_at_everything_through_your_left_eye_it_doesn_t_make_any_difference_the_farther_parts_of_the_room_remain_out_of_focus_1 : false)
-seen_s1_prologue_say_you_say_very_loudly_1: (typeof seen_s1_prologue_say_you_say_very_loudly_1 !== 'undefined' ? seen_s1_prologue_say_you_say_very_loudly_1 : false)
-seen_s1_prologue_silence_silence_you_say_1: (typeof seen_s1_prologue_silence_silence_you_say_1 !== 'undefined' ? seen_s1_prologue_silence_silence_you_say_1 : false)
-seen_s1_prologue_theo_heirs_1: (typeof seen_s1_prologue_theo_heirs_1 !== 'undefined' ? seen_s1_prologue_theo_heirs_1 : false)
-seen_s1_prologue_um_seven_or_seven_um_seven_you_inquire_brightly_everyone_pretends_you_didn_t_speak_1: (typeof seen_s1_prologue_um_seven_or_seven_um_seven_you_inquire_brightly_everyone_pretends_you_didn_t_speak_1 !== 'undefined' ? seen_s1_prologue_um_seven_or_seven_um_seven_you_inquire_brightly_everyone_pretends_you_didn_t_speak_1 : false)
-seen_s1_prologue_understand_bother_or_curses_or_drat_or_darn_as_mild_obscenity_1: (typeof seen_s1_prologue_understand_bother_or_curses_or_drat_or_darn_as_mild_obscenity_1 !== 'undefined' ? seen_s1_prologue_understand_bother_or_curses_or_drat_or_darn_as_mild_obscenity_1 : false)
-seen_s1_prologue_wisdom_thought_thinking_wisdom_you_intone_1: (typeof seen_s1_prologue_wisdom_thought_thinking_wisdom_you_intone_1 !== 'undefined' ? seen_s1_prologue_wisdom_thought_thinking_wisdom_you_intone_1 : false)
-seen_s2_wondering_blank_ball_1: (typeof seen_s2_wondering_blank_ball_1 !== 'undefined' ? seen_s2_wondering_blank_ball_1 : false)
-seen_s2_wondering_blank_heirs_1: (typeof seen_s2_wondering_blank_heirs_1 !== 'undefined' ? seen_s2_wondering_blank_heirs_1 : false)
-seen_s2_wondering_blank_love_1: (typeof seen_s2_wondering_blank_love_1 !== 'undefined' ? seen_s2_wondering_blank_love_1 : false)
-seen_s2_wondering_blank_lucinda_1: (typeof seen_s2_wondering_blank_lucinda_1 !== 'undefined' ? seen_s2_wondering_blank_lucinda_1 : false)
-seen_s2_wondering_blank_magic_1: (typeof seen_s2_wondering_blank_magic_1 !== 'undefined' ? seen_s2_wondering_blank_magic_1 : false)
-seen_s2_wondering_blank_marriage_1: (typeof seen_s2_wondering_blank_marriage_1 !== 'undefined' ? seen_s2_wondering_blank_marriage_1 : false)
-seen_s2_wondering_blank_shoe_1: (typeof seen_s2_wondering_blank_shoe_1 !== 'undefined' ? seen_s2_wondering_blank_shoe_1 : false)
-seen_s2_wondering_blank_theodora_1: (typeof seen_s2_wondering_blank_theodora_1 !== 'undefined' ? seen_s2_wondering_blank_theodora_1 : false)
-seen_s2_wondering_love_marriage_1: (typeof seen_s2_wondering_love_marriage_1 !== 'undefined' ? seen_s2_wondering_love_marriage_1 : false)
-seen_s2_wondering_marriage_stepmother_1: (typeof seen_s2_wondering_marriage_stepmother_1 !== 'undefined' ? seen_s2_wondering_marriage_stepmother_1 : false)
-seen_s3_fitting_ball_magic_1: (typeof seen_s3_fitting_ball_magic_1 !== 'undefined' ? seen_s3_fitting_ball_magic_1 : false)
-seen_s3_fitting_ball_marriage_1: (typeof seen_s3_fitting_ball_marriage_1 !== 'undefined' ? seen_s3_fitting_ball_marriage_1 : false)
-seen_s3_fitting_ball_shoe_1: (typeof seen_s3_fitting_ball_shoe_1 !== 'undefined' ? seen_s3_fitting_ball_shoe_1 : false)
-seen_s3_fitting_begin_1: (typeof seen_s3_fitting_begin_1 !== 'undefined' ? seen_s3_fitting_begin_1 : false)
-seen_s3_fitting_blank_love_1: (typeof seen_s3_fitting_blank_love_1 !== 'undefined' ? seen_s3_fitting_blank_love_1 : false)
-seen_s3_fitting_blank_lucinda_1: (typeof seen_s3_fitting_blank_lucinda_1 !== 'undefined' ? seen_s3_fitting_blank_lucinda_1 : false)
-seen_s3_fitting_blank_magic_1: (typeof seen_s3_fitting_blank_magic_1 !== 'undefined' ? seen_s3_fitting_blank_magic_1 : false)
-seen_s3_fitting_blank_magic_2: (typeof seen_s3_fitting_blank_magic_2 !== 'undefined' ? seen_s3_fitting_blank_magic_2 : false)
-seen_s3_fitting_blank_marriage_1: (typeof seen_s3_fitting_blank_marriage_1 !== 'undefined' ? seen_s3_fitting_blank_marriage_1 : false)
-seen_s3_fitting_blank_stepmother_1: (typeof seen_s3_fitting_blank_stepmother_1 !== 'undefined' ? seen_s3_fitting_blank_stepmother_1 : false)
-seen_s3_fitting_blank_theo_1: (typeof seen_s3_fitting_blank_theo_1 !== 'undefined' ? seen_s3_fitting_blank_theo_1 : false)
-seen_s3_fitting_end_repeat_1: (typeof seen_s3_fitting_end_repeat_1 !== 'undefined' ? seen_s3_fitting_end_repeat_1 : false)
-seen_s3_fitting_magic_ball_1: (typeof seen_s3_fitting_magic_ball_1 !== 'undefined' ? seen_s3_fitting_magic_ball_1 : false)
-seen_s3_fitting_magic_shoe_1: (typeof seen_s3_fitting_magic_shoe_1 !== 'undefined' ? seen_s3_fitting_magic_shoe_1 : false)
-seen_s3_fitting_marriage_shoe_1: (typeof seen_s3_fitting_marriage_shoe_1 !== 'undefined' ? seen_s3_fitting_marriage_shoe_1 : false)
-seen_s3_fitting_repeat_through_table_of_lucinda_checks_1: (typeof seen_s3_fitting_repeat_through_table_of_lucinda_checks_1 !== 'undefined' ? seen_s3_fitting_repeat_through_table_of_lucinda_checks_1 : false)
-seen_s3_fitting_row_1: (typeof seen_s3_fitting_row_1 !== 'undefined' ? seen_s3_fitting_row_1 : false)
-seen_s3_fitting_row_2: (typeof seen_s3_fitting_row_2 !== 'undefined' ? seen_s3_fitting_row_2 : false)
-seen_s3_fitting_row_3: (typeof seen_s3_fitting_row_3 !== 'undefined' ? seen_s3_fitting_row_3 : false)
-seen_s3_fitting_row_4: (typeof seen_s3_fitting_row_4 !== 'undefined' ? seen_s3_fitting_row_4 : false)
-seen_s3_fitting_row_5: (typeof seen_s3_fitting_row_5 !== 'undefined' ? seen_s3_fitting_row_5 : false)
-seen_s3_fitting_say_the_prince_stares_at_the_shoe_then_he_looks_up_you_he_repeats_i_mean_you_seemed_i_thought_for_certain_that_you_weren_t_the_way_you_i_thought_you_would_be_good_practice_because_1: (typeof seen_s3_fitting_say_the_prince_stares_at_the_shoe_then_he_looks_up_you_he_repeats_i_mean_you_seemed_i_thought_for_certain_that_you_weren_t_the_way_you_i_thought_you_would_be_good_practice_because_1 !== 'undefined' ? seen_s3_fitting_say_the_prince_stares_at_the_shoe_then_he_looks_up_you_he_repeats_i_mean_you_seemed_i_thought_for_certain_that_you_weren_t_the_way_you_i_thought_you_would_be_good_practice_because_1 : false)
-seen_s3_fitting_shoe_ball_1: (typeof seen_s3_fitting_shoe_ball_1 !== 'undefined' ? seen_s3_fitting_shoe_ball_1 : false)
-seen_s4_checking_theodora_blank_lucinda_1: (typeof seen_s4_checking_theodora_blank_lucinda_1 !== 'undefined' ? seen_s4_checking_theodora_blank_lucinda_1 : false)
-seen_s4_checking_theodora_blank_shoe_1: (typeof seen_s4_checking_theodora_blank_shoe_1 !== 'undefined' ? seen_s4_checking_theodora_blank_shoe_1 : false)
-seen_s5_checking_lucinda_blank_theodora_1: (typeof seen_s5_checking_lucinda_blank_theodora_1 !== 'undefined' ? seen_s5_checking_lucinda_blank_theodora_1 : false)
-seen_s6_checking_cinderella_blank_ball_1: (typeof seen_s6_checking_cinderella_blank_ball_1 !== 'undefined' ? seen_s6_checking_cinderella_blank_ball_1 : false)
-seen_s6_checking_cinderella_blank_ball_2: (typeof seen_s6_checking_cinderella_blank_ball_2 !== 'undefined' ? seen_s6_checking_cinderella_blank_ball_2 : false)
-seen_s6_checking_cinderella_blank_love_1: (typeof seen_s6_checking_cinderella_blank_love_1 !== 'undefined' ? seen_s6_checking_cinderella_blank_love_1 : false)
-seen_s6_checking_cinderella_blank_lucinda_1: (typeof seen_s6_checking_cinderella_blank_lucinda_1 !== 'undefined' ? seen_s6_checking_cinderella_blank_lucinda_1 : false)
-seen_s6_checking_cinderella_blank_magic_1: (typeof seen_s6_checking_cinderella_blank_magic_1 !== 'undefined' ? seen_s6_checking_cinderella_blank_magic_1 : false)
-seen_s6_checking_cinderella_blank_marriage_1: (typeof seen_s6_checking_cinderella_blank_marriage_1 !== 'undefined' ? seen_s6_checking_cinderella_blank_marriage_1 : false)
-seen_s6_checking_cinderella_blank_theodora_1: (typeof seen_s6_checking_cinderella_blank_theodora_1 !== 'undefined' ? seen_s6_checking_cinderella_blank_theodora_1 : false)
-seen_s6_checking_cinderella_if_fitting_is_happening_and_cinderella_is_the_current_subject_yes_1: (typeof seen_s6_checking_cinderella_if_fitting_is_happening_and_cinderella_is_the_current_subject_yes_1 !== 'undefined' ? seen_s6_checking_cinderella_if_fitting_is_happening_and_cinderella_is_the_current_subject_yes_1 : false)
-seen_s6_checking_cinderella_otherwise_no_1: (typeof seen_s6_checking_cinderella_otherwise_no_1 !== 'undefined' ? seen_s6_checking_cinderella_otherwise_no_1 : false)
-seen_s6_checking_cinderella_say_cinde_1: (typeof seen_s6_checking_cinderella_say_cinde_1 !== 'undefined' ? seen_s6_checking_cinderella_say_cinde_1 : false)
-seen_s6_checking_cinderella_say_inform_7_is_the_work_of_graham_nelson_and_story_title_was_compiled_using_andrew_hunter_s_compiler_for_mac_os_x_1: (typeof seen_s6_checking_cinderella_say_inform_7_is_the_work_of_graham_nelson_and_story_title_was_compiled_using_andrew_hunter_s_compiler_for_mac_os_x_1 !== 'undefined' ? seen_s6_checking_cinderella_say_inform_7_is_the_work_of_graham_nelson_and_story_title_was_compiled_using_andrew_hunter_s_compiler_for_mac_os_x_1 : false)
-seen_s6_checking_cinderella_say_this_story_may_strike_you_as_familiar_which_means_that_you_already_have_some_idea_of_the_ways_it_can_end_up_1: (typeof seen_s6_checking_cinderella_say_this_story_may_strike_you_as_familiar_which_means_that_you_already_have_some_idea_of_the_ways_it_can_end_up_1 !== 'undefined' ? seen_s6_checking_cinderella_say_this_story_may_strike_you_as_familiar_which_means_that_you_already_have_some_idea_of_the_ways_it_can_end_up_1 : false)
---
-
+:: Start
 The Prince sits awkwardly on the couch, holding his glass slipper and trying to keep it from crushing. Lucinda and Theodora have the ends of the same couch, and the old lady leans toward him: 'Do tell me about your father's health.' It is your business to steer the talk.
 
-[[>|S1-Prologue-Hub]]
-[if 2 + 2 === 4]
+Choose how to guide the conversation:
 
-After Emily Short's Glass (I7-Examples/Glass). Choice adaptation, light polish, all paths preserved.
+[[Discuss the Prince's prospects for marriage|Prologue-Marriage]]
+[[Ask about the ball|Prologue-Ball]]
+[[Mention the glass slipper|Prologue-Shoe]]
 
-
-:: S1-Prologue-Hub
-This is the Prologue stretch of the evening. The Prince fidgets, the old lady steers, Lucinda sighs, and Theodora giggles at all the wrong moments. You may speak on any subject you please, or press on toward an ending.
-
-[unless seen_s1_prologue_heirs_marriage_1]
-[[Steer toward marriage — “Now I have heard a rumor,' says the old lady,”|S1-Prologue-heirs-marriage-1]]
-[unless seen_s1_prologue_marriage_ball_1]
-[[Steer toward ball — “It's true, you know, that my father threw the”|S1-Prologue-marriage-ball-1]]
-[unless seen_s1_prologue_blank_shoe_1]
-[[Steer toward shoe|S1-Prologue-blank-shoe-1]]
-[if 2 + 2 === 4]
-[if seen_s1_prologue_blank_shoe_1]
-[[>|S2-Wondering-Hub]]
-[if 2 + 2 === 4]
-[[>|S9-End-Pirates]]
-
-:: S2-Wondering-Hub
-This is the Wondering stretch of the evening. The Prince fidgets, the old lady steers, Lucinda sighs, and Theodora giggles at all the wrong moments. You may speak on any subject you please, or press on toward an ending.
-
-[unless seen_s2_wondering_blank_shoe_1]
-[[Steer toward shoe|S2-Wondering-blank-shoe-1]]
-[unless seen_s2_wondering_blank_marriage_1]
-[[Steer toward marriage — “It's marvelous that you were so drawn to a yo”|S2-Wondering-blank-marriage-1]]
-[unless seen_s2_wondering_blank_ball_1]
-[[Steer toward ball|S2-Wondering-blank-ball-1]]
-[if 2 + 2 === 4]
-[if seen_s2_wondering_blank_ball_1]
-[[>|S3-Fitting-Hub]]
-[if 2 + 2 === 4]
-[[>|S9-End-Prince-Departs]]
-
-:: S3-Fitting-Hub
-This is the Fitting stretch of the evening. The Prince fidgets, the old lady steers, Lucinda sighs, and Theodora giggles at all the wrong moments. You may speak on any subject you please, or press on toward an ending.
-
-[unless seen_s3_fitting_ball_shoe_1]
-[[Steer toward shoe — “Midnight,' repeats the old lady. 'Well, well.”|S3-Fitting-ball-shoe-1]]
-[unless seen_s3_fitting_blank_theo_1]
-[[Steer toward Theo|S3-Fitting-blank-theo-1]]
-[unless seen_s3_fitting_blank_marriage_1]
-[[Steer toward marriage — “It seems to me,' says the old lady, after a l”|S3-Fitting-blank-marriage-1]]
-[if 2 + 2 === 4]
-[if seen_s3_fitting_blank_theo_1]
-[[>|S4-Checking-Theodora-Hub]]
-[if seen_s3_fitting_blank_theo_1]
-[[>|S5-Checking-Lucinda-Hub]]
-[if seen_s3_fitting_blank_theo_1]
-[[>|S6-Checking-Cinderella-Hub]]
-[if 2 + 2 === 4]
-[[>|S9-End-Disaster]]
-
-:: S4-Checking-Theodora-Hub
-This is the Checking-Theodora stretch of the evening. The Prince fidgets, the old lady steers, Lucinda sighs, and Theodora giggles at all the wrong moments. You may speak on any subject you please, or press on toward an ending.
-
-[unless seen_s4_checking_theodora_blank_lucinda_1]
-[[Steer toward Lucinda|S4-Checking-Theodora-blank-lucinda-1]]
-[unless seen_s4_checking_theodora_blank_shoe_1]
-[[Steer toward shoe|S4-Checking-Theodora-blank-shoe-1]]
-[if 2 + 2 === 4]
-[[>|S7-Theodora-Endgame-Hub]]
-
-:: S5-Checking-Lucinda-Hub
-This is the Checking-Lucinda stretch of the evening. The Prince fidgets, the old lady steers, Lucinda sighs, and Theodora giggles at all the wrong moments. You may speak on any subject you please, or press on toward an ending.
-
-[unless seen_s5_checking_lucinda_blank_theodora_1]
-[[Steer toward Theodora|S5-Checking-Lucinda-blank-theodora-1]]
-[if 2 + 2 === 4]
-[[>|S8-Lucinda-Endgame-Hub]]
-
-:: S6-Checking-Cinderella-Hub
-This is the Checking-Cinderella stretch of the evening. The Prince fidgets, the old lady steers, Lucinda sighs, and Theodora giggles at all the wrong moments. You may speak on any subject you please, or press on toward an ending.
-
-[unless seen_s6_checking_cinderella_blank_ball_1]
-[[Steer toward ball — “The Prince frowns at Cinderella. 'I don't rec”|S6-Checking-Cinderella-blank-ball-1]]
-[unless seen_s6_checking_cinderella_blank_marriage_1]
-[[Steer toward marriage|S6-Checking-Cinderella-blank-marriage-1]]
-[unless seen_s6_checking_cinderella_blank_love_1]
-[[Steer toward love|S6-Checking-Cinderella-blank-love-1]]
-[if 2 + 2 === 4]
-[if 2 + 2 === 4]
-[[>|S9-End-Peace]]
-[[>|S9-End-Cinderella-Executed]]
-[[>|S9-End-Cinderella-Wed]]
-
-:: S1-Prologue-blank-shoe-1
-seen_s1_prologue_blank_shoe_1: true
---
-"'I'm sure it's nothing surprising,' remarks the old lady, 'if you didn't meet anyone at the ball that you felt immediately you could marry. Such short acquaintances... there's much more to an alliance than that. One must feel at ease with the family, for instance.'
+:: Prologue-Marriage
+'Now I have heard a rumor,' says the old lady, pretending that this conversation topic just now occurred to her, rather than being the object of her determined pursuit for the last half hour. 'A rumor that you yourself were planning to wed, in the very near future.'
 
 The humans take this in, and wait for the talk to turn once more.
 
-[[>|S1-Prologue-Hub]]
+[[Continue to the ball|Wondering-Ball]]
 
-
-:: S1-Prologue-heirs-marriage-1
-seen_s1_prologue_heirs_marriage_1: true
---
-"'Now I have heard a rumor,' says the old lady, pretending that this conversation topic just now occurred to her, rather than being the object of her determined pursuit for the last half hour. 'A rumor that you yourself were planning to wed, in the very near future.'
+:: Prologue-Ball
+'It's true, you know, that my father threw the ball in the hope that I would-- that is, that it would lead to a greater acquaintance--' The Prince stops again, rattled, and glares down at the small shoe cradled in his hands. 'I had not been very attentive to ladies in my youth.'
 
 The humans take this in, and wait for the talk to turn once more.
 
-[[>|S1-Prologue-Hub]]
+[[Continue to the slipper|Wondering-Shoe]]
 
-
-:: S1-Prologue-marriage-ball-1
-seen_s1_prologue_marriage_ball_1: true
---
-"'It's true, you know, that my father threw the ball in the hope that I would-- that is, that it would lead to a greater acquaintance--' The Prince stops again, rattled, and glares down at the small shoe cradled in his hands. 'I had not been very attentive to ladies in my youth.'
+:: Prologue-Shoe
+'I'm sure it's nothing surprising,' remarks the old lady, 'if you didn't meet anyone at the ball that you felt immediately you could marry. Such short acquaintances... there's much more to an alliance than that. One must feel at ease with the family, for instance.'
 
 The humans take this in, and wait for the talk to turn once more.
 
-[[>|S1-Prologue-Hub]]
+[[Move to wondering about the mystery woman|Wondering-Marriage]]
 
-
-:: S2-Wondering-blank-shoe-1
-seen_s2_wondering_blank_shoe_1: true
---
-"'I-- managed to rescue the shoe when she ran off,' says the Prince, a little embarrassed-looking.
+:: Wondering-Shoe
+'I-- managed to rescue the shoe when she ran off,' says the Prince, a little embarrassed-looking.
 
 The humans take this in, and wait for the talk to turn once more.
 
-[[>|S2-Wondering-Hub]]
+[[Proceed to the fitting|Fitting-Shoe]]
 
-
-:: S2-Wondering-blank-ball-1
-seen_s2_wondering_blank_ball_1: true
---
-"'It wasn't a masked ball,' the old lady says. 'It wasn't even badly lit. Your father did not stint on the candles at all.'
+:: Wondering-Marriage
+'It's marvelous that you were so drawn to a young lady that you want to marry her even though you can't remember what she looks like,' remarks the old woman.
 
 The humans take this in, and wait for the talk to turn once more.
 
-[[>|S2-Wondering-Hub]]
+[[Proceed to the fitting|Fitting-Marriage]]
 
-
-:: S2-Wondering-blank-marriage-1
-seen_s2_wondering_blank_marriage_1: true
---
-"'It's marvelous that you were so drawn to a young lady that you want to marry her even though you can't remember what she looks like,' remarks the old woman.
+:: Wondering-Ball
+'It wasn't a masked ball,' the old lady says. 'It wasn't even badly lit. Your father did not stint on the candles at all.'
 
 The humans take this in, and wait for the talk to turn once more.
 
-[[>|S2-Wondering-Hub]]
+[[Proceed to the fitting|Fitting-Ball]]
 
-
-:: S3-Fitting-ball-shoe-1
-seen_s3_fitting_ball_shoe_1: true
---
-"'Midnight,' repeats the old lady. 'Well, well.' She smiles at the Prince. 'Good luck to you. It was quick thinking taking the shoe.'
+:: Fitting-Shoe
+'Midnight,' repeats the old lady. 'Well, well.' She smiles at the Prince. 'Good luck to you. It was quick thinking taking the shoe.'
 
 The humans take this in, and wait for the talk to turn once more.
 
-[[>|S3-Fitting-Hub]]
+[[The Prince must try the shoe on someone|Check-Theodora]]
 
-
-:: S3-Fitting-blank-marriage-1
-seen_s3_fitting_blank_marriage_1: true
---
-"'It seems to me,' says the old lady, after a long thoughtful moment, 'that you have no choice but to try this shoe on every eligible young woman, and determine who she was. And if I were you, I would also invent an explanation for this extraordinary method of bride-selection that will satisfy the people at large.'
+:: Fitting-Marriage
+'It seems to me,' says the old lady, after a long thoughtful moment, 'that you have no choice but to try this shoe on every eligible young woman, and determine who she was. And if I were you, I would also invent an explanation for this extraordinary method of bride-selection that will satisfy the people at large.'
 
 The humans take this in, and wait for the talk to turn once more.
 
-[[>|S3-Fitting-Hub]]
+[[The Prince must try the shoe on someone|Check-Theodora]]
 
-
-:: S3-Fitting-blank-theo-1
-seen_s3_fitting_blank_theo_1: true
---
-"Theodora blushes. 'Stupid bird,' she says.
+:: Fitting-Ball
+The Prince stares at the shoe, then he looks up. 'You,' he repeats. 'I mean, you seemed-- I thought for certain that you weren't-- the way you-- I thought you would be. Good practice, because...'
 
 The humans take this in, and wait for the talk to turn once more.
 
-[[>|S3-Fitting-Hub]]
+[[The Prince must try the shoe on someone|Check-Theodora]]
 
+:: Check-Theodora
+Theodora blushes. 'Stupid bird,' she says.
 
-:: S4-Checking-Theodora-blank-lucinda-1
-seen_s4_checking_theodora_blank_lucinda_1: true
---
-"'One at a time, bird,' mutters the Prince. Theodora giggles."
+'One at a time, bird,' mutters the Prince. Theodora giggles.
 
-The humans take this in, and wait for the talk to turn once more.
+[[Try the shoe on Lucinda instead|Check-Lucinda]]
+[[Have Theodora try the shoe|End-Theodora-Marriage]]
 
-[[>|S4-Checking-Theodora-Hub]]
+:: Check-Lucinda
+'I'll get to her later,' the Prince says. 'If necessary,' he adds, under his breath.
 
+'Yes,' says Lucinda to you. 'You're very smart.'
 
-:: S4-Checking-Theodora-blank-shoe-1
-seen_s4_checking_theodora_blank_shoe_1: true
---
-"'Yes,' says Lucinda to you. 'You're very smart.'"
+[[Call for Cinderella|Check-Cinderella]]
+[[Have Lucinda try the shoe|End-Lucinda-Marriage]]
 
-The humans take this in, and wait for the talk to turn once more.
+:: Check-Cinderella
+The Prince frowns at Cinderella. 'I don't recall seeing you at the ball.'
 
-[[>|S4-Checking-Theodora-Hub]]
+'I held the ball to look for someone to-- someone that I might marry,' the Prince explains to Cinderella.
 
+The Prince and Cinderella both look up at you. Cinderella puts one little finger to her lips, and winks, but you are afraid.
 
-:: S5-Checking-Lucinda-blank-theodora-1
-seen_s5_checking_lucinda_blank_theodora_1: true
---
-"'I'll get to her later,' the Prince says. 'If necessary,' he adds, under his breath."
+[[Reveal Cinderella as the mystery woman|End-Cinderella-Wed]]
+[[Expose Cinderella's magic|End-Cinderella-Executed]]
+[[Accept the peace offered|End-Peace]]
 
-The humans take this in, and wait for the talk to turn once more.
+:: End-Theodora-Marriage
+The Prince pulls Theodora toward him. 'You are a woman of unexpected Depths,' he says softly. She blinks at him, then says, 'I hope you are not angry.' He laughs, and touches her cheek; and she kisses him. 'Well,' says the old lady briskly, standing. 'How many unexpected turns life brings to us.' Theodora and the Prince are married.
 
-[[>|S5-Checking-Lucinda-Hub]]
-
-
-:: S6-Checking-Cinderella-blank-ball-1
-seen_s6_checking_cinderella_blank_ball_1: true
---
-"The Prince frowns at Cinderella. 'I don't recall seeing you at the ball.'
-
-The humans take this in, and wait for the talk to turn once more.
-
-[[>|S6-Checking-Cinderella-Hub]]
-
-
-:: S6-Checking-Cinderella-blank-marriage-1
-seen_s6_checking_cinderella_blank_marriage_1: true
---
-"'I held the ball to look for someone to-- someone that I might marry,' the Prince explains to Cinderella.
-
-The humans take this in, and wait for the talk to turn once more.
-
-[[>|S6-Checking-Cinderella-Hub]]
-
-
-:: S6-Checking-Cinderella-blank-love-1
-seen_s6_checking_cinderella_blank_love_1: true
---
-"The Prince and Cinderella both look up at you. Cinderella puts one little finger to her lips, and winks, but you are afraid.
-
-The humans take this in, and wait for the talk to turn once more.
-
-[[>|S6-Checking-Cinderella-Hub]]
-
-
-:: S7-Theodora-Endgame-Hub
-This is the Theodora-Endgame stretch of the evening. The Prince fidgets, the old lady steers, Lucinda sighs, and Theodora giggles at all the wrong moments. You may speak on any subject you please, or press on toward an ending.
-
-[if 2 + 2 === 4]
-[[>|S9-End-Theodora-Marriage]]
-
-
-:: S8-Lucinda-Endgame-Hub
-This is the Lucinda-Endgame stretch of the evening. The Prince fidgets, the old lady steers, Lucinda sighs, and Theodora giggles at all the wrong moments. You may speak on any subject you please, or press on toward an ending.
-
-[if 2 + 2 === 4]
-[[>|S9-End-Lucinda-Marriage]]
-
-
-:: S9-End-Theodora-Marriage
-The Prince pulls Theodora toward him. 'You are a woman of unexpected depths,' he says softly. She blinks at him, then says, 'I hope you are not angry.' He laughs, and touches her cheek; and she kisses him. 'Well,' says the old lady briskly, standing. 'How many unexpected turns life brings to us.' Theodora and the Prince are married.
-
-
-
-
-
-:: S9-End-Lucinda-Marriage
+:: End-Lucinda-Marriage
 The Prince gives a great sigh and puts his head down on Lucinda's lap. 'I was sure I wouldn't find you,' he says. 'It seemed impossible.' 'You have me now,' she says, and puts her hand on the back of his neck, while Theodora slips out of the room, and the old lady rings for brandy. Lucinda and the Prince are married.
 
-
-
-
-
-:: S9-End-Peace
-There is the crack of a summoning: and there she stands, in the doorway, the secret daughter, the enchantress. 'May I present my third daughter,' says the old lady, very dryly. The Prince frowns at Cinderella a little longer, then seems to reach some decision. No one is punished, no shoe is forced, and the evening ends in peace, with brandy all around.
-
-
-
-
-
-:: S9-End-Disaster
-Cinderella puts the shoe on, turning her ankle to watch the effect. The change sweeps up through her, making her taller, more perfect, almost inhumanly beautiful. The Prince drops his hand. 'It's true,' says Lucinda. 'We poured holy water on her every day for a year.' 'But the law,' says the Prince. It all ends in disaster, as evenings with magic so often do.
-
-
-
-
-
-:: S9-End-Prince-Departs
-'Check the rest of your maidens,' the old lady says. 'Good luck finding your bride. You will not discover her in this house.' 'Thank Providence for that,' he says, snatching up the glass slipper. You watch him go, and think of the third daughter, waiting, in her bedroom, with the door locked. The Prince departs in anger.
-
-
-
-
-
-:: S9-End-Cinderella-Executed
-'You need not have done that,' the Prince says. 'You could have broken it. Lied to me. Remained hidden.' 'She understands,' says the old lady, rising from her chair. 'I'm afraid the rest of us, not being in love with you, had less faith in your intuition.' The Prince swallows. 'You see I cannot conceal this; it would be treason, now I have seen this witchcraft with my own eyes.' Cinderella is executed.
-
-
-
-
-
-:: S9-End-Cinderella-Wed
+:: End-Cinderella-Wed
 'This business of the shoe is nonsense,' the Prince remarks. He turns and hurls the slipper against the wall, where it splinters into dozens of sparkling pieces. There is a great sigh in the room, and the old lady actually laughs. His gaze lingers on Cinderella. She looks back at him, her chin tilted up. Cinderella and the Prince are (eventually) wed.
 
+:: End-Cinderella-Executed
+'You need not have done that,' the Prince says. 'You could have broken it. Lied to me. Remained hidden.' 'She understands,' says the old lady, rising from her chair. 'I'm afraid the rest of us, not being in love with you, had less faith in your intuition.' The Prince swallows. 'You see I cannot conceal this; it would be treason, now I have seen this witchcraft with my own eyes.' Cinderella is executed.
 
+:: End-Peace
+There is the crack of a summoning: and there she stands, in the doorway, the secret daughter, the enchantress. 'May I present my third daughter,' says the old lady, very dryly. The Prince frowns at Cinderella a little longer, then seems to reach some decision. No one is punished, no shoe is forced, and the evening ends in peace, with brandy all around.
 
+:: End-Disaster
+Cinderella puts the shoe on, turning her ankle to watch the effect. The change sweeps up through her, making her taller, more perfect, almost inhumanly beautiful. The Prince drops his hand. 'It's true,' says Lucinda. 'We poured holy water on her every day for a year.' 'But the law,' says the Prince. It all ends in disaster, as evenings with magic so often do.
 
+:: End-Prince-Departs
+'Check the rest of your maidens,' the old lady says. 'Good luck finding your bride. You will not discover her in this house.' 'Thank Providence for that,' he says, snatching up the glass slipper. You watch him go, and think of the third daughter, waiting, in her bedroom, with the door locked. The Prince departs in anger.
 
-:: S9-End-Pirates
+:: End-Pirates
 You speak very loudly. 'If that happens again,' says the old woman to you, 'we will sell you to the first man with an earring we can find.' Lucinda's cheeks go pink. 'Right,' says the old lady. And she rings for a servant to remove you from the room. You are sold to pirates and have a glorious career on the open sea.
-
