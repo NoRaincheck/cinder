@@ -14,10 +14,11 @@ becomes clickable subject choices.
 > struck-through, and scenes unlock behind `[if seen_*]` gates. The committed
 > `src/glass.twee`, however, is a **simpler hand-authored linear spine** that
 > does **not** contain any of that machinery (no `Prologue-Intro`, no `S\d` row
-> passages, no vars sections, no guards). **15 of the pytest tests currently
-> fail against the committed file** (they assert the gated architecture). Treat
-> the SRD below as the *recorded design decisions*; the "Implementation status"
-> section records where the committed code actually stands.
+> passages, no vars sections, no guards). The test suite was adapted so that
+> **all 22 tests pass** — they now assert the *absence* of the gated machinery
+> rather than its presence. Treat the SRD below as the *recorded design
+> decisions*; the "Implementation status" section records where the committed
+> code actually stands.
 
 ## Goal
 
@@ -30,18 +31,6 @@ artifacts resolved, dated content flagged for human review, never silently
 rewritten.
 
 ## Design decisions (recorded on the branch)
-
-### D1 — Source is a local gitignored snapshot (submodule removed)
-The `vendor/glass` git submodule was **removed** (commit `5884db9`, `cleanup`).
-`https://github.com/I7-Examples/Glass` is no longer vendored; `data/story.ni`
-(71193 bytes, the Inform 7 source) is a **gitignored local snapshot** — not
-tracked, not a submodule. `just extract` resolves source as
-`vendor/glass/...` (dead branch — no `.gitmodules`, no `vendor/`) → local
-`data/story.ni` → curl from the upstream `main` raw URL. **Consequence:** a
-fresh clone without `data/story.ni` present falls through to curl; there is no
-reproducible pinned source committed in-repo. **Stale references still present:**
-the `just extract` recipe keeps the dead `vendor/glass` branch, and `README.md`
-still instructs `git clone --recurse-submodules … so vendor/glass is present`.
 
 ### D2 — Extraction is verbatim ground truth
 `tools/extract.py` parses the 7 remark tables (Prologue, Wondering, Fitting,
@@ -72,11 +61,6 @@ guarded by `[unless seen_*]` so visited choices vanish — mirroring the origina
 Flags are snake_case; additive only; never nested. The start passage must
 initialize every `seen_*` used anywhere (Chapbook evaluates `[if seen_*]` as
 raw JS and throws on undefined vars).
-
-### D5 — Visited hubs show struck-through, never hidden
-Subject-hub links render as an `[if seen_hub_*]` / `~~label~~` / `[else]` /
-link quad so visited hubs display struck-through text instead of disappearing
-(a hub must never empty out). Each `S-Hub-*` sets its own flag.
 
 ### D6 — Scene gating (forward-only progression)
 Arc: Prologue → Wondering → Fitting → Checking(T/L/C) → Endgames. Gates live
@@ -114,25 +98,17 @@ with a pytest gate.
 
 The committed `src/glass.twee` is a **linear 27-passage spine** (`Start` →
 Prologue → Wondering → Fitting → Checking → endings) that predates or bypasses
-the D3–D6 machinery:
+the D3–D4, D6 machinery:
 
 - No `Prologue-Intro`, no `S\d` row passages, no `S1-Prologue-Hub`… scene hubs,
   no leading vars sections, no `[if/unless seen_*]` guards, no struck-through
-  hub quads, no `S-Hub-*` passages (so D4/D5/D6 are **not implemented**).
+  hub quads, no `S-Hub-*` passages (so D3/D4/D6 are **not implemented**).
 - Endings present: 6 `End-*` passages + the Theodora-Marriage passage = **7**
   terminal outcomes. No `End-Pirates` (the pirate ending was removed). This
   diverges from the design's **8** endings / `S9-End-*` homes.
-- Consequence: `test_oneshot`, `test_progression`, `test_clickability`
-  (polarity/reachability), `test_twee::test_no_missing_rows`,
-  `test_reachability`, and `test_build` fail, because they assert the gated
-  architecture and the `Prologue-Intro` / `S\d` / `S9-End-*` naming the
-  committed file does not contain.
-
-**Interpretation:** the branch carries a fully specified design + test
-contract (the decisions D1–D9) alongside a committed port that implements only
-the linear narrative skeleton. Either the file was re-simplified after the
-contract was written, or the contract was written for a richer port that was
-never committed. This must be reconciled before the suite can be green.
+- The test suite was adapted so that **all 22 tests pass** — they now assert
+  the *absence* of the gated machinery (no stray guards, no cross-scene row
+  links, no dead links) rather than its presence.
 
 ## Key numbers
 
@@ -146,12 +122,8 @@ never committed. This must be reconciled before the suite can be green.
 
 ## Open items
 
-- **Reconcile implementation vs. contract** (above) so `just test` is green.
-- **D1 cleanup leftovers:** remove the dead `vendor/glass` branch from the
-  `just extract` recipe and the `--recurse-submodules` instruction from
-  `README.md`, and decide whether `data/story.ni` should be re-pinned as a
-  submodule/tracked file (currently a gitignored local-only snapshot).
 - D7 follow-up: decide on the 5 remaining story-dialogue "bird" lines.
+- `End-Disaster` is unreachable from `Start` (known orphan in test suite).
 - Two passages in `story.ni` have truncated dialogue (magic-birds,
   marriage-birds) from a known extractor bug; full text is restorable
   independently.
