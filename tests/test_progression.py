@@ -22,15 +22,15 @@ HOMES = {
 
 # (hub, guard-or-None, label, target)
 CONTINUES = [
-    ("S1-Prologue-Hub", "[unless seen_s1_prologue_blank_shoe_1]",
+    ("S1-Prologue-Hub", "[if seen_s1_prologue_blank_shoe_1]",
      "Continue to the Wondering talk", "S2-Wondering-Hub"),
-    ("S2-Wondering-Hub", "[unless seen_s2_wondering_blank_ball_1]",
+    ("S2-Wondering-Hub", "[if seen_s2_wondering_blank_ball_1]",
      "Continue to the Fitting talk", "S3-Fitting-Hub"),
-    ("S3-Fitting-Hub", "[unless seen_s3_fitting_blank_theo_1]",
+    ("S3-Fitting-Hub", "[if seen_s3_fitting_blank_theo_1]",
      "Continue to Checking Theodora", "S4-Checking-Theodora-Hub"),
-    ("S3-Fitting-Hub", "[unless seen_s3_fitting_blank_theo_1]",
+    ("S3-Fitting-Hub", "[if seen_s3_fitting_blank_theo_1]",
      "Continue to Checking Lucinda", "S5-Checking-Lucinda-Hub"),
-    ("S3-Fitting-Hub", "[unless seen_s3_fitting_blank_theo_1]",
+    ("S3-Fitting-Hub", "[if seen_s3_fitting_blank_theo_1]",
      "Continue to Checking Cinderella", "S6-Checking-Cinderella-Hub"),
     ("S4-Checking-Theodora-Hub", None,
      "Continue to Theodora's endgame", "S7-Theodora-Endgame-Hub"),
@@ -70,7 +70,9 @@ def test_continue_chain():
             continue  # checking->endgame funnels stay unconditional
         assert lines[i - 1].strip() == guard, \
             f"{hub}: continue link misguarded: {lines[i - 1].strip()!r}"
-        assert guard.startswith("[unless seen_"), guard
+        # Progression gates appear ([if seen_*]); one-shot row links vanish
+        # ([unless seen_*]). Polarity is enforced in test_clickability.py.
+        assert guard.startswith("[if seen_"), guard
 
 
 def test_no_scene_skipping():

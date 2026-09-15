@@ -58,9 +58,12 @@ plus the current twee passage body for that row.
   The start passage opens only the Prologue hub; every ending is homed to
   exactly one scene (S1 Pirates / S2 Prince-Departs / S3 Disaster /
   S6 Peace+Executed+Wed / S7 Theodora-Marriage / S8 Lucinda-Marriage).
-- Continue links unlock behind key-row flags (`[unless seen_s1_prologue_blank_shoe_1]`
+- Continue links unlock behind key-row flags (`[if seen_s1_prologue_blank_shoe_1]`
   etc.); checking->endgame funnels stay unconditional. Never add an ending
   or cross-scene link outside this map — `tests/test_progression.py` enforces it.
+- Polarity: appear-gates use `[if seen_*]` (Continue links), vanish-gates use
+  `[unless seen_*]` (row links). Inverted polarity strands players — it is
+  enforced in `tests/test_clickability.py`.
 - Guarded continue links live with the guarded block (before the scope
   terminator); never leave unguarded content after a guard without one.
 

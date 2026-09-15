@@ -43,7 +43,7 @@ def test_row_links_guarded():
 
 def test_guards_reference_defined_vars():
     defined = {var_of(n) for n in PASSAGES if is_row(n)}
-    used = set(re.findall(r"^\[unless (seen_[a-z0-9_]+)\]$", TWEE, flags=re.M))
+    used = set(re.findall(r"^\[(?:unless|if) (seen_[a-z0-9_]+)\]$", TWEE, flags=re.M))
     assert used - defined == set(), f"guards with no defining passage: {sorted(used - defined)[:5]}"
     assert defined - used == set(), f"flags set but never used: {sorted(defined - used)[:5]}"
 
