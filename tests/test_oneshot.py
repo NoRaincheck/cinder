@@ -20,7 +20,7 @@ def var_of(n):
 
 def test_row_passages_set_seen_flag():
     rows = [n for n in PASSAGES if is_row(n)]
-    assert len(rows) == 104
+    assert len(rows) == 15
     bad = [n for n in rows
            if not PASSAGES[n].startswith(f"{var_of(n)}: true\n--\n")]
     assert bad == [], f"row passages missing leading vars section: {bad[:5]}"
@@ -37,7 +37,7 @@ def test_row_links_guarded():
                 if prev != f"[unless {var_of(m.group(1))}]":
                     bad.append(f"{name}: {line.strip()[:60]}")
             prev = line.strip()
-    assert count == 104, f"guarded row links changed: {count}"
+    assert count == 15, f"guarded row links changed: {count}"
     assert bad == [], f"unguarded row links: {bad[:5]}"
 
 
@@ -46,6 +46,19 @@ def test_guards_reference_defined_vars():
     used = set(re.findall(r"^\[(?:unless|if) (seen_s\d[a-z0-9_]+)\]$", TWEE, flags=re.M))
     assert used - defined == set(), f"guards with no defining passage: {sorted(used - defined)[:5]}"
     assert defined - used == set(), f"flags set but never used: {sorted(defined - used)[:5]}"
+
+
+def test_start_passage_initializes_all_seen_vars():
+    """Chapbook evaluates [if seen_*] as raw JS and throws ReferenceError on
+    undefined vars (no auto-false). Prologue-Intro runs first and must default
+    every seen_* used anywhere, with a typeof-guard so revisits preserve true."""
+    used = set(re.findall(r"^\[(?:unless|if) (seen_[a-z0-9_]+)\]$", TWEE, flags=re.M))
+    body = PASSAGES["Prologue-Intro"]
+    assert "\n--\n" in body, "Prologue-Intro missing vars section (undefined-var crash)"
+    vars_section = body.split("\n--\n", 1)[0]
+    initialized = set(re.findall(r"^(seen_[a-z0-9_]+)\s*:", vars_section, flags=re.M))
+    assert used - initialized == set(), \
+        f"seen vars used but never initialized at start: {sorted(used - initialized)[:5]}"
 
 
 def test_hubs_endings_intro_unguarded():

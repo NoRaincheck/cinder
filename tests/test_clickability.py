@@ -49,6 +49,23 @@ def test_links_wellformed():
     assert bad == [], bad[:5]
 
 
+def test_hub_link_labels_unique():
+    """Within each scene hub, every choice label must be unique: duplicate
+    labels pointing at different passages (19x 'Steer toward more', 5x
+    \"king's health\", ...) strand players who can't tell choices apart."""
+    bad = []
+    for name, body in PASSAGES.items():
+        if "-Hub" not in name or "S-Hub-" in name:
+            continue
+        seen_labels = {}
+        for m in re.finditer(r"\[\[([^\]|]+)\|([^\]]+)\]\]", body):
+            label, target = m.group(1).strip(), m.group(2).strip()
+            if label in seen_labels and seen_labels[label] != target:
+                bad.append(f"{name}: {label!r} -> {seen_labels[label]} and {target}")
+            seen_labels.setdefault(label, target)
+    assert bad == [], f"duplicate hub labels: {bad[:5]}"
+
+
 def test_guard_polarity():
     """Continue links appear ([if]); row links vanish ([unless]); funnels
     (checking->endgame, hub/ending navigation) stay unconditional."""
@@ -72,7 +89,7 @@ def test_guard_polarity():
                 gated_unless.append(m.group(2))
     assert len(gated_if) == 5, gated_if
     assert sorted(plain_cont) == ["S7-Theodora-Endgame-Hub", "S8-Lucinda-Endgame-Hub"]
-    assert len(gated_unless) == 104, len(gated_unless)
+    assert len(gated_unless) == 15, len(gated_unless)
 
 
 def test_all_rows_reachable_from_start():

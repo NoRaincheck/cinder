@@ -49,12 +49,6 @@ def test_link_targets_exist():
     bad = [(p, t) for p, ts in LINKS.items() for t in ts if t not in PASSAGES]
     assert bad == [], f"dead links: {bad[:5]}"
 
-def test_every_conversation_passage_links_all_subjects():
-    weak = [p for p, ts in LINKS.items()
-            if p.startswith("S") and "-End-" not in p and p not in META
-            and sum(1 for s in SUBJECTS if any(s in t.lower() for t in ts)) < len(SUBJECTS)]
-    assert weak == [], f"passages missing subject choices: {weak[:5]}"
-
 def test_fidelity_verbatim():
     thin = [p for p, b in PASSAGES.items()
             if p.startswith("S") and p not in META and len(b.strip()) < 80]
@@ -136,8 +130,15 @@ def test_fidelity_verbatim():
         # contained "you squawk" (now "you say"). Content otherwise intact.
         "Reactions:say-oops-you-squawk-sorry-oops-sorry",
     }
-    EXPECTED_EXEMPT = POLISH_EXEMPT | ISSUE2_EXEMPT | SHORT_EXEMPT | SQUAWK_REMOVED_EXEMPT
-    EXPECTED_VIOLATOR_INSTANCES = 34  # 32 unique keys; Fitting Remarks:row x3
+    # 2026-09-15 curated-3 rescope (Task 4): the 15-row spine cut every
+    # passage outside KEEP, so all full-glass violator/exempt keys above are
+    # either prune-listed (skipped: cut by design) or passageless (skipped:
+    # coverage is asserted by test_no_missing_rows instead). Every surviving
+    # non-pruned row with a passage is verbatim-grounded, hence the
+    # curated-universe constants below. The category sets above are retained
+    # for provenance (git history of the 104-row glass).
+    EXPECTED_EXEMPT = set()
+    EXPECTED_VIOLATOR_INSTANCES = 0
     exempt = {}  # unique key -> reason
     viol_instances = 0
     unexpected = []
