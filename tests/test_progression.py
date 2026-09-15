@@ -20,22 +20,22 @@ HOMES = {
     "S8-Lucinda-Endgame-Hub": {"S9-End-Lucinda-Marriage"},
 }
 
-# (hub, guard-or-None, label, target)
+# (hub, guard-or-None, target). All navigation renders as bare `>`.
 CONTINUES = [
     ("S1-Prologue-Hub", "[if seen_s1_prologue_blank_shoe_1]",
-     "Continue to the Wondering talk", "S2-Wondering-Hub"),
+     "S2-Wondering-Hub"),
     ("S2-Wondering-Hub", "[if seen_s2_wondering_blank_ball_1]",
-     "Continue to the Fitting talk", "S3-Fitting-Hub"),
+     "S3-Fitting-Hub"),
     ("S3-Fitting-Hub", "[if seen_s3_fitting_blank_theo_1]",
-     "Continue to Checking Theodora", "S4-Checking-Theodora-Hub"),
+     "S4-Checking-Theodora-Hub"),
     ("S3-Fitting-Hub", "[if seen_s3_fitting_blank_theo_1]",
-     "Continue to Checking Lucinda", "S5-Checking-Lucinda-Hub"),
+     "S5-Checking-Lucinda-Hub"),
     ("S3-Fitting-Hub", "[if seen_s3_fitting_blank_theo_1]",
-     "Continue to Checking Cinderella", "S6-Checking-Cinderella-Hub"),
+     "S6-Checking-Cinderella-Hub"),
     ("S4-Checking-Theodora-Hub", None,
-     "Continue to Theodora's endgame", "S7-Theodora-Endgame-Hub"),
+     "S7-Theodora-Endgame-Hub"),
     ("S5-Checking-Lucinda-Hub", None,
-     "Continue to Lucinda's endgame", "S8-Lucinda-Endgame-Hub"),
+     "S8-Lucinda-Endgame-Hub"),
 ]
 
 
@@ -59,13 +59,13 @@ def test_ending_homes():
 
 
 def test_continue_chain():
-    for hub, guard, label, target in CONTINUES:
+    for hub, guard, target in CONTINUES:
         lines = PASSAGES[hub].splitlines()
         try:
             i = next(i for i, l in enumerate(lines)
-                     if l.strip() == f"[[{label}|{target}]]")
+                     if l.strip() == f"[[>|{target}]]")
         except StopIteration:
-            raise AssertionError(f"{hub}: missing continue link [[{label}|{target}]]")
+            raise AssertionError(f"{hub}: missing continue link [[>|{target}]]")
         if guard is None:
             continue  # checking->endgame funnels stay unconditional
         assert lines[i - 1].strip() == guard, \

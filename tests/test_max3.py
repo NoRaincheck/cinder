@@ -3,12 +3,12 @@ from pathlib import Path
 
 TWEE = Path("src/glass.twee").read_text()
 PASSAGES = dict(re.findall(r"^::\s+(\S+)[^\n]*\n((?:(?!^::).)*)", TWEE, flags=re.M | re.S))
-NAV = ("Continue to ", "Back to ", "Take up ", "Press on toward ")
-
+# Navigation renders as a bare `>` (no ending/return info); every other
+# label is a story choice.
 def story_links(body):
     out = []
     for m in re.finditer(r"\[\[([^\]|]+)\|([^\]]+)\]\]", body):
-        if not m.group(1).startswith(NAV):
+        if m.group(1).strip() != ">":
             out.append(m.group(0))
     return out
 

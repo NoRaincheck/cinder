@@ -64,20 +64,28 @@ def test_start_passage_initializes_all_seen_vars():
 def test_hubs_endings_intro_unguarded():
     # Designated Continue links are the one exception: they must be guarded
     # (scene gating) and are audited in test_progression.py instead.
-    # S-Hub-* links are the other exception: visited-state quads audited in
-    # test_hubstrike.py. Everything else hub/ending-bound stays unconditional.
+    # Everything else hub/ending-bound stays unconditional. Navigation
+    # renders as bare `>`, so Continues are told apart by target.
+    CONTINUE_TARGETS = {"S2-Wondering-Hub", "S3-Fitting-Hub",
+                        "S4-Checking-Theodora-Hub", "S5-Checking-Lucinda-Hub",
+                        "S6-Checking-Cinderella-Hub", "S7-Theodora-Endgame-Hub",
+                        "S8-Lucinda-Endgame-Hub"}
+    OWN_HUB = {"1": "S1-Prologue-Hub", "2": "S2-Wondering-Hub", "3": "S3-Fitting-Hub",
+               "4": "S4-Checking-Theodora-Hub", "5": "S5-Checking-Lucinda-Hub",
+               "6": "S6-Checking-Cinderella-Hub", "7": "S7-Theodora-Endgame-Hub",
+               "8": "S8-Lucinda-Endgame-Hub"}
     bad = []
     for name, body in PASSAGES.items():
         prev = ""
+        mm = re.match(r"S(\d)-", name)
+        own = OWN_HUB.get(mm.group(1)) if mm else None
         for line in body.splitlines():
             m = re.fullmatch(r"\[\[(?:[^|\]]+\|)?([^\]]+)\]\]", line.strip())
             if m and m.group(1) in PASSAGES and not is_row(m.group(1)) \
                     and not m.group(1).startswith("S-Hub-"):
-                lm = re.match(r"\[\[([^\]|]+)\|", line.strip())
-                label = lm.group(1) if lm else ""
                 guarded = (prev.startswith("[unless ") or prev.startswith("[if ")) \
                     and prev != "[if 2 + 2 === 4]"
-                if guarded and not label.startswith("Continue to "):
+                if guarded and not (m.group(1) in CONTINUE_TARGETS and m.group(1) != own):
                     bad.append(f"{name}: {line.strip()[:60]}")
             prev = line.strip()
     assert bad == [], f"guarded hub/ending/intro links (dead-end risk): {bad[:5]}"

@@ -50,9 +50,10 @@ def test_links_wellformed():
 
 
 def test_hub_link_labels_unique():
-    """Within each scene hub, every choice label must be unique: duplicate
-    labels pointing at different passages (19x 'Steer toward more', 5x
-    \"king's health\", ...) strand players who can't tell choices apart."""
+    """Within each scene hub, every story choice label must be unique:
+    duplicate labels pointing at different passages strand players who
+    can't tell choices apart. Bare `>` navigation is exempt by design
+    (it deliberately carries no info)."""
     bad = []
     for name, body in PASSAGES.items():
         if "-Hub" not in name or "S-Hub-" in name:
@@ -60,6 +61,8 @@ def test_hub_link_labels_unique():
         seen_labels = {}
         for m in re.finditer(r"\[\[([^\]|]+)\|([^\]]+)\]\]", body):
             label, target = m.group(1).strip(), m.group(2).strip()
+            if label == ">":
+                continue
             if label in seen_labels and seen_labels[label] != target:
                 bad.append(f"{name}: {label!r} -> {seen_labels[label]} and {target}")
             seen_labels.setdefault(label, target)
@@ -68,25 +71,38 @@ def test_hub_link_labels_unique():
 
 def test_guard_polarity():
     """Continue links appear ([if]); row links vanish ([unless]); funnels
-    (checking->endgame, hub/ending navigation) stay unconditional."""
+    (checking->endgame, hub/ending navigation) stay unconditional.
+    All navigation renders as bare `>`, so links are told apart by target."""
+    CONTINUE = {"S2-Wondering-Hub", "S3-Fitting-Hub", "S4-Checking-Theodora-Hub",
+                "S5-Checking-Lucinda-Hub", "S6-Checking-Cinderella-Hub"}
+    FUNNELS = {"S7-Theodora-Endgame-Hub", "S8-Lucinda-Endgame-Hub"}
+    OWN_HUB = {"1": "S1-Prologue-Hub", "2": "S2-Wondering-Hub", "3": "S3-Fitting-Hub",
+               "4": "S4-Checking-Theodora-Hub", "5": "S5-Checking-Lucinda-Hub",
+               "6": "S6-Checking-Cinderella-Hub", "7": "S7-Theodora-Endgame-Hub",
+               "8": "S8-Lucinda-Endgame-Hub"}
     gated_if, gated_unless, plain_cont = [], [], []
     for name, body in PASSAGES.items():
         lines = body.splitlines()
+        mm = re.match(r"S(\d)-", name)
+        own = OWN_HUB.get(mm.group(1)) if mm else None
         for i, line in enumerate(lines):
             m = re.fullmatch(r"\[\[([^\]|]+)\|([^\]]+)\]\]", line.strip())
             if not m:
                 continue
             prev = lines[i - 1].strip() if i > 0 else ""
-            if m.group(1).startswith("Continue to ") and "endgame" not in m.group(1):
+            if m.group(2) in CONTINUE and m.group(2) != own:
                 assert prev.startswith("[if seen_"), f"{name}: gated continue misguarded: {prev!r}"
                 gated_if.append(m.group(2))
-            elif m.group(1).startswith("Continue to "):
+            elif m.group(2) in FUNNELS:
                 assert not prev.startswith("[") or prev == "[if 2 + 2 === 4]", \
                     f"{name}: funnel continue guarded: {prev!r}"
                 plain_cont.append(m.group(2))
             elif m.group(2) in PASSAGES and is_row(m.group(2)):
                 assert prev.startswith("[unless seen_"), f"{name}: row link misguarded: {prev!r}"
                 gated_unless.append(m.group(2))
+            elif m.group(1).strip() == ">":
+                assert not prev.startswith("[if seen_") and not prev.startswith("[unless "), \
+                    f"{name}: back/ending nav guarded: {prev!r}"
     assert len(gated_if) == 5, gated_if
     assert sorted(plain_cont) == ["S7-Theodora-Endgame-Hub", "S8-Lucinda-Endgame-Hub"]
     assert len(gated_unless) == 15, len(gated_unless)

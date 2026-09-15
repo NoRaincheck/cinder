@@ -43,6 +43,21 @@ def strip_topic_quads(body):
         i += 1
     return "\n".join(out)
 
+def relabel_nav(passage):
+    # Final pass: every non-story link renders as bare `>` (no ending or
+    # return-to info); drop exact-duplicate link lines.
+    name, _, body = passage.partition("\n")
+    seen, out = set(), [name]
+    for l in body.splitlines():
+        m = re.fullmatch(r"\[\[([^\]|]+)\|([^\]]+)\]\]", l.strip())
+        if m and not m.group(1).startswith("Steer toward"):
+            l = f"[[>|{m.group(2)}]]"
+            if l in seen:
+                continue
+            seen.add(l)
+        out.append(l)
+    return "\n".join(out)
+
 def main(src, dst):
     t = open(src).read()
     ps = dict(re.findall(r"^::\s+(\S+)[^\n]*\n((?:(?!^::).)*)", t, flags=re.M | re.S))
@@ -65,35 +80,52 @@ def main(src, dst):
         out.append(f":: {hub}\n{strip_topic_quads(ps[hub])}")
     for e in [n for n in ps if "-End-" in n]:
         out.append(f":: {e}\n{ps[e]}")
+    out = [relabel_nav(p) for p in out]
     open(dst, "w").write("\n\n".join(out) + "\n")
     print(f"kept_rows={len(KEEP)} passages={len(out)}")
 
 def rebuild_hub(hub, rows, ps):
     # keep first 3 story link blocks verbatim from old hub, drop S-Hub-* quads,
-    # keep Continue/Press lines, append nothing else
+    # keep Continue/Press lines as bare `>` nav, dedupe identical nav targets.
+    # All navigation renders as `>` (no ending/return info).
     body = ps[hub]
-    keep_lines = []
+    keep_lines, nav_seen, nav_out = [], set(), []
     lines = body.splitlines()
     for i, l in enumerate(lines):
         m = re.fullmatch(r"\[\[([^\]|]+)\|([^\]]+)\]\]", l.strip())
         if not m:
             continue
         label, tgt = m.group(1), m.group(2)
-        if tgt in rows or label.startswith(("Continue to ", "Press on toward ")):
+        if tgt in rows:
             prev = lines[i-1].strip() if i > 0 else ""
-            if prev.startswith("["):
+            if prev.startswith("[") and not prev.startswith("[["):
                 keep_lines.append(prev)
             keep_lines.append(l.strip())
+        elif label.strip() == ">" or label.startswith(("Continue to ", "Press on toward ", "Back to ", "Take up ")):
+            prev = lines[i-1].strip() if i > 0 else ""
+            if tgt not in nav_seen:
+                nav_seen.add(tgt)
+                nav_out.append((prev if prev.startswith("[") and not prev.startswith("[[") else None, tgt))
+    if nav_out and rows:
+        # Terminate the last [unless]/[if] scope before trailing nav:
+        # Chapbook modifiers leak onto all following text, so an
+        # unterminated story guard would swallow the funnel/ending links.
+        keep_lines.append("[if 2 + 2 === 4]")
+    for guard, tgt in nav_out:
+        if guard:
+            keep_lines.append(guard)
+        keep_lines.append(f"[[>|{tgt}]]")
     head = body.split("[unless", 1)[0].split("[[", 1)[0]
     return f":: {hub}\n{head}" + "\n".join(keep_lines)
 
 def rebuild_row(row, ps):
     body = strip_topic_quads(ps[row])
     hub = HUB_OF[scene(row)]
-    # normalize the Return-to-Hub nav to a Back-to-Hub link (Back = nav, not story)
+    # normalize the Return-to-Hub nav to a bare `>` Back link (Back = nav, not story)
     body = body.replace("[[Return to ", "[[Back to ")
-    if f"Back to" not in body:
-        body = body.rstrip() + f"\n[[Back to the talk|{hub}]]\n"
+    body = re.sub(r"\[\[[^\]|]+\|(" + re.escape(hub) + r")\]\]", r"[[>|\1]]", body)
+    if hub not in body:
+        body = body.rstrip() + f"\n[[>|{hub}]]\n"
     return f":: {row}\n{body}"
 
 if __name__ == "__main__":

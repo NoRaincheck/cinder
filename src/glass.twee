@@ -3,8 +3,12 @@ Twee-Glass
 
 
 
+
+
 :: StoryData
 {"format": "Chapbook", "format-version": "2.3.0", "ifid": "C67460F1-5CAD-42EC-AF08-E1A7249DBCE8", "start": "Prologue-Intro"}
+
+
 
 
 
@@ -130,7 +134,7 @@ seen_s6_checking_cinderella_say_this_story_may_strike_you_as_familiar_which_mean
 
 The Prince sits awkwardly on the couch, holding his glass slipper and trying to keep it from crushing. Lucinda and Theodora have the ends of the same couch, and the old lady leans toward him: 'Do tell me about your father's health.' It is your business to steer the talk.
 
-[[Take up the Prologue talk|S1-Prologue-Hub]]
+[[>|S1-Prologue-Hub]]
 [if 2 + 2 === 4]
 
 After Emily Short's Glass (I7-Examples/Glass). Choice adaptation, light polish, all paths preserved.
@@ -145,10 +149,11 @@ This is the Prologue stretch of the evening. The Prince fidgets, the old lady st
 [[Steer toward ball — “It's true, you know, that my father threw the”|S1-Prologue-marriage-ball-1]]
 [unless seen_s1_prologue_blank_shoe_1]
 [[Steer toward shoe|S1-Prologue-blank-shoe-1]]
-[if seen_s1_prologue_blank_shoe_1]
-[[Continue to the Wondering talk|S2-Wondering-Hub]]
 [if 2 + 2 === 4]
-[[Press on toward S9-End-Pirates|S9-End-Pirates]]
+[if seen_s1_prologue_blank_shoe_1]
+[[>|S2-Wondering-Hub]]
+[if 2 + 2 === 4]
+[[>|S9-End-Pirates]]
 
 :: S2-Wondering-Hub
 This is the Wondering stretch of the evening. The Prince fidgets, the old lady steers, Lucinda sighs, and Theodora giggles at all the wrong moments. You may speak on any subject you please, or press on toward an ending.
@@ -159,10 +164,11 @@ This is the Wondering stretch of the evening. The Prince fidgets, the old lady s
 [[Steer toward marriage — “It's marvelous that you were so drawn to a yo”|S2-Wondering-blank-marriage-1]]
 [unless seen_s2_wondering_blank_ball_1]
 [[Steer toward ball|S2-Wondering-blank-ball-1]]
-[if seen_s2_wondering_blank_ball_1]
-[[Continue to the Fitting talk|S3-Fitting-Hub]]
 [if 2 + 2 === 4]
-[[Press on toward S9-End-Prince-Departs|S9-End-Prince-Departs]]
+[if seen_s2_wondering_blank_ball_1]
+[[>|S3-Fitting-Hub]]
+[if 2 + 2 === 4]
+[[>|S9-End-Prince-Departs]]
 
 :: S3-Fitting-Hub
 This is the Fitting stretch of the evening. The Prince fidgets, the old lady steers, Lucinda sighs, and Theodora giggles at all the wrong moments. You may speak on any subject you please, or press on toward an ending.
@@ -173,30 +179,33 @@ This is the Fitting stretch of the evening. The Prince fidgets, the old lady ste
 [[Steer toward Theo|S3-Fitting-blank-theo-1]]
 [unless seen_s3_fitting_blank_marriage_1]
 [[Steer toward marriage — “It seems to me,' says the old lady, after a l”|S3-Fitting-blank-marriage-1]]
-[if seen_s3_fitting_blank_theo_1]
-[[Continue to Checking Theodora|S4-Checking-Theodora-Hub]]
-[if seen_s3_fitting_blank_theo_1]
-[[Continue to Checking Lucinda|S5-Checking-Lucinda-Hub]]
-[if seen_s3_fitting_blank_theo_1]
-[[Continue to Checking Cinderella|S6-Checking-Cinderella-Hub]]
 [if 2 + 2 === 4]
-[[Press on toward S9-End-Disaster|S9-End-Disaster]]
+[if seen_s3_fitting_blank_theo_1]
+[[>|S4-Checking-Theodora-Hub]]
+[if seen_s3_fitting_blank_theo_1]
+[[>|S5-Checking-Lucinda-Hub]]
+[if seen_s3_fitting_blank_theo_1]
+[[>|S6-Checking-Cinderella-Hub]]
+[if 2 + 2 === 4]
+[[>|S9-End-Disaster]]
 
 :: S4-Checking-Theodora-Hub
 This is the Checking-Theodora stretch of the evening. The Prince fidgets, the old lady steers, Lucinda sighs, and Theodora giggles at all the wrong moments. You may speak on any subject you please, or press on toward an ending.
 
-[[Continue to Theodora's endgame|S7-Theodora-Endgame-Hub]]
 [unless seen_s4_checking_theodora_blank_lucinda_1]
 [[Steer toward Lucinda|S4-Checking-Theodora-blank-lucinda-1]]
 [unless seen_s4_checking_theodora_blank_shoe_1]
 [[Steer toward shoe|S4-Checking-Theodora-blank-shoe-1]]
+[if 2 + 2 === 4]
+[[>|S7-Theodora-Endgame-Hub]]
 
 :: S5-Checking-Lucinda-Hub
 This is the Checking-Lucinda stretch of the evening. The Prince fidgets, the old lady steers, Lucinda sighs, and Theodora giggles at all the wrong moments. You may speak on any subject you please, or press on toward an ending.
 
-[[Continue to Lucinda's endgame|S8-Lucinda-Endgame-Hub]]
 [unless seen_s5_checking_lucinda_blank_theodora_1]
 [[Steer toward Theodora|S5-Checking-Lucinda-blank-theodora-1]]
+[if 2 + 2 === 4]
+[[>|S8-Lucinda-Endgame-Hub]]
 
 :: S6-Checking-Cinderella-Hub
 This is the Checking-Cinderella stretch of the evening. The Prince fidgets, the old lady steers, Lucinda sighs, and Theodora giggles at all the wrong moments. You may speak on any subject you please, or press on toward an ending.
@@ -208,11 +217,10 @@ This is the Checking-Cinderella stretch of the evening. The Prince fidgets, the 
 [unless seen_s6_checking_cinderella_blank_love_1]
 [[Steer toward love|S6-Checking-Cinderella-blank-love-1]]
 [if 2 + 2 === 4]
-[[Press on toward S9-End-Peace|S9-End-Peace]]
-[[Press on toward S9-End-Peace|S9-End-Peace]]
-[[Press on toward S9-End-Cinderella-Executed|S9-End-Cinderella-Executed]]
-[[Press on toward S9-End-Cinderella-Executed|S9-End-Cinderella-Executed]]
-[[Press on toward S9-End-Cinderella-Wed|S9-End-Cinderella-Wed]]
+[if 2 + 2 === 4]
+[[>|S9-End-Peace]]
+[[>|S9-End-Cinderella-Executed]]
+[[>|S9-End-Cinderella-Wed]]
 
 :: S1-Prologue-blank-shoe-1
 seen_s1_prologue_blank_shoe_1: true
@@ -221,7 +229,7 @@ seen_s1_prologue_blank_shoe_1: true
 
 The humans take this in, and wait for the talk to turn once more.
 
-[[Back to the Prologue talk|S1-Prologue-Hub]]
+[[>|S1-Prologue-Hub]]
 
 
 :: S1-Prologue-heirs-marriage-1
@@ -231,7 +239,7 @@ seen_s1_prologue_heirs_marriage_1: true
 
 The humans take this in, and wait for the talk to turn once more.
 
-[[Back to the Prologue talk|S1-Prologue-Hub]]
+[[>|S1-Prologue-Hub]]
 
 
 :: S1-Prologue-marriage-ball-1
@@ -241,7 +249,7 @@ seen_s1_prologue_marriage_ball_1: true
 
 The humans take this in, and wait for the talk to turn once more.
 
-[[Back to the Prologue talk|S1-Prologue-Hub]]
+[[>|S1-Prologue-Hub]]
 
 
 :: S2-Wondering-blank-shoe-1
@@ -251,7 +259,7 @@ seen_s2_wondering_blank_shoe_1: true
 
 The humans take this in, and wait for the talk to turn once more.
 
-[[Back to the Wondering talk|S2-Wondering-Hub]]
+[[>|S2-Wondering-Hub]]
 
 
 :: S2-Wondering-blank-ball-1
@@ -261,7 +269,7 @@ seen_s2_wondering_blank_ball_1: true
 
 The humans take this in, and wait for the talk to turn once more.
 
-[[Back to the Wondering talk|S2-Wondering-Hub]]
+[[>|S2-Wondering-Hub]]
 
 
 :: S2-Wondering-blank-marriage-1
@@ -271,7 +279,7 @@ seen_s2_wondering_blank_marriage_1: true
 
 The humans take this in, and wait for the talk to turn once more.
 
-[[Back to the Wondering talk|S2-Wondering-Hub]]
+[[>|S2-Wondering-Hub]]
 
 
 :: S3-Fitting-ball-shoe-1
@@ -281,7 +289,7 @@ seen_s3_fitting_ball_shoe_1: true
 
 The humans take this in, and wait for the talk to turn once more.
 
-[[Back to the Fitting talk|S3-Fitting-Hub]]
+[[>|S3-Fitting-Hub]]
 
 
 :: S3-Fitting-blank-marriage-1
@@ -291,7 +299,7 @@ seen_s3_fitting_blank_marriage_1: true
 
 The humans take this in, and wait for the talk to turn once more.
 
-[[Back to the Fitting talk|S3-Fitting-Hub]]
+[[>|S3-Fitting-Hub]]
 
 
 :: S3-Fitting-blank-theo-1
@@ -301,7 +309,7 @@ seen_s3_fitting_blank_theo_1: true
 
 The humans take this in, and wait for the talk to turn once more.
 
-[[Back to the Fitting talk|S3-Fitting-Hub]]
+[[>|S3-Fitting-Hub]]
 
 
 :: S4-Checking-Theodora-blank-lucinda-1
@@ -311,7 +319,7 @@ seen_s4_checking_theodora_blank_lucinda_1: true
 
 The humans take this in, and wait for the talk to turn once more.
 
-[[Back to the Checking-Theodora talk|S4-Checking-Theodora-Hub]]
+[[>|S4-Checking-Theodora-Hub]]
 
 
 :: S4-Checking-Theodora-blank-shoe-1
@@ -321,7 +329,7 @@ seen_s4_checking_theodora_blank_shoe_1: true
 
 The humans take this in, and wait for the talk to turn once more.
 
-[[Back to the Checking-Theodora talk|S4-Checking-Theodora-Hub]]
+[[>|S4-Checking-Theodora-Hub]]
 
 
 :: S5-Checking-Lucinda-blank-theodora-1
@@ -331,7 +339,7 @@ seen_s5_checking_lucinda_blank_theodora_1: true
 
 The humans take this in, and wait for the talk to turn once more.
 
-[[Back to the Checking-Lucinda talk|S5-Checking-Lucinda-Hub]]
+[[>|S5-Checking-Lucinda-Hub]]
 
 
 :: S6-Checking-Cinderella-blank-ball-1
@@ -341,7 +349,7 @@ seen_s6_checking_cinderella_blank_ball_1: true
 
 The humans take this in, and wait for the talk to turn once more.
 
-[[Back to the Checking-Cinderella talk|S6-Checking-Cinderella-Hub]]
+[[>|S6-Checking-Cinderella-Hub]]
 
 
 :: S6-Checking-Cinderella-blank-marriage-1
@@ -351,7 +359,7 @@ seen_s6_checking_cinderella_blank_marriage_1: true
 
 The humans take this in, and wait for the talk to turn once more.
 
-[[Back to the Checking-Cinderella talk|S6-Checking-Cinderella-Hub]]
+[[>|S6-Checking-Cinderella-Hub]]
 
 
 :: S6-Checking-Cinderella-blank-love-1
@@ -361,25 +369,27 @@ seen_s6_checking_cinderella_blank_love_1: true
 
 The humans take this in, and wait for the talk to turn once more.
 
-[[Back to the Checking-Cinderella talk|S6-Checking-Cinderella-Hub]]
+[[>|S6-Checking-Cinderella-Hub]]
 
 
 :: S7-Theodora-Endgame-Hub
 This is the Theodora-Endgame stretch of the evening. The Prince fidgets, the old lady steers, Lucinda sighs, and Theodora giggles at all the wrong moments. You may speak on any subject you please, or press on toward an ending.
 
 [if 2 + 2 === 4]
-[[Press on toward S9-End-Theodora-Marriage|S9-End-Theodora-Marriage]]
+[[>|S9-End-Theodora-Marriage]]
 
 
 :: S8-Lucinda-Endgame-Hub
 This is the Lucinda-Endgame stretch of the evening. The Prince fidgets, the old lady steers, Lucinda sighs, and Theodora giggles at all the wrong moments. You may speak on any subject you please, or press on toward an ending.
 
 [if 2 + 2 === 4]
-[[Press on toward S9-End-Lucinda-Marriage|S9-End-Lucinda-Marriage]]
+[[>|S9-End-Lucinda-Marriage]]
 
 
 :: S9-End-Theodora-Marriage
 The Prince pulls Theodora toward him. 'You are a woman of unexpected depths,' he says softly. She blinks at him, then says, 'I hope you are not angry.' He laughs, and touches her cheek; and she kisses him. 'Well,' says the old lady briskly, standing. 'How many unexpected turns life brings to us.' Theodora and the Prince are married.
+
+
 
 
 
@@ -388,8 +398,12 @@ The Prince gives a great sigh and puts his head down on Lucinda's lap. 'I was su
 
 
 
+
+
 :: S9-End-Peace
 There is the crack of a summoning: and there she stands, in the doorway, the secret daughter, the enchantress. 'May I present my third daughter,' says the old lady, very dryly. The Prince frowns at Cinderella a little longer, then seems to reach some decision. No one is punished, no shoe is forced, and the evening ends in peace, with brandy all around.
+
+
 
 
 
@@ -398,8 +412,12 @@ Cinderella puts the shoe on, turning her ankle to watch the effect. The change s
 
 
 
+
+
 :: S9-End-Prince-Departs
 'Check the rest of your maidens,' the old lady says. 'Good luck finding your bride. You will not discover her in this house.' 'Thank Providence for that,' he says, snatching up the glass slipper. You watch him go, and think of the third daughter, waiting, in her bedroom, with the door locked. The Prince departs in anger.
+
+
 
 
 
@@ -408,8 +426,12 @@ Cinderella puts the shoe on, turning her ankle to watch the effect. The change s
 
 
 
+
+
 :: S9-End-Cinderella-Wed
 'This business of the shoe is nonsense,' the Prince remarks. He turns and hurls the slipper against the wall, where it splinters into dozens of sparkling pieces. There is a great sigh in the room, and the old lady actually laughs. His gaze lingers on Cinderella. She looks back at him, her chin tilted up. Cinderella and the Prince are (eventually) wed.
+
+
 
 
 
