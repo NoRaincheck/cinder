@@ -2,7 +2,7 @@
 Twee-Glass
 
 :: StoryData
-{"format": "Chapbook-2", "start": "Prologue-Intro"}
+{"format": "Chapbook", "format-version": "2.3.0", "ifid": "C67460F1-5CAD-42EC-AF08-E1A7249DBCE8", "start": "Prologue-Intro"}
 
 :: Prologue-Intro
 {set currentSubject to 'kings-health'}

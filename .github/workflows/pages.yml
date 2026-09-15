@@ -6,10 +6,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with: {node-version: 20}
-      - run: npm install -g tweego@2.1.1 chapbook@2.3.0
-      - run: mkdir -p dist && tweego src -o dist/index.html && ls -la dist
+      - run: tools/setup-tweego.sh
+      - run: mkdir -p dist && build/tweego/tweego src -o dist/index.html && ls -la dist
       - uses: actions/upload-pages-artifact@v3
         with: {path: dist}
   deploy:

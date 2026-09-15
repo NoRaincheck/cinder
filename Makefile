@@ -1,4 +1,13 @@
-build:
-	npx tweego@2.1.1 src -o dist/index.html
+TWEEGO := build/tweego/tweego
+
+.PHONY: build test
+
+build: $(TWEEGO)
+	mkdir -p dist
+	$(TWEEGO) src -o dist/index.html
+
+$(TWEEGO):
+	tools/setup-tweego.sh
+
 test:
 	python3 -m pytest tests/ -v
