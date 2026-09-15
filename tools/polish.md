@@ -41,6 +41,17 @@ plus the current twee passage body for that row.
 | `[mild obscenity]` in a Topic line | `a mild obscenity` | `story.ni` Understand-as-mild lines |
 | `[A random visible woman]` | `A woman` (never name *which* woman; that would invent plot) | `story.ni` random-woman phrase |
 
+## One-shot links (anti-loop, 2026-09-15)
+
+- Every row passage (`S<digit>...`, excluding hubs/endings) opens with a vars
+  section setting its seen-flag, e.g. `seen_s1_prologue_blank_shoe_1: true`
+  on the first line, then a `--` separator line, then the body. Flags are
+  snake_case (`seen_` + lowercased passage name, `-` → `_`).
+- Every link targeting a row passage is preceded by an `[unless seen_*]`
+  guard line naming that passage's flag, so visited choices vanish.
+- Hub / ending / intro links stay unconditional. Never guard those.
+- Never nest conditionals; never invent new flag names (additive only).
+
 ## Attribution
 
 `Prologue-Intro` ends with this footer, verbatim:

@@ -50,6 +50,10 @@ dist/                 Build output (gitignored) — deploy artifact for Pages
 2. Each row becomes a passage; every conversation passage links all 14
    subjects (missing-row moves fall back to the scene's generic redirect,
    faithful to the original's "uncomfortable silence").
+3. One-shot links: each row passage sets a `seen_*` flag in a leading vars
+   section, and links to visited rows hide behind `[unless seen_*]` guards —
+   like the original blanking each remark after use. Hub/ending links stay
+   unconditional so navigation can never vanish.
 3. `just build` compiles to a single `index.html`; pushing `main` deploys it
    to GitHub Pages via `.github/workflows/pages.yml` (pytest gate included).
 

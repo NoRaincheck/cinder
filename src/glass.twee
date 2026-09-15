@@ -268,8 +268,11 @@ The conversation turns to god. Eyes brighten, and everyone leans in a little clo
 :: S-Hub-birds
 The conversation turns to birds. Eyes brighten, and everyone leans in a little closer, for this is a subject on which the talk may steer the room wherever it pleases. You clear your throat and speak.
 
+[unless seen_s2_wondering_blank_birds_1]
 [[Steer toward the shoe-wearer joke|S2-Wondering-blank-birds-1]]
+[unless seen_s3_fitting_magic_birds_1]
 [[Steer toward the possession talk|S3-Fitting-magic-birds-1]]
+[unless seen_s6_checking_cinderella_blank_birds_1]
 [[Steer toward Cinderella's kindness|S6-Checking-Cinderella-blank-birds-1]]
 
 [[King's health|S-Hub-kings-health]]
@@ -288,6 +291,8 @@ The conversation turns to birds. Eyes brighten, and everyone leans in a little c
 [[The birds|S-Hub-birds]]
 [[Back to the beginning|Prologue-Intro]]
 :: S1-Prologue-obscenity-obscenity-reaction-rule-1
+seen_s1_prologue_obscenity_obscenity_reaction_rule_1: true
+--
 Topic: "an obscenity"
 Response: ""
 Rule: obscenity reaction rule
@@ -310,6 +315,8 @@ The humans take this in, and wait for the talk to turn once more.
 [[God|S-Hub-god]]
 [[The birds|S-Hub-birds]]
 :: S1-Prologue-mild-obscenity-mild-reaction-rule-1
+seen_s1_prologue_mild_obscenity_mild_reaction_rule_1: true
+--
 Topic: "a mild obscenity"
 Response: ""
 Rule: mild reaction rule
@@ -332,6 +339,8 @@ The humans take this in, and wait for the talk to turn once more.
 [[God|S-Hub-god]]
 [[The birds|S-Hub-birds]]
 :: S1-Prologue-cracker-cracker-or-cracker-wanna-cracker-cracker-wanna-cracker-you-announce-but-they-ve-grown-tired-of-that-one-1
+seen_s1_prologue_cracker_cracker_or_cracker_wanna_cracker_cracker_wanna_cracker_you_announce_but_they_ve_grown_tired_of_that_one_1: true
+--
 Topic: "cracker"
 Response: "'Cracker!' you announce. But they've grown tired of that one."
 
@@ -353,6 +362,8 @@ The humans take this in, and wait for the talk to turn once more.
 [[God|S-Hub-god]]
 [[The birds|S-Hub-birds]]
 :: S1-Prologue-um-seven-or-seven-um-seven-you-inquire-brightly-everyone-pretends-you-didn-t-speak-1
+seen_s1_prologue_um_seven_or_seven_um_seven_you_inquire_brightly_everyone_pretends_you_didn_t_speak_1: true
+--
 Topic: "um seven" or "seven"
 Response: "'Um, seven?' you inquire brightly. Everyone pretends you didn't speak."
 
@@ -374,6 +385,8 @@ The humans take this in, and wait for the talk to turn once more.
 [[God|S-Hub-god]]
 [[The birds|S-Hub-birds]]
 :: S1-Prologue-silence-silence-you-say-1
+seen_s1_prologue_silence_silence_you_say_1: true
+--
 Topic: "silence"
 Response: "'Silence!' you say.
 
@@ -395,6 +408,8 @@ The humans take this in, and wait for the talk to turn once more.
 [[God|S-Hub-god]]
 [[The birds|S-Hub-birds]]
 :: S1-Prologue-wisdom-thought-thinking-wisdom-you-intone-1
+seen_s1_prologue_wisdom_thought_thinking_wisdom_you_intone_1: true
+--
 Topic: "wisdom/thought/thinking"
 Response: "'Wisdom,' you intone.
 
@@ -416,6 +431,8 @@ The humans take this in, and wait for the talk to turn once more.
 [[God|S-Hub-god]]
 [[The birds|S-Hub-birds]]
 :: S1-Prologue-no-one-seems-to-think-you-know-much-about-that-1
+seen_s1_prologue_no_one_seems_to_think_you_know_much_about_that_1: true
+--
 Topic: No one seems to think you know much about that."
 
 The humans take this in, and wait for the talk to turn once more.
@@ -436,6 +453,8 @@ The humans take this in, and wait for the talk to turn once more.
 [[God|S-Hub-god]]
 [[The birds|S-Hub-birds]]
 :: S1-Prologue-kindness-cry-kindness-1
+seen_s1_prologue_kindness_cry_kindness_1: true
+--
 Topic: "kindness"
 Response: "'Kindness!'
 
@@ -457,6 +476,8 @@ The humans take this in, and wait for the talk to turn once more.
 [[God|S-Hub-god]]
 [[The birds|S-Hub-birds]]
 :: S1-Prologue-corknut-corknuts-almond-almonds-cork-nut-or-candied-almond-almond-you-hint-no-one-takes-you-up-on-it-1
+seen_s1_prologue_corknut_corknuts_almond_almonds_cork_nut_or_candied_almond_almond_you_hint_no_one_takes_you_up_on_it_1: true
+--
 Topic: "corknut/corknuts/almond/almonds/cork nut" or "candied almond"
 Response: "'Almond!' you hint. No one takes you up on it."
 
@@ -478,6 +499,8 @@ The humans take this in, and wait for the talk to turn once more.
 [[God|S-Hub-god]]
 [[The birds|S-Hub-birds]]
 :: S1-Prologue-pirate-pirates-piracy-or-pieces-of-eight-you-say-a-short-piratical-ditty-not-quite-fit-for-polite-company-1
+seen_s1_prologue_pirate_pirates_piracy_or_pieces_of_eight_you_say_a_short_piratical_ditty_not_quite_fit_for_polite_company_1: true
+--
 Topic: "pirate/pirates/piracy" or "pieces of eight"
 Response: "You sing a short piratical ditty, not quite fit for polite company...
 
@@ -499,6 +522,8 @@ The humans take this in, and wait for the talk to turn once more.
 [[God|S-Hub-god]]
 [[The birds|S-Hub-birds]]
 :: S1-Prologue-cut-that-out-says-lucinda-obscenity-reaction-rule-1
+seen_s1_prologue_cut_that_out_says_lucinda_obscenity_reaction_rule_1: true
+--
 Topic: 'Cut that out,' says Lucinda."
 Response: obscenity reaction rule
 
@@ -520,6 +545,8 @@ The humans take this in, and wait for the talk to turn once more.
 [[God|S-Hub-god]]
 [[The birds|S-Hub-birds]]
 :: S1-Prologue-cheese-everyone-turns-to-look-at-you-1
+seen_s1_prologue_cheese_everyone_turns_to_look_at_you_1: true
+--
 Topic: "cheese"
 Response: "Everyone turns to look at you.
 
@@ -541,6 +568,8 @@ The humans take this in, and wait for the talk to turn once more.
 [[God|S-Hub-god]]
 [[The birds|S-Hub-birds]]
 :: S1-Prologue-fire-help-earthquake-flood-famine-or-stock-market-crash-the-prince-looks-puzzled-1
+seen_s1_prologue_fire_help_earthquake_flood_famine_or_stock_market_crash_the_prince_looks_puzzled_1: true
+--
 Topic: "fire/help/earthquake/flood/famine" or "stock market crash"
 Response: "The prince looks puzzled.
 
@@ -562,6 +591,8 @@ The humans take this in, and wait for the talk to turn once more.
 [[God|S-Hub-god]]
 [[The birds|S-Hub-birds]]
 :: S1-Prologue-cleavage-nice-word-cleavage-you-say-nice-word-1
+seen_s1_prologue_cleavage_nice_word_cleavage_you_say_nice_word_1: true
+--
 Topic: "cleavage"
 Response: "'Darling cleavage!' you say. 'Darling!'
 
@@ -585,6 +616,8 @@ The humans take this in, and wait for the talk to turn once more.
 [[God|S-Hub-god]]
 [[The birds|S-Hub-birds]]
 :: S1-Prologue-prying-pry-prying-you-cry-inquire-impertinently-be-curious-ferret-out-nose-around-1
+seen_s1_prologue_prying_pry_prying_you_cry_inquire_impertinently_be_curious_ferret_out_nose_around_1: true
+--
 Topic: "prying/pry"
 Response: "'Prying!' you say. 'Inquire impertinently, be curious, ferret out, nose around!'
 
@@ -606,6 +639,8 @@ The humans take this in, and wait for the talk to turn once more.
 [[God|S-Hub-god]]
 [[The birds|S-Hub-birds]]
 :: S1-Prologue-say-a-random-visible-woman-giggles-faintly-1
+seen_s1_prologue_say_a_random_visible_woman_giggles_faintly_1: true
+--
 Topic: (aside)
 Response: say "A woman giggles faintly."
 
@@ -627,6 +662,8 @@ The humans take this in, and wait for the talk to turn once more.
 [[God|S-Hub-god]]
 [[The birds|S-Hub-birds]]
 :: S1-Prologue-understand-bother-or-curses-or-drat-or-darn-as-mild-obscenity-1
+seen_s1_prologue_understand_bother_or_curses_or_drat_or_darn_as_mild_obscenity_1: true
+--
 Topic: Understand "bother" or "curses" or "drat" or "darn" as "a mild obscenity".
 
 The humans take this in, and wait for the talk to turn once more.
@@ -647,6 +684,8 @@ The humans take this in, and wait for the talk to turn once more.
 [[God|S-Hub-god]]
 [[The birds|S-Hub-birds]]
 :: S1-Prologue-now-the-player-is-disgraced-1
+seen_s1_prologue_now_the_player_is_disgraced_1: true
+--
 Topic: (aside)
 Response: now the player is disgraced;
 
@@ -668,6 +707,8 @@ The humans take this in, and wait for the talk to turn once more.
 [[God|S-Hub-god]]
 [[The birds|S-Hub-birds]]
 :: S1-Prologue-say-you-say-very-loudly-1
+seen_s1_prologue_say_you_say_very_loudly_1: true
+--
 Topic: (aside)
 Response: say "You speak very loudly.
 
@@ -689,6 +730,8 @@ The humans take this in, and wait for the talk to turn once more.
 [[God|S-Hub-god]]
 [[The birds|S-Hub-birds]]
 :: S1-Prologue-if-asking-someone-to-try-speech-continue-the-action-1
+seen_s1_prologue_if_asking_someone_to_try_speech_continue_the_action_1: true
+--
 Topic: (aside)
 Response: if asking someone to try speech, continue the action;
 
@@ -710,6 +753,8 @@ The humans take this in, and wait for the talk to turn once more.
 [[God|S-Hub-god]]
 [[The birds|S-Hub-birds]]
 :: S1-Prologue-say-no-one-in-this-house-obeys-you-at-all-1
+seen_s1_prologue_say_no_one_in_this_house_obeys_you_at_all_1: true
+--
 Topic: (aside)
 Response: say "No one in this house obeys you at all."
 
@@ -731,6 +776,8 @@ The humans take this in, and wait for the talk to turn once more.
 [[God|S-Hub-god]]
 [[The birds|S-Hub-birds]]
 :: S1-Prologue-say-right-says-the-old-lady-and-she-rings-for-a-servant-to-remove-you-from-the-room-1
+seen_s1_prologue_say_right_says_the_old_lady_and_she_rings_for_a_servant_to_remove_you_from_the_room_1: true
+--
 Topic: (aside)
 Response: say "'Right,' says the old lady. And she rings for a servant to remove you from the room.";
 
@@ -752,6 +799,8 @@ The humans take this in, and wait for the talk to turn once more.
 [[God|S-Hub-god]]
 [[The birds|S-Hub-birds]]
 :: S1-Prologue-end-the-story-saying-you-are-sold-to-pirates-and-have-a-glorious-career-on-the-open-sea-1
+seen_s1_prologue_end_the_story_saying_you_are_sold_to_pirates_and_have_a_glorious_career_on_the_open_sea_1: true
+--
 Topic: (aside)
 Response: end the story saying "You are sold to pirates and have a glorious career on the open sea".
 
@@ -773,6 +822,8 @@ The humans take this in, and wait for the talk to turn once more.
 [[God|S-Hub-god]]
 [[The birds|S-Hub-birds]]
 :: S1-Prologue-say-oops-you-say-sorry-oops-sorry-1
+seen_s1_prologue_say_oops_you_say_sorry_oops_sorry_1: true
+--
 Topic: (aside)
 Response: say "'Oops!' you say. 'Sorry! Oops, sorry!'
 
@@ -794,6 +845,8 @@ The humans take this in, and wait for the talk to turn once more.
 [[God|S-Hub-god]]
 [[The birds|S-Hub-birds]]
 :: S1-Prologue-say-cry-yes-1
+seen_s1_prologue_say_cry_yes_1: true
+--
 Topic: (aside)
 Response: say "'Yes!'"
 
@@ -815,6 +868,8 @@ The humans take this in, and wait for the talk to turn once more.
 [[God|S-Hub-god]]
 [[The birds|S-Hub-birds]]
 :: S1-Prologue-say-no-you-say-no-no-1
+seen_s1_prologue_say_no_you_say_no_no_1: true
+--
 Topic: (aside)
 Response: say "'No!' you say. 'No no!'
 
@@ -836,6 +891,8 @@ The humans take this in, and wait for the talk to turn once more.
 [[God|S-Hub-god]]
 [[The birds|S-Hub-birds]]
 :: S1-Prologue-if-turn-count-is-1-1
+seen_s1_prologue_if_turn_count_is_1_1: true
+--
 Topic: (aside)
 Response: if turn count is 1
 
@@ -857,6 +914,8 @@ The humans take this in, and wait for the talk to turn once more.
 [[God|S-Hub-god]]
 [[The birds|S-Hub-birds]]
 :: S1-Prologue-begin-1
+seen_s1_prologue_begin_1: true
+--
 Topic: (aside)
 Response: begin;
 
@@ -878,6 +937,8 @@ The humans take this in, and wait for the talk to turn once more.
 [[God|S-Hub-god]]
 [[The birds|S-Hub-birds]]
 :: S1-Prologue-say-paragraph-break-1
+seen_s1_prologue_say_paragraph_break_1: true
+--
 Topic: (aside)
 
 The humans take this in, and wait for the talk to turn once more.
@@ -898,6 +959,8 @@ The humans take this in, and wait for the talk to turn once more.
 [[God|S-Hub-god]]
 [[The birds|S-Hub-birds]]
 :: S1-Prologue-say-the-prince-sits-awkwardly-on-the-couch-holding-his-glass-slipper-and-trying-to-keep-it-from-crushing-lucinda-and-theodora-have-the-ends-of-the-same-couch-and-they-are-taking-turns-seeing-who-can-bend-lowest-and-show-off-the-most-cleavage-while-the-old-lady-in-her-wing-chair-carries-on-about-nonsense-for-instance-1
+seen_s1_prologue_say_the_prince_sits_awkwardly_on_the_couch_holding_his_glass_slipper_and_trying_to_keep_it_from_crushing_lucinda_and_theodora_have_the_ends_of_the_same_couch_and_they_are_taking_turns_seeing_who_can_bend_lowest_and_show_off_the_most_cleavage_while_the_old_lady_in_her_wing_chair_carries_on_about_nonsense_for_instance_1: true
+--
 Topic: (aside)
 Rule: say "The Prince sits awkwardly on the couch, holding his glass slipper and trying to keep it from crushing. Lucinda and Theodora have the ends of the same couch, and they are taking turns seeing who can bend lowest and show off the most cleavage; while the old lady, in her wing chair, carries on about nonsense. For instance:
 
@@ -921,6 +984,8 @@ The humans take this in, and wait for the talk to turn once more.
 [[God|S-Hub-god]]
 [[The birds|S-Hub-birds]]
 :: S1-Prologue-end-if-1
+seen_s1_prologue_end_if_1: true
+--
 Topic: (aside)
 Response: end if.
 
@@ -942,6 +1007,8 @@ The humans take this in, and wait for the talk to turn once more.
 [[God|S-Hub-god]]
 [[The birds|S-Hub-birds]]
 :: S1-Prologue-say-you-give-the-place-a-once-over-with-your-right-eye-then-you-turn-your-head-and-look-at-everything-through-your-left-eye-it-doesn-t-make-any-difference-the-farther-parts-of-the-room-remain-out-of-focus-1
+seen_s1_prologue_say_you_give_the_place_a_once_over_with_your_right_eye_then_you_turn_your_head_and_look_at_everything_through_your_left_eye_it_doesn_t_make_any_difference_the_farther_parts_of_the_room_remain_out_of_focus_1: true
+--
 Topic: (aside)
 Response: say "You give the place a once-over with your right eye. Then you turn your head and look at everything through your left eye. It doesn't make any difference. The farther parts of the room remain out of focus."
 
@@ -963,6 +1030,8 @@ The humans take this in, and wait for the talk to turn once more.
 [[God|S-Hub-god]]
 [[The birds|S-Hub-birds]]
 :: S1-Prologue-say-it-s-hard-to-have-a-good-look-at-the-moment-but-everything-feels-in-order-properly-groomed-1
+seen_s1_prologue_say_it_s_hard_to_have_a_good_look_at_the_moment_but_everything_feels_in_order_properly_groomed_1: true
+--
 Topic: (aside)
 Response: say "It's hard to have a good look at the moment, but everything feels in order."
 
@@ -984,6 +1053,8 @@ The humans take this in, and wait for the talk to turn once more.
 [[God|S-Hub-god]]
 [[The birds|S-Hub-birds]]
 :: S1-Prologue-choose-a-random-row-in-the-table-of-waiting-1
+seen_s1_prologue_choose_a_random_row_in_the_table_of_waiting_1: true
+--
 Topic: (aside)
 Response: choose a random row in the Table of Waiting;
 
@@ -1005,6 +1076,8 @@ The humans take this in, and wait for the talk to turn once more.
 [[God|S-Hub-god]]
 [[The birds|S-Hub-birds]]
 :: S1-Prologue-say-response-entry-paragraph-break-1
+seen_s1_prologue_say_response_entry_paragraph_break_1: true
+--
 Topic: (aside)
 
 The humans take this in, and wait for the talk to turn once more.
@@ -1025,6 +1098,8 @@ The humans take this in, and wait for the talk to turn once more.
 [[God|S-Hub-god]]
 [[The birds|S-Hub-birds]]
 :: S1-Prologue-king-s-health-heirs-1
+seen_s1_prologue_king_s_health_heirs_1: true
+--
 "'It's so fortunate,' says the old lady. 'That you're of an age -- that is, that the King has been so blessed with an heir who can follow in his footsteps when the time comes, which we all hope will be--'
 
 The humans take this in, and wait for the talk to turn once more.
@@ -1045,6 +1120,8 @@ The humans take this in, and wait for the talk to turn once more.
 [[God|S-Hub-god]]
 [[The birds|S-Hub-birds]]
 :: S1-Prologue-king-s-health-heirs-2
+seen_s1_prologue_king_s_health_heirs_2: true
+--
 "'When the time comes, which will be when God wills it, you will be a fine King,' says the old lady firmly."
 
 The humans take this in, and wait for the talk to turn once more.
@@ -1065,6 +1142,8 @@ The humans take this in, and wait for the talk to turn once more.
 [[God|S-Hub-god]]
 [[The birds|S-Hub-birds]]
 :: S1-Prologue-blank-king-s-health-1
+seen_s1_prologue_blank_king_s_health_1: true
+--
 "'I think the king is less concerned than the rest of us are,' says the Prince. 'But he has always been very brave, and philosophical. I believe he would meet death with a Socratic--'
 
 The humans take this in, and wait for the talk to turn once more.
@@ -1085,6 +1164,8 @@ The humans take this in, and wait for the talk to turn once more.
 [[God|S-Hub-god]]
 [[The birds|S-Hub-birds]]
 :: S1-Prologue-blank-king-s-health-2
+seen_s1_prologue_blank_king_s_health_2: true
+--
 "'I know very well how hard it will be to emulate my father's command,' says the Prince. 'He has a knowledge of how to speak to people which I do not.'
 
 The humans take this in, and wait for the talk to turn once more.
@@ -1105,6 +1186,8 @@ The humans take this in, and wait for the talk to turn once more.
 [[God|S-Hub-god]]
 [[The birds|S-Hub-birds]]
 :: S1-Prologue-blank-king-s-health-3
+seen_s1_prologue_blank_king_s_health_3: true
+--
 "'May he live long,' says Lucinda softly."
 
 The humans take this in, and wait for the talk to turn once more.
@@ -1125,6 +1208,8 @@ The humans take this in, and wait for the talk to turn once more.
 [[God|S-Hub-god]]
 [[The birds|S-Hub-birds]]
 :: S1-Prologue-blank-king-s-health-4
+seen_s1_prologue_blank_king_s_health_4: true
+--
 "'You must try not to worry too desperately,' Lucinda says to the Prince in a comforting tone. 'I have heard only the best things about the doctors.'
 
 The humans take this in, and wait for the talk to turn once more.
@@ -1145,6 +1230,8 @@ The humans take this in, and wait for the talk to turn once more.
 [[God|S-Hub-god]]
 [[The birds|S-Hub-birds]]
 :: S1-Prologue-heirs-king-s-health-1
+seen_s1_prologue_heirs_king_s_health_1: true
+--
 "'It would have been better for us all if I had siblings,' says the Prince. 'My father feels it, I know.'"
 
 The humans take this in, and wait for the talk to turn once more.
@@ -1165,6 +1252,8 @@ The humans take this in, and wait for the talk to turn once more.
 [[God|S-Hub-god]]
 [[The birds|S-Hub-birds]]
 :: S1-Prologue-heirs-marriage-1
+seen_s1_prologue_heirs_marriage_1: true
+--
 "'Now I have heard a rumor,' says the old lady, pretending that this conversation topic just now occurred to her, rather than being the object of her determined pursuit for the last half hour. 'A rumor that you yourself were planning to wed, in the very near future.'
 
 The humans take this in, and wait for the talk to turn once more.
@@ -1185,6 +1274,8 @@ The humans take this in, and wait for the talk to turn once more.
 [[God|S-Hub-god]]
 [[The birds|S-Hub-birds]]
 :: S1-Prologue-heirs-marriage-2
+seen_s1_prologue_heirs_marriage_2: true
+--
 "'I think I am not expressing a unique opinion,' says the old lady, brushing at her skirt with her gloves, 'when I say that the whole kingdom will be delighted to see your family increase yet further.'"
 
 The humans take this in, and wait for the talk to turn once more.
@@ -1205,6 +1296,8 @@ The humans take this in, and wait for the talk to turn once more.
 [[God|S-Hub-god]]
 [[The birds|S-Hub-birds]]
 :: S1-Prologue-marriage-ball-1
+seen_s1_prologue_marriage_ball_1: true
+--
 "'It's true, you know, that my father threw the ball in the hope that I would-- that is, that it would lead to a greater acquaintance--' The Prince stops again, rattled, and glares down at the small shoe cradled in his hands. 'I had not been very attentive to ladies in my youth.'
 
 The humans take this in, and wait for the talk to turn once more.
@@ -1225,6 +1318,8 @@ The humans take this in, and wait for the talk to turn once more.
 [[God|S-Hub-god]]
 [[The birds|S-Hub-birds]]
 :: S1-Prologue-blank-love-1
+seen_s1_prologue_blank_love_1: true
+--
 "A look of unexpected sweetness crosses the face of the Prince. The old lady watches this with interest."
 
 The humans take this in, and wait for the talk to turn once more.
@@ -1245,6 +1340,8 @@ The humans take this in, and wait for the talk to turn once more.
 [[God|S-Hub-god]]
 [[The birds|S-Hub-birds]]
 :: S1-Prologue-blank-shoe-1
+seen_s1_prologue_blank_shoe_1: true
+--
 "'I'm sure it's nothing surprising,' remarks the old lady, 'if you didn't meet anyone at the ball that you felt immediately you could marry. Such short acquaintances... there's much more to an alliance than that. One must feel at ease with the family, for instance.'
 
 The humans take this in, and wait for the talk to turn once more.
@@ -1265,6 +1362,8 @@ The humans take this in, and wait for the talk to turn once more.
 [[God|S-Hub-god]]
 [[The birds|S-Hub-birds]]
 :: S1-Prologue-blank-ball-1
+seen_s1_prologue_blank_ball_1: true
+--
 "The Prince sighs. 'Yes,' he says. 'The ball, I meant to tell you...'
 
 The humans take this in, and wait for the talk to turn once more.
@@ -1285,6 +1384,8 @@ The humans take this in, and wait for the talk to turn once more.
 [[God|S-Hub-god]]
 [[The birds|S-Hub-birds]]
 :: S1-Prologue-marriage-theo-1
+seen_s1_prologue_marriage_theo_1: true
+--
 "Theodora blushes with sudden consciousness. The Prince glances at her piercingly.
 
 The humans take this in, and wait for the talk to turn once more.
@@ -1305,6 +1406,8 @@ The humans take this in, and wait for the talk to turn once more.
 [[God|S-Hub-god]]
 [[The birds|S-Hub-birds]]
 :: S1-Prologue-theo-heirs-1
+seen_s1_prologue_theo_heirs_1: true
+--
 "'Ah, Theodora... I'm so fortunate in my own children,' the old lady goes on. 'You can never understand what a great pleasure there is in them until you have your own.'
 
 The humans take this in, and wait for the talk to turn once more.
@@ -1325,6 +1428,8 @@ The humans take this in, and wait for the talk to turn once more.
 [[God|S-Hub-god]]
 [[The birds|S-Hub-birds]]
 :: S1-Prologue-god-lucinda-1
+seen_s1_prologue_god_lucinda_1: true
+--
 "'Lucinda is thinking about becoming a nun,' says Theodora.
 
 The humans take this in, and wait for the talk to turn once more.
@@ -1345,6 +1450,8 @@ The humans take this in, and wait for the talk to turn once more.
 [[God|S-Hub-god]]
 [[The birds|S-Hub-birds]]
 :: S1-Prologue-blank-heirs-1
+seen_s1_prologue_blank_heirs_1: true
+--
 "'How sad that your dear mother did not live along enough to give you siblings,' says the old lady, dabbing the edge of her eye with one finger.
 
 The humans take this in, and wait for the talk to turn once more.
@@ -1365,6 +1472,8 @@ The humans take this in, and wait for the talk to turn once more.
 [[God|S-Hub-god]]
 [[The birds|S-Hub-birds]]
 :: S1-Prologue-love-marriage-1
+seen_s1_prologue_love_marriage_1: true
+--
 "'It is a pity,' says the old lady. 'But love and marriage often have so little to do with one another, at the upper levels of society. And certainly when matters of state intervene.'
 
 The humans take this in, and wait for the talk to turn once more.
@@ -1385,6 +1494,8 @@ The humans take this in, and wait for the talk to turn once more.
 [[God|S-Hub-god]]
 [[The birds|S-Hub-birds]]
 :: S1-Prologue-blank-love-2
+seen_s1_prologue_blank_love_2: true
+--
 "'I think the feelings at the outset of a marriage are nearly irrelevant,' says Lucinda. 'If there is commitment and good intention, then you can learn to live with the person, and if there isn't... no amount of affection, or, or...'
 
 The humans take this in, and wait for the talk to turn once more.
@@ -1405,6 +1516,8 @@ The humans take this in, and wait for the talk to turn once more.
 [[God|S-Hub-god]]
 [[The birds|S-Hub-birds]]
 :: S1-Prologue-blank-stepmother-1
+seen_s1_prologue_blank_stepmother_1: true
+--
 "The old lady glares at you."
 
 The humans take this in, and wait for the talk to turn once more.
@@ -1425,8 +1538,8 @@ The humans take this in, and wait for the talk to turn once more.
 [[God|S-Hub-god]]
 [[The birds|S-Hub-birds]]
 :: S1-Prologue-say-the-old-woman-laughs-slightly-how-beautifully-romantic-but-she-didn-t-give-you-her-name-1
-
-
+seen_s1_prologue_say_the_old_woman_laughs_slightly_how_beautifully_romantic_but_she_didn_t_give_you_her_name_1: true
+--
 The humans take this in, and wait for the talk to turn once more.
 
 [[Return to the Prologue talk|S1-Prologue-Hub]]
@@ -1445,6 +1558,8 @@ The humans take this in, and wait for the talk to turn once more.
 [[God|S-Hub-god]]
 [[The birds|S-Hub-birds]]
 :: S2-Wondering-blank-birds-1
+seen_s2_wondering_blank_birds_1: true
+--
 "'At least we can rule out the parrot as a possible wearer of the shoe,' says the old lady, twinkling."
 
 The humans take this in, and wait for the talk to turn once more.
@@ -1465,6 +1580,8 @@ The humans take this in, and wait for the talk to turn once more.
 [[God|S-Hub-god]]
 [[The birds|S-Hub-birds]]
 :: S2-Wondering-blank-shoe-1
+seen_s2_wondering_blank_shoe_1: true
+--
 "'I-- managed to rescue the shoe when she ran off,' says the Prince, a little embarrassed-looking.
 
 The humans take this in, and wait for the talk to turn once more.
@@ -1485,6 +1602,8 @@ The humans take this in, and wait for the talk to turn once more.
 [[God|S-Hub-god]]
 [[The birds|S-Hub-birds]]
 :: S2-Wondering-blank-magic-1
+seen_s2_wondering_blank_magic_1: true
+--
 "Unless you are mistaken, the old lady flinches."
 
 The humans take this in, and wait for the talk to turn once more.
@@ -1505,6 +1624,8 @@ The humans take this in, and wait for the talk to turn once more.
 [[God|S-Hub-god]]
 [[The birds|S-Hub-birds]]
 :: S2-Wondering-blank-theodora-1
+seen_s2_wondering_blank_theodora_1: true
+--
 "Theodora starts. 'I didn't have anything to do with it,' she remarks. 'That is--'
 
 The humans take this in, and wait for the talk to turn once more.
@@ -1525,6 +1646,8 @@ The humans take this in, and wait for the talk to turn once more.
 [[God|S-Hub-god]]
 [[The birds|S-Hub-birds]]
 :: S2-Wondering-blank-lucinda-1
+seen_s2_wondering_blank_lucinda_1: true
+--
 "'Yes, Parrot?' asks Lucinda, looking up at you rather coldly. She's always made it clear she thinks you possessed. Theo is much nicer."
 
 The humans take this in, and wait for the talk to turn once more.
@@ -1545,6 +1668,8 @@ The humans take this in, and wait for the talk to turn once more.
 [[God|S-Hub-god]]
 [[The birds|S-Hub-birds]]
 :: S2-Wondering-blank-heirs-1
+seen_s2_wondering_blank_heirs_1: true
+--
 "'And I suppose this is a suitable young woman for -- that is, your father will think her a good mother to his grandchildren?'
 
 The humans take this in, and wait for the talk to turn once more.
@@ -1565,6 +1690,8 @@ The humans take this in, and wait for the talk to turn once more.
 [[God|S-Hub-god]]
 [[The birds|S-Hub-birds]]
 :: S2-Wondering-blank-marriage-1
+seen_s2_wondering_blank_marriage_1: true
+--
 "'It's marvelous that you were so drawn to a young lady that you want to marry her even though you can't remember what she looks like,' remarks the old woman.
 
 The humans take this in, and wait for the talk to turn once more.
@@ -1585,6 +1712,8 @@ The humans take this in, and wait for the talk to turn once more.
 [[God|S-Hub-god]]
 [[The birds|S-Hub-birds]]
 :: S2-Wondering-blank-love-1
+seen_s2_wondering_blank_love_1: true
+--
 "'Do you--' begins the old lady. 'Oh, dear, this is such a delicate question, and there is no tactful way to put it. Do you have reason to think she reciprocates your regard?'
 
 The humans take this in, and wait for the talk to turn once more.
@@ -1605,6 +1734,8 @@ The humans take this in, and wait for the talk to turn once more.
 [[God|S-Hub-god]]
 [[The birds|S-Hub-birds]]
 :: S2-Wondering-love-marriage-1
+seen_s2_wondering_love_marriage_1: true
+--
 "'If she does love you,' Lucinda says, 'I wonder why she was not more straightforward? Deception has no part in true love.'
 
 The humans take this in, and wait for the talk to turn once more.
@@ -1625,6 +1756,8 @@ The humans take this in, and wait for the talk to turn once more.
 [[God|S-Hub-god]]
 [[The birds|S-Hub-birds]]
 :: S2-Wondering-marriage-stepmother-1
+seen_s2_wondering_marriage_stepmother_1: true
+--
 "'I was so fortunate in my own alliances,' says the old lady, startled into a reminiscent mood. 'The dear captain -- Lucinda and Theodora's father -- was so handsome! and then...'
 
 The humans take this in, and wait for the talk to turn once more.
@@ -1645,6 +1778,8 @@ The humans take this in, and wait for the talk to turn once more.
 [[God|S-Hub-god]]
 [[The birds|S-Hub-birds]]
 :: S2-Wondering-blank-ball-1
+seen_s2_wondering_blank_ball_1: true
+--
 "'It wasn't a masked ball,' the old lady says. 'It wasn't even badly lit. Your father did not stint on the candles at all.'
 
 The humans take this in, and wait for the talk to turn once more.
@@ -1665,6 +1800,8 @@ The humans take this in, and wait for the talk to turn once more.
 [[God|S-Hub-god]]
 [[The birds|S-Hub-birds]]
 :: S3-Fitting-ball-shoe-1
+seen_s3_fitting_ball_shoe_1: true
+--
 "'Midnight,' repeats the old lady. 'Well, well.' She smiles at the Prince. 'Good luck to you. It was quick thinking taking the shoe.'
 
 The humans take this in, and wait for the talk to turn once more.
@@ -1685,6 +1822,8 @@ The humans take this in, and wait for the talk to turn once more.
 [[God|S-Hub-god]]
 [[The birds|S-Hub-birds]]
 :: S3-Fitting-shoe-ball-1
+seen_s3_fitting_shoe_ball_1: true
+--
 "'That was a good ball,' says Theodora, out of nowhere. 'It was the nicest ball I've ever been to.'
 
 The humans take this in, and wait for the talk to turn once more.
@@ -1705,6 +1844,8 @@ The humans take this in, and wait for the talk to turn once more.
 [[God|S-Hub-god]]
 [[The birds|S-Hub-birds]]
 :: S3-Fitting-blank-stepmother-1
+seen_s3_fitting_blank_stepmother_1: true
+--
 "The old lady starts. 'That is a good point,' she says. 'For a bird. Are you intending to interview the older ladies as well? Oh, I don't mean myself, of course!' She manages an almost natural laugh. 'But how do you know that your intended is a young lady?'
 
 The humans take this in, and wait for the talk to turn once more.
@@ -1725,6 +1866,8 @@ The humans take this in, and wait for the talk to turn once more.
 [[God|S-Hub-god]]
 [[The birds|S-Hub-birds]]
 :: S3-Fitting-blank-theo-1
+seen_s3_fitting_blank_theo_1: true
+--
 "Theodora blushes. 'Stupid bird,' she says.
 
 The humans take this in, and wait for the talk to turn once more.
@@ -1745,6 +1888,8 @@ The humans take this in, and wait for the talk to turn once more.
 [[God|S-Hub-god]]
 [[The birds|S-Hub-birds]]
 :: S3-Fitting-blank-lucinda-1
+seen_s3_fitting_blank_lucinda_1: true
+--
 "'Might as well start there as anywhere,' says the Prince, shrugging. 'Miss Lucinda, would you mind trying the slipper? You needn't -- that is, please do not regard this in the nature of a royal request, if you would rather not.'
 
 The humans take this in, and wait for the talk to turn once more.
@@ -1765,6 +1910,8 @@ The humans take this in, and wait for the talk to turn once more.
 [[God|S-Hub-god]]
 [[The birds|S-Hub-birds]]
 :: S3-Fitting-ball-magic-1
+seen_s3_fitting_ball_magic_1: true
+--
 "The Prince's eye goes to you. 'Your bird, madam, is freakishly percipient. Positively unnatural.'
 
 The humans take this in, and wait for the talk to turn once more.
@@ -1785,6 +1932,8 @@ The humans take this in, and wait for the talk to turn once more.
 [[God|S-Hub-god]]
 [[The birds|S-Hub-birds]]
 :: S3-Fitting-magic-shoe-1
+seen_s3_fitting_magic_shoe_1: true
+--
 "'Perhaps the shoe itself is--' begins Theo thoughtfully.
 
 The humans take this in, and wait for the talk to turn once more.
@@ -1805,6 +1954,8 @@ The humans take this in, and wait for the talk to turn once more.
 [[God|S-Hub-god]]
 [[The birds|S-Hub-birds]]
 :: S3-Fitting-magic-birds-1
+seen_s3_fitting_magic_birds_1: true
+--
 "All eyes turn to you. 'I have heard,' the Prince says tentatively, 'about creatures who are possessed...'
 
 The humans take this in, and wait for the talk to turn once more.
@@ -1825,6 +1976,8 @@ The humans take this in, and wait for the talk to turn once more.
 [[God|S-Hub-god]]
 [[The birds|S-Hub-birds]]
 :: S3-Fitting-blank-magic-1
+seen_s3_fitting_blank_magic_1: true
+--
 "'The creature gets redundant,' says the old lady. 'I'm afraid it has a taste for melodrama.'"
 
 The humans take this in, and wait for the talk to turn once more.
@@ -1845,6 +1998,8 @@ The humans take this in, and wait for the talk to turn once more.
 [[God|S-Hub-god]]
 [[The birds|S-Hub-birds]]
 :: S3-Fitting-magic-ball-1
+seen_s3_fitting_magic_ball_1: true
+--
 "'I have considered the problem,' says the Prince. 'Very closely. I have not been able to sleep for considering it.'
 
 The humans take this in, and wait for the talk to turn once more.
@@ -1865,6 +2020,8 @@ The humans take this in, and wait for the talk to turn once more.
 [[God|S-Hub-god]]
 [[The birds|S-Hub-birds]]
 :: S3-Fitting-ball-marriage-1
+seen_s3_fitting_ball_marriage_1: true
+--
 "'Maybe,' Lucinda suggests, 'she thought it would be wrong to deceive you about what she was, and chose this way to, to make it known.'
 
 The humans take this in, and wait for the talk to turn once more.
@@ -1885,6 +2042,8 @@ The humans take this in, and wait for the talk to turn once more.
 [[God|S-Hub-god]]
 [[The birds|S-Hub-birds]]
 :: S3-Fitting-blank-marriage-1
+seen_s3_fitting_blank_marriage_1: true
+--
 "'It seems to me,' says the old lady, after a long thoughtful moment, 'that you have no choice but to try this shoe on every eligible young woman, and determine who she was. And if I were you, I would also invent an explanation for this extraordinary method of bride-selection that will satisfy the people at large.'
 
 The humans take this in, and wait for the talk to turn once more.
@@ -1905,6 +2064,8 @@ The humans take this in, and wait for the talk to turn once more.
 [[God|S-Hub-god]]
 [[The birds|S-Hub-birds]]
 :: S3-Fitting-marriage-shoe-1
+seen_s3_fitting_marriage_shoe_1: true
+--
 "'Yes, the shoe,' says Lucinda to you; and to her mother: 'Do you think we could send it back to bird school?'
 
 The humans take this in, and wait for the talk to turn once more.
@@ -1925,6 +2086,8 @@ The humans take this in, and wait for the talk to turn once more.
 [[God|S-Hub-god]]
 [[The birds|S-Hub-birds]]
 :: S3-Fitting-blank-love-1
+seen_s3_fitting_blank_love_1: true
+--
 "'Are you sure that it wasn't just an infatuation?' the old lady asks gently. 'Such a short acquaintance-- forgive me, but you've always seemed so level-headed.'
 
 The humans take this in, and wait for the talk to turn once more.
@@ -1945,6 +2108,8 @@ The humans take this in, and wait for the talk to turn once more.
 [[God|S-Hub-god]]
 [[The birds|S-Hub-birds]]
 :: S3-Fitting-blank-magic-2
+seen_s3_fitting_blank_magic_2: true
+--
 "'Do you agree with your father's views?' asks Theodora. 'On magic, I mean.'
 
 The humans take this in, and wait for the talk to turn once more.
@@ -1965,6 +2130,8 @@ The humans take this in, and wait for the talk to turn once more.
 [[God|S-Hub-god]]
 [[The birds|S-Hub-birds]]
 :: S3-Fitting-row-1
+seen_s3_fitting_row_1: true
+--
 now left hand status line is "Trying the slipper on Lucinda";
 
 The humans take this in, and wait for the talk to turn once more.
@@ -1985,6 +2152,8 @@ The humans take this in, and wait for the talk to turn once more.
 [[God|S-Hub-god]]
 [[The birds|S-Hub-birds]]
 :: S3-Fitting-row-2
+seen_s3_fitting_row_2: true
+--
 now last subject is current subject; now the current subject is Lucinda; now the target subject is Lucinda; now the conversation set is Table of Lucinda Checking Remarks.
 
 The humans take this in, and wait for the talk to turn once more.
@@ -2005,8 +2174,8 @@ The humans take this in, and wait for the talk to turn once more.
 [[God|S-Hub-god]]
 [[The birds|S-Hub-birds]]
 :: S3-Fitting-repeat-through-table-of-lucinda-checks-1
-
-
+seen_s3_fitting_repeat_through_table_of_lucinda_checks_1: true
+--
 The humans take this in, and wait for the talk to turn once more.
 
 [[Return to the Fitting talk|S3-Fitting-Hub]]
@@ -2025,8 +2194,8 @@ The humans take this in, and wait for the talk to turn once more.
 [[God|S-Hub-god]]
 [[The birds|S-Hub-birds]]
 :: S3-Fitting-begin-1
-
-
+seen_s3_fitting_begin_1: true
+--
 The humans take this in, and wait for the talk to turn once more.
 
 [[Return to the Fitting talk|S3-Fitting-Hub]]
@@ -2045,7 +2214,8 @@ The humans take this in, and wait for the talk to turn once more.
 [[God|S-Hub-god]]
 [[The birds|S-Hub-birds]]
 :: S3-Fitting-row-3
-
+seen_s3_fitting_row_3: true
+--
 The humans take this in, and wait for the talk to turn once more.
 
 [[Return to the Fitting talk|S3-Fitting-Hub]]
@@ -2064,6 +2234,8 @@ The humans take this in, and wait for the talk to turn once more.
 [[God|S-Hub-god]]
 [[The birds|S-Hub-birds]]
 :: S3-Fitting-row-4
+seen_s3_fitting_row_4: true
+--
 blank out the whole row;
 
 The humans take this in, and wait for the talk to turn once more.
@@ -2084,6 +2256,8 @@ The humans take this in, and wait for the talk to turn once more.
 [[God|S-Hub-god]]
 [[The birds|S-Hub-birds]]
 :: S3-Fitting-row-5
+seen_s3_fitting_row_5: true
+--
 rule succeeds;
 
 The humans take this in, and wait for the talk to turn once more.
@@ -2104,8 +2278,8 @@ The humans take this in, and wait for the talk to turn once more.
 [[God|S-Hub-god]]
 [[The birds|S-Hub-birds]]
 :: S3-Fitting-end-repeat-1
-
-
+seen_s3_fitting_end_repeat_1: true
+--
 The humans take this in, and wait for the talk to turn once more.
 
 [[Return to the Fitting talk|S3-Fitting-Hub]]
@@ -2124,8 +2298,8 @@ The humans take this in, and wait for the talk to turn once more.
 [[God|S-Hub-god]]
 [[The birds|S-Hub-birds]]
 :: S3-Fitting-say-the-prince-stares-at-the-shoe-then-he-looks-up-you-he-repeats-i-mean-you-seemed-i-thought-for-certain-that-you-weren-t-the-way-you-i-thought-you-would-be-good-practice-because-1
-
-
+seen_s3_fitting_say_the_prince_stares_at_the_shoe_then_he_looks_up_you_he_repeats_i_mean_you_seemed_i_thought_for_certain_that_you_weren_t_the_way_you_i_thought_you_would_be_good_practice_because_1: true
+--
 The humans take this in, and wait for the talk to turn once more.
 
 [[Return to the Fitting talk|S3-Fitting-Hub]]
@@ -2144,6 +2318,8 @@ The humans take this in, and wait for the talk to turn once more.
 [[God|S-Hub-god]]
 [[The birds|S-Hub-birds]]
 :: S5-Checking-Lucinda-blank-theodora-1
+seen_s5_checking_lucinda_blank_theodora_1: true
+--
 "'I'll get to her later,' the Prince says. 'If necessary,' he adds, under his breath."
 
 The humans take this in, and wait for the talk to turn once more.
@@ -2164,6 +2340,8 @@ The humans take this in, and wait for the talk to turn once more.
 [[God|S-Hub-god]]
 [[The birds|S-Hub-birds]]
 :: S4-Checking-Theodora-blank-lucinda-1
+seen_s4_checking_theodora_blank_lucinda_1: true
+--
 "'One at a time, bird,' mutters the Prince. Theodora giggles."
 
 The humans take this in, and wait for the talk to turn once more.
@@ -2184,6 +2362,8 @@ The humans take this in, and wait for the talk to turn once more.
 [[God|S-Hub-god]]
 [[The birds|S-Hub-birds]]
 :: S4-Checking-Theodora-blank-shoe-1
+seen_s4_checking_theodora_blank_shoe_1: true
+--
 "'Yes,' says Lucinda to you. 'You're very smart.'"
 
 The humans take this in, and wait for the talk to turn once more.
@@ -2204,6 +2384,8 @@ The humans take this in, and wait for the talk to turn once more.
 [[God|S-Hub-god]]
 [[The birds|S-Hub-birds]]
 :: S6-Checking-Cinderella-blank-theodora-1
+seen_s6_checking_cinderella_blank_theodora_1: true
+--
 "'No time for that now,' says the Prince."
 
 The humans take this in, and wait for the talk to turn once more.
@@ -2224,6 +2406,8 @@ The humans take this in, and wait for the talk to turn once more.
 [[God|S-Hub-god]]
 [[The birds|S-Hub-birds]]
 :: S6-Checking-Cinderella-blank-lucinda-1
+seen_s6_checking_cinderella_blank_lucinda_1: true
+--
 "The Prince shakes his head, ignoring you."
 
 The humans take this in, and wait for the talk to turn once more.
@@ -2244,6 +2428,8 @@ The humans take this in, and wait for the talk to turn once more.
 [[God|S-Hub-god]]
 [[The birds|S-Hub-birds]]
 :: S6-Checking-Cinderella-blank-ball-1
+seen_s6_checking_cinderella_blank_ball_1: true
+--
 "The Prince frowns at Cinderella. 'I don't recall seeing you at the ball.'
 
 The humans take this in, and wait for the talk to turn once more.
@@ -2264,6 +2450,8 @@ The humans take this in, and wait for the talk to turn once more.
 [[God|S-Hub-god]]
 [[The birds|S-Hub-birds]]
 :: S6-Checking-Cinderella-blank-ball-2
+seen_s6_checking_cinderella_blank_ball_2: true
+--
 "'In any case,' says the Prince. 'This ball -- I should check, you see, I'm having everyone try on a shoe...'
 
 The humans take this in, and wait for the talk to turn once more.
@@ -2284,6 +2472,8 @@ The humans take this in, and wait for the talk to turn once more.
 [[God|S-Hub-god]]
 [[The birds|S-Hub-birds]]
 :: S6-Checking-Cinderella-blank-marriage-1
+seen_s6_checking_cinderella_blank_marriage_1: true
+--
 "'I held the ball to look for someone to-- someone that I might marry,' the Prince explains to Cinderella.
 
 The humans take this in, and wait for the talk to turn once more.
@@ -2304,6 +2494,8 @@ The humans take this in, and wait for the talk to turn once more.
 [[God|S-Hub-god]]
 [[The birds|S-Hub-birds]]
 :: S6-Checking-Cinderella-blank-love-1
+seen_s6_checking_cinderella_blank_love_1: true
+--
 "The Prince and Cinderella both look up at you. Cinderella puts one little finger to her lips, and winks, but you are afraid.
 
 The humans take this in, and wait for the talk to turn once more.
@@ -2324,6 +2516,8 @@ The humans take this in, and wait for the talk to turn once more.
 [[God|S-Hub-god]]
 [[The birds|S-Hub-birds]]
 :: S6-Checking-Cinderella-blank-birds-1
+seen_s6_checking_cinderella_blank_birds_1: true
+--
 "Cinderella smiles, and comes over to where you are, and pets the top of your head and whispers cossetting things in a language only you understand. Your heart is filled with sweetness."
 
 The humans take this in, and wait for the talk to turn once more.
@@ -2344,6 +2538,8 @@ The humans take this in, and wait for the talk to turn once more.
 [[God|S-Hub-god]]
 [[The birds|S-Hub-birds]]
 :: S6-Checking-Cinderella-blank-magic-1
+seen_s6_checking_cinderella_blank_magic_1: true
+--
 "'Magic magic magic,' you sing. 'Witch, enchantress...'
 
 The humans take this in, and wait for the talk to turn once more.
@@ -2364,8 +2560,8 @@ The humans take this in, and wait for the talk to turn once more.
 [[God|S-Hub-god]]
 [[The birds|S-Hub-birds]]
 :: S6-Checking-Cinderella-if-fitting-is-happening-and-cinderella-is-the-current-subject-yes-1
-
-
+seen_s6_checking_cinderella_if_fitting_is_happening_and_cinderella_is_the_current_subject_yes_1: true
+--
 The humans take this in, and wait for the talk to turn once more.
 
 [[Return to the Checking-Cinderella talk|S6-Checking-Cinderella-Hub]]
@@ -2384,8 +2580,8 @@ The humans take this in, and wait for the talk to turn once more.
 [[God|S-Hub-god]]
 [[The birds|S-Hub-birds]]
 :: S6-Checking-Cinderella-otherwise-no-1
-
-
+seen_s6_checking_cinderella_otherwise_no_1: true
+--
 The humans take this in, and wait for the talk to turn once more.
 
 [[Return to the Checking-Cinderella talk|S6-Checking-Cinderella-Hub]]
@@ -2404,8 +2600,8 @@ The humans take this in, and wait for the talk to turn once more.
 [[God|S-Hub-god]]
 [[The birds|S-Hub-birds]]
 :: S6-Checking-Cinderella-say-cinde-1
-
-
+seen_s6_checking_cinderella_say_cinde_1: true
+--
 The humans take this in, and wait for the talk to turn once more.
 
 [[Return to the Checking-Cinderella talk|S6-Checking-Cinderella-Hub]]
@@ -2424,8 +2620,8 @@ The humans take this in, and wait for the talk to turn once more.
 [[God|S-Hub-god]]
 [[The birds|S-Hub-birds]]
 :: S6-Checking-Cinderella-say-this-story-may-strike-you-as-familiar-which-means-that-you-already-have-some-idea-of-the-ways-it-can-end-up-1
-
-
+seen_s6_checking_cinderella_say_this_story_may_strike_you_as_familiar_which_means_that_you_already_have_some_idea_of_the_ways_it_can_end_up_1: true
+--
 The humans take this in, and wait for the talk to turn once more.
 
 [[Return to the Checking-Cinderella talk|S6-Checking-Cinderella-Hub]]
@@ -2444,8 +2640,8 @@ The humans take this in, and wait for the talk to turn once more.
 [[God|S-Hub-god]]
 [[The birds|S-Hub-birds]]
 :: S6-Checking-Cinderella-say-inform-7-is-the-work-of-graham-nelson-and-story-title-was-compiled-using-andrew-hunter-s-compiler-for-mac-os-x-1
-
-
+seen_s6_checking_cinderella_say_inform_7_is_the_work_of_graham_nelson_and_story_title_was_compiled_using_andrew_hunter_s_compiler_for_mac_os_x_1: true
+--
 The humans take this in, and wait for the talk to turn once more.
 
 [[Return to the Checking-Cinderella talk|S6-Checking-Cinderella-Hub]]
@@ -2466,61 +2662,117 @@ The humans take this in, and wait for the talk to turn once more.
 :: S1-Prologue-Hub
 This is the Prologue stretch of the evening. The Prince fidgets, the old lady steers, Lucinda sighs, and Theodora giggles at all the wrong moments. You may speak on any subject you please, or press on toward an ending.
 
+[unless seen_s1_prologue_obscenity_obscenity_reaction_rule_1]
 [[Steer toward obscenity|S1-Prologue-obscenity-obscenity-reaction-rule-1]]
+[unless seen_s1_prologue_mild_obscenity_mild_reaction_rule_1]
 [[Steer toward mild obscenity|S1-Prologue-mild-obscenity-mild-reaction-rule-1]]
+[unless seen_s1_prologue_cracker_cracker_or_cracker_wanna_cracker_cracker_wanna_cracker_you_announce_but_they_ve_grown_tired_of_that_one_1]
 [[Steer toward cracker|S1-Prologue-cracker-cracker-or-cracker-wanna-cracker-cracker-wanna-cracker-you-announce-but-they-ve-grown-tired-of-that-one-1]]
+[unless seen_s1_prologue_um_seven_or_seven_um_seven_you_inquire_brightly_everyone_pretends_you_didn_t_speak_1]
 [[Steer toward um seven" or "seven|S1-Prologue-um-seven-or-seven-um-seven-you-inquire-brightly-everyone-pretends-you-didn-t-speak-1]]
+[unless seen_s1_prologue_silence_silence_you_say_1]
 [[Steer toward silence|S1-Prologue-silence-silence-you-say-1]]
+[unless seen_s1_prologue_wisdom_thought_thinking_wisdom_you_intone_1]
 [[Steer toward wisdom/thought/thinking|S1-Prologue-wisdom-thought-thinking-wisdom-you-intone-1]]
+[unless seen_s1_prologue_no_one_seems_to_think_you_know_much_about_that_1]
 [[Steer toward No one seems to think you know much abou|S1-Prologue-no-one-seems-to-think-you-know-much-about-that-1]]
+[unless seen_s1_prologue_kindness_cry_kindness_1]
 [[Steer toward kindness|S1-Prologue-kindness-cry-kindness-1]]
+[unless seen_s1_prologue_corknut_corknuts_almond_almonds_cork_nut_or_candied_almond_almond_you_hint_no_one_takes_you_up_on_it_1]
 [[Steer toward corknut/corknuts/almond/almonds/cork nut|S1-Prologue-corknut-corknuts-almond-almonds-cork-nut-or-candied-almond-almond-you-hint-no-one-takes-you-up-on-it-1]]
+[unless seen_s1_prologue_pirate_pirates_piracy_or_pieces_of_eight_you_say_a_short_piratical_ditty_not_quite_fit_for_polite_company_1]
 [[Steer toward pirate/pirates/piracy" or "pieces of eig|S1-Prologue-pirate-pirates-piracy-or-pieces-of-eight-you-say-a-short-piratical-ditty-not-quite-fit-for-polite-company-1]]
+[unless seen_s1_prologue_cut_that_out_says_lucinda_obscenity_reaction_rule_1]
 [[Steer toward 'Cut that out,' says Lucinda.|S1-Prologue-cut-that-out-says-lucinda-obscenity-reaction-rule-1]]
+[unless seen_s1_prologue_cheese_everyone_turns_to_look_at_you_1]
 [[Steer toward cheese|S1-Prologue-cheese-everyone-turns-to-look-at-you-1]]
+[unless seen_s1_prologue_fire_help_earthquake_flood_famine_or_stock_market_crash_the_prince_looks_puzzled_1]
 [[Steer toward fire/help/earthquake/flood/famine" or "s|S1-Prologue-fire-help-earthquake-flood-famine-or-stock-market-crash-the-prince-looks-puzzled-1]]
+[unless seen_s1_prologue_cleavage_nice_word_cleavage_you_say_nice_word_1]
 [[Steer toward cleavage|S1-Prologue-cleavage-nice-word-cleavage-you-say-nice-word-1]]
+[unless seen_s1_prologue_prying_pry_prying_you_cry_inquire_impertinently_be_curious_ferret_out_nose_around_1]
 [[Steer toward prying/pry|S1-Prologue-prying-pry-prying-you-cry-inquire-impertinently-be-curious-ferret-out-nose-around-1]]
+[unless seen_s1_prologue_say_a_random_visible_woman_giggles_faintly_1]
 [[Steer toward more|S1-Prologue-say-a-random-visible-woman-giggles-faintly-1]]
+[unless seen_s1_prologue_understand_bother_or_curses_or_drat_or_darn_as_mild_obscenity_1]
 [[Steer toward Understand "bother" or "curses" or "drat|S1-Prologue-understand-bother-or-curses-or-drat-or-darn-as-mild-obscenity-1]]
+[unless seen_s1_prologue_now_the_player_is_disgraced_1]
 [[Steer toward more|S1-Prologue-now-the-player-is-disgraced-1]]
+[unless seen_s1_prologue_say_you_say_very_loudly_1]
 [[Steer toward more|S1-Prologue-say-you-say-very-loudly-1]]
+[unless seen_s1_prologue_if_asking_someone_to_try_speech_continue_the_action_1]
 [[Steer toward more|S1-Prologue-if-asking-someone-to-try-speech-continue-the-action-1]]
+[unless seen_s1_prologue_say_no_one_in_this_house_obeys_you_at_all_1]
 [[Steer toward more|S1-Prologue-say-no-one-in-this-house-obeys-you-at-all-1]]
+[unless seen_s1_prologue_say_right_says_the_old_lady_and_she_rings_for_a_servant_to_remove_you_from_the_room_1]
 [[Steer toward more|S1-Prologue-say-right-says-the-old-lady-and-she-rings-for-a-servant-to-remove-you-from-the-room-1]]
+[unless seen_s1_prologue_end_the_story_saying_you_are_sold_to_pirates_and_have_a_glorious_career_on_the_open_sea_1]
 [[Steer toward more|S1-Prologue-end-the-story-saying-you-are-sold-to-pirates-and-have-a-glorious-career-on-the-open-sea-1]]
+[unless seen_s1_prologue_say_oops_you_say_sorry_oops_sorry_1]
 [[Steer toward more|S1-Prologue-say-oops-you-say-sorry-oops-sorry-1]]
+[unless seen_s1_prologue_say_cry_yes_1]
 [[Steer toward more|S1-Prologue-say-cry-yes-1]]
+[unless seen_s1_prologue_say_no_you_say_no_no_1]
 [[Steer toward more|S1-Prologue-say-no-you-say-no-no-1]]
+[unless seen_s1_prologue_if_turn_count_is_1_1]
 [[Steer toward more|S1-Prologue-if-turn-count-is-1-1]]
+[unless seen_s1_prologue_begin_1]
 [[Steer toward more|S1-Prologue-begin-1]]
+[unless seen_s1_prologue_say_paragraph_break_1]
 [[Steer toward more|S1-Prologue-say-paragraph-break-1]]
+[unless seen_s1_prologue_say_the_prince_sits_awkwardly_on_the_couch_holding_his_glass_slipper_and_trying_to_keep_it_from_crushing_lucinda_and_theodora_have_the_ends_of_the_same_couch_and_they_are_taking_turns_seeing_who_can_bend_lowest_and_show_off_the_most_cleavage_while_the_old_lady_in_her_wing_chair_carries_on_about_nonsense_for_instance_1]
 [[Steer toward more|S1-Prologue-say-the-prince-sits-awkwardly-on-the-couch-holding-his-glass-slipper-and-trying-to-keep-it-from-crushing-lucinda-and-theodora-have-the-ends-of-the-same-couch-and-they-are-taking-turns-seeing-who-can-bend-lowest-and-show-off-the-most-cleavage-while-the-old-lady-in-her-wing-chair-carries-on-about-nonsense-for-instance-1]]
+[unless seen_s1_prologue_end_if_1]
 [[Steer toward more|S1-Prologue-end-if-1]]
+[unless seen_s1_prologue_say_you_give_the_place_a_once_over_with_your_right_eye_then_you_turn_your_head_and_look_at_everything_through_your_left_eye_it_doesn_t_make_any_difference_the_farther_parts_of_the_room_remain_out_of_focus_1]
 [[Steer toward more|S1-Prologue-say-you-give-the-place-a-once-over-with-your-right-eye-then-you-turn-your-head-and-look-at-everything-through-your-left-eye-it-doesn-t-make-any-difference-the-farther-parts-of-the-room-remain-out-of-focus-1]]
+[unless seen_s1_prologue_say_it_s_hard_to_have_a_good_look_at_the_moment_but_everything_feels_in_order_properly_groomed_1]
 [[Steer toward more|S1-Prologue-say-it-s-hard-to-have-a-good-look-at-the-moment-but-everything-feels-in-order-properly-groomed-1]]
+[unless seen_s1_prologue_choose_a_random_row_in_the_table_of_waiting_1]
 [[Steer toward more|S1-Prologue-choose-a-random-row-in-the-table-of-waiting-1]]
+[unless seen_s1_prologue_say_response_entry_paragraph_break_1]
 [[Steer toward more|S1-Prologue-say-response-entry-paragraph-break-1]]
+[unless seen_s1_prologue_king_s_health_heirs_1]
 [[Steer toward heirs|S1-Prologue-king-s-health-heirs-1]]
+[unless seen_s1_prologue_king_s_health_heirs_2]
 [[Steer toward heirs|S1-Prologue-king-s-health-heirs-2]]
+[unless seen_s1_prologue_blank_king_s_health_1]
 [[Steer toward king's health|S1-Prologue-blank-king-s-health-1]]
+[unless seen_s1_prologue_blank_king_s_health_2]
 [[Steer toward king's health|S1-Prologue-blank-king-s-health-2]]
+[unless seen_s1_prologue_blank_king_s_health_3]
 [[Steer toward king's health|S1-Prologue-blank-king-s-health-3]]
+[unless seen_s1_prologue_blank_king_s_health_4]
 [[Steer toward king's health|S1-Prologue-blank-king-s-health-4]]
+[unless seen_s1_prologue_heirs_king_s_health_1]
 [[Steer toward king's health|S1-Prologue-heirs-king-s-health-1]]
+[unless seen_s1_prologue_heirs_marriage_1]
 [[Steer toward marriage|S1-Prologue-heirs-marriage-1]]
+[unless seen_s1_prologue_heirs_marriage_2]
 [[Steer toward marriage|S1-Prologue-heirs-marriage-2]]
+[unless seen_s1_prologue_marriage_ball_1]
 [[Steer toward ball|S1-Prologue-marriage-ball-1]]
+[unless seen_s1_prologue_blank_love_1]
 [[Steer toward love|S1-Prologue-blank-love-1]]
+[unless seen_s1_prologue_blank_shoe_1]
 [[Steer toward shoe|S1-Prologue-blank-shoe-1]]
+[unless seen_s1_prologue_blank_ball_1]
 [[Steer toward ball|S1-Prologue-blank-ball-1]]
+[unless seen_s1_prologue_marriage_theo_1]
 [[Steer toward Theo|S1-Prologue-marriage-theo-1]]
+[unless seen_s1_prologue_theo_heirs_1]
 [[Steer toward heirs|S1-Prologue-theo-heirs-1]]
+[unless seen_s1_prologue_god_lucinda_1]
 [[Steer toward Lucinda|S1-Prologue-god-lucinda-1]]
+[unless seen_s1_prologue_blank_heirs_1]
 [[Steer toward heirs|S1-Prologue-blank-heirs-1]]
+[unless seen_s1_prologue_love_marriage_1]
 [[Steer toward marriage|S1-Prologue-love-marriage-1]]
+[unless seen_s1_prologue_blank_love_2]
 [[Steer toward love|S1-Prologue-blank-love-2]]
+[unless seen_s1_prologue_blank_stepmother_1]
 [[Steer toward stepmother|S1-Prologue-blank-stepmother-1]]
+[unless seen_s1_prologue_say_the_old_woman_laughs_slightly_how_beautifully_romantic_but_she_didn_t_give_you_her_name_1]
 [[Steer toward say "The old woman laughs slightly. 'How|S1-Prologue-say-the-old-woman-laughs-slightly-how-beautifully-romantic-but-she-didn-t-give-you-her-name-1]]
 [[King's health|S-Hub-kings-health]]
 [[Heirs|S-Hub-heirs]]
@@ -2547,16 +2799,27 @@ This is the Prologue stretch of the evening. The Prince fidgets, the old lady st
 :: S2-Wondering-Hub
 This is the Wondering stretch of the evening. The Prince fidgets, the old lady steers, Lucinda sighs, and Theodora giggles at all the wrong moments. You may speak on any subject you please, or press on toward an ending.
 
+[unless seen_s2_wondering_blank_birds_1]
 [[Steer toward birds|S2-Wondering-blank-birds-1]]
+[unless seen_s2_wondering_blank_shoe_1]
 [[Steer toward shoe|S2-Wondering-blank-shoe-1]]
+[unless seen_s2_wondering_blank_magic_1]
 [[Steer toward magic|S2-Wondering-blank-magic-1]]
+[unless seen_s2_wondering_blank_theodora_1]
 [[Steer toward Theodora|S2-Wondering-blank-theodora-1]]
+[unless seen_s2_wondering_blank_lucinda_1]
 [[Steer toward Lucinda|S2-Wondering-blank-lucinda-1]]
+[unless seen_s2_wondering_blank_heirs_1]
 [[Steer toward heirs|S2-Wondering-blank-heirs-1]]
+[unless seen_s2_wondering_blank_marriage_1]
 [[Steer toward marriage|S2-Wondering-blank-marriage-1]]
+[unless seen_s2_wondering_blank_love_1]
 [[Steer toward love|S2-Wondering-blank-love-1]]
+[unless seen_s2_wondering_love_marriage_1]
 [[Steer toward marriage|S2-Wondering-love-marriage-1]]
+[unless seen_s2_wondering_marriage_stepmother_1]
 [[Steer toward stepmother|S2-Wondering-marriage-stepmother-1]]
+[unless seen_s2_wondering_blank_ball_1]
 [[Steer toward ball|S2-Wondering-blank-ball-1]]
 [[King's health|S-Hub-kings-health]]
 [[Heirs|S-Hub-heirs]]
@@ -2583,29 +2846,53 @@ This is the Wondering stretch of the evening. The Prince fidgets, the old lady s
 :: S3-Fitting-Hub
 This is the Fitting stretch of the evening. The Prince fidgets, the old lady steers, Lucinda sighs, and Theodora giggles at all the wrong moments. You may speak on any subject you please, or press on toward an ending.
 
+[unless seen_s3_fitting_ball_shoe_1]
 [[Steer toward shoe|S3-Fitting-ball-shoe-1]]
+[unless seen_s3_fitting_shoe_ball_1]
 [[Steer toward ball|S3-Fitting-shoe-ball-1]]
+[unless seen_s3_fitting_blank_stepmother_1]
 [[Steer toward stepmother|S3-Fitting-blank-stepmother-1]]
+[unless seen_s3_fitting_blank_theo_1]
 [[Steer toward Theo|S3-Fitting-blank-theo-1]]
+[unless seen_s3_fitting_blank_lucinda_1]
 [[Steer toward Lucinda|S3-Fitting-blank-lucinda-1]]
+[unless seen_s3_fitting_ball_magic_1]
 [[Steer toward magic|S3-Fitting-ball-magic-1]]
+[unless seen_s3_fitting_magic_shoe_1]
 [[Steer toward shoe|S3-Fitting-magic-shoe-1]]
+[unless seen_s3_fitting_magic_birds_1]
 [[Steer toward birds|S3-Fitting-magic-birds-1]]
+[unless seen_s3_fitting_blank_magic_1]
 [[Steer toward magic|S3-Fitting-blank-magic-1]]
+[unless seen_s3_fitting_magic_ball_1]
 [[Steer toward ball|S3-Fitting-magic-ball-1]]
+[unless seen_s3_fitting_ball_marriage_1]
 [[Steer toward marriage|S3-Fitting-ball-marriage-1]]
+[unless seen_s3_fitting_blank_marriage_1]
 [[Steer toward marriage|S3-Fitting-blank-marriage-1]]
+[unless seen_s3_fitting_marriage_shoe_1]
 [[Steer toward shoe|S3-Fitting-marriage-shoe-1]]
+[unless seen_s3_fitting_blank_love_1]
 [[Steer toward love|S3-Fitting-blank-love-1]]
+[unless seen_s3_fitting_blank_magic_2]
 [[Steer toward magic|S3-Fitting-blank-magic-2]]
+[unless seen_s3_fitting_row_1]
 [[Steer toward more|S3-Fitting-row-1]]
+[unless seen_s3_fitting_row_2]
 [[Steer toward more|S3-Fitting-row-2]]
+[unless seen_s3_fitting_repeat_through_table_of_lucinda_checks_1]
 [[Steer toward repeat through Table of Lucinda Checks|S3-Fitting-repeat-through-table-of-lucinda-checks-1]]
+[unless seen_s3_fitting_begin_1]
 [[Steer toward begin;|S3-Fitting-begin-1]]
+[unless seen_s3_fitting_row_3]
 [[Steer toward more|S3-Fitting-row-3]]
+[unless seen_s3_fitting_row_4]
 [[Steer toward more|S3-Fitting-row-4]]
+[unless seen_s3_fitting_row_5]
 [[Steer toward more|S3-Fitting-row-5]]
+[unless seen_s3_fitting_end_repeat_1]
 [[Steer toward end repeat.|S3-Fitting-end-repeat-1]]
+[unless seen_s3_fitting_say_the_prince_stares_at_the_shoe_then_he_looks_up_you_he_repeats_i_mean_you_seemed_i_thought_for_certain_that_you_weren_t_the_way_you_i_thought_you_would_be_good_practice_because_1]
 [[Steer toward say "The Prince stares at the shoe. Then|S3-Fitting-say-the-prince-stares-at-the-shoe-then-he-looks-up-you-he-repeats-i-mean-you-seemed-i-thought-for-certain-that-you-weren-t-the-way-you-i-thought-you-would-be-good-practice-because-1]]
 [[King's health|S-Hub-kings-health]]
 [[Heirs|S-Hub-heirs]]
@@ -2632,7 +2919,9 @@ This is the Fitting stretch of the evening. The Prince fidgets, the old lady ste
 :: S4-Checking-Theodora-Hub
 This is the Checking-Theodora stretch of the evening. The Prince fidgets, the old lady steers, Lucinda sighs, and Theodora giggles at all the wrong moments. You may speak on any subject you please, or press on toward an ending.
 
+[unless seen_s4_checking_theodora_blank_lucinda_1]
 [[Steer toward Lucinda|S4-Checking-Theodora-blank-lucinda-1]]
+[unless seen_s4_checking_theodora_blank_shoe_1]
 [[Steer toward shoe|S4-Checking-Theodora-blank-shoe-1]]
 [[King's health|S-Hub-kings-health]]
 [[Heirs|S-Hub-heirs]]
@@ -2659,6 +2948,7 @@ This is the Checking-Theodora stretch of the evening. The Prince fidgets, the ol
 :: S5-Checking-Lucinda-Hub
 This is the Checking-Lucinda stretch of the evening. The Prince fidgets, the old lady steers, Lucinda sighs, and Theodora giggles at all the wrong moments. You may speak on any subject you please, or press on toward an ending.
 
+[unless seen_s5_checking_lucinda_blank_theodora_1]
 [[Steer toward Theodora|S5-Checking-Lucinda-blank-theodora-1]]
 [[King's health|S-Hub-kings-health]]
 [[Heirs|S-Hub-heirs]]
@@ -2685,18 +2975,31 @@ This is the Checking-Lucinda stretch of the evening. The Prince fidgets, the old
 :: S6-Checking-Cinderella-Hub
 This is the Checking-Cinderella stretch of the evening. The Prince fidgets, the old lady steers, Lucinda sighs, and Theodora giggles at all the wrong moments. You may speak on any subject you please, or press on toward an ending.
 
+[unless seen_s6_checking_cinderella_blank_theodora_1]
 [[Steer toward Theodora|S6-Checking-Cinderella-blank-theodora-1]]
+[unless seen_s6_checking_cinderella_blank_lucinda_1]
 [[Steer toward Lucinda|S6-Checking-Cinderella-blank-lucinda-1]]
+[unless seen_s6_checking_cinderella_blank_ball_1]
 [[Steer toward ball|S6-Checking-Cinderella-blank-ball-1]]
+[unless seen_s6_checking_cinderella_blank_ball_2]
 [[Steer toward ball|S6-Checking-Cinderella-blank-ball-2]]
+[unless seen_s6_checking_cinderella_blank_marriage_1]
 [[Steer toward marriage|S6-Checking-Cinderella-blank-marriage-1]]
+[unless seen_s6_checking_cinderella_blank_love_1]
 [[Steer toward love|S6-Checking-Cinderella-blank-love-1]]
+[unless seen_s6_checking_cinderella_blank_birds_1]
 [[Steer toward birds|S6-Checking-Cinderella-blank-birds-1]]
+[unless seen_s6_checking_cinderella_blank_magic_1]
 [[Steer toward magic|S6-Checking-Cinderella-blank-magic-1]]
+[unless seen_s6_checking_cinderella_if_fitting_is_happening_and_cinderella_is_the_current_subject_yes_1]
 [[Steer toward if Fitting is happening and Cinderella i|S6-Checking-Cinderella-if-fitting-is-happening-and-cinderella-is-the-current-subject-yes-1]]
+[unless seen_s6_checking_cinderella_otherwise_no_1]
 [[Steer toward otherwise no.|S6-Checking-Cinderella-otherwise-no-1]]
+[unless seen_s6_checking_cinderella_say_cinde_1]
 [[Steer toward say "'Cinde--'|S6-Checking-Cinderella-say-cinde-1]]
+[unless seen_s6_checking_cinderella_say_this_story_may_strike_you_as_familiar_which_means_that_you_already_have_some_idea_of_the_ways_it_can_end_up_1]
 [[Steer toward say "This story may strike you as famili|S6-Checking-Cinderella-say-this-story-may-strike-you-as-familiar-which-means-that-you-already-have-some-idea-of-the-ways-it-can-end-up-1]]
+[unless seen_s6_checking_cinderella_say_inform_7_is_the_work_of_graham_nelson_and_story_title_was_compiled_using_andrew_hunter_s_compiler_for_mac_os_x_1]
 [[Steer toward say "Inform 7 is the work of Graham Nels|S6-Checking-Cinderella-say-inform-7-is-the-work-of-graham-nelson-and-story-title-was-compiled-using-andrew-hunter-s-compiler-for-mac-os-x-1]]
 [[King's health|S-Hub-kings-health]]
 [[Heirs|S-Hub-heirs]]
