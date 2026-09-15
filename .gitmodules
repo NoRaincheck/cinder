@@ -1,0 +1,3 @@
+[submodule "vendor/glass"]
+	path = vendor/glass
+	url = https://github.com/I7-Examples/Glass.git

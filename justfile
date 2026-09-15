@@ -3,7 +3,7 @@
 # Chapbook format are fetched by `just setup` — nothing to install by hand.
 
 tweego := "build/tweego/tweego"
-port := "8080"
+port := "8765"
 
 # List available recipes.
 default:
@@ -28,9 +28,16 @@ test:
 extract:
     #!/usr/bin/env bash
     set -euo pipefail
-    if [ ! -f data/story.ni ]; then
+    if [ -f vendor/glass/Glass.inform/Source/story.ni ]; then
+        SRC=vendor/glass/Glass.inform/Source/story.ni
+    elif [ -f data/story.ni ]; then
+        SRC=data/story.ni
+    else
+        echo "submodule not initialized; fetching snapshot" >&2
         curl -sSL https://raw.githubusercontent.com/I7-Examples/Glass/main/Glass.inform/Source/story.ni -o data/story.ni
+        SRC=data/story.ni
     fi
+    if [ "$SRC" != "data/story.ni" ]; then cp "$SRC" data/story.ni; fi
     python3 tools/extract.py data/story.ni data
     cat data/extraction-report.json
 

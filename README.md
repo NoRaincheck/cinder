@@ -15,9 +15,11 @@ Prereqs: [`just`](https://just.systems) and `python3`. Then:
 just preview
 ```
 
+Clone with `git clone --recurse-submodules <url>` (or run `git submodule update --init` after cloning) so `vendor/glass` is present.
+
 This installs the pinned toolchain (Tweego 2.1.1 + Chapbook 2.3.0), compiles
 `src/*.twee` to `dist/index.html`, and serves it. Open the printed URL
-(default <http://localhost:8080>) and play — start at *Prologue-Intro*,
+(default <http://localhost:8765>) and play — start at *Prologue-Intro*,
 pick a subject like Heirs, and follow the conversation to one of 8 endings.
 
 Other recipes (`just` with no args lists them):
