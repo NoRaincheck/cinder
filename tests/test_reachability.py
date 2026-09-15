@@ -10,7 +10,8 @@ LINKS = {n: re.findall(r"\[\[(?:[^|\]]+\|)?([^\]]+)\]\]", b) for n, b in PASSAGE
 SCENES = ["Prologue", "Wondering", "Fitting", "Check-", "Theodora", "Lucinda", "End"]
 # End-Disaster is reachable via Cinderella-Tries → [[> |End-Disaster]].
 # No orphans in the curated spine; every non-meta passage must be reachable from Start.
-ORPHANS = set()
+# vars is a Chapbook meta-section, not a real passage.
+ORPHANS = {"vars"}
 
 
 def walk(start):
