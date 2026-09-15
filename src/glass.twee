@@ -99,6 +99,7 @@ The Prince frowns at Cinderella. 'I don't recall seeing you at the ball.'
 
 The Prince and Cinderella both look up at you. Cinderella puts one little finger to her lips, and winks, but you are afraid.
 
+[[Try the shoe on Cinderella|Cinderella-Tries]]  
 [[Reveal Cinderella as the mystery woman|End-Cinderella-Wed]]  
 [[Expose Cinderella's magic|End-Cinderella-Executed]]  
 [[Accept the peace offered|End-Peace]]  
@@ -200,6 +201,27 @@ The Prince gives a great sigh and puts his head down on Lucinda's lap. 'I was su
 
 :: End-Peace
 There is the crack of a summoning: and there she stands, in the doorway, the secret daughter, the enchantress. 'May I present my third daughter,' says the old lady, very dryly. The Prince frowns at Cinderella a little longer, then seems to reach some decision. No one is punished, no shoe is forced, and the evening ends in peace, with brandy all around.
+
+:: Cinderella-Tries
+'Would you mind trying this shoe?' the Prince asks, quite politely.
+
+Cinderella nods, and takes the glass slipper from his hand. She puts it on, turning her ankle to watch the effect. The change sweeps up through her, making her taller, more perfect, almost inhumanly beautiful.
+
+The Prince drops his hand. 'You need not have done that,' he says. 'You could have broken it. Lied to me. Remained hidden.' His jaw works. 'Didn't you understand that--'
+
+'She understands,' says the old lady, rising from her chair. 'I told her. We all told her. She hoped that you would understand her secret but have the wit not to put her to the test.' Her fingers dig into the chairback. 'I'm afraid the rest of us -- not being in love with you, you see -- we had less faith in your intuition. We thought perhaps we might distract you with one of the other two. One of the plainly... non-magical ones.'
+
+The Prince swallows. He is crying: not very man-like. 'You see I cannot conceal this; it would be treason, now I have seen this witchcraft with my own eyes...'
+
+Cinderella backs away. 'I have no truck with devils,' she says. 'I was gifted or cursed in my nature, that is all. I cannot make it go away -- the power remains with me.'
+
+'It's true,' says Lucinda. 'We poured holy water on her every day for a year.'
+
+'But the law,' says the Prince.
+
+'You're an idiot,' says the old lady. 'You knew what you might find. If you loved her at all, you would not have come looking.'
+
+[[> |End-Disaster]]
 
 :: End-Disaster
 Cinderella puts the shoe on, turning her ankle to watch the effect. The change sweeps up through her, making her taller, more perfect, almost inhumanly beautiful. The Prince drops his hand. 'It's true,' says Lucinda. 'We poured holy water on her every day for a year.' 'But the law,' says the Prince. It all ends in disaster, as evenings with magic so often do.
