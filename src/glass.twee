@@ -1,3 +1,14 @@
+:: vars
+{
+  "skip_prologue": false,
+  "prologue_enchantment": false,
+  "prologue_law": false,
+  "prologue_beauty": false,
+  "prologue_memory": false,
+  "prologue_nature": false,
+  "prologue_truth": false
+}
+
 :: StoryTitle
 Glass
 
@@ -13,66 +24,191 @@ Choose how to guide the conversation:
 [[Ask about the ball|Prologue-Ball]]  
 [[Mention the glass slipper|Prologue-Shoe]]  
 
+[[Skip the prologue|Wondering-Shoe]]  
+
 :: Prologue-Marriage
 'Now I have heard a rumor,' says the old lady, pretending that this conversation topic just now occurred to her, rather than being the object of her determined pursuit for the last half hour. 'A rumor that you yourself were planning to wed, in the very near future.'
 
 The humans take this in, and wait for the talk to turn once more.
 
-[[Continue to the ball|Wondering-Ball]]  
+[[What drew him?|Prologue-Marriage-Enchantment]]  
+[[The law of the kingdom|Prologue-Marriage-Law]]  
 
-:: Prologue-Ball
-'It's true, you know, that my father threw the ball in the hope that I would-- that is, that it would lead to a greater acquaintance--' The Prince stops again, rattled, and glares down at the small shoe cradled in his hands. 'I had not been very attentive to ladies in my youth.'
+[[Skip the prologue|Wondering-Marriage]]  
+
+:: Prologue-Marriage-Enchantment
+'But tell me,' says the old lady, her voice dropping to something almost conspiratorial, 'did you feel it—the pull? Some men speak of it as if it were destiny, others as if it were a spell. I wonder which you would call it.'
+
+She watches him carefully. The Prince hesitates.
+
+'There was something,' he says at last. 'Not enchantment, I think. Not the kind that... compels. Something deeper. As if she were always meant to be there, at that ball, waiting to be seen.'
+
+The old lady nods slowly. 'There are powers in this world that are not spells, but are no less powerful for that. They are not cast—they are simply what someone is.'
 
 The humans take this in, and wait for the talk to turn once more.
 
-[[Continue to the slipper|Wondering-Shoe]]  
+[[What is she?|Wondering-Marriage]]  
+[[What does the law say?|Wondering-Ball]]  
+
+:: Prologue-Marriage-Law
+'It will not be easy,' the old lady says, her expression growing grave. 'Your father's views on certain matters are... well. You know what they are.'
+
+The Prince stiffens. 'I know what he says. I have not had the opportunity to study his reasoning.'
+
+'The law is clear on the matter,' she continues. 'Magic—witchcraft, he calls it—is punishable by death. Not because it is evil, necessarily, but because it is unpredictable. And a kingdom cannot be ruled by unpredictability.'
+
+The Prince says nothing. His grip tightens on the slipper.
+
+'But laws are written by men who have never stood where you stand,' she adds, softer now. 'Who have never looked at someone and known, with absolute certainty, that they are the one. Even if that someone carries a power that the law cannot abide.'
+
+The humans take this in, and wait for the talk to turn once more.
+
+[[What drew him?|Wondering-Marriage]]  
+[[About the ball|Wondering-Ball]]  
+
+:: Prologue-Ball
+'It's true, you know,' the Prince says, 'that my father threw the ball in the hope that I would— that is, that it would lead to a greater acquaintance—' He stops again, rattled, and glares down at the small shoe cradled in his hands. 'I had not been very attentive to ladies in my youth.'
+
+The old lady looks at him with an expression he cannot quite read. 'Well— my dear boy—' she begins. Then she seems to reconsider her words.
+
+The humans take this in, and wait for the talk to turn once more.
+
+[[The nature of beauty|Prologue-Ball-Beauty]]  
+[[The nature of memory|Prologue-Ball-Memory]]  
+
+[[Skip the prologue|Wondering-Shoe]]  
+
+:: Prologue-Ball-Beauty
+'You met her in candlelight,' the old lady says carefully. 'But tell me—was it her beauty that struck you? Or was it something that her beauty revealed?'
+
+The Prince considers this. 'They were the same thing,' he says at last. 'But not in the way you might think. It was not merely that she was beautiful. It was that her beauty seemed to... illuminate everything around her. The candles, the room, the other people. As if she were the source of light, not merely its reflection.'
+
+'There are such people,' the old lady says. 'Born with a radiance that has nothing to do with cosmetics or dress. Nothing to do with enchantment, either. It is simply their nature.'
+
+'Is that not a kind of magic?' the Prince asks.
+
+The old lady is quiet for a long moment. 'It depends on what you mean by magic,' she says.
+
+The humans take this in, and wait for the talk to turn once more.
+
+[[About the ball|Wondering-Ball]]  
+[[About the slipper|Wondering-Marriage]]  
+
+:: Prologue-Ball-Memory
+'You said she left at midnight,' the old lady observes. 'But you remember her face. You remember her voice. You remember everything you said to her.'
+
+'I do,' says the Prince. 'I wrote down some notes at the end of the evening. Everything I could remember about her, everything I recalled her saying to me. I believe I noted that she was pretty.'
+
+'And yet you cannot recognize her now,' the old lady says. 'Even though you have seen her—perhaps—many times since.'
+
+The Prince frowns. 'That is the trouble. I would have thought I would know. If she were someone I had seen before, I would know. But I do not. And that is what frightens me most—not the enchantment, perhaps, but the fact that I cannot be sure there was any enchantment at all.'
+
+'There is a difference between forgetting and not knowing,' the old lady says. 'You do not forget her. You never knew her. And that is a harder thing to bear.'
+
+The humans take this in, and wait for the talk to turn once more.
+
+[[About the slipper|Wondering-Shoe]]  
+[[What is she?|Wondering-Marriage]]  
 
 :: Prologue-Shoe
 'I'm sure it's nothing surprising,' remarks the old lady, 'if you didn't meet anyone at the ball that you felt immediately you could marry. Such short acquaintances... there's much more to an alliance than that. One must feel at ease with the family, for instance.'
 
-The humans take this in, and wait for the talk to turn once more.
+The Prince opens his mouth, then closes it again. 'I did meet someone,' he admits. 'But I know nothing of her family. It hardly matters to me, however. It will be the woman who can wear this shoe.'
 
-[[Move to wondering about the mystery woman|Wondering-Marriage]]  
-
-:: Wondering-Shoe
-'I-- managed to rescue the shoe when she ran off,' says the Prince, a little embarrassed-looking.
+He holds up the slipper. It catches the candlelight, and for a moment it seems to glow from within.
 
 The humans take this in, and wait for the talk to turn once more.
 
-[[Proceed to the fitting|Fitting-Shoe]]  
+[[The nature of the glass|Prologue-Shoe-Nature]]  
+[[The truth it holds|Prologue-Shoe-Truth]]  
+
+[[Skip the prologue|Wondering-Marriage]]  
+
+:: Prologue-Shoe-Nature
+'Glass,' the old lady says, looking at the slipper. 'An unusual choice. Gold would have been the natural material for a royal token. Silver, even. But glass—'
+
+She pauses, studying the Prince's face.
+
+'Glass is transparent,' she continues. 'It shows everything. It cannot hide what is behind it. And it is fragile, easily broken.' She looks up at him. 'Do you think that is significant? That the token of your betrothal should be made of something so... honest?'
+
+The Prince stares at the slipper. 'I never thought of it that way.'
+
+'Perhaps you should have,' she says. 'The materials you choose to surround yourself with—they say more about you than you might imagine.'
+
+The humans take this in, and wait for the talk to turn once more.
+
+[[What is she?|Wondering-Marriage]]  
+[[The truth it holds|Wondering-Shoe]]  
+
+:: Prologue-Shoe-Truth
+'You took the shoe from the stairs,' the old lady says. 'When she ran off. She left it behind, willingly or not.'
+
+'I managed to rescue it when she ran off,' says the Prince. 'It was the only thing I had of her.'
+
+'The shoe is glass,' the old lady says. 'It will show the truth of the foot that fits it. No deception, no alteration. Only truth.' She looks at him steadily. 'Are you prepared for what the truth might be?'
+
+The Prince meets her gaze. 'I met someone at the ball,' he says. 'I felt for her. I thought to recognize her again by her shoe. If the shoe is what you say it is—then I am prepared for whatever it shows me.'
+
+The old lady nods, and there is something like respect in her eyes. 'Then you are braver than your father gives you credit for.'
+
+The humans take this in, and wait for the talk to turn once more.
+
+[[About the ball|Wondering-Ball]]  
+[[The nature of glass|Wondering-Shoe]]  
 
 :: Wondering-Marriage
 'It's marvelous that you were so drawn to a young lady that you want to marry her even though you can't remember what she looks like,' remarks the old woman.
 
-The humans take this in, and wait for the talk to turn once more.
+'There was something about her,' the Prince says. 'Something I cannot explain. Not enchantment, exactly. More like—recognition. As if I had known her all my life and only just realized it.'
+
+The old lady's expression shifts almost imperceptibly. 'Recognition,' she repeats. 'Yes. That is a powerful thing. More powerful than any spell.'
 
 [[Proceed to the fitting|Fitting-Marriage]]  
 
 :: Wondering-Ball
 'It wasn't a masked ball,' the old lady says. 'It wasn't even badly lit. Your father did not stint on the candles at all.'
 
-The humans take this in, and wait for the talk to turn once more.
+The Prince opens his mouth.
+
+'Oh, dear, dear, I am being odiously prying. I'm so sorry. Perhaps you met this young lady out on the terrace...' She trails off, suggesting the very faintest disapproval of young ladies who linger on terraces, out of sight of chaperones, to hold conversations with Princes, and never tell their names.
+
+'I met her in candlelight,' says the Prince, goaded. 'But she left me at midnight.'
+
+The effect of this comment is like the shattering of glass: for a moment you wonder if he dropped the shoe...? No. It is merely that he has admitted, or near-as-admitted, that his chosen bride is one who appeared to him under a glamor, a magical enchantment. A crime punishable by death under his father's law.
+
+Everyone remains very very quiet.
 
 [[Proceed to the fitting|Fitting-Ball]]  
 
-:: Fitting-Shoe
-'Midnight,' repeats the old lady. 'Well, well.' She smiles at the Prince. 'Good luck to you. It was quick thinking taking the shoe.'
+:: Wondering-Shoe
+'I-- managed to rescue the shoe when she ran off,' says the Prince, a little embarrassed-looking.
 
-The humans take this in, and wait for the talk to turn once more.
+'It's fortunate she left behind such a distinctive token,' says the old lady, her eyebrows raised in mischief. 'Though I wonder—do you think she intended to be found by it?'
 
-[[The Prince must try the shoe on someone|Check-Theodora]]  
+The Prince considers this. 'I don't know. Perhaps she hoped I would find it. Perhaps she hoped I would look for her.' He looks down at the slipper. 'Or perhaps she intended for no one to find it at all.'
+
+The old lady says nothing. She does not need to. The silence says everything.
+
+[[Proceed to the fitting|Fitting-Shoe]]  
 
 :: Fitting-Marriage
 'It seems to me,' says the old lady, after a long thoughtful moment, 'that you have no choice but to try this shoe on every eligible young woman, and determine who she was. And if I were you, I would also invent an explanation for this extraordinary method of bride-selection that will satisfy the people at large.'
 
-The humans take this in, and wait for the talk to turn once more.
+He chuckles, but nods.
 
 [[The Prince must try the shoe on someone|Check-Theodora]]  
 
 :: Fitting-Ball
 The Prince stares at the shoe, then he looks up. 'You,' he repeats. 'I mean, you seemed-- I thought for certain that you weren't-- the way you-- I thought you would be. Good practice, because...'
 
-The humans take this in, and wait for the talk to turn once more.
+[[The Prince must try the shoe on someone|Check-Theodora]]  
+
+:: Fitting-Shoe
+'Midnight,' repeats the old lady. 'Well, well.' She smiles at the Prince. 'Good luck to you. It was quick thinking taking the shoe.'
+
+He blushes. 'She left it on the stairs; I thought it was the only thing I was going to have left of her.'
+
+'Mm. Love.' She smiles at him. 'I do wish your mother were alive.'
 
 [[The Prince must try the shoe on someone|Check-Theodora]]  
 
