@@ -1,17 +1,1 @@
-# Build outputs
-/build/
-/dist/
-
-# Generated / fetched copies
-data/story.ni
-
-# Python
-__pycache__/
-*.py[cod]
-.pytest_cache/
-
-# Local / tooling caches
-.roborev/
-
-# macOS
-.DS_Store
+(src/glass.twee is a source file, so no need to add anything to .gitignore)
