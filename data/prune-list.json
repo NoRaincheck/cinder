@@ -2,7 +2,7 @@
   {
     "table": "Bad Bird Excuses",
     "reason": "loop",
-    "detail": "0 rows collapsed to one representative passage"
+    "detail": "0 rows, dropped (no representative passage)"
   },
   {
     "table": "Waiting",

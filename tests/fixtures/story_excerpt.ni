@@ -26,3 +26,8 @@ cinderella	ending	"'Cinderella, come here,' says the lady."
 Table of Bad Bird Excuses
 response
 "'Don't mind our parrot,' says the lady."
+
+Table of Reactions
+topic	response
+"cracker/polly"	"'Polly wanna cracker!' you announce. But they've grown tired of that one."
+"silence"	"'Silence!' you squawk."

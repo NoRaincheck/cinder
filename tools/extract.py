@@ -7,11 +7,16 @@ REMARK_TABLES = ["Prologue Remarks", "Wondering Remarks", "Fitting Remarks",
     "Cinderella Checking Remarks", "Reactions"]
 LOOP_TABLES = {"Bad Bird Excuses": "loop", "Waiting": "loop",
     "Awwkwardness": "loop", "Insults": "loop", "Flattery": "loop"}
-INVALID_TABLES = {"Reactions-pirate-row": "invalid-input"}
 
 def extract_tables(text):
     tables, current, header = {}, None, None
     for line in text.splitlines():
+        # NOTE: this matches every `Table of <Name>` declaration block, including
+        # one-shot flavor tables consumed by `repeat through Table of ...` blanking
+        # loops (Waiting, Lucinda Checks, Theodora Checks). Those are NOT
+        # conversation tables: they never enter REMARK_TABLES/graph.json, but they
+        # DO appear with row counts in extraction-report.json. Do not mistake the
+        # `Lucinda Checks` / `Theodora Checks` report counts for missing content.
         m = re.match(r"Table of (.+)$", line.strip())
         if m:
             current = m.group(1).strip()
@@ -32,9 +37,19 @@ def extract_tables(text):
 
 def apply_prune_rules(tables):
     kept = {k: list(v) for k, v in tables.items() if k in REMARK_TABLES}
-    pruned = [{"table": t, "reason": "loop",
-               "detail": f"{len(tables.get(t, []))} rows collapsed to one representative passage"}
-              for t in LOOP_TABLES if t in tables]
+    pruned = []
+    for t in LOOP_TABLES:
+        if t not in tables:
+            continue
+        n = len(tables[t])
+        if n == 0:
+            # Zero extracted rows: the table was dropped, not collapsed to a
+            # representative passage (applies to Bad Bird Excuses).
+            pruned.append({"table": t, "reason": "loop",
+                           "detail": "0 rows, dropped (no representative passage)"})
+        else:
+            pruned.append({"table": t, "reason": "loop",
+                           "detail": f"{n} rows collapsed to one representative passage"})
     return kept, pruned
 
 if __name__ == "__main__":

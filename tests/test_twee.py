@@ -45,3 +45,23 @@ def test_fidelity_verbatim():
     thin = [p for p, b in PASSAGES.items()
             if p.startswith("S") and p not in META and len(b.strip()) < 80]
     assert thin == [], f"passages too thin (LLM invented?): {thin[:5]}"
+    bad = []
+    for table, rows in GRAPH.items():
+        for r in rows:
+            slug = slug_of(r)
+            if not slug:
+                continue
+            cands = [p for p in PASSAGES
+                     if p.startswith("S") and p not in META and slug in p.lower()]
+            if not cands:
+                continue  # row-to-passage coverage is asserted by test_no_missing_rows
+            if "comment" in r:
+                src = r["comment"] or ""
+            else:
+                # Reactions rows use topic/response keys.
+                src = " ".join([r.get("topic") or "", r.get("response") or ""])
+            src = " ".join(src.split())
+            if not any(src[i:i + 40] in " ".join(PASSAGES[p].split())
+                       for p in cands for i in range(len(src) - 39)):
+                bad.append(f"{table}:{slug}")
+    assert bad == [], f"passages lacking a >=40-char verbatim run: {bad[:10]} (total {len(bad)})"

@@ -18,3 +18,11 @@ def test_prune_only_loops_and_invalid():
     reasons = {p["reason"] for p in pruned}
     assert reasons <= {"loop", "invalid-input"}
     assert any(p["table"] == "Bad Bird Excuses" for p in pruned)
+
+def test_extracts_reactions_topic_response():
+    tables = extract_tables(FIXTURE)
+    assert "Reactions" in tables, "missing Reactions"
+    assert tables["Reactions"][0]["topic"] == '"cracker/polly"'
+    assert "Polly wanna cracker" in tables["Reactions"][0]["response"]
+    kept, _ = apply_prune_rules(tables)
+    assert "Reactions" in kept

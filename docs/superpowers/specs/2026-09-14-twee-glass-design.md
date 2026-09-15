@@ -36,6 +36,11 @@ Cinderella Checking Remarks, Reactions (kept: cracker, seven, silence, wisdom,
 kindness, almond, cheese, fire, cleavage, prying; pirate row maps to the single
 obscenity ending).
 
+**Table count (live source truth, `data/extraction-report.json`):** 14
+`Table of ...` blocks in `story.ni` — the 7 conversation tables above plus
+Bad Bird Excuses, Waiting, Awwkwardness, Insults, Flattery, Lucinda Checks,
+and Theodora Checks.
+
 **Scenes (must all be routable):** Prologue → Wondering → Fitting →
 Checking Theodora / Checking Lucinda / Checking Cinderella → Theodora Endgame
 (ends in Theodora Marriage) / Lucinda Endgame (ends in Lucinda Marriage) /
