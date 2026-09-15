@@ -1,6 +1,7 @@
-"""One-shot links: every story row sets a seen-flag in a leading vars section,
-every link to a row is hidden behind an [unless seen_*] guard, and hub /
-ending / intro navigation stays unconditional (no dead ends by removal)."""
+"""The one-shot seen-flag guards were removed in the 2026-09-15 curation (the
+3-choice spine tracks no visited state). The tests in this module now assert
+that no stray seen_* guards / vars sections survive in the current source; they
+are vacuous until such machinery is reintroduced."""
 import re
 from pathlib import Path
 
@@ -18,47 +19,12 @@ def var_of(n):
     return "seen_" + n.lower().replace("-", "_")
 
 
-def test_row_passages_set_seen_flag():
-    rows = [n for n in PASSAGES if is_row(n)]
-    assert len(rows) == 15
-    bad = [n for n in rows
-           if not PASSAGES[n].startswith(f"{var_of(n)}: true\n--\n")]
-    assert bad == [], f"row passages missing leading vars section: {bad[:5]}"
-
-
-def test_row_links_guarded():
-    bad, count = [], 0
-    for name, body in PASSAGES.items():
-        prev = ""
-        for line in body.splitlines():
-            m = re.fullmatch(r"\[\[(?:[^|\]]+\|)?([^\]]+)\]\]", line.strip())
-            if m and m.group(1) in PASSAGES and is_row(m.group(1)):
-                count += 1
-                if prev != f"[unless {var_of(m.group(1))}]":
-                    bad.append(f"{name}: {line.strip()[:60]}")
-            prev = line.strip()
-    assert count == 15, f"guarded row links changed: {count}"
-    assert bad == [], f"unguarded row links: {bad[:5]}"
-
-
 def test_guards_reference_defined_vars():
     defined = {var_of(n) for n in PASSAGES if is_row(n)}
     used = set(re.findall(r"^\[(?:unless|if) (seen_s\d[a-z0-9_]+)\]$", TWEE, flags=re.M))
     assert used - defined == set(), f"guards with no defining passage: {sorted(used - defined)[:5]}"
     assert defined - used == set(), f"flags set but never used: {sorted(defined - used)[:5]}"
 
-
-def test_start_passage_initializes_all_seen_vars():
-    """Chapbook evaluates [if seen_*] as raw JS and throws ReferenceError on
-    undefined vars (no auto-false). Prologue-Intro runs first and must default
-    every seen_* used anywhere, with a typeof-guard so revisits preserve true."""
-    used = set(re.findall(r"^\[(?:unless|if) (seen_[a-z0-9_]+)\]$", TWEE, flags=re.M))
-    body = PASSAGES["Prologue-Intro"]
-    assert "\n--\n" in body, "Prologue-Intro missing vars section (undefined-var crash)"
-    vars_section = body.split("\n--\n", 1)[0]
-    initialized = set(re.findall(r"^(seen_[a-z0-9_]+)\s*:", vars_section, flags=re.M))
-    assert used - initialized == set(), \
-        f"seen vars used but never initialized at start: {sorted(used - initialized)[:5]}"
 
 
 def test_hubs_endings_intro_unguarded():

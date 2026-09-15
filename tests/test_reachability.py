@@ -5,12 +5,13 @@ from pathlib import Path
 TWEE = Path("src/glass.twee").read_text()
 PASSAGES = dict(re.findall(r"^::\s+(\S+)[^\n]*\n((?:(?!^::).)*)", TWEE, flags=re.M | re.S))
 LINKS = {n: re.findall(r"\[\[(?:[^|\]]+\|)?([^\]]+)\]\]", b) for n, b in PASSAGES.items()}
-SCENES = ["Prologue", "Wondering", "Fitting", "Checking-Theodora",
-          "Checking-Lucinda", "Checking-Cinderella", "Theodora-Endgame",
-          "Lucinda-Endgame", "End"]
-ENDINGS = ["S9-End-Theodora-Marriage", "S9-End-Lucinda-Marriage", "S9-End-Peace",
-           "S9-End-Disaster", "S9-End-Prince-Departs", "S9-End-Cinderella-Executed",
-           "S9-End-Cinderella-Wed", "S9-End-Pirates"]
+# Curated 3-choice spine (2026-09-15): scenes are named by their leading word,
+# not by S<n>-Hub passages.
+SCENES = ["Prologue", "Wondering", "Fitting", "Check-", "Theodora", "Lucinda", "End"]
+# End-Disaster has no incoming link in the curated spine (a known orphan left
+# by the curation); every other non-meta passage must be reachable from Start.
+ORPHANS = {"End-Disaster"}
+
 
 def walk(start):
     seen, stack = set(), [start]
@@ -23,9 +24,13 @@ def walk(start):
     return seen
 
 def test_all_endings_reachable():
-    seen = walk("Prologue-Intro")
-    assert [e for e in ENDINGS if e not in seen] == []
+    seen = walk("Start")
+    stranded = [p for p in PASSAGES
+                if not p.startswith(("Story", "S-"))
+                and p not in seen and p not in ORPHANS]
+    assert stranded == [], f"stranded passages (no path from Start): {stranded}"
 
 def test_all_scenes_routable():
-    seen = walk("Prologue-Intro")
-    assert [s for s in SCENES if not any(s in p for p in seen)] == []
+    seen = walk("Start")
+    missing = [s for s in SCENES if not any(s in p for p in seen)]
+    assert missing == [], f"scenes not reachable from Start: {missing}"

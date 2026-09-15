@@ -19,6 +19,8 @@ def test_tweego_builds_index():
     html = Path("dist/index.html")
     assert html.exists() and html.stat().st_size > 50_000
     text = html.read_text(errors="replace")
-    assert "Prologue-Intro" in text
-    for end in ["S9-End-Pirates", "S9-End-Cinderella-Wed", "S9-End-Peace"]:
+    # Curated 3-choice spine (2026-09-15): the start passage is "Start" and
+    # endings are named End-<Name> (no S9-/S-Hub- scaffolding remains).
+    assert "Start" in text
+    for end in ["End-Cinderella-Wed", "End-Lucinda-Marriage", "End-Peace"]:
         assert end in text, f"ending missing from build: {end}"

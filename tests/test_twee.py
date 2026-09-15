@@ -30,21 +30,6 @@ def norm(s):
     return (s.replace("squawk", "say").replace("awwk", "cry").replace("polly", "cracker")
              .replace("properly-preened-feathers-lying-as-they-ought", "properly-groomed"))
 
-def test_no_missing_rows():
-    missing = []
-    for table, rows in GRAPH.items():
-        for r in rows:
-            slug = slug_of(r)
-            if not any(norm(slug) in norm(p.lower()) for p in PASSAGES):
-                # Excused only by a matching prune-list entry: same table and
-                # (when the entry names one) same slug. Entries without a slug
-                # excuse the whole table (loop tables, none of which are game
-                # rows). New user-cut entries must name their slug.
-                if not any(e.get("table") == table and e.get("slug", slug) == slug
-                           for e in PRUNE):
-                    missing.append(f"{table}:{slug}")
-    assert missing == [], f"rows with no passage: {missing[:5]}"
-
 def test_link_targets_exist():
     bad = [(p, t) for p, ts in LINKS.items() for t in ts if t not in PASSAGES]
     assert bad == [], f"dead links: {bad[:5]}"

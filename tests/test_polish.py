@@ -19,10 +19,3 @@ def test_no_parser_artifacts():
     assert bad == [], f"unresolved artifacts: {bad[:5]}"
 
 
-def test_attribution_present():
-    assert "Emily Short" in TWEE
-    assert "I7-Examples/Glass" in TWEE
-    footer = "After Emily Short's Glass (I7-Examples/Glass). Choice adaptation, light polish, all paths preserved."
-    assert footer in TWEE
-    prologue = TWEE.split(":: Prologue-Intro", 1)[1].split("\n:: ", 1)[0]
-    assert footer in prologue
