@@ -24,7 +24,11 @@ def norm(s):
     # 2026-09-15 squawk removal: passage slugs use say/cry where the
     # source-derived slug has squawk/awwk. Normalize both sides alike;
     # row keys below stay raw so exemption lists are unchanged.
-    return s.replace("squawk", "say").replace("awwk", "cry")
+    # 2026-09-15 de-birding: the examine-yourself slug drops the
+    # feathers clause on both sides alike; the cracker-joke slug uses
+    # cracker where the source slug has polly.
+    return (s.replace("squawk", "say").replace("awwk", "cry").replace("polly", "cracker")
+             .replace("properly-preened-feathers-lying-as-they-ought", "properly-groomed"))
 
 def test_no_missing_rows():
     missing = []

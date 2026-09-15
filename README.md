@@ -2,8 +2,8 @@
 
 A choice-based Twine port of **Glass**, Emily Short's Inform 7 conversation
 game (original: [I7-Examples/Glass](https://github.com/I7-Examples/Glass)).
-You play the parrot; free-text `mention [subject]` from the parser original
-becomes clickable subject choices. All narrative paths are preserved — only
+You steer the drawing-room talk: free-text `mention [subject]` from the
+parser original becomes clickable subject choices. All narrative paths are preserved — only
 looping filler and invalid-input handlers were pruned (audited in
 `data/prune-list.json`).
 
@@ -62,8 +62,10 @@ editorial review, never silently rewritten.
 
 ## Known deviations
 
-- **Bird-cries removed:** no `squawk`/`awwk` wording anywhere in the game —
-  link labels are subject display names, bodies use `say`/`speak`/`sing`.
-  (In the original, `squawk` is the narration verb for the act of speaking
-  and the bird's content is a per-utterance roll of five cries; that whole
-  layer was cut per decision, including 8 verbatim `you squawk` lines.)
+- **Bird layer removed:** no `squawk`/`awwk`/`parrot`/`polly`/`feathers`
+  wording anywhere in play — labels are subject display names, bodies use
+  `say`/`speak`/`sing`, the Polly joke is a nameless cracker joke.
+  Deliberately kept: 3 story-dialogue lines where NPCs mention the parrot,
+  the 6 birds-topic conversation paths, and the wing chair (furniture).
+  (`data/graph.json` still mirrors the original text verbatim as the
+  extraction source.)
