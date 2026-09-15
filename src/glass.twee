@@ -5,7 +5,6 @@ Twee-Glass
 {"format": "Chapbook", "format-version": "2.3.0", "ifid": "C67460F1-5CAD-42EC-AF08-E1A7249DBCE8", "start": "Prologue-Intro"}
 
 :: Prologue-Intro
-{set currentSubject to 'kings-health'}
 The Prince sits awkwardly on the couch, holding his glass slipper and trying to keep it from crushing. Lucinda and Theodora have the ends of the same couch, and the old lady leans toward him: 'Do tell me about your father's health.' You are the parrot, and it is your business to steer the talk.
 
 [[Take up the Prologue talk|S1-Prologue-Hub]]
@@ -48,6 +47,8 @@ The conversation turns to kings-health. Feathers ruffle, eyes brighten, and ever
 [[Squawk of god|S-Hub-god]]
 [[Squawk of birds|S-Hub-birds]]
 [[Back to the beginning|Prologue-Intro]]
+
+After Emily Short's Glass (I7-Examples/Glass). Choice adaptation, light polish, all paths preserved.
 :: S-Hub-heirs
 The conversation turns to heirs. Feathers ruffle, eyes brighten, and everyone leans in a little closer, for this is a subject on which a clever parrot may steer the room wherever it pleases. You clear your throat and squawk.
 
@@ -283,8 +284,7 @@ The conversation turns to birds. Feathers ruffle, eyes brighten, and everyone le
 [[Squawk of birds|S-Hub-birds]]
 [[Back to the beginning|Prologue-Intro]]
 :: S1-Prologue-obscenity-obscenity-reaction-rule-1
-{set currentSubject to 'birds'}
-Topic: "[obscenity]"
+Topic: "an obscenity"
 Response: ""
 Rule: obscenity reaction rule
 
@@ -306,8 +306,7 @@ The parrot ruffles its feathers while the humans take this in, and waits for the
 [[Squawk of god|S-Hub-god]]
 [[Squawk of birds|S-Hub-birds]]
 :: S1-Prologue-mild-obscenity-mild-reaction-rule-1
-{set currentSubject to 'birds'}
-Topic: "[mild obscenity]"
+Topic: "a mild obscenity"
 Response: ""
 Rule: mild reaction rule
 
@@ -329,7 +328,6 @@ The parrot ruffles its feathers while the humans take this in, and waits for the
 [[Squawk of god|S-Hub-god]]
 [[Squawk of birds|S-Hub-birds]]
 :: S1-Prologue-cracker-polly-or-polly-wanna-cracker-polly-wanna-cracker-you-announce-but-they-ve-grown-tired-of-that-one-1
-{set currentSubject to 'birds'}
 Topic: "cracker/polly" or "polly wanna cracker"
 Response: "'Polly wanna cracker!' you announce. But they've grown tired of that one."
 
@@ -351,7 +349,6 @@ The parrot ruffles its feathers while the humans take this in, and waits for the
 [[Squawk of god|S-Hub-god]]
 [[Squawk of birds|S-Hub-birds]]
 :: S1-Prologue-um-seven-or-seven-um-seven-you-inquire-brightly-everyone-pretends-you-didn-t-speak-1
-{set currentSubject to 'birds'}
 Topic: "um seven" or "seven"
 Response: "'Um, seven?' you inquire brightly. Everyone pretends you didn't speak."
 
@@ -373,7 +370,6 @@ The parrot ruffles its feathers while the humans take this in, and waits for the
 [[Squawk of god|S-Hub-god]]
 [[Squawk of birds|S-Hub-birds]]
 :: S1-Prologue-silence-silence-you-squawk-1
-{set currentSubject to 'birds'}
 Topic: "silence"
 Response: "'Silence!' you squawk.
 
@@ -395,7 +391,6 @@ The parrot ruffles its feathers while the humans take this in, and waits for the
 [[Squawk of god|S-Hub-god]]
 [[Squawk of birds|S-Hub-birds]]
 :: S1-Prologue-wisdom-thought-thinking-wisdom-you-intone-1
-{set currentSubject to 'birds'}
 Topic: "wisdom/thought/thinking"
 Response: "'Wisdom,' you intone.
 
@@ -417,7 +412,6 @@ The parrot ruffles its feathers while the humans take this in, and waits for the
 [[Squawk of god|S-Hub-god]]
 [[Squawk of birds|S-Hub-birds]]
 :: S1-Prologue-no-one-seems-to-think-you-know-much-about-that-1
-{set currentSubject to 'birds'}
 Topic: No one seems to think you know much about that."
 
 The parrot ruffles its feathers while the humans take this in, and waits for the talk to turn once more.
@@ -438,9 +432,8 @@ The parrot ruffles its feathers while the humans take this in, and waits for the
 [[Squawk of god|S-Hub-god]]
 [[Squawk of birds|S-Hub-birds]]
 :: S1-Prologue-kindness-awwk-kindness-1
-{set currentSubject to 'birds'}
 Topic: "kindness"
-Response: "'[awwk]! Kindness!'
+Response: "'Awwk! Kindness!'
 
 The parrot ruffles its feathers while the humans take this in, and waits for the talk to turn once more.
 
@@ -460,7 +453,6 @@ The parrot ruffles its feathers while the humans take this in, and waits for the
 [[Squawk of god|S-Hub-god]]
 [[Squawk of birds|S-Hub-birds]]
 :: S1-Prologue-corknut-corknuts-almond-almonds-cork-nut-or-candied-almond-almond-you-hint-no-one-takes-you-up-on-it-1
-{set currentSubject to 'birds'}
 Topic: "corknut/corknuts/almond/almonds/cork nut" or "candied almond"
 Response: "'Almond!' you hint. No one takes you up on it."
 
@@ -482,7 +474,6 @@ The parrot ruffles its feathers while the humans take this in, and waits for the
 [[Squawk of god|S-Hub-god]]
 [[Squawk of birds|S-Hub-birds]]
 :: S1-Prologue-pirate-pirates-piracy-or-pieces-of-eight-you-squawk-a-short-piratical-ditty-not-quite-fit-for-polite-company-1
-{set currentSubject to 'birds'}
 Topic: "pirate/pirates/piracy" or "pieces of eight"
 Response: "You squawk a short piratical ditty, not quite fit for polite company...
 
@@ -504,7 +495,6 @@ The parrot ruffles its feathers while the humans take this in, and waits for the
 [[Squawk of god|S-Hub-god]]
 [[Squawk of birds|S-Hub-birds]]
 :: S1-Prologue-cut-that-out-says-lucinda-obscenity-reaction-rule-1
-{set currentSubject to 'birds'}
 Topic: 'Cut that out,' says Lucinda."
 Response: obscenity reaction rule
 
@@ -526,7 +516,6 @@ The parrot ruffles its feathers while the humans take this in, and waits for the
 [[Squawk of god|S-Hub-god]]
 [[Squawk of birds|S-Hub-birds]]
 :: S1-Prologue-cheese-everyone-turns-to-look-at-you-1
-{set currentSubject to 'birds'}
 Topic: "cheese"
 Response: "Everyone turns to look at you.
 
@@ -548,7 +537,6 @@ The parrot ruffles its feathers while the humans take this in, and waits for the
 [[Squawk of god|S-Hub-god]]
 [[Squawk of birds|S-Hub-birds]]
 :: S1-Prologue-fire-help-earthquake-flood-famine-or-stock-market-crash-the-prince-looks-puzzled-1
-{set currentSubject to 'birds'}
 Topic: "fire/help/earthquake/flood/famine" or "stock market crash"
 Response: "The prince looks puzzled.
 
@@ -570,11 +558,12 @@ The parrot ruffles its feathers while the humans take this in, and waits for the
 [[Squawk of god|S-Hub-god]]
 [[Squawk of birds|S-Hub-birds]]
 :: S1-Prologue-cleavage-nice-word-cleavage-you-squawk-nice-word-1
-{set currentSubject to 'birds'}
 Topic: "cleavage"
-Response: "'[Nice word] cleavage!' you squawk. '[Nice word]!'
+Response: "'Darling cleavage!' you squawk. 'Darling!'
 
 The parrot ruffles its feathers while the humans take this in, and waits for the talk to turn once more.
+
+<!-- FLAG: dated content, cleavage gag carried over from the 2005 source. Human decision needed: keep verbatim, soften, or cut. Do not silently rewrite. -->
 
 [[Return to the Prologue talk|S1-Prologue-Hub]]
 [[Squawk of kings-health|S-Hub-kings-health]]
@@ -592,9 +581,8 @@ The parrot ruffles its feathers while the humans take this in, and waits for the
 [[Squawk of god|S-Hub-god]]
 [[Squawk of birds|S-Hub-birds]]
 :: S1-Prologue-prying-pry-prying-you-awwk-inquire-impertinently-be-curious-ferret-out-nose-around-1
-{set currentSubject to 'birds'}
 Topic: "prying/pry"
-Response: "'Prying!' you awwk. 'Inquire impertinently, be curious, ferret out, nose around!'
+Response: "'Prying!' you squawk. 'Inquire impertinently, be curious, ferret out, nose around!'
 
 The parrot ruffles its feathers while the humans take this in, and waits for the talk to turn once more.
 
@@ -614,9 +602,8 @@ The parrot ruffles its feathers while the humans take this in, and waits for the
 [[Squawk of god|S-Hub-god]]
 [[Squawk of birds|S-Hub-birds]]
 :: S1-Prologue-say-a-random-visible-woman-giggles-faintly-1
-{set currentSubject to 'birds'}
 Topic: (aside)
-Response: say "[A random visible woman] giggles faintly."
+Response: say "A woman giggles faintly."
 
 The parrot ruffles its feathers while the humans take this in, and waits for the talk to turn once more.
 
@@ -636,8 +623,7 @@ The parrot ruffles its feathers while the humans take this in, and waits for the
 [[Squawk of god|S-Hub-god]]
 [[Squawk of birds|S-Hub-birds]]
 :: S1-Prologue-understand-bother-or-curses-or-drat-or-darn-as-mild-obscenity-1
-{set currentSubject to 'birds'}
-Topic: Understand "bother" or "curses" or "drat" or "darn" as "[mild obscenity]".
+Topic: Understand "bother" or "curses" or "drat" or "darn" as "a mild obscenity".
 
 The parrot ruffles its feathers while the humans take this in, and waits for the talk to turn once more.
 
@@ -657,7 +643,6 @@ The parrot ruffles its feathers while the humans take this in, and waits for the
 [[Squawk of god|S-Hub-god]]
 [[Squawk of birds|S-Hub-birds]]
 :: S1-Prologue-now-the-player-is-disgraced-1
-{set currentSubject to 'birds'}
 Topic: (aside)
 Response: now the player is disgraced;
 
@@ -679,7 +664,6 @@ The parrot ruffles its feathers while the humans take this in, and waits for the
 [[Squawk of god|S-Hub-god]]
 [[Squawk of birds|S-Hub-birds]]
 :: S1-Prologue-say-you-squawk-very-loudly-1
-{set currentSubject to 'birds'}
 Topic: (aside)
 Response: say "You squawk very loudly.
 
@@ -701,7 +685,6 @@ The parrot ruffles its feathers while the humans take this in, and waits for the
 [[Squawk of god|S-Hub-god]]
 [[Squawk of birds|S-Hub-birds]]
 :: S1-Prologue-if-asking-someone-to-try-speech-continue-the-action-1
-{set currentSubject to 'birds'}
 Topic: (aside)
 Response: if asking someone to try speech, continue the action;
 
@@ -723,7 +706,6 @@ The parrot ruffles its feathers while the humans take this in, and waits for the
 [[Squawk of god|S-Hub-god]]
 [[Squawk of birds|S-Hub-birds]]
 :: S1-Prologue-say-no-one-in-this-house-obeys-you-at-all-1
-{set currentSubject to 'birds'}
 Topic: (aside)
 Response: say "No one in this house obeys you at all."
 
@@ -745,7 +727,6 @@ The parrot ruffles its feathers while the humans take this in, and waits for the
 [[Squawk of god|S-Hub-god]]
 [[Squawk of birds|S-Hub-birds]]
 :: S1-Prologue-say-right-says-the-old-lady-and-she-rings-for-a-servant-to-remove-you-from-the-room-1
-{set currentSubject to 'birds'}
 Topic: (aside)
 Response: say "'Right,' says the old lady. And she rings for a servant to remove you from the room.";
 
@@ -767,7 +748,6 @@ The parrot ruffles its feathers while the humans take this in, and waits for the
 [[Squawk of god|S-Hub-god]]
 [[Squawk of birds|S-Hub-birds]]
 :: S1-Prologue-end-the-story-saying-you-are-sold-to-pirates-and-have-a-glorious-career-on-the-open-sea-1
-{set currentSubject to 'birds'}
 Topic: (aside)
 Response: end the story saying "You are sold to pirates and have a glorious career on the open sea".
 
@@ -789,7 +769,6 @@ The parrot ruffles its feathers while the humans take this in, and waits for the
 [[Squawk of god|S-Hub-god]]
 [[Squawk of birds|S-Hub-birds]]
 :: S1-Prologue-say-oops-you-squawk-sorry-oops-sorry-1
-{set currentSubject to 'birds'}
 Topic: (aside)
 Response: say "'Oops!' you squawk. 'Sorry! Oops, sorry!'
 
@@ -811,9 +790,8 @@ The parrot ruffles its feathers while the humans take this in, and waits for the
 [[Squawk of god|S-Hub-god]]
 [[Squawk of birds|S-Hub-birds]]
 :: S1-Prologue-say-awwk-yes-1
-{set currentSubject to 'birds'}
 Topic: (aside)
-Response: say "'[awwk]! Yes!'"
+Response: say "'Awwk! Yes!'"
 
 The parrot ruffles its feathers while the humans take this in, and waits for the talk to turn once more.
 
@@ -833,7 +811,6 @@ The parrot ruffles its feathers while the humans take this in, and waits for the
 [[Squawk of god|S-Hub-god]]
 [[Squawk of birds|S-Hub-birds]]
 :: S1-Prologue-say-no-you-squawk-no-no-1
-{set currentSubject to 'birds'}
 Topic: (aside)
 Response: say "'No!' you squawk. 'No no!'
 
@@ -855,7 +832,6 @@ The parrot ruffles its feathers while the humans take this in, and waits for the
 [[Squawk of god|S-Hub-god]]
 [[Squawk of birds|S-Hub-birds]]
 :: S1-Prologue-if-turn-count-is-1-1
-{set currentSubject to 'birds'}
 Topic: (aside)
 Response: if turn count is 1
 
@@ -877,7 +853,6 @@ The parrot ruffles its feathers while the humans take this in, and waits for the
 [[Squawk of god|S-Hub-god]]
 [[Squawk of birds|S-Hub-birds]]
 :: S1-Prologue-begin-1
-{set currentSubject to 'birds'}
 Topic: (aside)
 Response: begin;
 
@@ -899,9 +874,7 @@ The parrot ruffles its feathers while the humans take this in, and waits for the
 [[Squawk of god|S-Hub-god]]
 [[Squawk of birds|S-Hub-birds]]
 :: S1-Prologue-say-paragraph-break-1
-{set currentSubject to 'birds'}
 Topic: (aside)
-Rule: say paragraph break;
 
 The parrot ruffles its feathers while the humans take this in, and waits for the talk to turn once more.
 
@@ -921,11 +894,12 @@ The parrot ruffles its feathers while the humans take this in, and waits for the
 [[Squawk of god|S-Hub-god]]
 [[Squawk of birds|S-Hub-birds]]
 :: S1-Prologue-say-the-prince-sits-awkwardly-on-the-couch-holding-his-glass-slipper-and-trying-to-keep-it-from-crushing-lucinda-and-theodora-have-the-ends-of-the-same-couch-and-they-are-taking-turns-seeing-who-can-bend-lowest-and-show-off-the-most-cleavage-while-the-old-lady-in-her-wing-chair-carries-on-about-nonsense-for-instance-1
-{set currentSubject to 'birds'}
 Topic: (aside)
 Rule: say "The Prince sits awkwardly on the couch, holding his glass slipper and trying to keep it from crushing. Lucinda and Theodora have the ends of the same couch, and they are taking turns seeing who can bend lowest and show off the most cleavage; while the old lady, in her wing chair, carries on about nonsense. For instance:
 
 The parrot ruffles its feathers while the humans take this in, and waits for the talk to turn once more.
+
+<!-- FLAG: dated content, cleavage gag carried over from the 2005 source. Human decision needed: keep verbatim, soften, or cut. Do not silently rewrite. -->
 
 [[Return to the Prologue talk|S1-Prologue-Hub]]
 [[Squawk of kings-health|S-Hub-kings-health]]
@@ -943,7 +917,6 @@ The parrot ruffles its feathers while the humans take this in, and waits for the
 [[Squawk of god|S-Hub-god]]
 [[Squawk of birds|S-Hub-birds]]
 :: S1-Prologue-end-if-1
-{set currentSubject to 'birds'}
 Topic: (aside)
 Response: end if.
 
@@ -965,7 +938,6 @@ The parrot ruffles its feathers while the humans take this in, and waits for the
 [[Squawk of god|S-Hub-god]]
 [[Squawk of birds|S-Hub-birds]]
 :: S1-Prologue-say-you-give-the-place-a-once-over-with-your-right-eye-then-you-turn-your-head-and-look-at-everything-through-your-left-eye-it-doesn-t-make-any-difference-the-farther-parts-of-the-room-remain-out-of-focus-1
-{set currentSubject to 'birds'}
 Topic: (aside)
 Response: say "You give the place a once-over with your right eye. Then you turn your head and look at everything through your left eye. It doesn't make any difference. The farther parts of the room remain out of focus."
 
@@ -987,7 +959,6 @@ The parrot ruffles its feathers while the humans take this in, and waits for the
 [[Squawk of god|S-Hub-god]]
 [[Squawk of birds|S-Hub-birds]]
 :: S1-Prologue-say-it-s-hard-to-have-a-good-look-at-the-moment-but-everything-feels-in-order-properly-preened-feathers-lying-as-they-ought-1
-{set currentSubject to 'birds'}
 Topic: (aside)
 Response: say "It's hard to have a good look at the moment, but everything feels in order, properly preened, feathers lying as they ought."
 
@@ -1009,7 +980,6 @@ The parrot ruffles its feathers while the humans take this in, and waits for the
 [[Squawk of god|S-Hub-god]]
 [[Squawk of birds|S-Hub-birds]]
 :: S1-Prologue-choose-a-random-row-in-the-table-of-waiting-1
-{set currentSubject to 'birds'}
 Topic: (aside)
 Response: choose a random row in the Table of Waiting;
 
@@ -1031,9 +1001,7 @@ The parrot ruffles its feathers while the humans take this in, and waits for the
 [[Squawk of god|S-Hub-god]]
 [[Squawk of birds|S-Hub-birds]]
 :: S1-Prologue-say-response-entry-paragraph-break-1
-{set currentSubject to 'birds'}
 Topic: (aside)
-Response: say "[response entry][paragraph break]".
 
 The parrot ruffles its feathers while the humans take this in, and waits for the talk to turn once more.
 
@@ -1053,7 +1021,6 @@ The parrot ruffles its feathers while the humans take this in, and waits for the
 [[Squawk of god|S-Hub-god]]
 [[Squawk of birds|S-Hub-birds]]
 :: S1-Prologue-king-s-health-heirs-1
-{set currentSubject to 'heirs'}
 "'It's so fortunate,' says the old lady. 'That you're of an age -- that is, that the King has been so blessed with an heir who can follow in his footsteps when the time comes, which we all hope will be--'
 
 The parrot ruffles its feathers while the humans take this in, and waits for the talk to turn once more.
@@ -1074,7 +1041,6 @@ The parrot ruffles its feathers while the humans take this in, and waits for the
 [[Squawk of god|S-Hub-god]]
 [[Squawk of birds|S-Hub-birds]]
 :: S1-Prologue-king-s-health-heirs-2
-{set currentSubject to 'heirs'}
 "'When the time comes, which will be when God wills it, you will be a fine King,' says the old lady firmly."
 
 The parrot ruffles its feathers while the humans take this in, and waits for the talk to turn once more.
@@ -1095,7 +1061,6 @@ The parrot ruffles its feathers while the humans take this in, and waits for the
 [[Squawk of god|S-Hub-god]]
 [[Squawk of birds|S-Hub-birds]]
 :: S1-Prologue-blank-king-s-health-1
-{set currentSubject to 'kingshealth'}
 "'I think the king is less concerned than the rest of us are,' says the Prince. 'But he has always been very brave, and philosophical. I believe he would meet death with a Socratic--'
 
 The parrot ruffles its feathers while the humans take this in, and waits for the talk to turn once more.
@@ -1116,7 +1081,6 @@ The parrot ruffles its feathers while the humans take this in, and waits for the
 [[Squawk of god|S-Hub-god]]
 [[Squawk of birds|S-Hub-birds]]
 :: S1-Prologue-blank-king-s-health-2
-{set currentSubject to 'kingshealth'}
 "'I know very well how hard it will be to emulate my father's command,' says the Prince. 'He has a knowledge of how to speak to people which I do not.'
 
 The parrot ruffles its feathers while the humans take this in, and waits for the talk to turn once more.
@@ -1137,7 +1101,6 @@ The parrot ruffles its feathers while the humans take this in, and waits for the
 [[Squawk of god|S-Hub-god]]
 [[Squawk of birds|S-Hub-birds]]
 :: S1-Prologue-blank-king-s-health-3
-{set currentSubject to 'kingshealth'}
 "'May he live long,' says Lucinda softly."
 
 The parrot ruffles its feathers while the humans take this in, and waits for the talk to turn once more.
@@ -1158,7 +1121,6 @@ The parrot ruffles its feathers while the humans take this in, and waits for the
 [[Squawk of god|S-Hub-god]]
 [[Squawk of birds|S-Hub-birds]]
 :: S1-Prologue-blank-king-s-health-4
-{set currentSubject to 'kingshealth'}
 "'You must try not to worry too desperately,' Lucinda says to the Prince in a comforting tone. 'I have heard only the best things about the doctors.'
 
 The parrot ruffles its feathers while the humans take this in, and waits for the talk to turn once more.
@@ -1179,7 +1141,6 @@ The parrot ruffles its feathers while the humans take this in, and waits for the
 [[Squawk of god|S-Hub-god]]
 [[Squawk of birds|S-Hub-birds]]
 :: S1-Prologue-heirs-king-s-health-1
-{set currentSubject to 'kingshealth'}
 "'It would have been better for us all if I had siblings,' says the Prince. 'My father feels it, I know.'"
 
 The parrot ruffles its feathers while the humans take this in, and waits for the talk to turn once more.
@@ -1200,7 +1161,6 @@ The parrot ruffles its feathers while the humans take this in, and waits for the
 [[Squawk of god|S-Hub-god]]
 [[Squawk of birds|S-Hub-birds]]
 :: S1-Prologue-heirs-marriage-1
-{set currentSubject to 'marriage'}
 "'Now I have heard a rumor,' says the old lady, pretending that this conversation topic just now occurred to her, rather than being the object of her determined pursuit for the last half hour. 'A rumor that you yourself were planning to wed, in the very near future.'
 
 The parrot ruffles its feathers while the humans take this in, and waits for the talk to turn once more.
@@ -1221,7 +1181,6 @@ The parrot ruffles its feathers while the humans take this in, and waits for the
 [[Squawk of god|S-Hub-god]]
 [[Squawk of birds|S-Hub-birds]]
 :: S1-Prologue-heirs-marriage-2
-{set currentSubject to 'marriage'}
 "'I think I am not expressing a unique opinion,' says the old lady, brushing at her skirt with her gloves, 'when I say that the whole kingdom will be delighted to see your family increase yet further.'"
 
 The parrot ruffles its feathers while the humans take this in, and waits for the talk to turn once more.
@@ -1242,7 +1201,6 @@ The parrot ruffles its feathers while the humans take this in, and waits for the
 [[Squawk of god|S-Hub-god]]
 [[Squawk of birds|S-Hub-birds]]
 :: S1-Prologue-marriage-ball-1
-{set currentSubject to 'ball'}
 "'It's true, you know, that my father threw the ball in the hope that I would-- that is, that it would lead to a greater acquaintance--' The Prince stops again, rattled, and glares down at the small shoe cradled in his hands. 'I had not been very attentive to ladies in my youth.'
 
 The parrot ruffles its feathers while the humans take this in, and waits for the talk to turn once more.
@@ -1263,7 +1221,6 @@ The parrot ruffles its feathers while the humans take this in, and waits for the
 [[Squawk of god|S-Hub-god]]
 [[Squawk of birds|S-Hub-birds]]
 :: S1-Prologue-blank-love-1
-{set currentSubject to 'love'}
 "A look of unexpected sweetness crosses the face of the Prince. The old lady watches this with interest."
 
 The parrot ruffles its feathers while the humans take this in, and waits for the talk to turn once more.
@@ -1284,8 +1241,7 @@ The parrot ruffles its feathers while the humans take this in, and waits for the
 [[Squawk of god|S-Hub-god]]
 [[Squawk of birds|S-Hub-birds]]
 :: S1-Prologue-blank-shoe-1
-{set currentSubject to 'shoe'}
-"[if not mentioning shoe]'I'm sure it's nothing surprising,' remarks the old lady, 'if you didn't meet anyone at the ball that you felt immediately you could marry. Such short acquaintances... there's much more to an alliance than that. One must feel at ease with the family, for instance.'
+"'I'm sure it's nothing surprising,' remarks the old lady, 'if you didn't meet anyone at the ball that you felt immediately you could marry. Such short acquaintances... there's much more to an alliance than that. One must feel at ease with the family, for instance.'
 
 The parrot ruffles its feathers while the humans take this in, and waits for the talk to turn once more.
 
@@ -1305,7 +1261,6 @@ The parrot ruffles its feathers while the humans take this in, and waits for the
 [[Squawk of god|S-Hub-god]]
 [[Squawk of birds|S-Hub-birds]]
 :: S1-Prologue-blank-ball-1
-{set currentSubject to 'ball'}
 "The Prince sighs. 'Yes,' he says. 'The ball, I meant to tell you...'
 
 The parrot ruffles its feathers while the humans take this in, and waits for the talk to turn once more.
@@ -1326,7 +1281,6 @@ The parrot ruffles its feathers while the humans take this in, and waits for the
 [[Squawk of god|S-Hub-god]]
 [[Squawk of birds|S-Hub-birds]]
 :: S1-Prologue-marriage-theo-1
-{set currentSubject to 'theo'}
 "Theodora blushes with sudden consciousness. The Prince glances at her piercingly.
 
 The parrot ruffles its feathers while the humans take this in, and waits for the talk to turn once more.
@@ -1347,7 +1301,6 @@ The parrot ruffles its feathers while the humans take this in, and waits for the
 [[Squawk of god|S-Hub-god]]
 [[Squawk of birds|S-Hub-birds]]
 :: S1-Prologue-marriage-birds-1
-{set currentSubject to 'birds'}
 "'Do you suppose it means that marriage is for the birds?' asks Lucinda.
 
 The parrot ruffles its feathers while the humans take this in, and waits for the talk to turn once more.
@@ -1368,7 +1321,6 @@ The parrot ruffles its feathers while the humans take this in, and waits for the
 [[Squawk of god|S-Hub-god]]
 [[Squawk of birds|S-Hub-birds]]
 :: S1-Prologue-blank-birds-1
-{set currentSubject to 'birds'}
 "'I suppose it wishes to advocate a greater interest in aviary concerns?' the Prince asks, looking at you with curiosity.
 
 The parrot ruffles its feathers while the humans take this in, and waits for the talk to turn once more.
@@ -1389,7 +1341,6 @@ The parrot ruffles its feathers while the humans take this in, and waits for the
 [[Squawk of god|S-Hub-god]]
 [[Squawk of birds|S-Hub-birds]]
 :: S1-Prologue-theo-heirs-1
-{set currentSubject to 'heirs'}
 "'Ah, Theodora... I'm so fortunate in my own children,' the old lady goes on. 'You can never understand what a great pleasure there is in them until you have your own.'
 
 The parrot ruffles its feathers while the humans take this in, and waits for the talk to turn once more.
@@ -1410,7 +1361,6 @@ The parrot ruffles its feathers while the humans take this in, and waits for the
 [[Squawk of god|S-Hub-god]]
 [[Squawk of birds|S-Hub-birds]]
 :: S1-Prologue-god-lucinda-1
-{set currentSubject to 'lucinda'}
 "'Lucinda is thinking about becoming a nun,' says Theodora.
 
 The parrot ruffles its feathers while the humans take this in, and waits for the talk to turn once more.
@@ -1431,7 +1381,6 @@ The parrot ruffles its feathers while the humans take this in, and waits for the
 [[Squawk of god|S-Hub-god]]
 [[Squawk of birds|S-Hub-birds]]
 :: S1-Prologue-blank-heirs-1
-{set currentSubject to 'heirs'}
 "'How sad that your dear mother did not live along enough to give you siblings,' says the old lady, dabbing the edge of her eye with one finger.
 
 The parrot ruffles its feathers while the humans take this in, and waits for the talk to turn once more.
@@ -1452,7 +1401,6 @@ The parrot ruffles its feathers while the humans take this in, and waits for the
 [[Squawk of god|S-Hub-god]]
 [[Squawk of birds|S-Hub-birds]]
 :: S1-Prologue-love-marriage-1
-{set currentSubject to 'marriage'}
 "'It is a pity,' says the old lady. 'But love and marriage often have so little to do with one another, at the upper levels of society. And certainly when matters of state intervene.'
 
 The parrot ruffles its feathers while the humans take this in, and waits for the talk to turn once more.
@@ -1473,7 +1421,6 @@ The parrot ruffles its feathers while the humans take this in, and waits for the
 [[Squawk of god|S-Hub-god]]
 [[Squawk of birds|S-Hub-birds]]
 :: S1-Prologue-blank-love-2
-{set currentSubject to 'love'}
 "'I think the feelings at the outset of a marriage are nearly irrelevant,' says Lucinda. 'If there is commitment and good intention, then you can learn to live with the person, and if there isn't... no amount of affection, or, or...'
 
 The parrot ruffles its feathers while the humans take this in, and waits for the talk to turn once more.
@@ -1494,7 +1441,6 @@ The parrot ruffles its feathers while the humans take this in, and waits for the
 [[Squawk of god|S-Hub-god]]
 [[Squawk of birds|S-Hub-birds]]
 :: S1-Prologue-blank-stepmother-1
-{set currentSubject to 'stepmother'}
 "The old lady glares at you."
 
 The parrot ruffles its feathers while the humans take this in, and waits for the talk to turn once more.
@@ -1515,7 +1461,6 @@ The parrot ruffles its feathers while the humans take this in, and waits for the
 [[Squawk of god|S-Hub-god]]
 [[Squawk of birds|S-Hub-birds]]
 :: S1-Prologue-say-the-old-woman-laughs-slightly-how-beautifully-romantic-but-she-didn-t-give-you-her-name-1
-{set currentSubject to 'saytheoldwomanlaughsslightlyhowbeautifullyromanticbut--shedidntgiveyouhername'}
 
 
 The parrot ruffles its feathers while the humans take this in, and waits for the talk to turn once more.
@@ -1536,7 +1481,6 @@ The parrot ruffles its feathers while the humans take this in, and waits for the
 [[Squawk of god|S-Hub-god]]
 [[Squawk of birds|S-Hub-birds]]
 :: S2-Wondering-blank-birds-1
-{set currentSubject to 'birds'}
 "'At least we can rule out the parrot as a possible wearer of the shoe,' says the old lady, twinkling."
 
 The parrot ruffles its feathers while the humans take this in, and waits for the talk to turn once more.
@@ -1557,7 +1501,6 @@ The parrot ruffles its feathers while the humans take this in, and waits for the
 [[Squawk of god|S-Hub-god]]
 [[Squawk of birds|S-Hub-birds]]
 :: S2-Wondering-blank-shoe-1
-{set currentSubject to 'shoe'}
 "'I-- managed to rescue the shoe when she ran off,' says the Prince, a little embarrassed-looking.
 
 The parrot ruffles its feathers while the humans take this in, and waits for the talk to turn once more.
@@ -1578,7 +1521,6 @@ The parrot ruffles its feathers while the humans take this in, and waits for the
 [[Squawk of god|S-Hub-god]]
 [[Squawk of birds|S-Hub-birds]]
 :: S2-Wondering-blank-magic-1
-{set currentSubject to 'magic'}
 "Unless you are mistaken, the old lady flinches."
 
 The parrot ruffles its feathers while the humans take this in, and waits for the talk to turn once more.
@@ -1599,7 +1541,6 @@ The parrot ruffles its feathers while the humans take this in, and waits for the
 [[Squawk of god|S-Hub-god]]
 [[Squawk of birds|S-Hub-birds]]
 :: S2-Wondering-blank-theodora-1
-{set currentSubject to 'theodora'}
 "Theodora starts. 'I didn't have anything to do with it,' she remarks. 'That is--'
 
 The parrot ruffles its feathers while the humans take this in, and waits for the talk to turn once more.
@@ -1620,7 +1561,6 @@ The parrot ruffles its feathers while the humans take this in, and waits for the
 [[Squawk of god|S-Hub-god]]
 [[Squawk of birds|S-Hub-birds]]
 :: S2-Wondering-blank-lucinda-1
-{set currentSubject to 'lucinda'}
 "'Yes, Parrot?' asks Lucinda, looking up at you rather coldly. She's always made it clear she thinks you possessed. Theo is much nicer."
 
 The parrot ruffles its feathers while the humans take this in, and waits for the talk to turn once more.
@@ -1641,7 +1581,6 @@ The parrot ruffles its feathers while the humans take this in, and waits for the
 [[Squawk of god|S-Hub-god]]
 [[Squawk of birds|S-Hub-birds]]
 :: S2-Wondering-blank-heirs-1
-{set currentSubject to 'heirs'}
 "'And I suppose this is a suitable young woman for -- that is, your father will think her a good mother to his grandchildren?'
 
 The parrot ruffles its feathers while the humans take this in, and waits for the talk to turn once more.
@@ -1662,7 +1601,6 @@ The parrot ruffles its feathers while the humans take this in, and waits for the
 [[Squawk of god|S-Hub-god]]
 [[Squawk of birds|S-Hub-birds]]
 :: S2-Wondering-blank-marriage-1
-{set currentSubject to 'marriage'}
 "'It's marvelous that you were so drawn to a young lady that you want to marry her even though you can't remember what she looks like,' remarks the old woman.
 
 The parrot ruffles its feathers while the humans take this in, and waits for the talk to turn once more.
@@ -1683,7 +1621,6 @@ The parrot ruffles its feathers while the humans take this in, and waits for the
 [[Squawk of god|S-Hub-god]]
 [[Squawk of birds|S-Hub-birds]]
 :: S2-Wondering-blank-love-1
-{set currentSubject to 'love'}
 "'Do you--' begins the old lady. 'Oh, dear, this is such a delicate question, and there is no tactful way to put it. Do you have reason to think she reciprocates your regard?'
 
 The parrot ruffles its feathers while the humans take this in, and waits for the talk to turn once more.
@@ -1704,7 +1641,6 @@ The parrot ruffles its feathers while the humans take this in, and waits for the
 [[Squawk of god|S-Hub-god]]
 [[Squawk of birds|S-Hub-birds]]
 :: S2-Wondering-love-marriage-1
-{set currentSubject to 'marriage'}
 "'If she does love you,' Lucinda says, 'I wonder why she was not more straightforward? Deception has no part in true love.'
 
 The parrot ruffles its feathers while the humans take this in, and waits for the talk to turn once more.
@@ -1725,7 +1661,6 @@ The parrot ruffles its feathers while the humans take this in, and waits for the
 [[Squawk of god|S-Hub-god]]
 [[Squawk of birds|S-Hub-birds]]
 :: S2-Wondering-marriage-stepmother-1
-{set currentSubject to 'stepmother'}
 "'I was so fortunate in my own alliances,' says the old lady, startled into a reminiscent mood. 'The dear captain -- Lucinda and Theodora's father -- was so handsome! and then...'
 
 The parrot ruffles its feathers while the humans take this in, and waits for the talk to turn once more.
@@ -1746,7 +1681,6 @@ The parrot ruffles its feathers while the humans take this in, and waits for the
 [[Squawk of god|S-Hub-god]]
 [[Squawk of birds|S-Hub-birds]]
 :: S2-Wondering-blank-ball-1
-{set currentSubject to 'ball'}
 "'It wasn't a masked ball,' the old lady says. 'It wasn't even badly lit. Your father did not stint on the candles at all.'
 
 The parrot ruffles its feathers while the humans take this in, and waits for the talk to turn once more.
@@ -1767,7 +1701,6 @@ The parrot ruffles its feathers while the humans take this in, and waits for the
 [[Squawk of god|S-Hub-god]]
 [[Squawk of birds|S-Hub-birds]]
 :: S3-Fitting-ball-shoe-1
-{set currentSubject to 'shoe'}
 "'Midnight,' repeats the old lady. 'Well, well.' She smiles at the Prince. 'Good luck to you. It was quick thinking taking the shoe.'
 
 The parrot ruffles its feathers while the humans take this in, and waits for the talk to turn once more.
@@ -1788,7 +1721,6 @@ The parrot ruffles its feathers while the humans take this in, and waits for the
 [[Squawk of god|S-Hub-god]]
 [[Squawk of birds|S-Hub-birds]]
 :: S3-Fitting-shoe-ball-1
-{set currentSubject to 'ball'}
 "'That was a good ball,' says Theodora, out of nowhere. 'It was the nicest ball I've ever been to.'
 
 The parrot ruffles its feathers while the humans take this in, and waits for the talk to turn once more.
@@ -1809,7 +1741,6 @@ The parrot ruffles its feathers while the humans take this in, and waits for the
 [[Squawk of god|S-Hub-god]]
 [[Squawk of birds|S-Hub-birds]]
 :: S3-Fitting-blank-stepmother-1
-{set currentSubject to 'stepmother'}
 "The old lady starts. 'That is a good point,' she says. 'For a bird. Are you intending to interview the older ladies as well? Oh, I don't mean myself, of course!' She manages an almost natural laugh. 'But how do you know that your intended is a young lady?'
 
 The parrot ruffles its feathers while the humans take this in, and waits for the talk to turn once more.
@@ -1830,8 +1761,7 @@ The parrot ruffles its feathers while the humans take this in, and waits for the
 [[Squawk of god|S-Hub-god]]
 [[Squawk of birds|S-Hub-birds]]
 :: S3-Fitting-blank-theo-1
-{set currentSubject to 'theo'}
-"[if mentioning Theodora]Theodora blushes. 'Stupid bird,' she says.
+"Theodora blushes. 'Stupid bird,' she says.
 
 The parrot ruffles its feathers while the humans take this in, and waits for the talk to turn once more.
 
@@ -1851,8 +1781,7 @@ The parrot ruffles its feathers while the humans take this in, and waits for the
 [[Squawk of god|S-Hub-god]]
 [[Squawk of birds|S-Hub-birds]]
 :: S3-Fitting-blank-lucinda-1
-{set currentSubject to 'lucinda'}
-"[if mentioning Lucinda]'Might as well start there as anywhere,' says the Prince, shrugging. [otherwise]The Prince licks his lips. [end if]'Miss Lucinda, would you mind trying the slipper? You needn't -- that is, please do not regard this in the nature of a royal request, if you would rather not.'
+"'Might as well start there as anywhere,' says the Prince, shrugging. 'Miss Lucinda, would you mind trying the slipper? You needn't -- that is, please do not regard this in the nature of a royal request, if you would rather not.'
 
 The parrot ruffles its feathers while the humans take this in, and waits for the talk to turn once more.
 
@@ -1872,8 +1801,7 @@ The parrot ruffles its feathers while the humans take this in, and waits for the
 [[Squawk of god|S-Hub-god]]
 [[Squawk of birds|S-Hub-birds]]
 :: S3-Fitting-ball-magic-1
-{set currentSubject to 'magic'}
-"[if mentioning magic]The Prince's eye goes to you. 'Your bird, madam, is freakishly percipient. Positively unnatural.'
+"The Prince's eye goes to you. 'Your bird, madam, is freakishly percipient. Positively unnatural.'
 
 The parrot ruffles its feathers while the humans take this in, and waits for the talk to turn once more.
 
@@ -1893,7 +1821,6 @@ The parrot ruffles its feathers while the humans take this in, and waits for the
 [[Squawk of god|S-Hub-god]]
 [[Squawk of birds|S-Hub-birds]]
 :: S3-Fitting-magic-shoe-1
-{set currentSubject to 'shoe'}
 "'Perhaps the shoe itself is--' begins Theo thoughtfully.
 
 The parrot ruffles its feathers while the humans take this in, and waits for the talk to turn once more.
@@ -1914,7 +1841,6 @@ The parrot ruffles its feathers while the humans take this in, and waits for the
 [[Squawk of god|S-Hub-god]]
 [[Squawk of birds|S-Hub-birds]]
 :: S3-Fitting-magic-birds-1
-{set currentSubject to 'birds'}
 "All eyes turn to you. 'I have heard,' the Prince says tentatively, 'about creatures who are possessed...'
 
 The parrot ruffles its feathers while the humans take this in, and waits for the talk to turn once more.
@@ -1935,7 +1861,6 @@ The parrot ruffles its feathers while the humans take this in, and waits for the
 [[Squawk of god|S-Hub-god]]
 [[Squawk of birds|S-Hub-birds]]
 :: S3-Fitting-blank-magic-1
-{set currentSubject to 'magic'}
 "'The creature gets redundant,' says the old lady. 'I'm afraid it has a taste for melodrama.'"
 
 The parrot ruffles its feathers while the humans take this in, and waits for the talk to turn once more.
@@ -1956,7 +1881,6 @@ The parrot ruffles its feathers while the humans take this in, and waits for the
 [[Squawk of god|S-Hub-god]]
 [[Squawk of birds|S-Hub-birds]]
 :: S3-Fitting-magic-ball-1
-{set currentSubject to 'ball'}
 "'I have considered the problem,' says the Prince. 'Very closely. I have not been able to sleep for considering it.'
 
 The parrot ruffles its feathers while the humans take this in, and waits for the talk to turn once more.
@@ -1977,7 +1901,6 @@ The parrot ruffles its feathers while the humans take this in, and waits for the
 [[Squawk of god|S-Hub-god]]
 [[Squawk of birds|S-Hub-birds]]
 :: S3-Fitting-ball-marriage-1
-{set currentSubject to 'marriage'}
 "'Maybe,' Lucinda suggests, 'she thought it would be wrong to deceive you about what she was, and chose this way to, to make it known.'
 
 The parrot ruffles its feathers while the humans take this in, and waits for the talk to turn once more.
@@ -1998,7 +1921,6 @@ The parrot ruffles its feathers while the humans take this in, and waits for the
 [[Squawk of god|S-Hub-god]]
 [[Squawk of birds|S-Hub-birds]]
 :: S3-Fitting-blank-marriage-1
-{set currentSubject to 'marriage'}
 "'It seems to me,' says the old lady, after a long thoughtful moment, 'that you have no choice but to try this shoe on every eligible young woman, and determine who she was. And if I were you, I would also invent an explanation for this extraordinary method of bride-selection that will satisfy the people at large.'
 
 The parrot ruffles its feathers while the humans take this in, and waits for the talk to turn once more.
@@ -2019,7 +1941,6 @@ The parrot ruffles its feathers while the humans take this in, and waits for the
 [[Squawk of god|S-Hub-god]]
 [[Squawk of birds|S-Hub-birds]]
 :: S3-Fitting-marriage-shoe-1
-{set currentSubject to 'shoe'}
 "'Yes, the shoe,' says Lucinda to you; and to her mother: 'Do you think we could send it back to bird school?'
 
 The parrot ruffles its feathers while the humans take this in, and waits for the talk to turn once more.
@@ -2040,7 +1961,6 @@ The parrot ruffles its feathers while the humans take this in, and waits for the
 [[Squawk of god|S-Hub-god]]
 [[Squawk of birds|S-Hub-birds]]
 :: S3-Fitting-blank-love-1
-{set currentSubject to 'love'}
 "'Are you sure that it wasn't just an infatuation?' the old lady asks gently. 'Such a short acquaintance-- forgive me, but you've always seemed so level-headed.'
 
 The parrot ruffles its feathers while the humans take this in, and waits for the talk to turn once more.
@@ -2061,7 +1981,6 @@ The parrot ruffles its feathers while the humans take this in, and waits for the
 [[Squawk of god|S-Hub-god]]
 [[Squawk of birds|S-Hub-birds]]
 :: S3-Fitting-blank-magic-2
-{set currentSubject to 'magic'}
 "'Do you agree with your father's views?' asks Theodora. 'On magic, I mean.'
 
 The parrot ruffles its feathers while the humans take this in, and waits for the talk to turn once more.
@@ -2082,7 +2001,6 @@ The parrot ruffles its feathers while the humans take this in, and waits for the
 [[Squawk of god|S-Hub-god]]
 [[Squawk of birds|S-Hub-birds]]
 :: S3-Fitting-row-1
-{set currentSubject to 'birds'}
 now left hand status line is "Trying the slipper on Lucinda";
 
 The parrot ruffles its feathers while the humans take this in, and waits for the talk to turn once more.
@@ -2103,7 +2021,6 @@ The parrot ruffles its feathers while the humans take this in, and waits for the
 [[Squawk of god|S-Hub-god]]
 [[Squawk of birds|S-Hub-birds]]
 :: S3-Fitting-row-2
-{set currentSubject to 'birds'}
 now last subject is current subject; now the current subject is Lucinda; now the target subject is Lucinda; now the conversation set is Table of Lucinda Checking Remarks.
 
 The parrot ruffles its feathers while the humans take this in, and waits for the talk to turn once more.
@@ -2124,7 +2041,6 @@ The parrot ruffles its feathers while the humans take this in, and waits for the
 [[Squawk of god|S-Hub-god]]
 [[Squawk of birds|S-Hub-birds]]
 :: S3-Fitting-repeat-through-table-of-lucinda-checks-1
-{set currentSubject to 'repeatthroughtableoflucindachecks'}
 
 
 The parrot ruffles its feathers while the humans take this in, and waits for the talk to turn once more.
@@ -2145,7 +2061,6 @@ The parrot ruffles its feathers while the humans take this in, and waits for the
 [[Squawk of god|S-Hub-god]]
 [[Squawk of birds|S-Hub-birds]]
 :: S3-Fitting-begin-1
-{set currentSubject to 'begin'}
 
 
 The parrot ruffles its feathers while the humans take this in, and waits for the talk to turn once more.
@@ -2166,8 +2081,6 @@ The parrot ruffles its feathers while the humans take this in, and waits for the
 [[Squawk of god|S-Hub-god]]
 [[Squawk of birds|S-Hub-birds]]
 :: S3-Fitting-row-3
-{set currentSubject to 'birds'}
-say "[response entry][paragraph break]";
 
 The parrot ruffles its feathers while the humans take this in, and waits for the talk to turn once more.
 
@@ -2187,7 +2100,6 @@ The parrot ruffles its feathers while the humans take this in, and waits for the
 [[Squawk of god|S-Hub-god]]
 [[Squawk of birds|S-Hub-birds]]
 :: S3-Fitting-row-4
-{set currentSubject to 'birds'}
 blank out the whole row;
 
 The parrot ruffles its feathers while the humans take this in, and waits for the talk to turn once more.
@@ -2208,7 +2120,6 @@ The parrot ruffles its feathers while the humans take this in, and waits for the
 [[Squawk of god|S-Hub-god]]
 [[Squawk of birds|S-Hub-birds]]
 :: S3-Fitting-row-5
-{set currentSubject to 'birds'}
 rule succeeds;
 
 The parrot ruffles its feathers while the humans take this in, and waits for the talk to turn once more.
@@ -2229,7 +2140,6 @@ The parrot ruffles its feathers while the humans take this in, and waits for the
 [[Squawk of god|S-Hub-god]]
 [[Squawk of birds|S-Hub-birds]]
 :: S3-Fitting-end-repeat-1
-{set currentSubject to 'endrepeat'}
 
 
 The parrot ruffles its feathers while the humans take this in, and waits for the talk to turn once more.
@@ -2250,7 +2160,6 @@ The parrot ruffles its feathers while the humans take this in, and waits for the
 [[Squawk of god|S-Hub-god]]
 [[Squawk of birds|S-Hub-birds]]
 :: S3-Fitting-say-the-prince-stares-at-the-shoe-then-he-looks-up-you-he-repeats-i-mean-you-seemed-i-thought-for-certain-that-you-weren-t-the-way-you-i-thought-you-would-be-good-practice-because-1
-{set currentSubject to 'saytheprincestaresattheshoethenhelooksupyouherepeatsimean--youseemed--ithoughtforcertainthatyouwerent--thewayyou--ithoughtyouwouldbegoodpracticebecause--'}
 
 
 The parrot ruffles its feathers while the humans take this in, and waits for the talk to turn once more.
@@ -2271,7 +2180,6 @@ The parrot ruffles its feathers while the humans take this in, and waits for the
 [[Squawk of god|S-Hub-god]]
 [[Squawk of birds|S-Hub-birds]]
 :: S5-Checking-Lucinda-blank-theodora-1
-{set currentSubject to 'theodora'}
 "'I'll get to her later,' the Prince says. 'If necessary,' he adds, under his breath."
 
 The parrot ruffles its feathers while the humans take this in, and waits for the talk to turn once more.
@@ -2292,7 +2200,6 @@ The parrot ruffles its feathers while the humans take this in, and waits for the
 [[Squawk of god|S-Hub-god]]
 [[Squawk of birds|S-Hub-birds]]
 :: S5-Checking-Lucinda-blank-birds-1
-{set currentSubject to 'birds'}
 "'I do believe the parrot is jealous,' remarks Theo.
 
 The parrot ruffles its feathers while the humans take this in, and waits for the talk to turn once more.
@@ -2313,7 +2220,6 @@ The parrot ruffles its feathers while the humans take this in, and waits for the
 [[Squawk of god|S-Hub-god]]
 [[Squawk of birds|S-Hub-birds]]
 :: S4-Checking-Theodora-blank-lucinda-1
-{set currentSubject to 'lucinda'}
 "'One at a time, bird,' mutters the Prince. Theodora giggles."
 
 The parrot ruffles its feathers while the humans take this in, and waits for the talk to turn once more.
@@ -2334,7 +2240,6 @@ The parrot ruffles its feathers while the humans take this in, and waits for the
 [[Squawk of god|S-Hub-god]]
 [[Squawk of birds|S-Hub-birds]]
 :: S4-Checking-Theodora-blank-shoe-1
-{set currentSubject to 'shoe'}
 "'Yes,' says Lucinda to you. 'You're very smart.'"
 
 The parrot ruffles its feathers while the humans take this in, and waits for the talk to turn once more.
@@ -2355,7 +2260,6 @@ The parrot ruffles its feathers while the humans take this in, and waits for the
 [[Squawk of god|S-Hub-god]]
 [[Squawk of birds|S-Hub-birds]]
 :: S6-Checking-Cinderella-blank-theodora-1
-{set currentSubject to 'theodora'}
 "'No time for that now,' says the Prince."
 
 The parrot ruffles its feathers while the humans take this in, and waits for the talk to turn once more.
@@ -2376,7 +2280,6 @@ The parrot ruffles its feathers while the humans take this in, and waits for the
 [[Squawk of god|S-Hub-god]]
 [[Squawk of birds|S-Hub-birds]]
 :: S6-Checking-Cinderella-blank-lucinda-1
-{set currentSubject to 'lucinda'}
 "The Prince shakes his head, ignoring you."
 
 The parrot ruffles its feathers while the humans take this in, and waits for the talk to turn once more.
@@ -2397,7 +2300,6 @@ The parrot ruffles its feathers while the humans take this in, and waits for the
 [[Squawk of god|S-Hub-god]]
 [[Squawk of birds|S-Hub-birds]]
 :: S6-Checking-Cinderella-blank-ball-1
-{set currentSubject to 'ball'}
 "The Prince frowns at Cinderella. 'I don't recall seeing you at the ball.'
 
 The parrot ruffles its feathers while the humans take this in, and waits for the talk to turn once more.
@@ -2418,7 +2320,6 @@ The parrot ruffles its feathers while the humans take this in, and waits for the
 [[Squawk of god|S-Hub-god]]
 [[Squawk of birds|S-Hub-birds]]
 :: S6-Checking-Cinderella-blank-ball-2
-{set currentSubject to 'ball'}
 "'In any case,' says the Prince. 'This ball -- I should check, you see, I'm having everyone try on a shoe...'
 
 The parrot ruffles its feathers while the humans take this in, and waits for the talk to turn once more.
@@ -2439,7 +2340,6 @@ The parrot ruffles its feathers while the humans take this in, and waits for the
 [[Squawk of god|S-Hub-god]]
 [[Squawk of birds|S-Hub-birds]]
 :: S6-Checking-Cinderella-blank-marriage-1
-{set currentSubject to 'marriage'}
 "'I held the ball to look for someone to-- someone that I might marry,' the Prince explains to Cinderella.
 
 The parrot ruffles its feathers while the humans take this in, and waits for the talk to turn once more.
@@ -2460,7 +2360,6 @@ The parrot ruffles its feathers while the humans take this in, and waits for the
 [[Squawk of god|S-Hub-god]]
 [[Squawk of birds|S-Hub-birds]]
 :: S6-Checking-Cinderella-blank-love-1
-{set currentSubject to 'love'}
 "The Prince and Cinderella both look up at you. Cinderella puts one little finger to her lips, and winks, but you are afraid.
 
 The parrot ruffles its feathers while the humans take this in, and waits for the talk to turn once more.
@@ -2481,7 +2380,6 @@ The parrot ruffles its feathers while the humans take this in, and waits for the
 [[Squawk of god|S-Hub-god]]
 [[Squawk of birds|S-Hub-birds]]
 :: S6-Checking-Cinderella-blank-birds-1
-{set currentSubject to 'birds'}
 "Cinderella smiles, and comes over to where you are, and pets the top of your head and whispers cossetting things in a language only you understand. Your heart is filled with sweetness."
 
 The parrot ruffles its feathers while the humans take this in, and waits for the talk to turn once more.
@@ -2502,8 +2400,7 @@ The parrot ruffles its feathers while the humans take this in, and waits for the
 [[Squawk of god|S-Hub-god]]
 [[Squawk of birds|S-Hub-birds]]
 :: S6-Checking-Cinderella-blank-magic-1
-{set currentSubject to 'magic'}
-"[if mentioning magic]'Magic magic magic,' you sing. 'Witch, enchantress...'
+"'Magic magic magic,' you sing. 'Witch, enchantress...'
 
 The parrot ruffles its feathers while the humans take this in, and waits for the talk to turn once more.
 
@@ -2523,7 +2420,6 @@ The parrot ruffles its feathers while the humans take this in, and waits for the
 [[Squawk of god|S-Hub-god]]
 [[Squawk of birds|S-Hub-birds]]
 :: S6-Checking-Cinderella-if-fitting-is-happening-and-cinderella-is-the-current-subject-yes-1
-{set currentSubject to 'iffittingishappeningandcinderellaisthecurrentsubjectyes'}
 
 
 The parrot ruffles its feathers while the humans take this in, and waits for the talk to turn once more.
@@ -2544,7 +2440,6 @@ The parrot ruffles its feathers while the humans take this in, and waits for the
 [[Squawk of god|S-Hub-god]]
 [[Squawk of birds|S-Hub-birds]]
 :: S6-Checking-Cinderella-otherwise-no-1
-{set currentSubject to 'otherwiseno'}
 
 
 The parrot ruffles its feathers while the humans take this in, and waits for the talk to turn once more.
@@ -2565,7 +2460,6 @@ The parrot ruffles its feathers while the humans take this in, and waits for the
 [[Squawk of god|S-Hub-god]]
 [[Squawk of birds|S-Hub-birds]]
 :: S6-Checking-Cinderella-say-cinde-1
-{set currentSubject to 'saycinde--'}
 
 
 The parrot ruffles its feathers while the humans take this in, and waits for the talk to turn once more.
@@ -2586,7 +2480,6 @@ The parrot ruffles its feathers while the humans take this in, and waits for the
 [[Squawk of god|S-Hub-god]]
 [[Squawk of birds|S-Hub-birds]]
 :: S6-Checking-Cinderella-say-this-story-may-strike-you-as-familiar-which-means-that-you-already-have-some-idea-of-the-ways-it-can-end-up-1
-{set currentSubject to 'saythisstorymaystrikeyouasfamiliarwhichmeansthatyoualreadyhavesomeideaofthewaysitcanendup'}
 
 
 The parrot ruffles its feathers while the humans take this in, and waits for the talk to turn once more.
@@ -2607,7 +2500,6 @@ The parrot ruffles its feathers while the humans take this in, and waits for the
 [[Squawk of god|S-Hub-god]]
 [[Squawk of birds|S-Hub-birds]]
 :: S6-Checking-Cinderella-say-inform-7-is-the-work-of-graham-nelson-and-story-title-was-compiled-using-andrew-hunter-s-compiler-for-mac-os-x-1
-{set currentSubject to 'sayinformistheworkofgrahamnelsonandstorytitlewascompiledusingandrewhunterscompilerformacosx'}
 
 
 The parrot ruffles its feathers while the humans take this in, and waits for the talk to turn once more.
