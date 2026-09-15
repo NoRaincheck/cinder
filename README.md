@@ -59,3 +59,14 @@ Original game **Glass** by Emily Short (Inform 7 example, 2006). This is a
 choice adaptation with light polish — dialogue kept verbatim except parser
 artifacts; see the footer on the start passage. Dated content is flagged for
 editorial review, never silently rewritten.
+
+## Known deviations (parked)
+
+- **Bird-cry labels:** every subject link reads `Squawk of X`. In the
+  original, `squawk` is only ever the narration verb for the act of speaking
+  (`'Silence!' you squawk`) or an understood command; the bird's speech
+  content is a per-utterance roll from five cries (`Awwk`, `Awk`, `Awwwk`,
+  `Squawk`, `Squaw-awk`) plus the topic words. Faithfully modeling that
+  (`Awwk! Heirs!`, rotating cries, or bare topics) is deliberately deferred —
+  current labels are generator wording, revisited when squawk paths are back
+  in scope.
