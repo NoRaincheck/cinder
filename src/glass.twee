@@ -1300,46 +1300,6 @@ The humans take this in, and wait for the talk to turn once more.
 [[Magic|S-Hub-magic]]
 [[God|S-Hub-god]]
 [[The birds|S-Hub-birds]]
-:: S1-Prologue-marriage-birds-1
-"'Do you suppose it means that marriage is for the birds?' asks Lucinda.
-
-The humans take this in, and wait for the talk to turn once more.
-
-[[Return to the Prologue talk|S1-Prologue-Hub]]
-[[King's health|S-Hub-kings-health]]
-[[Heirs|S-Hub-heirs]]
-[[Marriage|S-Hub-marriage]]
-[[The ball|S-Hub-ball]]
-[[The shoe|S-Hub-shoe]]
-[[Cinderella|S-Hub-cinderella]]
-[[Theo|S-Hub-theo]]
-[[Lucinda|S-Hub-lucinda]]
-[[Stepmother|S-Hub-stepmother]]
-[[Love|S-Hub-love]]
-[[Blood|S-Hub-blood]]
-[[Magic|S-Hub-magic]]
-[[God|S-Hub-god]]
-[[The birds|S-Hub-birds]]
-:: S1-Prologue-blank-birds-1
-"'I suppose it wishes to advocate a greater interest in aviary concerns?' the Prince asks, looking at you with curiosity.
-
-The humans take this in, and wait for the talk to turn once more.
-
-[[Return to the Prologue talk|S1-Prologue-Hub]]
-[[King's health|S-Hub-kings-health]]
-[[Heirs|S-Hub-heirs]]
-[[Marriage|S-Hub-marriage]]
-[[The ball|S-Hub-ball]]
-[[The shoe|S-Hub-shoe]]
-[[Cinderella|S-Hub-cinderella]]
-[[Theo|S-Hub-theo]]
-[[Lucinda|S-Hub-lucinda]]
-[[Stepmother|S-Hub-stepmother]]
-[[Love|S-Hub-love]]
-[[Blood|S-Hub-blood]]
-[[Magic|S-Hub-magic]]
-[[God|S-Hub-god]]
-[[The birds|S-Hub-birds]]
 :: S1-Prologue-theo-heirs-1
 "'Ah, Theodora... I'm so fortunate in my own children,' the old lady goes on. 'You can never understand what a great pleasure there is in them until you have your own.'
 
@@ -2199,26 +2159,6 @@ The humans take this in, and wait for the talk to turn once more.
 [[Magic|S-Hub-magic]]
 [[God|S-Hub-god]]
 [[The birds|S-Hub-birds]]
-:: S5-Checking-Lucinda-blank-birds-1
-"'I do believe the parrot is jealous,' remarks Theo.
-
-The humans take this in, and wait for the talk to turn once more.
-
-[[Return to the Checking-Lucinda talk|S5-Checking-Lucinda-Hub]]
-[[King's health|S-Hub-kings-health]]
-[[Heirs|S-Hub-heirs]]
-[[Marriage|S-Hub-marriage]]
-[[The ball|S-Hub-ball]]
-[[The shoe|S-Hub-shoe]]
-[[Cinderella|S-Hub-cinderella]]
-[[Theo|S-Hub-theo]]
-[[Lucinda|S-Hub-lucinda]]
-[[Stepmother|S-Hub-stepmother]]
-[[Love|S-Hub-love]]
-[[Blood|S-Hub-blood]]
-[[Magic|S-Hub-magic]]
-[[God|S-Hub-god]]
-[[The birds|S-Hub-birds]]
 :: S4-Checking-Theodora-blank-lucinda-1
 "'One at a time, bird,' mutters the Prince. Theodora giggles."
 
@@ -2571,8 +2511,6 @@ This is the Prologue stretch of the evening. The Prince fidgets, the old lady st
 [[Steer toward shoe|S1-Prologue-blank-shoe-1]]
 [[Steer toward ball|S1-Prologue-blank-ball-1]]
 [[Steer toward Theo|S1-Prologue-marriage-theo-1]]
-[[Steer toward birds|S1-Prologue-marriage-birds-1]]
-[[Steer toward birds|S1-Prologue-blank-birds-1]]
 [[Steer toward heirs|S1-Prologue-theo-heirs-1]]
 [[Steer toward Lucinda|S1-Prologue-god-lucinda-1]]
 [[Steer toward heirs|S1-Prologue-blank-heirs-1]]
@@ -2718,7 +2656,6 @@ This is the Checking-Theodora stretch of the evening. The Prince fidgets, the ol
 This is the Checking-Lucinda stretch of the evening. The Prince fidgets, the old lady steers, Lucinda sighs, and Theodora giggles at all the wrong moments. You may speak on any subject you please, or press on toward an ending.
 
 [[Steer toward Theodora|S5-Checking-Lucinda-blank-theodora-1]]
-[[Steer toward birds|S5-Checking-Lucinda-blank-birds-1]]
 [[King's health|S-Hub-kings-health]]
 [[Heirs|S-Hub-heirs]]
 [[Marriage|S-Hub-marriage]]

@@ -36,9 +36,13 @@ def test_no_missing_rows():
         for r in rows:
             slug = slug_of(r)
             if not any(norm(slug) in norm(p.lower()) for p in PASSAGES):
-                missing.append(f"{table}:{slug}")
-    pruned_slugs = json.dumps(PRUNE)
-    missing = [m for m in missing if m.split(":")[0] not in pruned_slugs]
+                # Excused only by a matching prune-list entry: same table and
+                # (when the entry names one) same slug. Entries without a slug
+                # excuse the whole table (loop tables, none of which are game
+                # rows). New user-cut entries must name their slug.
+                if not any(e.get("table") == table and e.get("slug", slug) == slug
+                           for e in PRUNE):
+                    missing.append(f"{table}:{slug}")
     assert missing == [], f"rows with no passage: {missing[:5]}"
 
 def test_link_targets_exist():
@@ -142,6 +146,9 @@ def test_fidelity_verbatim():
             slug = slug_of(r)
             if not slug:
                 continue
+            if any(e.get("table") == table and e.get("slug", slug) == slug
+                   for e in PRUNE):
+                continue  # user-cut/loop-pruned rows have no passage by design
             cands = [p for p in PASSAGES
                      if p.startswith("S") and p not in META and norm(slug) in norm(p.lower())]
             if not cands:

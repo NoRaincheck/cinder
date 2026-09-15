@@ -23,5 +23,23 @@
     "table": "Flattery",
     "reason": "loop",
     "detail": "4 rows collapsed to one representative passage"
+  },
+  {
+    "table": "Prologue Remarks",
+    "slug": "marriage-birds",
+    "reason": "user-cut",
+    "detail": "2026-09-15 bird-paths review §A1 (flavor, no plot); passage + hub links deleted"
+  },
+  {
+    "table": "Prologue Remarks",
+    "slug": "blank-birds",
+    "reason": "user-cut",
+    "detail": "2026-09-15 bird-paths review §A2 (flavor, no plot); passage + hub links deleted"
+  },
+  {
+    "table": "Lucinda Checking Remarks",
+    "slug": "blank-birds",
+    "reason": "user-cut",
+    "detail": "2026-09-15 bird-paths review §A5 (one-line Theo beat); passage + hub links deleted"
   }
 ]
