@@ -19,7 +19,7 @@ Clone with `git clone --recurse-submodules <url>` (or run `git submodule update 
 
 This installs the pinned toolchain (Tweego 2.1.1 + Chapbook 2.3.0), compiles
 `src/*.twee` to `dist/index.html`, and serves it. Open the printed URL
-(default <http://localhost:8765>) and play — start at *Prologue-Intro*,
+(default <http://localhost:8765>) and play — start at *Start*,
 pick a subject like Heirs, and follow the conversation to one of 8 endings.
 
 Other recipes (`just` with no args lists them):
@@ -36,7 +36,7 @@ Other recipes (`just` with no args lists them):
 ## Layout
 
 ```
-src/glass.twee        Chapbook 2 source — 143 passages, one per remark row
+src/glass.twee        Chapbook 2 source — 28 passages, a curated linear spine
 tools/extract.py      Parses story.ni remark tables → data/graph.json
 tools/setup-tweego.sh Fetches pinned Tweego + Chapbook binaries
 tools/polish.md       LLM rules: light polish only, verbatim kept, FLAG don't rewrite
@@ -62,7 +62,7 @@ dist/                 Build output (gitignored) — deploy artifact for Pages
    the shoe discussion, Fitting behind the ball, the Checking scenes behind
    Theo, and each ending lives in exactly one scene — so the evening always
    moves forward and every ending stays reachable.
-3. `just build` compiles to a single `index.html`; pushing `main` deploys it
+5. `just build` compiles to a single `index.html`; pushing `main` deploys it
    to GitHub Pages via `.github/workflows/pages.yml` (pytest gate included).
 
 ## Attribution

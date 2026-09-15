@@ -24,8 +24,6 @@ def extract_tables(text):
             header = None
             continue
         if current is None or not line.strip():
-            if line.strip() == "" and current:
-                pass
             continue
         if header is None and "\t" in line:
             header = [h.strip().lower() for h in line.split("\t")]

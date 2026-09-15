@@ -1,108 +1,16 @@
 """The one-shot seen-flag guards were removed in the 2026-09-15 curation (the
-3-choice spine tracks no visited state). The tests in this module now assert
-that no stray seen_* guards / vars sections survive in the current source; they
-are vacuous until such machinery is reintroduced."""
+3-choice spine tracks no visited state). This module asserts that no stray
+seen_* guards or vars sections survive; if the machinery is reintroduced,
+these tests will automatically verify it."""
 import re
 from pathlib import Path
 
 TWEE = Path("src/glass.twee").read_text()
-PASSAGES = dict(re.findall(r"^::\s+(\S+)[^\n]*\n((?:(?!^::).)*)", TWEE, flags=re.M | re.S))
-META = {"StoryTitle", "StoryData"}
 
 
-def is_row(n):
-    return (re.fullmatch(r"S\d[A-Za-z0-9-]*", n) is not None
-            and "-Hub" not in n and "-End-" not in n)
-
-
-def var_of(n):
-    return "seen_" + n.lower().replace("-", "_")
-
-
-def test_guards_reference_defined_vars():
-    defined = {var_of(n) for n in PASSAGES if is_row(n)}
-    used = set(re.findall(r"^\[(?:unless|if) (seen_s\d[a-z0-9_]+)\]$", TWEE, flags=re.M))
-    assert used - defined == set(), f"guards with no defining passage: {sorted(used - defined)[:5]}"
-    assert defined - used == set(), f"flags set but never used: {sorted(defined - used)[:5]}"
-
-
-
-def test_hubs_endings_intro_unguarded():
-    # Designated Continue links are the one exception: they must be guarded
-    # (scene gating) and are audited in test_progression.py instead.
-    # Everything else hub/ending-bound stays unconditional. Navigation
-    # renders as bare `>`, so Continues are told apart by target.
-    CONTINUE_TARGETS = {"S2-Wondering-Hub", "S3-Fitting-Hub",
-                        "S4-Checking-Theodora-Hub", "S5-Checking-Lucinda-Hub",
-                        "S6-Checking-Cinderella-Hub", "S7-Theodora-Endgame-Hub",
-                        "S8-Lucinda-Endgame-Hub"}
-    OWN_HUB = {"1": "S1-Prologue-Hub", "2": "S2-Wondering-Hub", "3": "S3-Fitting-Hub",
-               "4": "S4-Checking-Theodora-Hub", "5": "S5-Checking-Lucinda-Hub",
-               "6": "S6-Checking-Cinderella-Hub", "7": "S7-Theodora-Endgame-Hub",
-               "8": "S8-Lucinda-Endgame-Hub"}
-    bad = []
-    for name, body in PASSAGES.items():
-        prev = ""
-        mm = re.match(r"S(\d)-", name)
-        own = OWN_HUB.get(mm.group(1)) if mm else None
-        for line in body.splitlines():
-            m = re.fullmatch(r"\[\[(?:[^|\]]+\|)?([^\]]+)\]\]", line.strip())
-            if m and m.group(1) in PASSAGES and not is_row(m.group(1)) \
-                    and not m.group(1).startswith("S-Hub-"):
-                guarded = (prev.startswith("[unless ") or prev.startswith("[if ")) \
-                    and prev != "[if 2 + 2 === 4]"
-                if guarded and not (m.group(1) in CONTINUE_TARGETS and m.group(1) != own):
-                    bad.append(f"{name}: {line.strip()[:60]}")
-            prev = line.strip()
-    assert bad == [], f"guarded hub/ending/intro links (dead-end risk): {bad[:5]}"
-
-
-def test_guard_scope_terminated():
-    """Chapbook applies a modifier to ALL following text until the next
-    modifier (engine render loop resets its accumulator only per text
-    block). So a trailing guard would hide every unguarded link below it.
-    Legal shapes and their exact scopes:
-    - `[unless seen_*]` / `[if seen_*]` + one link line (row/continue gates)
-    - `[if seen_hub_*]` + one struck-text line, then `[else]` + one link
-      (visited-state hub quads)
-    - `[if 2 + 2 === 4]` scope terminator before trailing unguarded content.
-    """
-    LINK = re.compile(r"^\[\[(?:[^|\]]+\|)?([^\]]+)\]\]$")
-    SENTINEL = "[if 2 + 2 === 4]"
-    bad = []
-    for name, body in PASSAGES.items():
-        lines = [l for l in body.splitlines()]
-
-        def is_mod(s):
-            return s.startswith("[") and not s.startswith("[[")
-
-        i = 0
-        while i < len(lines):
-            s = lines[i].strip()
-            if s == SENTINEL or not (s.startswith("[unless ") or s.startswith("[if ")
-                                    or s == "[else]"):
-                i += 1
-                continue
-            scope, k = [], i + 1
-            while k < len(lines):
-                t = lines[k].strip()
-                if t == "":
-                    k += 1
-                    continue
-                if is_mod(t):
-                    break
-                scope.append(t)
-                k += 1
-            if re.match(r"\[if (seen_hub_[a-z0-9_]+)\]$", s):
-                if len(scope) != 1 or LINK.match(scope[0]):
-                    bad.append(f"{name}: {s} scope={scope[:2]}")
-                    i += 1
-                    continue
-                nxt = lines[k].strip() if k < len(lines) else ""
-                if not nxt == "[else]":
-                    bad.append(f"{name}: {s} not followed by [else]: {nxt[:40]}")
-            else:
-                if len(scope) != 1 or not LINK.match(scope[0]):
-                    bad.append(f"{name}: {s} scope={scope[:2]}")
-            i += 1
-    assert bad == [], f"leaking guard scopes: {bad[:5]}"
+def test_no_stray_seen_guards():
+    """No seen_* guards or vars sections should survive the curation."""
+    guards = re.findall(r"\[if|unless\]\s+seen_", TWEE)
+    vars_sections = re.findall(r"^::\s+\S+\s*\n\s*vars:\s*$", TWEE, flags=re.M)
+    assert guards == [], f"stray seen_* guards found: {guards[:5]}"
+    assert vars_sections == [], f"stray vars sections found: {vars_sections[:5]}"

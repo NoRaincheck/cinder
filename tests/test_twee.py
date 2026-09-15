@@ -122,6 +122,11 @@ def test_fidelity_verbatim():
     # non-pruned row with a passage is verbatim-grounded, hence the
     # curated-universe constants below. The category sets above are retained
     # for provenance (git history of the 104-row glass).
+    # EXPECTED_EXEMPT and EXPECTED_VIOLATOR_INSTANCES are empty because the
+    # curated spine contains zero violations — every surviving passage has
+    # a >=40-char verbatim run from its source row (the curation dropped all
+    # thin/invented passages). If a future edit introduces a violation, these
+    # constants must be updated before the test can pass.
     EXPECTED_EXEMPT = set()
     EXPECTED_VIOLATOR_INSTANCES = 0
     exempt = {}  # unique key -> reason
