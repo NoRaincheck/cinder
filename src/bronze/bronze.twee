@@ -22,7 +22,7 @@ seen_bronze_hourglass: false
 seen_bronze_crypt_door: false
 --
 
-![Drawbridge before the rainy castle](assets/bronze/bronze-gate.png)
+![Drawbridge before the rainy castle](assets/bronze/bronze-gate.webp)
 
 Even in your short absence, the castle has come to look strange to you again. When you came here first, you stood a long while on the drawbridge, unready to cross the moat, for fear of the spells that might bind you if you did. This time it is too late to worry about such things.
 
@@ -37,7 +37,7 @@ The castle waits for your next move.
 seen_bronze_gate: true
 --
 
-![Drawbridge before the rainy castle](assets/bronze/bronze-gate.png)
+![Drawbridge before the rainy castle](assets/bronze/bronze-gate.webp)
 
 You shouldn't be able to open it, heavy as it is, but it swings aside lightly at your touch. The Beast said that it knows friend from enemy; and the castle, at least, still regards you as friend.
 
@@ -45,7 +45,7 @@ You shouldn't be able to open it, heavy as it is, but it swings aside lightly at
 :: Bronze-Entrance-Hall
 --
 
-![Drawbridge before the rainy castle](assets/bronze/bronze-gate.png)
+![Drawbridge before the rainy castle](assets/bronze/bronze-gate.webp)
 
 There is no fire in the big fireplace, and no one is waiting for you here; the air is very cold. Over the gate, the old familiar warning sign is painted.
 
@@ -61,7 +61,7 @@ The castle waits for your next move.
 :: Bronze-Courtyard
 --
 
-![Rainy courtyard and helical stair](assets/bronze/bronze-courtyard.png)
+![Rainy courtyard and helical stair](assets/bronze/bronze-courtyard.webp)
 
 Open to a grey sky, from which a light rain falls. You have never seen the courtyard otherwise: it rains in every season, winter or summer, no matter what lies beyond the moat.
 
@@ -81,7 +81,7 @@ The castle waits for your next move.
 seen_bronze_helical_stair: true
 --
 
-![Rainy courtyard and helical stair](assets/bronze/bronze-courtyard.png)
+![Rainy courtyard and helical stair](assets/bronze/bronze-courtyard.webp)
 
 The steps rise from here towards the upper rooms, and open out onto the bare courtyard. Too narrow for comfort near the axis; too broad for speed, along the outer edge; and at the center, where they have just the right breadth, they have been worn down by the passage of hundreds of feet, and made almost into a ramp.
 
@@ -91,7 +91,7 @@ An obscene gargoyle sits where the finial of the banister should be. It still do
 :: Bronze-Scarlet-Gallery
 --
 
-![Scarlet gallery and caged treasures](assets/bronze/bronze-scarlet.png)
+![Scarlet gallery and caged treasures](assets/bronze/bronze-scarlet.webp)
 
 You do not often come this way, into the older part of the castle, which is narrow and has a low roof. The walls, and the ceiling too, are deep scarlet, the color of the old king and queen that ruled here two hundred fifty years ago, when there was still a kingdom.
 
@@ -114,7 +114,7 @@ The castle waits for your next move.
 seen_bronze_scarlet_tower: true
 --
 
-![Scarlet gallery and caged treasures](assets/bronze/bronze-scarlet.png)
+![Scarlet gallery and caged treasures](assets/bronze/bronze-scarlet.webp)
 
 A little hexagonal room, from whose narrow window you can see the moat, the lawn, and the beginning of the forest outside. Beyond a short stretch of clear ground, the forest grows thick and uninhabited for many miles.
 
@@ -129,7 +129,7 @@ On the windowsill, a helmet waits, for the use of the sentry.
 seen_bronze_helmet: true
 --
 
-![Scarlet gallery and caged treasures](assets/bronze/bronze-scarlet.png)
+![Scarlet gallery and caged treasures](assets/bronze/bronze-scarlet.webp)
 
 A very old helmet that you have seen the Beast wear (and quite foolish it looked, perched on a head it no longer fits: it would suit your head better). He told you once that the helmet was for night watchmen, scouts, and guards, to increase their vigilance and strengthen their hearing.
 
@@ -142,7 +142,7 @@ You settle the helmet over your head, and there is a roaring in your ears at fir
 seen_bronze_history_gallery: true
 --
 
-![Scarlet gallery and caged treasures](assets/bronze/bronze-scarlet.png)
+![Scarlet gallery and caged treasures](assets/bronze/bronze-scarlet.webp)
 
 Here on the north wall and the south are paintings of historical events from times past: the assassination of King Elzibad in 1248; the arrival of Princess Lucrezia from the Italian State of Medici-Credenza in 1545.
 
@@ -155,7 +155,7 @@ Here on the north wall and the south are paintings of historical events from tim
 seen_bronze_treasure_room: true
 --
 
-![Scarlet gallery and caged treasures](assets/bronze/bronze-scarlet.png)
+![Scarlet gallery and caged treasures](assets/bronze/bronze-scarlet.webp)
 
 Locked in an iron cage are the house treasures not in use -- he showed them to you one rainy day, telling you their many histories.
 
@@ -170,7 +170,7 @@ The cage is made of broad strap-like bars of metal, as thick as a man's belt, an
 seen_bronze_cage: true
 --
 
-![Scarlet gallery and caged treasures](assets/bronze/bronze-scarlet.png)
+![Scarlet gallery and caged treasures](assets/bronze/bronze-scarlet.webp)
 
 In the cage lie a sceptre studded with measly turquoises and semi-precious stones, formerly belonging to Queen Ingratitudina the First, only slightly bent where she used it to strike King Cophetua -- and a pair of cloven shoes, made for something with cloven hoofs, bearing evidence of having been adjusted to their current size by a shoemaker.
 
@@ -181,7 +181,7 @@ You slip your feet into the shoes, and feel less alone. Mere sentiment, you thin
 seen_bronze_maze_room: true
 --
 
-![The Beast in his den](assets/bronze/bronze-beast.png)
+![The Beast in his den](assets/bronze/bronze-beast.webp)
 
 A labyrinth of black and white, like that of cathedrals, as protection against the spite of the undead: which protection might often have been needed, by those that dwelt here in former times. The way down is at the center of the maze.
 
@@ -196,7 +196,7 @@ It is not a difficult maze at all: a simple inward spiral with a few doublings-b
 seen_bronze_bear_corridor: true
 --
 
-![The Beast in his den](assets/bronze/bronze-beast.png)
+![The Beast in his den](assets/bronze/bronze-beast.webp)
 
 Less couth and cultivated than any other part of the castle, and you have been forbidden to visit this place before now. The walls press close to you on either side. The floor slopes down. Bears with sharp claws are carved into the rock, but they remind you of Him, and you are not frightened.
 
@@ -209,7 +209,7 @@ Less couth and cultivated than any other part of the castle, and you have been f
 seen_bronze_zoo: true
 --
 
-![The Beast in his den](assets/bronze/bronze-beast.png)
+![The Beast in his den](assets/bronze/bronze-beast.webp)
 
 A resting place for an animal: warm but rough. There is little to suggest, from this environment, that he thinks of himself as a man at all, though he is capable of walking upright and eating with utensils, of reading books and even of writing a legible hand.
 
@@ -222,7 +222,7 @@ A resting place for an animal: warm but rough. There is little to suggest, from 
 seen_bronze_beast: true
 --
 
-![The Beast in his den](assets/bronze/bronze-beast.png)
+![The Beast in his den](assets/bronze/bronze-beast.webp)
 
 He plucks the poison vial from your fingers with a delicacy that should be impossible in one his size. 'It was a good thought,' he said. 'But if I could be killed by poison -- or by violence, or starving, or leaping from towers, by drowning or by suffocation or by fire, I assure you, I would have found the way by now. That leaves only yourself as a victim, and I did not bring you here to die.' And so you didn't.
 
@@ -230,7 +230,7 @@ He plucks the poison vial from your fingers with a delicacy that should be impos
 :: Bronze-Law-Library
 --
 
-![Law library and great contract book](assets/bronze/bronze-library.png)
+![Law library and great contract book](assets/bronze/bronze-library.webp)
 
 Many books of precedent line these walls, containing every kind of contract that can be made to bind every kind of soul. A hole in the floor descends to the other, less savory portion of this place.
 
@@ -253,7 +253,7 @@ The castle waits for your next move.
 seen_bronze_contract_book: true
 --
 
-![Law library and great contract book](assets/bronze/bronze-library.png)
+![Law library and great contract book](assets/bronze/bronze-library.webp)
 
 A book many thousands of pages long, and on each page is a name, a birthdate, a term of service, all the contracts that bind the castle's ghosts and servitors and Powers: ostlers and fighting-men, bishops and whores.
 
@@ -266,7 +266,7 @@ Your father's contract is just before your own: a lifetime of service in this ca
 seen_bronze_records_room: true
 --
 
-![Law library and great contract book](assets/bronze/bronze-library.png)
+![Law library and great contract book](assets/bronze/bronze-library.webp)
 
 Where all the papers and histories are kept, not only for the royal family, but for kin in every kind and direction. Neatly filed: he told you he'd spent twenty years or so on them, having no other way to occupy his time.
 
@@ -278,7 +278,7 @@ The roses, according to record, were planted from a cutting brought by Lucrezia 
 :: Bronze-Rotunda
 --
 
-![Rotunda hourglass and rose garden](assets/bronze/bronze-rotunda.png)
+![Rotunda hourglass and rose garden](assets/bronze/bronze-rotunda.webp)
 
 Built for the bureaucratic offices of the palace. Inlaid in the floor is the map of all the lands that once this palace commanded; and from the stains and driblets of wax, it is clear to you that someone at some time thought it useful to set a candle at the map's center, and observe the result.
 
@@ -296,7 +296,7 @@ The castle waits for your next move.
 seen_bronze_hourglass: true
 --
 
-![Rotunda hourglass and rose garden](assets/bronze/bronze-rotunda.png)
+![Rotunda hourglass and rose garden](assets/bronze/bronze-rotunda.webp)
 
 In this very tall room, like a silo, is a glass of running sand: not an hourglass, or even a dayglass, but a timer whose duration you do not know. A whole Sahara has poured into its lower chamber, but the trickle from above continues, very fine. No human glassblower could have made this thing, that much is certain.
 
@@ -310,7 +310,7 @@ You walk far enough in to get a view of sand falling in a huge hourglass. Though
 :: Bronze-Rose-Garden
 --
 
-![Rotunda hourglass and rose garden](assets/bronze/bronze-rotunda.png)
+![Rotunda hourglass and rose garden](assets/bronze/bronze-rotunda.webp)
 
 Only one kind of roses grows here, a pink only just distinct from white. This strain creeps over the ground and climbs the walls of the cloister. The raindrops seem to you larger and colder than you remember.
 
@@ -324,7 +324,7 @@ The castle waits for your next move.
 seen_bronze_crypt_door: true
 --
 
-![Pentagonal crypt of bones](assets/bronze/bronze-crypt.png)
+![Pentagonal crypt of bones](assets/bronze/bronze-crypt.webp)
 
 Pentagonal and lined with stones. Below lies a relic-storage place for all the bits of men and women -- and creatures -- bound to the Kings over many centuries. Only brute animals are free of binding, since they have no souls; which is why there are no dogs in the castle, no horses, no songbirds.
 
@@ -335,7 +335,7 @@ Bones are built into the walls, often no more than fragments.
 :: Bronze-Choice-Stay
 --
 
-![Rotunda hourglass and rose garden](assets/bronze/bronze-rotunda.png)
+![Rotunda hourglass and rose garden](assets/bronze/bronze-rotunda.webp)
 
 You have read your contract, and the amendment that lets you leave and return within seven days. You did return. Let the seven days be the rest of your life.
 
@@ -343,7 +343,7 @@ You have read your contract, and the amendment that lets you leave and return wi
 :: Bronze-Choice-Beast
 --
 
-![Pentagonal crypt of bones](assets/bronze/bronze-crypt.png)
+![Pentagonal crypt of bones](assets/bronze/bronze-crypt.webp)
 
 The crypt holds the most wretched of the castle's affiliated spirits, and the shoes whispered that there are sources of power there which even he has never understood. You will face what waits below -- him, or whatever he has become.
 
@@ -351,7 +351,7 @@ The crypt holds the most wretched of the castle's affiliated spirits, and the sh
 :: Bronze-Choice-Leave
 --
 
-![Rotunda hourglass and rose garden](assets/bronze/bronze-rotunda.png)
+![Rotunda hourglass and rose garden](assets/bronze/bronze-rotunda.webp)
 
 Those who seek to leave the castle depart at peril of their lives and souls, unless another servant be provided in exchange, or a fixed term of absence be granted by their master. Your term was granted. You will take the peril all the same.
 
@@ -359,7 +359,7 @@ Those who seek to leave the castle depart at peril of their lives and souls, unl
 :: End-Bronze-Leave
 --
 
-![Rotunda hourglass and rose garden](assets/bronze/bronze-rotunda.png)
+![Rotunda hourglass and rose garden](assets/bronze/bronze-rotunda.webp)
 
 You leave the castle to its rain and its silence. The moat is full of slightly oily brown water, and the forest grows thick and uninhabited for many miles. Whatever contract bound you, you carry its amendment with you: seven days, kept.
 
@@ -367,7 +367,7 @@ THE END.
 :: End-Bronze-Stay
 --
 
-![Rotunda hourglass and rose garden](assets/bronze/bronze-rotunda.png)
+![Rotunda hourglass and rose garden](assets/bronze/bronze-rotunda.webp)
 
 You stay. The servants remain, the rain keeps falling on the courtyard, and the helmet waits on the sill for the next sentry. You take up your place in the castle's long history, and the castle, at least, still regards you as friend.
 
@@ -375,7 +375,7 @@ THE END.
 :: End-Bronze-Beast
 --
 
-![Pentagonal crypt of bones](assets/bronze/bronze-crypt.png)
+![Pentagonal crypt of bones](assets/bronze/bronze-crypt.webp)
 
 You go down into the dark where he waits, past bones built into the walls, past the relics of everyone the castle has ever bound. What happens there belongs to the two of you alone -- but the Beast is gone, and the servants remain enslaved, no doubt inherited by the next of the line.
 

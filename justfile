@@ -22,8 +22,8 @@ build-landing:
 # Compile both stories + landing to dist/.
 build: setup
     mkdir -p dist dist/assets/glass dist/assets/bronze
-    cp -n src/glass/assets/*.png dist/assets/glass/ 2>/dev/null || cp src/glass/assets/*.png dist/assets/glass/
-    cp -n src/bronze/assets/*.png dist/assets/bronze/ 2>/dev/null || cp src/bronze/assets/*.png dist/assets/bronze/
+    cp -n src/glass/assets/*.webp dist/assets/glass/ 2>/dev/null || cp src/glass/assets/*.webp dist/assets/glass/
+    cp -n src/bronze/assets/*.webp dist/assets/bronze/ 2>/dev/null || cp src/bronze/assets/*.webp dist/assets/bronze/
     {{tweego}} src/glass -o dist/glass.html
     node tools/patch-chapbook.js dist/glass.html
     {{tweego}} src/bronze -o dist/bronze.html
@@ -80,13 +80,13 @@ fmt:
 # Compile Glass story dir to dist/glass.html.
 build-glass: setup
     mkdir -p dist dist/assets/glass
-    cp -n src/glass/assets/*.png dist/assets/glass/ 2>/dev/null || cp src/glass/assets/*.png dist/assets/glass/
+    cp -n src/glass/assets/*.webp dist/assets/glass/ 2>/dev/null || cp src/glass/assets/*.webp dist/assets/glass/
     {{tweego}} src/glass -o dist/glass.html
     node tools/patch-chapbook.js dist/glass.html
 
 # Compile Bronze story dir to dist/bronze.html.
 build-bronze: setup
     mkdir -p dist dist/assets/bronze
-    cp -n src/bronze/assets/*.png dist/assets/bronze/ 2>/dev/null || cp src/bronze/assets/*.png dist/assets/bronze/
+    cp -n src/bronze/assets/*.webp dist/assets/bronze/ 2>/dev/null || cp src/bronze/assets/*.webp dist/assets/bronze/
     {{tweego}} src/bronze -o dist/bronze.html
     node tools/patch-chapbook.js dist/bronze.html

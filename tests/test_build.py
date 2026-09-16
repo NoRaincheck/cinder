@@ -51,21 +51,21 @@ def test_tweego_builds_both_stories_and_landing():
     # Tweego compilation into the built HTML (imported as Twine.image
     # passages; src strings retained in the output).
     glass_art = [
-        "glass-prologue.png",
-        "glass-wondering-ball.png",
-        "glass-fitting.png",
-        "glass-checking.png",
-        "glass-cinderella.png",
-        "glass-ending.png",
+        "glass-prologue.webp",
+        "glass-wondering-ball.webp",
+        "glass-fitting.webp",
+        "glass-checking.webp",
+        "glass-cinderella.webp",
+        "glass-ending.webp",
     ]
     bronze_art = [
-        "bronze-gate.png",
-        "bronze-courtyard.png",
-        "bronze-scarlet.png",
-        "bronze-beast.png",
-        "bronze-library.png",
-        "bronze-rotunda.png",
-        "bronze-crypt.png",
+        "bronze-gate.webp",
+        "bronze-courtyard.webp",
+        "bronze-scarlet.webp",
+        "bronze-beast.webp",
+        "bronze-library.webp",
+        "bronze-rotunda.webp",
+        "bronze-crypt.webp",
     ]
     for name in glass_art:
         assert (Path("src/glass/assets") / name).exists(), f"missing src art: {name}"
