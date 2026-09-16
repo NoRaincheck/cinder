@@ -1,0 +1,72 @@
+[
+  {
+    "table": "Topic Hints",
+    "reason": "loop",
+    "detail": "475 rows omitted: ASK/TELL hint scaffolding has no place in the 28-passage choice spine"
+  },
+  {
+    "table": "Beast Thoughts",
+    "reason": "loop",
+    "detail": "300 rows omitted: idle thought-loop flavor cut from the 28-passage spine"
+  },
+  {
+    "table": "History",
+    "reason": "loop",
+    "detail": "21 rows collapsed to one representative passage (Bronze-History-Gallery)"
+  },
+  {
+    "table": "Contracts List",
+    "reason": "loop",
+    "detail": "343 rows collapsed to one representative passage (Bronze-Contract-Book)"
+  },
+  {
+    "table": "Memories",
+    "reason": "user-cut",
+    "detail": "0 rows extracted: memory-flashback system dropped, no representative passage"
+  },
+  {
+    "table": "Notes",
+    "reason": "user-cut",
+    "detail": "146 rows omitted: marginalia/note system not in the 28-passage spine"
+  },
+  {
+    "table": "Fancy Status",
+    "reason": "user-cut",
+    "detail": "39 rows omitted: parser status-line scaffolding, meaningless in choice format"
+  },
+  {
+    "table": "Basic Help Options (continued)",
+    "reason": "user-cut",
+    "detail": "5 rows omitted: inline help menu not in the 28-passage spine"
+  },
+  {
+    "table": "Stuckness Advice (continued)",
+    "reason": "user-cut",
+    "detail": "6 rows omitted: stuckness-hint menu not in the 28-passage spine"
+  },
+  {
+    "table": "User Styles (continued)",
+    "reason": "user-cut",
+    "detail": "1 row omitted: transcript-styling option, parser-only concern"
+  },
+  {
+    "table": "rooms: bedrooms and private chambers",
+    "reason": "user-cut",
+    "detail": "not in the 28-passage spine (presumed cut): Crystal Bedroom, Empty Bedroom, Green Bedroom, Guest Bedroom, Dank Room, Rocky Chamber, Rooted Room, Smoke-Damaged Chamber"
+  },
+  {
+    "table": "rooms: galleries and balcony",
+    "reason": "user-cut",
+    "detail": "not in the 28-passage spine (presumed cut): Black Gallery, White Gallery, Gilded Balcony (Gallery itself is represented via Bronze-History-Gallery)"
+  },
+  {
+    "table": "rooms: service and utility",
+    "reason": "user-cut",
+    "detail": "not in the 28-passage spine (presumed cut): Enormous Kitchen, Press Room, Wax Supply, Armory, Apprentice's Workshop, Guard Tower"
+  },
+  {
+    "table": "rooms: deep castle and vaults",
+    "reason": "user-cut",
+    "detail": "not in the 28-passage spine (presumed cut): Lower Bulb, Upper Bulb, Tight Passage, Bell Castings, Bellroom, Burnt Frame, Cloister Walk, Parliamentary Chambers, Private Parlor, Debtor's Paradise, Father's Regret, Lucrezia's Study, Lie Library, Translation Room, Scrying Room, Virgin's End, Walk's End, Great Dining Hall"
+  }
+]

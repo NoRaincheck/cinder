@@ -2,7 +2,7 @@ from pathlib import Path
 
 import re
 
-TWEE = Path("src/glass.twee").read_text()
+TWEE = Path("src/glass/glass.twee").read_text()
 
 
 def test_no_parser_artifacts():

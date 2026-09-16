@@ -18,10 +18,17 @@
 const fs = require("fs");
 const path = require("path");
 
-const distPath = path.join(__dirname, "..", "dist", "index.html");
+const arg = process.argv[2];
+if (arg === "--help" || arg === "-h") {
+  console.log("Usage: node tools/patch-chapbook.js [target-html] (default: dist/index.html)");
+  process.exit(0);
+}
+const distPath = arg
+  ? path.resolve(arg)
+  : path.join(__dirname, "..", "dist", "index.html");
 
 if (!fs.existsSync(distPath)) {
-  console.error("dist/index.html not found. Run `just build` first.");
+  console.error(distPath + " not found. Run `just build` first.");
   process.exit(1);
 }
 
@@ -37,7 +44,7 @@ const brokenCount = (html.match(new RegExp(broken.replace(/[.*+?^${}()|[\]\\]/g,
 if (brokenCount > 0) {
   html = html.replace(broken, after);
   fs.writeFileSync(distPath, html, "utf-8");
-  console.log(`Repaired ${brokenCount} occurrence(s) of broken [continue] patch in dist/index.html`);
+  console.log("Repaired " + brokenCount + " occurrence(s) of broken [continue] patch in " + distPath);
   console.log("  Before: process(c){c.state.conditionEval=void 0}}");
   console.log("  After:  process(n,c){c.state.conditionEval=void 0}}");
   process.exit(0);
@@ -57,6 +64,6 @@ if (count !== 1) {
 html = html.replace(before, after);
 fs.writeFileSync(distPath, html, "utf-8");
 
-console.log(`Patched ${count} occurrence(s) of [continue] modifier in dist/index.html`);
+console.log("Patched " + count + " occurrence(s) of [continue] modifier in " + distPath);
 console.log("  Before: process(){}}");
 console.log("  After:  process(n,c){c.state.conditionEval=void 0}}");

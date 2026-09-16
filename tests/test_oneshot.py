@@ -6,7 +6,7 @@ these tests will automatically verify it."""
 import re
 from pathlib import Path
 
-TWEE = Path("src/glass.twee").read_text()
+TWEE = Path("src/glass/glass.twee").read_text()
 
 
 def test_no_stray_seen_guards():

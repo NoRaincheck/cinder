@@ -1,7 +1,7 @@
 import json, re
 from pathlib import Path
 
-TWEE = Path("src/glass.twee").read_text()
+TWEE = Path("src/glass/glass.twee").read_text()
 PASSAGES = dict(re.findall(r"^::\s+(\S+)[^\n]*\n((?:(?!^::).)*)", TWEE, flags=re.M | re.S))
 LINKS = {name: re.findall(r"\[\[(?:[^|\]]+\|)?([^\]]+)\]\]", body) for name, body in PASSAGES.items()}
 GRAPH = json.load(open("data/graph.json"))

@@ -1,7 +1,15 @@
-"""Filter src/glass.twee to the curated 3-choice spine. Keeps passage bodies
-verbatim; rewrites hub link blocks to <=3 story links + Back/Continue/Press nav;
-drops S-Hub-* passages; appends Back-to-Hub to every kept row."""
-import re, sys
+"""Filter the Glass twee to the curated 3-choice spine (src/glass/glass.twee).
+Keeps passage bodies verbatim; rewrites hub link blocks to <=3 story links +
+Back/Continue/Press nav; drops S-Hub-* passages; appends Back-to-Hub to every
+kept row. Glass-only: bronze curation is manual."""
+import argparse
+import re
+
+# Default paths for the Glass source (the only story curate3 supports).
+STORY_PATHS = {
+    "glass": {"graph": "data/graph.json", "src_dir": "src/glass",
+              "twee": "src/glass/glass.twee"},
+}
 
 KEEP = [
     "S1-Prologue-blank-shoe-1", "S1-Prologue-heirs-marriage-1", "S1-Prologue-marriage-ball-1",
@@ -129,4 +137,14 @@ def rebuild_row(row, ps):
     return f":: {row}\n{body}"
 
 if __name__ == "__main__":
-    main(sys.argv[1], sys.argv[2])
+    ap = argparse.ArgumentParser(description=__doc__)
+    ap.add_argument("src", nargs="?", default=None,
+                    help="input .twee file (default: <src_dir>/<story>.twee)")
+    ap.add_argument("dst", nargs="?", default=None,
+                    help="output .twee file (default: same as src, in place)")
+    ap.add_argument("--story", default="glass", choices=["glass"],
+                    help="story to curate (glass only)")
+    args = ap.parse_args()
+    src = args.src or STORY_PATHS[args.story]["twee"]
+    dst = args.dst or src
+    main(src, dst)

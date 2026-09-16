@@ -20,7 +20,9 @@ def test_pages_workflow_exists():
 
 def test_justfile_has_recipes():
     jf = Path("justfile").read_text()
-    for recipe in ["setup:", "build:", "test:", "preview:", "extract:", "fmt:"]:
+    for recipe in ["setup:", "build:", "test:", "preview:", "fmt:"]:
         assert recipe in jf, f"justfile missing recipe {recipe}"
+    # extract is parameterized: `just extract` (all), `just extract glass|bronze`.
+    assert 'extract story="all":' in jf, "justfile missing parameterized extract recipe"
     assert "build/tweego/tweego" in jf
     assert "http.server" in jf

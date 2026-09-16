@@ -14,33 +14,52 @@ setup:
     pip3 install -r requirements.txt
     tools/setup-tweego.sh
 
-# Compile src/*.twee (Chapbook) to dist/index.html.
-# Post-build: patch Chapbook [continue] modifier to reset conditionEval
-# (fixes variable state bleeding across blocks within a passage).
+# Generate dist/index.html landing linking both stories.
+build-landing:
+    python3 tools/build-landing.py
+    ls -la dist
+
+# Compile both stories + landing to dist/.
 build: setup
     mkdir -p dist
-    {{tweego}} src -o dist/index.html
-    node tools/patch-chapbook.js
+    {{tweego}} src/glass -o dist/glass.html
+    node tools/patch-chapbook.js dist/glass.html
+    {{tweego}} src/bronze -o dist/bronze.html
+    node tools/patch-chapbook.js dist/bronze.html
+    python3 tools/build-landing.py
     ls -la dist
 
 # Run the full pytest suite (coverage, links, reachability, build, polish).
 test:
     python3 -m pytest tests/ -v
 
-# Re-extract graph.json + prune-list.json from the Inform 7 source.
-# Canonical source is the committed ref copy; snapshot only restores it.
-extract:
+# Re-extract graphs: `just extract` (all), `just extract glass`, `just extract bronze`.
+extract story="all":
     #!/usr/bin/env bash
     set -euo pipefail
-    if [ -f ref/source/glass.ni ]; then
-        SRC=ref/source/glass.ni
-    else
-        echo "ref/source/glass.ni missing; fetching snapshot" >&2
-        curl -sSL https://raw.githubusercontent.com/I7-Examples/Glass/main/Glass.inform/Source/story.ni -o ref/source/glass.ni
-        SRC=ref/source/glass.ni
+    if [ "{{story}}" != "glass" ] && [ "{{story}}" != "bronze" ] && [ "{{story}}" != "all" ]; then
+        echo "unknown story: {{story}} (glass|bronze|all)" >&2
+        exit 1
     fi
-    python3 tools/extract.py "$SRC" data
-    cat data/extraction-report.json
+    if [ "{{story}}" = "glass" ] || [ "{{story}}" = "all" ]; then
+        if [ -f ref/source/glass.ni ]; then
+            SRC=ref/source/glass.ni
+        else
+            echo "ref/source/glass.ni missing; fetching snapshot" >&2
+            curl -sSL https://raw.githubusercontent.com/I7-Examples/Glass/main/Glass.inform/Source/story.ni -o ref/source/glass.ni
+            SRC=ref/source/glass.ni
+        fi
+        python3 tools/extract.py "$SRC" data
+        cat data/extraction-report.json
+    fi
+    if [ "{{story}}" = "bronze" ] || [ "{{story}}" = "all" ]; then
+        if [ ! -f ref/source/bronze.ni ]; then
+            echo "ref/source/bronze.ni missing; fetching snapshot" >&2
+            curl -sSL https://raw.githubusercontent.com/I7-Examples/Bronze/main/Bronze.inform/Source/story.ni -o ref/source/bronze.ni
+        fi
+        python3 tools/extract.py ref/source/bronze.ni data --story bronze
+        cat data/bronze-extraction-report.json
+    fi
 
 # Build, then serve dist/ locally so you can play the game in a browser.
 preview: build
@@ -52,6 +71,18 @@ clean:
     rm -rf dist build .pytest_cache
     find . -name "__pycache__" -type d -prune -exec rm -rf {} +
 
-# Format src/glass.twee: append two spaces after any line ending in ]] (Chapbook link rule).
+# Format story sources: append two spaces after any line ending in ]] (Chapbook link rule).
 fmt:
-	@sed -i '' -E 's/\]\][ ]?$/]]  /' src/glass.twee
+    @sed -i '' -E 's/\]\][ ]?$/]]  /' src/glass/glass.twee src/bronze/bronze.twee
+
+# Compile Glass story dir to dist/glass.html.
+build-glass: setup
+    mkdir -p dist
+    {{tweego}} src/glass -o dist/glass.html
+    node tools/patch-chapbook.js dist/glass.html
+
+# Compile Bronze story dir to dist/bronze.html.
+build-bronze: setup
+    mkdir -p dist
+    {{tweego}} src/bronze -o dist/bronze.html
+    node tools/patch-chapbook.js dist/bronze.html
