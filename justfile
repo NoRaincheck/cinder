@@ -37,6 +37,10 @@ test:
 extract story="all":
     #!/usr/bin/env bash
     set -euo pipefail
+    if [ "{{story}}" != "glass" ] && [ "{{story}}" != "bronze" ] && [ "{{story}}" != "all" ]; then
+        echo "unknown story: {{story}} (glass|bronze|all)" >&2
+        exit 1
+    fi
     if [ "{{story}}" = "glass" ] || [ "{{story}}" = "all" ]; then
         if [ -f ref/source/glass.ni ]; then
             SRC=ref/source/glass.ni

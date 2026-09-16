@@ -1,16 +1,14 @@
-"""Filter a story twee to the curated 3-choice spine (default: src/glass/glass.twee).
+"""Filter the Glass twee to the curated 3-choice spine (src/glass/glass.twee).
 Keeps passage bodies verbatim; rewrites hub link blocks to <=3 story links +
 Back/Continue/Press nav; drops S-Hub-* passages; appends Back-to-Hub to every
-kept row. Use --story bronze for src/bronze/bronze.twee."""
+kept row. Glass-only: bronze curation is manual."""
 import argparse
 import re
 
-# Per-story default paths: graph extraction output + story source dir.
+# Default paths for the Glass source (the only story curate3 supports).
 STORY_PATHS = {
     "glass": {"graph": "data/graph.json", "src_dir": "src/glass",
               "twee": "src/glass/glass.twee"},
-    "bronze": {"graph": "data/bronze-graph.json", "src_dir": "src/bronze",
-               "twee": "src/bronze/bronze.twee"},
 }
 
 KEEP = [
@@ -144,11 +142,9 @@ if __name__ == "__main__":
                     help="input .twee file (default: <src_dir>/<story>.twee)")
     ap.add_argument("dst", nargs="?", default=None,
                     help="output .twee file (default: same as src, in place)")
-    ap.add_argument("--story", default="glass", choices=sorted(STORY_PATHS),
-                    help="story to curate (default: glass)")
+    ap.add_argument("--story", default="glass", choices=["glass"],
+                    help="story to curate (glass only)")
     args = ap.parse_args()
-    if args.story != "glass":
-        raise SystemExit("bronze curation is manual; --story bronze not supported")
     src = args.src or STORY_PATHS[args.story]["twee"]
     dst = args.dst or src
     main(src, dst)
