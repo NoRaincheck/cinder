@@ -28,26 +28,29 @@ test:
     python3 -m pytest tests/ -v
 
 # Re-extract graph.json + prune-list.json from the Inform 7 source.
+# Canonical source is the committed ref copy; snapshot only restores it.
 extract:
     #!/usr/bin/env bash
     set -euo pipefail
-    if [ -f vendor/glass/Glass.inform/Source/story.ni ]; then
-        SRC=vendor/glass/Glass.inform/Source/story.ni
-    elif [ -f data/glass.ni ]; then
-        SRC=data/glass.ni
+    if [ -f ref/source/glass.ni ]; then
+        SRC=ref/source/glass.ni
     else
-        echo "submodule not initialized; fetching snapshot" >&2
-        curl -sSL https://raw.githubusercontent.com/I7-Examples/Glass/main/Glass.inform/Source/story.ni -o data/glass.ni
-        SRC=data/glass.ni
+        echo "ref/source/glass.ni missing; fetching snapshot" >&2
+        curl -sSL https://raw.githubusercontent.com/I7-Examples/Glass/main/Glass.inform/Source/story.ni -o ref/source/glass.ni
+        SRC=ref/source/glass.ni
     fi
-    if [ "$SRC" != "data/glass.ni" ]; then cp "$SRC" data/glass.ni; fi
-    python3 tools/extract.py data/glass.ni data
+    python3 tools/extract.py "$SRC" data
     cat data/extraction-report.json
 
 # Build, then serve dist/ locally so you can play the game in a browser.
 preview: build
     @echo "Playing Twee-Glass at http://localhost:{{port}} (Ctrl-C to stop)..."
     python3 -m http.server {{port}} --directory dist
+
+# Remove build outputs and caches.
+clean:
+    rm -rf dist build .pytest_cache
+    find . -name "__pycache__" -type d -prune -exec rm -rf {} +
 
 # Format src/glass.twee: append two spaces after any line ending in ]] (Chapbook link rule).
 fmt:

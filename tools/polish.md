@@ -26,7 +26,7 @@ plus the current twee passage body for that row.
 
   so a human decides (keep verbatim, soften, or cut) before merge.
 
-## Artifact resolutions (deterministic, grounded in `data/glass.ni`)
+## Artifact resolutions (deterministic, grounded in `ref/source/glass.ni`)
 
 | Artifact | Resolution | Grounding |
 |---|---|---|

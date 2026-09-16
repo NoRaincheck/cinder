@@ -2,9 +2,6 @@
 /build/
 /dist/
 
-# Generated / fetched copies
-data/glass.ni
-
 # Python
 __pycache__/
 *.py[cod]
