@@ -1,4 +1,4 @@
-# SRD — Twee-Glass (durable)
+# SRD — Cinder (durable)
 
 **Status:** durable — default branch alone is sufficient to operate and recover the system.
 **Scope:** Choice-based Twine ports of Emily Short's Inform 7 games *Glass* and *Bronze*.

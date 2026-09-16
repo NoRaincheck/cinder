@@ -17,10 +17,10 @@ STORIES = [
 
 TEMPLATE = """<!doctype html>
 <html lang="en">
-<head><meta charset="utf-8"><title>Twee-Glass &amp; Bronze</title></head>
+<head><meta charset="utf-8"><title>Cinder</title></head>
 <body>
 <main>
-<h1>Twee-Glass &amp; Bronze</h1>
+<h1>Cinder</h1>
 {cards}
 <footer><p>Glass and Bronze by Emily Short (2006), choice adaptations. Dialogue kept verbatim except parser artifacts.</p></footer>
 </main>

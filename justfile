@@ -1,4 +1,4 @@
-# Twee-Glass task runner. Run `just` (no args) to list recipes.
+# Cinder task runner. Run `just` (no args) to list recipes.
 # Prereqs: just (https://just.systems), python3. The Tweego binary and
 # Chapbook format are fetched by `just setup` — nothing to install by hand.
 
@@ -65,7 +65,7 @@ extract story="all":
 
 # Build, then serve dist/ locally so you can play the game in a browser.
 preview: build
-    @echo "Playing Twee-Glass at http://localhost:{{port}} (Ctrl-C to stop)..."
+    @echo "Playing Cinder at http://localhost:{{port}} (Ctrl-C to stop)..."
     python3 -m http.server {{port}} --directory dist
 
 # Remove build outputs and caches.
