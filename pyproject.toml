@@ -18,3 +18,6 @@ dev = [
 
 [tool.uv.sources]
 pixel-alchemy = { git = "https://github.com/NoRaincheck/pixel-alchemy.git" }
+
+[tool.pytest.ini_options]
+pythonpath = ["."]

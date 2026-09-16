@@ -8,9 +8,9 @@ jobs:
       - uses: actions/checkout@v4
       - uses: astral-sh/setup-uv@v5
       - run: uv sync --frozen
-      - run: uv run --frozen pytest tests/
+      - run: uv run --frozen python -m pytest tests/
       - run: tools/setup-tweego.sh
-      - run: mkdir -p dist && build/tweego/tweego src/glass -o dist/glass.html && node tools/patch-chapbook.js dist/glass.html && build/tweego/tweego src/bronze -o dist/bronze.html && node tools/patch-chapbook.js dist/bronze.html && python3 tools/build-landing.py && ls -la dist
+      - run: mkdir -p dist dist/assets/glass dist/assets/bronze && cp src/glass/assets/*.png dist/assets/glass/ && cp src/bronze/assets/*.png dist/assets/bronze/ && build/tweego/tweego src/glass -o dist/glass.html && node tools/patch-chapbook.js dist/glass.html && build/tweego/tweego src/bronze -o dist/bronze.html && node tools/patch-chapbook.js dist/bronze.html && python3 tools/build-landing.py && ls -la dist dist/assets/glass dist/assets/bronze
       - uses: actions/upload-pages-artifact@v3
         with: {path: dist}
   deploy:
