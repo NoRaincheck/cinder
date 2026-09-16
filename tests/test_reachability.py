@@ -2,7 +2,7 @@
 import re
 from pathlib import Path
 
-TWEE = Path("src/glass.twee").read_text()
+TWEE = Path("src/glass/glass.twee").read_text()
 PASSAGES = dict(re.findall(r"^::\s+(\S+)[^\n]*\n((?:(?!^::).)*)", TWEE, flags=re.M | re.S))
 LINKS = {n: re.findall(r"\[\[(?:[^|\]]+\|)?([^\]]+)\]\]", b) for n, b in PASSAGES.items()}
 # Curated 3-choice spine (2026-09-15): scenes are named by their leading word,
