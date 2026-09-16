@@ -46,3 +46,30 @@ def test_tweego_builds_both_stories_and_landing():
     landing = Path("dist/index.html").read_text(errors="replace")
     assert 'href="glass.html"' in landing
     assert 'href="bronze.html"' in landing
+
+    # Scene art: every generated asset must exist in src/ and survive
+    # Tweego compilation into the built HTML (imported as Twine.image
+    # passages; src strings retained in the output).
+    glass_art = [
+        "glass-prologue.png",
+        "glass-wondering-ball.png",
+        "glass-fitting.png",
+        "glass-checking.png",
+        "glass-cinderella.png",
+        "glass-ending.png",
+    ]
+    bronze_art = [
+        "bronze-gate.png",
+        "bronze-courtyard.png",
+        "bronze-scarlet.png",
+        "bronze-beast.png",
+        "bronze-library.png",
+        "bronze-rotunda.png",
+        "bronze-crypt.png",
+    ]
+    for name in glass_art:
+        assert (Path("src/glass/assets") / name).exists(), f"missing src art: {name}"
+        assert f"assets/glass/{name}" in gtext, f"art missing from glass build: {name}"
+    for name in bronze_art:
+        assert (Path("src/bronze/assets") / name).exists(), f"missing src art: {name}"
+        assert f"assets/bronze/{name}" in btext, f"art missing from bronze build: {name}"

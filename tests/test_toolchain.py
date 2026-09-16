@@ -1,4 +1,5 @@
 import json
+import tomllib
 from pathlib import Path
 
 
@@ -8,9 +9,10 @@ def test_package_pins_tweego_chapbook():
     assert pkg["devDependencies"]["chapbook"] == "2.3.0"
 
 
-def test_requirements_pins_pytest():
-    req = Path("requirements.txt").read_text()
-    assert "pytest==8.3" in req
+def test_pyproject_pins_pytest():
+    proj = tomllib.loads(Path("pyproject.toml").read_text())
+    dev = proj["dependency-groups"]["dev"]
+    assert "pytest>=9.1.1" in dev
 
 
 def test_pages_workflow_exists():

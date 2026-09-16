@@ -11,7 +11,7 @@ default:
 
 # Install pinned test deps + Tweego 2.1.1 / Chapbook 2.3.0 toolchain.
 setup:
-    pip3 install -r requirements.txt
+    uv sync --frozen
     tools/setup-tweego.sh
 
 # Generate dist/index.html landing linking both stories.
