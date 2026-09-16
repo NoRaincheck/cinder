@@ -1,0 +1,20 @@
+[project]
+name = "cinder"
+version = "0.1.0"
+description = "Experimental interactive fiction stories"
+readme = "README.md"
+authors = [
+    { name = "NoRaincheck", email = "2498638+NoRaincheck@users.noreply.github.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "pixel-alchemy",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+]
+
+[tool.uv.sources]
+pixel-alchemy = { git = "https://github.com/NoRaincheck/pixel-alchemy.git" }
