@@ -15,9 +15,12 @@ setup:
     tools/setup-tweego.sh
 
 # Compile src/*.twee (Chapbook) to dist/index.html.
+# Post-build: patch Chapbook [continue] modifier to reset conditionEval
+# (fixes variable state bleeding across blocks within a passage).
 build: setup
     mkdir -p dist
     {{tweego}} src -o dist/index.html
+    node tools/patch-chapbook.js
     ls -la dist
 
 # Run the full pytest suite (coverage, links, reachability, build, polish).

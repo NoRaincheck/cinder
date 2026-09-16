@@ -6,6 +6,10 @@ Glass
 
 :: Start
 skipPrologue: false
+prologueEnchantment: false
+prologueLaw: false
+prologueNature: false
+prologueTruth: false
 --
 The Prince sits awkwardly on the couch, holding his glass slipper and trying to keep it from crushing. Lucinda and Theodora have the ends of the same couch, and the old lady leans toward him: 'Do tell me about your father's health.' It is your business to steer the talk.
 
@@ -14,11 +18,7 @@ Choose how to guide the conversation:
 [[Discuss the Prince's prospects for marriage|Prologue-Marriage]]  
 [[Ask about the ball|Prologue-Ball]]  
 [[Mention the glass slipper|Prologue-Shoe]]  
-
-[if !skipPrologue]
-[[Skip the prologue|Wondering-Shoe]]  
-[JavaScript] engine.state.set('skipPrologue', true)
-[continue]
+[[> |Wondering-Shoe]]  
 
 :: Prologue-Marriage
 --
@@ -28,11 +28,7 @@ The humans take this in, and wait for the talk to turn once more.
 
 [[What drew him?|Prologue-Marriage-Enchantment]]  
 [[The law of the kingdom|Prologue-Marriage-Law]]  
-
-[if !skipPrologue]
-[[Skip the prologue|Wondering-Marriage]]  
-[JavaScript] engine.state.set('skipPrologue', true)
-[continue]
+[[> |Wondering-Marriage]]  
 
 :: Prologue-Marriage-Enchantment
 prologueEnchantment: true
@@ -81,10 +77,7 @@ The humans take this in, and wait for the talk to turn once more.
 [[The nature of beauty|Prologue-Ball-Beauty]]  
 [[The nature of memory|Prologue-Ball-Memory]]  
 
-[if !skipPrologue]
-[[Skip the prologue|Wondering-Shoe]]  
-[JavaScript] engine.state.set('skipPrologue', true)
-[continue]
+[[> |Wondering-Shoe]]  
 
 :: Prologue-Ball-Beauty
 prologueBeauty: true
@@ -137,10 +130,7 @@ The humans take this in, and wait for the talk to turn once more.
 [[The nature of the glass|Prologue-Shoe-Nature]]  
 [[The truth it holds|Prologue-Shoe-Truth]]  
 
-[if !skipPrologue]
-[[Skip the prologue|Wondering-Marriage]]  
-[JavaScript] engine.state.set('skipPrologue', true)
-[continue]
+[[>|Wondering-Marriage]]  
 
 :: Prologue-Shoe-Nature
 prologueNature: true
@@ -181,12 +171,7 @@ The humans take this in, and wait for the talk to turn once more.
 [[Enough of this for now|Wondering-Marriage]]  
 
 :: Wondering-Marriage
-[if skipPrologue]
-'You skipped the small talk,' the old lady says. 'Good. It means you know what matters.'
-[continue]
-[unless skipPrologue]
 'It's marvelous that you were so drawn to a young lady that you want to marry her even though you can't remember what she looks like,' remarks the old woman.
-[continue]
 
 'There was something about her,' the Prince says. 'Something I cannot explain. Not enchantment, exactly. More like—recognition. As if I had known her all my life and only just realized it.'
 
@@ -208,10 +193,6 @@ The old lady's expression shifts almost imperceptibly. 'Recognition,' she repeat
 [[Proceed to the fitting|Fitting-Marriage]]  
 
 :: Wondering-Ball
-[if skipPrologue]
-'You skipped the small talk,' the old lady says. 'Good. It means you know what matters.'
-[continue]
-[unless skipPrologue]
 'It wasn't a masked ball,' the old lady says. 'It wasn't even badly lit. Your father did not stint on the candles at all.'
 
 The Prince opens his mouth.
@@ -235,10 +216,6 @@ Everyone remains very very quiet.
 [[Proceed to the fitting|Fitting-Ball]]  
 
 :: Wondering-Shoe
-[if skipPrologue]
-'You skipped the small talk,' the old lady says. 'Good. It means you know what matters.'
-[continue]
-[unless skipPrologue]
 'I-- managed to rescue the shoe when she ran off,' says the Prince, a little embarrassed-looking.
 
 'It's fortunate she left behind such a distinctive token,' says the old lady, her eyebrows raised in mischief. 'Though I wonder—do you think she intended to be found by it?'
@@ -295,6 +272,10 @@ Theodora blushes. 'Stupid bird,' she says.
 [[Have Lucinda try the shoe|Lucinda-Tries]]  
 
 :: Check-Cinderella
+There is the crack of a summoning: and there she stands, in the doorway, the secret daughter, the enchantress.
+
+'May I present my third daughter,' says the old lady, very dryly.
+
 The Prince frowns at Cinderella. 'I don't recall seeing you at the ball.'
 
 'I held the ball to look for someone to-- someone that I might marry,' the Prince explains to Cinderella.
@@ -302,9 +283,8 @@ The Prince frowns at Cinderella. 'I don't recall seeing you at the ball.'
 The Prince and Cinderella both look up at you. Cinderella puts one little finger to her lips, and winks, but you are afraid.
 
 [[Try the shoe on Cinderella|Cinderella-Tries]]  
-[[Reveal Cinderella as the mystery woman|End-Cinderella-Wed]]  
 [[Expose Cinderella's magic|End-Cinderella-Executed]]  
-[[Accept the peace offered|End-Peace]]  
+[[Leave the shoe untested|End-Cinderella-Wed]]  
 
 :: Theodora-Tries
 The old lady slips her hands into the pockets of her skirt and leans back.
@@ -389,8 +369,10 @@ The Prince stops his work with the shoe. 'I can't -- this must not be --'
 
 'Bless me,' she says.
 
+Lucinda smiles, a strange, sad smile. Something is wrong. Lucinda's hand is clenched, her nails digging into the pillow where only you can see. You smell blood.
+
 [[Accept Lucinda as the bride|End-Lucinda-Marriage]]  
-[[Suspect something is wrong|End-Prince-Departs]]  
+[[Mention the blood|End-Prince-Departs]]  
 
 :: End-Cinderella-Wed
 'This business of the shoe is nonsense,' the Prince remarks. He turns and hurls the slipper against the wall, where it splinters into dozens of sparkling pieces. There is a great sigh in the room, and the old lady actually laughs. His gaze lingers on Cinderella. She looks back at him, her chin tilted up. Cinderella and the Prince are (eventually) wed.
@@ -400,9 +382,6 @@ The Prince stops his work with the shoe. 'I can't -- this must not be --'
 
 :: End-Lucinda-Marriage
 The Prince gives a great sigh and puts his head down on Lucinda's lap. 'I was sure I wouldn't find you,' he says. 'It seemed impossible.' 'You have me now,' she says, and puts her hand on the back of his neck, while Theodora slips out of the room, and the old lady rings for brandy. Lucinda and the Prince are married.
-
-:: End-Peace
-There is the crack of a summoning: and there she stands, in the doorway, the secret daughter, the enchantress. 'May I present my third daughter,' says the old lady, very dryly. The Prince frowns at Cinderella a little longer, then seems to reach some decision. No one is punished, no shoe is forced, and the evening ends in peace, with brandy all around.
 
 :: Cinderella-Tries
 'Would you mind trying this shoe?' the Prince asks, quite politely.
@@ -423,10 +402,7 @@ Cinderella backs away. 'I have no truck with devils,' she says. 'I was gifted or
 
 'You're an idiot,' says the old lady. 'You knew what you might find. If you loved her at all, you would not have come looking.'
 
-[[> |End-Disaster]]  
-
-:: End-Disaster
-'It's true,' says Lucinda. 'We poured holy water on her every day for a year.' 'But the law,' says the Prince. It all ends in disaster, as evenings with magic so often do.
+[[> |End-Cinderella-Executed]]  
 
 :: End-Prince-Departs
 'Check the rest of your maidens,' the old lady says. 'Good luck finding your bride. You will not discover her in this house.' 'Thank Providence for that,' he says, snatching up the glass slipper. You watch him go, and think of the third daughter, waiting, in her bedroom, with the door locked. The Prince departs in anger.
