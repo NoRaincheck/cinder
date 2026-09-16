@@ -6,7 +6,7 @@ import json
 import re
 from pathlib import Path
 
-TWEE = Path("src/glass.twee").read_text()
+TWEE = Path("src/glass/glass.twee").read_text()
 PASSAGES = dict(re.findall(r"^::\s+(\S+)[^\n]*\n((?:(?!^::).)*)", TWEE, flags=re.M | re.S))
 GRAPH = json.load(open("data/graph.json"))
 PRUNE = json.load(open("data/prune-list.json"))
