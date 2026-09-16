@@ -26,20 +26,20 @@ plus the current twee passage body for that row.
 
   so a human decides (keep verbatim, soften, or cut) before merge.
 
-## Artifact resolutions (deterministic, grounded in `data/story.ni`)
+## Artifact resolutions (deterministic, grounded in `ref/source/glass.ni`)
 
 | Artifact | Resolution | Grounding |
 |---|---|---|
 | `{set currentSubject to '...'}` whole line | Delete the line. Chapbook 2.3.0 has no `set` insert or modifier (`build/tweego/storyformats/chapbook-2/format.js`: 15 inserts, 8 modifiers, none named `set`); unknown `{...}` renders literally into the page, and nothing ever reads the variable. | engine source + `dist/index.html` leak |
 | `[awwk]` (cry word, e.g. `'Awwk! Kindness!'`) | Drop the cry, keep the topic (`'Kindness!'`). All bird-cries removed per 2026-09-15 decision. | squawk removal |
 | `you awwk` / `you squawk` (bare, in parrot table text) | `you say` (`You squawk very loudly` → `You speak very loudly`; `squawk a ... ditty` → `sing a ... ditty`) | 2026-09-15 squawk removal |
-| `[Nice word]` / `[nice word]` | `Darling` (first row of the Table of Flattery) | `story.ni` `To say nice word` |
-| `[if ...]` guard with a single branch | Drop the marker, keep the visible text (the extractor already selected this path's text; no Chapbook equivalent exists) | remark rows in `story.ni` |
-| `[if mentioning Lucinda]A[otherwise]B[end if]C` | `AC` when the passage subject is Lucinda (true-branch); drop the false-branch | `story.ni` Fitting Remarks |
-| `say "[response entry][paragraph break]".` / `say paragraph break;` whole line | Delete the line (runtime table-selection with no static text; the bridge narration carries the passage) | `story.ni` relate/instructions rules |
-| `[obscenity]` in a Topic line | `an obscenity` | `story.ni` Understand-as-obscenity lines |
-| `[mild obscenity]` in a Topic line | `a mild obscenity` | `story.ni` Understand-as-mild lines |
-| `[A random visible woman]` | `A woman` (never name *which* woman; that would invent plot) | `story.ni` random-woman phrase |
+| `[Nice word]` / `[nice word]` | `Darling` (first row of the Table of Flattery) | `glass.ni` `To say nice word` |
+| `[if ...]` guard with a single branch | Drop the marker, keep the visible text (the extractor already selected this path's text; no Chapbook equivalent exists) | remark rows in `glass.ni` |
+| `[if mentioning Lucinda]A[otherwise]B[end if]C` | `AC` when the passage subject is Lucinda (true-branch); drop the false-branch | `glass.ni` Fitting Remarks |
+| `say "[response entry][paragraph break]".` / `say paragraph break;` whole line | Delete the line (runtime table-selection with no static text; the bridge narration carries the passage) | `glass.ni` relate/instructions rules |
+| `[obscenity]` in a Topic line | `an obscenity` | `glass.ni` Understand-as-obscenity lines |
+| `[mild obscenity]` in a Topic line | `a mild obscenity` | `glass.ni` Understand-as-mild lines |
+| `[A random visible woman]` | `A woman` (never name *which* woman; that would invent plot) | `glass.ni` random-woman phrase |
 
 ## One-shot links (anti-loop, 2026-09-15)
 

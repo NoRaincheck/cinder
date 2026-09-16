@@ -1,4 +1,4 @@
-"""Parse story.ni remark tables. Tables are 'Table of <Name>' followed by
+"""Parse glass.ni remark tables. Tables are 'Table of <Name>' followed by
 tab-separated rows. Remark tables have columns starting/final/comment."""
 import json, re, sys
 

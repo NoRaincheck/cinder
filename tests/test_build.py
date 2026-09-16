@@ -21,6 +21,9 @@ def test_tweego_builds_index():
     text = html.read_text(errors="replace")
     # Curated 3-choice spine (2026-09-15): the start passage is "Start" and
     # endings are named End-<Name> (no S9-/S-Hub- scaffolding remains).
+    # Canonical Glass endings (glass.ni): Cinderella-wed/peace,
+    # Cinderella-executed/disaster, Lucinda-Marriage (+ Prince-Departs,
+    # Theodora-Marriage asserted via link integrity/reachability).
     assert "Start" in text
-    for end in ["End-Cinderella-Wed", "End-Lucinda-Marriage", "End-Peace"]:
+    for end in ["End-Cinderella-Wed", "End-Lucinda-Marriage", "End-Cinderella-Executed"]:
         assert end in text, f"ending missing from build: {end}"
