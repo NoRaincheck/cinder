@@ -1,4 +1,4 @@
-# Twee-Glass
+# Cinder
 
 Choice-based Twine ports of Emily Short's Inform 7 games **Glass** and
 **Bronze** (originals: [I7-Examples/Glass](https://github.com/I7-Examples/Glass),

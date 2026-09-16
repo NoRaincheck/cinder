@@ -11,6 +11,9 @@ prologueLaw: false
 prologueNature: false
 prologueTruth: false
 --
+
+![Drawing room with the Prince holding the glass slipper](assets/glass/glass-prologue.png)
+
 The Prince sits awkwardly on the couch, holding his glass slipper and trying to keep it from crushing. Lucinda and Theodora have the ends of the same couch, and the old lady leans toward him: 'Do tell me about your father's health.' It is your business to steer the talk.
 
 Choose how to guide the conversation:
@@ -19,7 +22,6 @@ Choose how to guide the conversation:
 [[Ask about the ball|Prologue-Ball]]  
 [[Mention the glass slipper|Prologue-Shoe]]  
 [[> |Wondering-Shoe]]  
-
 :: Prologue-Marriage
 --
 'Now I have heard a rumor,' says the old lady, pretending that this conversation topic just now occurred to her, rather than being the object of her determined pursuit for the last half hour. 'A rumor that you yourself were planning to wed, in the very near future.'
@@ -171,6 +173,9 @@ The humans take this in, and wait for the talk to turn once more.
 [[Enough of this for now|Wondering-Marriage]]  
 
 :: Wondering-Marriage
+![Candlelit ball memory at midnight](assets/glass/glass-wondering-ball.png)
+
+
 'It's marvelous that you were so drawn to a young lady that you want to marry her even though you can't remember what she looks like,' remarks the old woman.
 
 'There was something about her,' the Prince says. 'Something I cannot explain. Not enchantment, exactly. More like—recognition. As if I had known her all my life and only just realized it.'
@@ -191,8 +196,10 @@ The old lady's expression shifts almost imperceptibly. 'Recognition,' she repeat
 [continue]
 
 [[Proceed to the fitting|Fitting-Marriage]]  
-
 :: Wondering-Ball
+![Candlelit ball memory at midnight](assets/glass/glass-wondering-ball.png)
+
+
 'It wasn't a masked ball,' the old lady says. 'It wasn't even badly lit. Your father did not stint on the candles at all.'
 
 The Prince opens his mouth.
@@ -214,8 +221,10 @@ Everyone remains very very quiet.
 [continue]
 
 [[Proceed to the fitting|Fitting-Ball]]  
-
 :: Wondering-Shoe
+![Candlelit ball memory at midnight](assets/glass/glass-wondering-ball.png)
+
+
 'I-- managed to rescue the shoe when she ran off,' says the Prince, a little embarrassed-looking.
 
 'It's fortunate she left behind such a distinctive token,' says the old lady, her eyebrows raised in mischief. 'Though I wonder—do you think she intended to be found by it?'
@@ -233,20 +242,26 @@ The old lady says nothing. She does not need to. The silence says everything.
 [continue]
 
 [[Proceed to the fitting|Fitting-Shoe]]  
-
 :: Fitting-Marriage
+![The Prince fitting the glass slipper](assets/glass/glass-fitting.png)
+
+
 'It seems to me,' says the old lady, after a long thoughtful moment, 'that you have no choice but to try this shoe on every eligible young woman, and determine who she was. And if I were you, I would also invent an explanation for this extraordinary method of bride-selection that will satisfy the people at large.'
 
 He chuckles, but nods.
 
 [[The Prince must try the shoe on someone|Check-Theodora]]  
-
 :: Fitting-Ball
+![The Prince fitting the glass slipper](assets/glass/glass-fitting.png)
+
+
 The Prince stares at the shoe, then he looks up. 'You,' he repeats. 'I mean, you seemed-- I thought for certain that you weren't-- the way you-- I thought you would be. Good practice, because...'
 
 [[The Prince must try the shoe on someone|Check-Theodora]]  
-
 :: Fitting-Shoe
+![The Prince fitting the glass slipper](assets/glass/glass-fitting.png)
+
+
 'Midnight,' repeats the old lady. 'Well, well.' She smiles at the Prince. 'Good luck to you. It was quick thinking taking the shoe.'
 
 He blushes. 'She left it on the stairs; I thought it was the only thing I was going to have left of her.'
@@ -254,24 +269,30 @@ He blushes. 'She left it on the stairs; I thought it was the only thing I was go
 'Mm. Love.' She smiles at him. 'I do wish your mother were alive.'
 
 [[The Prince must try the shoe on someone|Check-Theodora]]  
-
 :: Check-Theodora
+![The sisters in the drawing room](assets/glass/glass-checking.png)
+
+
 Theodora blushes. 'Stupid bird,' she says.
 
 'One at a time, bird,' mutters the Prince. Theodora giggles.
 
 [[Try the shoe on Lucinda instead|Check-Lucinda]]  
 [[Have Theodora try the shoe|Theodora-Tries]]  
-
 :: Check-Lucinda
+![The sisters in the drawing room](assets/glass/glass-checking.png)
+
+
 'I'll get to her later,' the Prince says. 'If necessary,' he adds, under his breath.
 
 'Yes,' says Lucinda to you. 'You're very smart.'
 
 [[Call for Cinderella|Check-Cinderella]]  
 [[Have Lucinda try the shoe|Lucinda-Tries]]  
-
 :: Check-Cinderella
+![The secret daughter revealed in the doorway](assets/glass/glass-cinderella.png)
+
+
 There is the crack of a summoning: and there she stands, in the doorway, the secret daughter, the enchantress.
 
 'May I present my third daughter,' says the old lady, very dryly.
@@ -285,8 +306,10 @@ The Prince and Cinderella both look up at you. Cinderella puts one little finger
 [[Try the shoe on Cinderella|Cinderella-Tries]]  
 [[Expose Cinderella's magic|End-Cinderella-Executed]]  
 [[Leave the shoe untested|End-Cinderella-Wed]]  
-
 :: Theodora-Tries
+![The sisters in the drawing room](assets/glass/glass-checking.png)
+
+
 The old lady slips her hands into the pockets of her skirt and leans back.
 
 The Prince drops to kneel at Theo's feet. He looks dubiously at the shoe. 'Do you happen to know whether this goes on the left foot, or the right one?' he asks. 'It's very--'
@@ -299,8 +322,10 @@ She twitches her skirt, giving him -- you imagine, since you are at the wrong an
 
 [[Try the other foot|Theodora-Other-Foot]]  
 [[Give up on Theodora|Check-Lucinda]]  
-
 :: Theodora-Other-Foot
+![The sisters in the drawing room](assets/glass/glass-checking.png)
+
+
 'Right,' he says. 'Other foot now.' He slides the shoe on, and it does go considerably further. 'Tell me if I'm hurting you,' he says.
 
 'You're not, not at all,' Theo assures him on a wince.
@@ -319,8 +344,10 @@ The old lady turns away, tucking something into her pocket: something glassy and
 
 [[Accept Theodora as the bride|Theodora-Marriage]]  
 [[Notice the old lady's deception|Theodora-Pocket]]  
-
 :: Theodora-Marriage
+![Farewell at dawn](assets/glass/glass-ending.png)
+
+
 The Prince pulls Theodora toward him. 'You are a woman of unexpected depths,' he says softly. 'All these years I have known you, seen you here and there, and thought that you were such a simple straightforward creature...'
 
 She blinks at him, then says, 'I hope you are not angry.'
@@ -328,8 +355,10 @@ She blinks at him, then says, 'I hope you are not angry.'
 He laughs, and touches her cheek; and she kisses him.
 
 Lucinda bites her lip. 'Well,' says the old lady briskly, standing. 'How many unexpected turns life brings to us.' And she pulls the bellpull with unnecessary force. Theodora and the Prince are married.
-
 :: Theodora-Pocket
+![Farewell at dawn](assets/glass/glass-ending.png)
+
+
 'Mother!' you squawk. 'Pocket! Pocket!'
 
 The Prince looks at you for a long moment, then turns to the old lady; who shrugs, as though to say that she knows the game is up. Fishing in her pocket she draws out the true slipper. 'The other one is only a little larger,' she says, handing the real one over. 'Theodora's feet are quite dainty, on the whole.'
@@ -343,8 +372,10 @@ He snorts. 'I thank you, I do not want to find my bride here. I imagine everyone
 'That is the truth,' Lucinda murmurs; but he is already going, going, gone.
 
 [[> |End-Prince-Departs]]  
-
 :: Lucinda-Tries
+![The sisters in the drawing room](assets/glass/glass-checking.png)
+
+
 The Prince drops to kneel at Lucinda's feet. He looks dubiously at the shoe, then up at her. 'Do you happen to know whether this goes on the left foot, or the right one?' he asks. 'It's very--'
 
 'You can try it on both,' says Lucinda. 'If you want.'
@@ -355,8 +386,10 @@ She twitches her skirt, giving him -- you imagine, since you are at the wrong an
 
 [[Try the other foot|Lucinda-Other-Foot]]  
 [[Give up on Lucinda|Check-Cinderella]]  
-
 :: Lucinda-Other-Foot
+![The sisters in the drawing room](assets/glass/glass-checking.png)
+
+
 'Right,' he says. 'Other foot now.' He slides the shoe on, and it does go considerably further. 'Tell me if I'm hurting you,' he says.
 
 'You're not, not at all,' Lucinda assures him on a wince.
@@ -373,17 +406,25 @@ Lucinda smiles, a strange, sad smile. Something is wrong. Lucinda's hand is clen
 
 [[Accept Lucinda as the bride|End-Lucinda-Marriage]]  
 [[Mention the blood|End-Prince-Departs]]  
-
 :: End-Cinderella-Wed
+![Farewell at dawn](assets/glass/glass-ending.png)
+
+
 'This business of the shoe is nonsense,' the Prince remarks. He turns and hurls the slipper against the wall, where it splinters into dozens of sparkling pieces. There is a great sigh in the room, and the old lady actually laughs. His gaze lingers on Cinderella. She looks back at him, her chin tilted up. Cinderella and the Prince are (eventually) wed.
-
 :: End-Cinderella-Executed
+![Farewell at dawn](assets/glass/glass-ending.png)
+
+
 'You need not have done that,' the Prince says. 'You could have broken it. Lied to me. Remained hidden.' 'She understands,' says the old lady, rising from her chair. 'I'm afraid the rest of us, not being in love with you, had less faith in your intuition.' The Prince swallows. 'You see I cannot conceal this; it would be treason, now I have seen this witchcraft with my own eyes.' Cinderella is executed.
-
 :: End-Lucinda-Marriage
-The Prince gives a great sigh and puts his head down on Lucinda's lap. 'I was sure I wouldn't find you,' he says. 'It seemed impossible.' 'You have me now,' she says, and puts her hand on the back of his neck, while Theodora slips out of the room, and the old lady rings for brandy. Lucinda and the Prince are married.
+![Farewell at dawn](assets/glass/glass-ending.png)
 
+
+The Prince gives a great sigh and puts his head down on Lucinda's lap. 'I was sure I wouldn't find you,' he says. 'It seemed impossible.' 'You have me now,' she says, and puts her hand on the back of his neck, while Theodora slips out of the room, and the old lady rings for brandy. Lucinda and the Prince are married.
 :: Cinderella-Tries
+![The secret daughter revealed in the doorway](assets/glass/glass-cinderella.png)
+
+
 'Would you mind trying this shoe?' the Prince asks, quite politely.
 
 Cinderella nods, and takes the glass slipper from his hand. She puts it on, turning her ankle to watch the effect. The change sweeps up through her, making her taller, more perfect, almost inhumanly beautiful.
@@ -403,6 +444,8 @@ Cinderella backs away. 'I have no truck with devils,' she says. 'I was gifted or
 'You're an idiot,' says the old lady. 'You knew what you might find. If you loved her at all, you would not have come looking.'
 
 [[> |End-Cinderella-Executed]]  
-
 :: End-Prince-Departs
+![Farewell at dawn](assets/glass/glass-ending.png)
+
+
 'Check the rest of your maidens,' the old lady says. 'Good luck finding your bride. You will not discover her in this house.' 'Thank Providence for that,' he says, snatching up the glass slipper. You watch him go, and think of the third daughter, waiting, in her bedroom, with the door locked. The Prince departs in anger.

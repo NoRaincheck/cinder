@@ -6,8 +6,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: pip install -r requirements.txt
-      - run: python3 -m pytest tests/
+      - uses: astral-sh/setup-uv@v5
+      - run: uv sync --frozen
+      - run: uv run --frozen pytest tests/
       - run: tools/setup-tweego.sh
       - run: mkdir -p dist && build/tweego/tweego src/glass -o dist/glass.html && node tools/patch-chapbook.js dist/glass.html && build/tweego/tweego src/bronze -o dist/bronze.html && node tools/patch-chapbook.js dist/bronze.html && python3 tools/build-landing.py && ls -la dist
       - uses: actions/upload-pages-artifact@v3

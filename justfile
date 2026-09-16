@@ -1,4 +1,4 @@
-# Twee-Glass task runner. Run `just` (no args) to list recipes.
+# Cinder task runner. Run `just` (no args) to list recipes.
 # Prereqs: just (https://just.systems), python3. The Tweego binary and
 # Chapbook format are fetched by `just setup` — nothing to install by hand.
 
@@ -11,7 +11,7 @@ default:
 
 # Install pinned test deps + Tweego 2.1.1 / Chapbook 2.3.0 toolchain.
 setup:
-    pip3 install -r requirements.txt
+    uv sync --frozen
     tools/setup-tweego.sh
 
 # Generate dist/index.html landing linking both stories.
@@ -21,13 +21,15 @@ build-landing:
 
 # Compile both stories + landing to dist/.
 build: setup
-    mkdir -p dist
+    mkdir -p dist dist/assets/glass dist/assets/bronze
+    cp -n src/glass/assets/*.png dist/assets/glass/ 2>/dev/null || cp src/glass/assets/*.png dist/assets/glass/
+    cp -n src/bronze/assets/*.png dist/assets/bronze/ 2>/dev/null || cp src/bronze/assets/*.png dist/assets/bronze/
     {{tweego}} src/glass -o dist/glass.html
     node tools/patch-chapbook.js dist/glass.html
     {{tweego}} src/bronze -o dist/bronze.html
     node tools/patch-chapbook.js dist/bronze.html
     python3 tools/build-landing.py
-    ls -la dist
+    ls -la dist dist/assets/glass dist/assets/bronze
 
 # Run the full pytest suite (coverage, links, reachability, build, polish).
 test:
@@ -63,7 +65,7 @@ extract story="all":
 
 # Build, then serve dist/ locally so you can play the game in a browser.
 preview: build
-    @echo "Playing Twee-Glass at http://localhost:{{port}} (Ctrl-C to stop)..."
+    @echo "Playing Cinder at http://localhost:{{port}} (Ctrl-C to stop)..."
     python3 -m http.server {{port}} --directory dist
 
 # Remove build outputs and caches.
@@ -77,12 +79,14 @@ fmt:
 
 # Compile Glass story dir to dist/glass.html.
 build-glass: setup
-    mkdir -p dist
+    mkdir -p dist dist/assets/glass
+    cp -n src/glass/assets/*.png dist/assets/glass/ 2>/dev/null || cp src/glass/assets/*.png dist/assets/glass/
     {{tweego}} src/glass -o dist/glass.html
     node tools/patch-chapbook.js dist/glass.html
 
 # Compile Bronze story dir to dist/bronze.html.
 build-bronze: setup
-    mkdir -p dist
+    mkdir -p dist dist/assets/bronze
+    cp -n src/bronze/assets/*.png dist/assets/bronze/ 2>/dev/null || cp src/bronze/assets/*.png dist/assets/bronze/
     {{tweego}} src/bronze -o dist/bronze.html
     node tools/patch-chapbook.js dist/bronze.html
