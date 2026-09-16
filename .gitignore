@@ -2,9 +2,6 @@
 /build/
 /dist/
 
-# Generated / fetched copies
-data/story.ni
-
 # Python
 __pycache__/
 *.py[cod]

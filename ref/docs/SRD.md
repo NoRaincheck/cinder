@@ -3,9 +3,9 @@
 **Project:** Choice-based Twine port of Emily Short's Inform 7 game *Glass*
 (I7-Examples/Glass). Player is the parrot; free-text `mention [subject]`
 becomes clickable subject choices.
-**Branch:** `twee-glass-port` (against `main`)
+**Branch:** `prologue-magic-lore` (against `main`)
 **Format:** Chapbook 2.3.0 via Tweego 2.1.1 → static `dist/index.html` (GitHub Pages). No custom JS.
-**Date:** 2026-09-15
+**Date:** 2026-09-16
 
 > **Read this first (state of the branch).** The design/decision artifacts on
 > this branch (specs, `polish.md`, `curate3.py`, the test suite) describe a
@@ -14,11 +14,15 @@ becomes clickable subject choices.
 > struck-through, and scenes unlock behind `[if seen_*]` gates. The committed
 > `src/glass.twee`, however, is a **simpler hand-authored linear spine** that
 > does **not** contain any of that machinery (no `Prologue-Intro`, no `S\d` row
-> passages, no vars sections, no guards). The test suite was adapted so that
-> **all 22 tests pass** — they now assert the *absence* of the gated machinery
-> rather than its presence. Treat the SRD below as the *recorded design
-> decisions*; the "Implementation status" section records where the committed
-> code actually stands.
+> passages, no `S1-Prologue-Hub`… scene hubs, no `[if/unless seen_*]` guards).
+> It **does** contain the D10–D12 machinery added on this branch: a `Start`
+> vars section, six `Prologue-*-*` lore sub-passages setting `prologue*`
+> flags, and `[if prologue*]` / `[continue]` callbacks in `Wondering-*`.
+> The test suite was adapted so that **all tests pass** — reachability allows
+> the `vars` meta-section as an orphan, polish allows Chapbook conditionals
+> (`[if camelCase]`, `[if !var]`) plus the always-true scope terminator.
+> Treat the SRD below as the *recorded design decisions*; the "Implementation
+> status" section records where the committed code actually stands.
 
 ## Goal
 
@@ -90,41 +94,99 @@ following text.
 
 ### D9 — Toolchain & delivery
 `justfile` recipes: `setup` (pytest pins + Tweego/Chapbook fetch), `build`
-(Chapbook → `dist/index.html`), `test` (pytest), `extract`, `preview`,
-`clean`, `fmt`. `.github/workflows/pages.yml` builds + deploys `main` to Pages
-with a pytest gate.
+(Chapbook → `dist/index.html`, then `node tools/patch-chapbook.js`), `test`
+(pytest), `extract`, `preview`, `clean`, `fmt`.
+`.github/workflows/pages.yml` builds + deploys `main` to Pages with a pytest
+gate. Canonical Inform source is the committed `ref/source/glass.ni`
+(renamed from upstream `story.ni`); `just extract` restores it from the
+snapshot only if missing, then parses it straight into `data/`.
+
+### D10 — Prologue magic-lore branches with forward callbacks
+`Start` offers three prologue topics (Marriage / Ball / Shoe), each fanning to
+two lore sub-passages (`Prologue-Marriage-Enchantment`, `-Law`,
+`Prologue-Ball-Beauty`, `-Memory`, `Prologue-Shoe-Nature`, `-Truth`). Each
+sub-passage opens with a vars section setting its `prologue*` flag, then
+`--`, then the body. `Wondering-Marriage` / `-Ball` / `-Shoe` close with
+`[if prologueX]` conditional paragraphs, each terminated by `[continue]`, so
+earlier lore echoes forward without gating progression. **Invariants:**
+`Start` must initialize every `prologue*` flag read anywhere (Chapbook
+evaluates `[if …]` as raw JS and throws on undefined vars); flags are
+camelCase, additive only, never nested; every `[if prologue*]` block is
+closed by `[continue]` before the next block or trailing nav
+(`tools/patch-chapbook.js` makes `[continue]` reset `conditionEval` — see
+D11). Enforced by `tests/test_polish.py` (allows only the always-true scope
+terminator, `seen_*` gates, `[if camelCase]`, `[if !var]`) and
+`tests/test_reachability.py`.
+
+### D11 — Chapbook `[continue]` conditionEval patch (build-time)
+Chapbook 2.3.0's `[continue]` modifier has an empty `process()`, so
+`conditionEval` set by a preceding `[if]` bleeds into following blocks in the
+same passage and blanks text after a false conditional. `just build` runs
+`node tools/patch-chapbook.js` after Tweego: it rewrites the single
+`process(){}}` occurrence in `dist/index.html` to
+`process(n,c){c.state.conditionEval=void 0}}` (and repairs the earlier broken
+single-arg `process(c)` form if present). **Invariant:** never hand-edit
+`dist/`; rerun `just build` to re-apply. Runbook: `just build` → patch prints
+`Patched 1 occurrence(s)`; `No patches needed` means the engine string moved
+and the script needs updating.
+
+### D12 — Endings grounded to canonical Glass outcomes
+Endings are the canonical `glass.ni` outcomes, not the D6 `S9-End-*` homes:
+`End-Cinderella-Wed` (shoe destroyed/left untested → wed),
+`End-Cinderella-Executed` (magic exposed → executed; reachable via
+`Cinderella-Tries → [[> |End-Cinderella-Executed]]`),
+`End-Lucinda-Marriage` (via `[[Mention the blood|End-Prince-Departs]]`
+branch wording; blood cue added to `Lucinda-Tries`),
+`End-Prince-Departs`, plus terminal `Theodora-Marriage`. Removed:
+`End-Peace` and `End-Disaster` as standalone passages (their text folded into
+`Check-Cinderella` summoning and the `Cinderella-Tries` → Executed funnel).
+**Invariant:** every non-meta passage is reachable from `Start`
+(`tests/test_reachability.py`, `ORPHANS = {"vars"}` — `vars` is a Chapbook
+meta-section, not a passage); `tests/test_build.py` asserts
+`End-Cinderella-Wed`, `End-Lucinda-Marriage`, `End-Cinderella-Executed`
+present in the built HTML.
 
 ## Implementation status (committed code vs. the decisions above)
 
-The committed `src/glass.twee` is a **linear 27-passage spine** (`Start` →
-Prologue → Wondering → Fitting → Checking → endings) that predates or bypasses
-the D3–D4, D6 machinery:
+The committed `src/glass.twee` is a **hand-authored linear spine with prologue
+lore callbacks** (`Start` → Prologue topics → Prologue lore leaves →
+Wondering → Fitting → Checking → endings) that bypasses the D3–D4, D6
+machinery but implements D10–D12:
 
 - No `Prologue-Intro`, no `S\d` row passages, no `S1-Prologue-Hub`… scene hubs,
-  no leading vars sections, no `[if/unless seen_*]` guards, no struck-through
-  hub quads, no `S-Hub-*` passages (so D3/D4/D6 are **not implemented**).
-- Endings present: 6 `End-*` passages + the Theodora-Marriage passage = **7**
-  terminal outcomes. No `End-Pirates` (the pirate ending was removed). This
-  diverges from the design's **8** endings / `S9-End-*` homes.
-- The test suite was adapted so that **all 22 tests pass** — they now assert
-  the *absence* of the gated machinery (no stray guards, no cross-scene row
-  links, no dead links) rather than its presence.
+  no `[if/unless seen_*]` guards, no struck-through hub quads, no `S-Hub-*`
+  passages (so D3/D4/D6 are **not implemented**).
+- Present: `Start` vars section (`skipPrologue`, `prologueEnchantment`,
+  `prologueLaw`, `prologueNature`, `prologueTruth`), six `Prologue-*-*` lore
+  passages, `[if prologue*]` / `[continue]` callbacks in all three
+  `Wondering-*` passages, and the D12 ending set (4 `End-*` passages +
+  terminal `Theodora-Marriage` = **5** terminal outcomes; no `End-Pirates`,
+  no standalone `End-Peace` / `End-Disaster`).
+- The test suite passes — reachability asserts full connectivity from `Start`
+  (`ORPHANS = {"vars"}`), build asserts the three canonical endings in
+  `dist/index.html`, polish asserts no unresolved parser artifacts.
 
 ## Key numbers
 
 | | Design contract | Committed file |
 |---|---|---|
-| Passages | 136 (all-paths) → curated spine | 27 (linear) |
+| Passages | 136 (all-paths) → curated spine | 30 story + 2 meta (`StoryTitle`, `StoryData`) |
 | Story rows | 15 (`curate3.py` KEEP) | 0 (`S\d` rows) |
+| Prologue lore leaves | — (D10) | 6 (`Prologue-*-Enchantment/Law/Beauty/Memory/Nature/Truth`) |
 | Scene hubs | S1–S8 | none (flat scene names) |
-| Endings | 8 (`S9-End-*` + 2 marriage hubs) | 7 (6 `End-*` + Theodora-Marriage) |
+| Endings | 8 (`S9-End-*` + 2 marriage hubs) | 5 (4 `End-*` + Theodora-Marriage; D12) |
 | `S-Hub-*` | deleted | n/a (absent) |
 
 ## Open items
 
 - D7 follow-up: decide on the 5 remaining story-dialogue "bird" lines.
-- `End-Disaster` is unreachable from `Start` (known orphan in test suite).
-- Two passages in `story.ni` have truncated dialogue (magic-birds,
+- D10 gap (bug): `Start` initializes 5 flags but `Wondering-Ball` reads 7 —
+  `prologueBeauty` / `prologueMemory` are set by their lore leaves but never
+  initialized in `Start`; add them (`prologueBeauty: false`,
+  `prologueMemory: false`) or Chapbook throws on the unvisited path.
+  `skipPrologue` is initialized but never read — either wire it or drop it.
+- Two passages in `glass.ni` have truncated dialogue (magic-birds,
   marriage-birds) from a known extractor bug; full text is restorable
   independently.
-- `data/story.ni` and `dist/` are gitignored; only build artifacts deploy.
+- `ref/source/glass.ni` (committed rename of upstream `story.ni`) is the
+  extraction source; `dist/` is gitignored; only build artifacts deploy.

@@ -10,12 +10,15 @@ def test_no_parser_artifacts():
     for artifact in ["[awwk]", "[nice word]", "[comment entry]"]:
         assert artifact not in lowered, f"unresolved artifact: {artifact}"
     # Bare [if guards are gone; allowed [if lines are the always-true scope
-    # terminator and seen-flag progression gates (Chapbook-native, audited
-    # in test_clickability.py).
+    # terminator, seen-flag progression gates, Chapbook negation
+    # ([if !var]), and Chapbook conditional modifiers (audited in
+    # test_clickability.py).
     bad = [l.strip() for l in TWEE.splitlines()
            if "[if " in l.lower()
            and l.strip() != "[if 2 + 2 === 4]"
-           and not re.fullmatch(r"\[if seen_[a-z0-9_]+\]", l.strip().lower())]
+           and not re.fullmatch(r"\[if seen_[a-z0-9_]+\]", l.strip().lower())
+           and not re.fullmatch(r"\[if [a-z]+[A-Z][a-zA-Z0-9]+\]", l.strip())
+           and not re.fullmatch(r"\[if ![a-zA-Z_]+\]", l.strip())]
     assert bad == [], f"unresolved artifacts: {bad[:5]}"
 
 

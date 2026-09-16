@@ -8,9 +8,10 @@ LINKS = {n: re.findall(r"\[\[(?:[^|\]]+\|)?([^\]]+)\]\]", b) for n, b in PASSAGE
 # Curated 3-choice spine (2026-09-15): scenes are named by their leading word,
 # not by S<n>-Hub passages.
 SCENES = ["Prologue", "Wondering", "Fitting", "Check-", "Theodora", "Lucinda", "End"]
-# End-Disaster is reachable via Cinderella-Tries → [[> |End-Disaster]].
+# End-Cinderella-Executed is reachable via Cinderella-Tries → [[> |End-Cinderella-Executed]].
 # No orphans in the curated spine; every non-meta passage must be reachable from Start.
-ORPHANS = set()
+# vars is a Chapbook meta-section, not a real passage.
+ORPHANS = {"vars"}
 
 
 def walk(start):

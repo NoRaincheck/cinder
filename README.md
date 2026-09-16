@@ -15,12 +15,12 @@ Prereqs: [`just`](https://just.systems) and `python3`. Then:
 just preview
 ```
 
-Clone with `git clone --recurse-submodules <url>` (or run `git submodule update --init` after cloning) so `vendor/glass` is present.
+The Inform 7 source lives at `ref/source/glass.ni` (committed).
 
 This installs the pinned toolchain (Tweego 2.1.1 + Chapbook 2.3.0), compiles
 `src/*.twee` to `dist/index.html`, and serves it. Open the printed URL
 (default <http://localhost:8765>) and play — start at *Start*,
-pick a subject like Heirs, and follow the conversation to one of 8 endings.
+pick a subject like Heirs, and follow the conversation to one of 5 endings.
 
 Other recipes (`just` with no args lists them):
 
@@ -28,16 +28,16 @@ Other recipes (`just` with no args lists them):
 |----------------|-----------------------------------------------------------|
 | `just setup`   | Install pytest pins + fetch Tweego/Chapbook               |
 | `just build`   | Compile Twee → `dist/index.html`                          |
-| `just test`    | Run the full pytest suite (15 tests)                      |
-| `just extract` | Re-parse `story.ni` → `data/graph.json` + prune audit     |
+| `just test`    | Run the full pytest suite (18 tests)                      |
+| `just extract` | Re-parse `ref/source/glass.ni` → `data/graph.json` + prune audit |
 | `just preview` | Build + serve `dist/` locally for playtesting             |
 | `just clean`   | Remove `dist/`, `build/`, caches                          |
 
 ## Layout
 
 ```
-src/glass.twee        Chapbook 2 source — 28 passages, a curated linear spine
-tools/extract.py      Parses story.ni remark tables → data/graph.json
+src/glass.twee        Chapbook 2 source — 30 story passages + 2 meta, a curated linear spine
+tools/extract.py      Parses ref/source/glass.ni remark tables → data/graph.json
 tools/setup-tweego.sh Fetches pinned Tweego + Chapbook binaries
 tools/polish.md       LLM rules: light polish only, verbatim kept, FLAG don't rewrite
 data/                 graph.json, prune-list.json, extraction-report.json
