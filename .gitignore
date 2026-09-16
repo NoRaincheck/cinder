@@ -3,7 +3,7 @@
 /dist/
 
 # Generated / fetched copies
-data/story.ni
+data/glass.ni
 
 # Python
 __pycache__/

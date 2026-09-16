@@ -29,7 +29,7 @@ Other recipes (`just` with no args lists them):
 | `just setup`   | Install pytest pins + fetch Tweego/Chapbook               |
 | `just build`   | Compile Twee → `dist/index.html`                          |
 | `just test`    | Run the full pytest suite (15 tests)                      |
-| `just extract` | Re-parse `story.ni` → `data/graph.json` + prune audit     |
+| `just extract` | Re-parse `glass.ni` → `data/graph.json` + prune audit     |
 | `just preview` | Build + serve `dist/` locally for playtesting             |
 | `just clean`   | Remove `dist/`, `build/`, caches                          |
 
@@ -37,7 +37,7 @@ Other recipes (`just` with no args lists them):
 
 ```
 src/glass.twee        Chapbook 2 source — 28 passages, a curated linear spine
-tools/extract.py      Parses story.ni remark tables → data/graph.json
+tools/extract.py      Parses glass.ni remark tables → data/graph.json
 tools/setup-tweego.sh Fetches pinned Tweego + Chapbook binaries
 tools/polish.md       LLM rules: light polish only, verbatim kept, FLAG don't rewrite
 data/                 graph.json, prune-list.json, extraction-report.json

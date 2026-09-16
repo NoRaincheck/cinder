@@ -124,7 +124,7 @@ the D3–D4, D6 machinery:
 
 - D7 follow-up: decide on the 5 remaining story-dialogue "bird" lines.
 - `End-Disaster` is unreachable from `Start` (known orphan in test suite).
-- Two passages in `story.ni` have truncated dialogue (magic-birds,
+- Two passages in `glass.ni` have truncated dialogue (magic-birds,
   marriage-birds) from a known extractor bug; full text is restorable
   independently.
-- `data/story.ni` and `dist/` are gitignored; only build artifacts deploy.
+- `data/glass.ni` and `dist/` are gitignored; only build artifacts deploy.

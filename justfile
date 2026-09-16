@@ -33,15 +33,15 @@ extract:
     set -euo pipefail
     if [ -f vendor/glass/Glass.inform/Source/story.ni ]; then
         SRC=vendor/glass/Glass.inform/Source/story.ni
-    elif [ -f data/story.ni ]; then
-        SRC=data/story.ni
+    elif [ -f data/glass.ni ]; then
+        SRC=data/glass.ni
     else
         echo "submodule not initialized; fetching snapshot" >&2
-        curl -sSL https://raw.githubusercontent.com/I7-Examples/Glass/main/Glass.inform/Source/story.ni -o data/story.ni
-        SRC=data/story.ni
+        curl -sSL https://raw.githubusercontent.com/I7-Examples/Glass/main/Glass.inform/Source/story.ni -o data/glass.ni
+        SRC=data/glass.ni
     fi
-    if [ "$SRC" != "data/story.ni" ]; then cp "$SRC" data/story.ni; fi
-    python3 tools/extract.py data/story.ni data
+    if [ "$SRC" != "data/glass.ni" ]; then cp "$SRC" data/glass.ni; fi
+    python3 tools/extract.py data/glass.ni data
     cat data/extraction-report.json
 
 # Build, then serve dist/ locally so you can play the game in a browser.
