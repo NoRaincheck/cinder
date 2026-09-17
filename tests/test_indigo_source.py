@@ -9,8 +9,9 @@ SHA256 = "3ddaa5071e599805232cb6c4526223d0f24907cd6747eb09c104cd25894bafab"
 def test_indigo_source_vendored():
     assert SRC.exists(), "ref/source/indigo.t3 missing"
     assert SRC.stat().st_size > 100_000, "indigo.t3 suspiciously small"
-    assert SRC.read_bytes()[:8] == b"T3-image", "not a TADS3 image"
-    assert hashlib.sha256(SRC.read_bytes()).hexdigest() == SHA256, "indigo.t3 corrupted"
+    blob = SRC.read_bytes()
+    assert blob[:8] == b"T3-image", "not a TADS3 image"
+    assert hashlib.sha256(blob).hexdigest() == SHA256, "indigo.t3 corrupted"
 
 
 def test_indigo_graph_schema():
