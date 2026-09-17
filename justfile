@@ -19,17 +19,20 @@ build-landing:
     python3 tools/build-landing.py
     ls -la dist
 
-# Compile both stories + landing to dist/.
+# Compile three stories + landing to dist/.
 build: setup
-    mkdir -p dist dist/assets/glass dist/assets/bronze
-    cp -n src/glass/assets/*.webp dist/assets/glass/ 2>/dev/null || cp src/glass/assets/*.webp dist/assets/glass/
-    cp -n src/bronze/assets/*.webp dist/assets/bronze/ 2>/dev/null || cp src/bronze/assets/*.webp dist/assets/bronze/
+    mkdir -p dist dist/assets/glass dist/assets/bronze dist/assets/indigo
+    (cp src/glass/assets/*.webp dist/assets/glass/ 2>/dev/null || true)
+    (cp src/bronze/assets/*.webp dist/assets/bronze/ 2>/dev/null || true)
+    (cp src/indigo/assets/*.webp dist/assets/indigo/ 2>/dev/null || true)
     {{tweego}} src/glass -o dist/glass.html
     node tools/patch-chapbook.js dist/glass.html
     {{tweego}} src/bronze -o dist/bronze.html
     node tools/patch-chapbook.js dist/bronze.html
+    {{tweego}} src/indigo -o dist/indigo.html
+    node tools/patch-chapbook.js dist/indigo.html
     python3 tools/build-landing.py
-    ls -la dist dist/assets/glass dist/assets/bronze
+    ls -la dist dist/assets/glass dist/assets/bronze dist/assets/indigo
 
 # Run the full pytest suite (coverage, links, reachability, build, polish).
 test:
@@ -75,7 +78,7 @@ clean:
 
 # Format story sources: append two spaces after any line ending in ]] (Chapbook link rule).
 fmt:
-    @sed -i '' -E 's/\]\][ ]?$/]]  /' src/glass/glass.twee src/bronze/bronze.twee
+    @sed -i '' -E 's/\]\][ ]?$/]]  /' src/glass/glass.twee src/bronze/bronze.twee src/indigo/indigo.twee
 
 # Compile Glass story dir to dist/glass.html.
 build-glass: setup
@@ -90,3 +93,10 @@ build-bronze: setup
     cp -n src/bronze/assets/*.webp dist/assets/bronze/ 2>/dev/null || cp src/bronze/assets/*.webp dist/assets/bronze/
     {{tweego}} src/bronze -o dist/bronze.html
     node tools/patch-chapbook.js dist/bronze.html
+
+# Compile Indigo story dir to dist/indigo.html.
+build-indigo: setup
+    mkdir -p dist dist/assets/indigo
+    (cp src/indigo/assets/*.webp dist/assets/indigo/ 2>/dev/null || true)
+    {{tweego}} src/indigo -o dist/indigo.html
+    node tools/patch-chapbook.js dist/indigo.html
