@@ -76,9 +76,21 @@ def test_tweego_builds_all_three_stories_and_landing():
         "bronze-rotunda.webp",
         "bronze-crypt.webp",
     ]
+    indigo_art = [
+        "indigo-kitchen.webp",
+        "indigo-cauldron.webp",
+        "indigo-tower.webp",
+        "indigo-hair.webp",
+        "indigo-candle.webp",
+        "indigo-storeroom.webp",
+        "indigo-escape.webp",
+    ]
     for name in glass_art:
         assert (Path("src/glass/assets") / name).exists(), f"missing src art: {name}"
         assert f"assets/glass/{name}" in gtext, f"art missing from glass build: {name}"
     for name in bronze_art:
         assert (Path("src/bronze/assets") / name).exists(), f"missing src art: {name}"
         assert f"assets/bronze/{name}" in btext, f"art missing from bronze build: {name}"
+    for name in indigo_art:
+        assert (Path("src/indigo/assets") / name).exists(), f"missing src art: {name}"
+        assert f"assets/indigo/{name}" in itext, f"art missing from indigo build: {name}"
