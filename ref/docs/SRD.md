@@ -178,7 +178,7 @@ artifact is missing (no dangling Play links). **Invariants:** Glass IFID
 `C67460F1-5CAD-42EC-AF08-E1A7249DBCE8` never changes; Bronze IFID is fixed at
 creation; Indigo IFID is fixed at creation; `dist/index.html` is the landing, never a game (old `#passage`
 deep links to the single-story index are retired — accepted, noted in
-`README.md`); `tests/test_build.py` asserts both artifacts >50KB with their
+`README.md`); `tests/test_build.py` asserts all three artifacts >50KB with their
 titles/endings plus landing links.
 
 ## Runbooks

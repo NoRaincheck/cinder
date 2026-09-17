@@ -1,7 +1,7 @@
 from pathlib import Path
 
 
-def test_landing_links_both_stories():
+def test_landing_links_all_three_stories():
     html = Path("dist/index.html").read_text(errors="replace")
     assert 'href="glass.html"' in html
     assert 'href="bronze.html"' in html

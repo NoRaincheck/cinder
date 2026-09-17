@@ -30,18 +30,18 @@ conversation to one of 5 endings.
 
 Other recipes (`just` with no args lists them):
 
-| Recipe            | What it does                                                        |
-|-------------------|---------------------------------------------------------------------|
-| `just setup`      | Install pytest pins + fetch Tweego/Chapbook                         |
-| `just build`      | Compile both stories + landing → `dist/`                            |
-| `just build-glass`  | Compile Glass story dir → `dist/glass.html`                       |
-| `just build-bronze` | Compile Bronze story dir → `dist/bronze.html`                     |
-| `just build-indigo` | Compile Indigo story dir → `dist/indigo.html`                     |
-| `just build-landing`| Generate landing `dist/index.html` linking both stories           |
-| `just test`       | Run the full pytest suite (29 tests)                                |
-| `just extract [glass\|bronze\|all]` | Re-parse `ref/source/*.ni` → `data/*graph.json` + prune audits |
-| `just preview`    | Build + serve `dist/` locally for playtesting                       |
-| `just clean`      | Remove `dist/`, `build/`, caches                                    |
+| Recipe                              | What it does                                                                                            |
+|-------------------------------------|---------------------------------------------------------------------------------------------------------|
+| `just setup`                        | Install pytest pins + fetch Tweego/Chapbook                                                             |
+| `just build`                        | Compile all three stories + landing → `dist/`                                                           |
+| `just build-glass`                  | Compile Glass story dir → `dist/glass.html`                                                             |
+| `just build-bronze`                 | Compile Bronze story dir → `dist/bronze.html`                                                           |
+| `just build-indigo`                 | Compile Indigo story dir → `dist/indigo.html`                                                           |
+| `just build-landing`                | Generate landing `dist/index.html` linking all three stories                                            |
+| `just test`                         | Run the full pytest suite (46 tests)                                                                    |
+| `just extract [glass\|bronze\|all]` | Re-parse `ref/source/*.ni` → `data/*graph.json` + prune audits (glass/bronze only; indigo.t3 is manual) |
+| `just preview`                      | Build + serve `dist/` locally for playtesting                                                           |
+| `just clean`                        | Remove `dist/`, `build/`, caches                                                                        |
 
 ## Layout
 

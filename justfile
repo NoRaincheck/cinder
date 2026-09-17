@@ -14,7 +14,7 @@ setup:
     uv sync --frozen
     tools/setup-tweego.sh
 
-# Generate dist/index.html landing linking both stories.
+# Generate dist/index.html landing linking all three stories.
 build-landing:
     python3 tools/build-landing.py
     ls -la dist

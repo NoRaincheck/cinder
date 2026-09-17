@@ -7,7 +7,7 @@ from pathlib import Path
 TWEEGO = Path("build/tweego/tweego")
 
 
-def test_tweego_builds_both_stories_and_landing():
+def test_tweego_builds_all_three_stories_and_landing():
     setup = subprocess.run(["tools/setup-tweego.sh"],
                            capture_output=True, text=True, timeout=300)
     assert setup.returncode == 0, setup.stderr[-2000:]

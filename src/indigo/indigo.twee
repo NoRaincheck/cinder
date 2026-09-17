@@ -124,8 +124,6 @@ The tower waits for your next move.
 --
 Opening the small wooden box reveals a stub of candle, a comb, some shears, and a stained paintbrush.
 
-The small wooden box contains a stub of candle, a comb, some shears, and a stained paintbrush.
-
 [[Take the candle stub|Indigo-Candle]]  
 [[> |Indigo-Blue-Tower]]  
 :: Indigo-Candle
@@ -249,5 +247,6 @@ THE END.
 You lay the decade over the potion and watch it thicken and curdle and then go sour, passing through a stage like flowery curds, then turning grey, and finally ending as nothing more than an encrusted residue on the surface of the cauldron. The rotten-egg smell diminishes.
 
 With the potion ruined, your preparation is spoiled, and the tower keeps you.
+<!-- FLAG: invented closer, no source line — needs transcript check -->
 
 THE END.
