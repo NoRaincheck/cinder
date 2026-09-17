@@ -1,0 +1,368 @@
+:: StoryTitle
+Alabaster
+
+:: StoryData
+{"format": "Chapbook", "format-version": "2.3.0", "ifid": "A1AB5E5B-2C3D-4E5F-8A1B-3C4D5E6F7A8B", "start": "Alabaster-Start"}
+
+:: Alabaster-Start
+seen_alabaster_snow: false
+seen_alabaster_box: false
+seen_alabaster_corpse: false
+seen_alabaster_vampire: false
+seen_alabaster_possessed: false
+seen_alabaster_heart: false
+seen_alabaster_exorcise: false
+seen_alabaster_freed: false
+seen_alabaster_sundering: false
+--
+It is the bitterest night you can remember since the dwarrows last marched against men. The sky is too cold, the village too still. There is smoke in the air but no voices from the doorways. The Queen's light burns in the tower window behind you. She is watching, as far as she can.
+
+You and the girl move through the narrow lanes without speaking, past the muted inns and shuttered bakeries, until you reach the narrowing path beyond the churchyard.
+
+Pass in silence the graves of veterans and goodwives, and then at the outskirts the graves of suicides, which are granted no markers. Come to the place where the village ends and the trees begin to grow.
+
+Enter the forest like two spies, one sent to kill the other.
+
+Walk for hours.
+
+The Queen has told you to return with her heart in a box. Snow White has made you promise to make other arrangements. Now that you're alone in the forest, it's hard to know which of the two women to trust.
+
+After Alabaster by John Cater, Rob Dubbin, Eric Eve, Elizabeth Heller, Jayzee, Kazuki Mishima, Sarah Morayati, Mark Musante, Emily Short, Adam Thornton, and Ziv Wities (2008). Choice adaptation, light polish, all paths preserved.
+
+[[Enter the dark woods|Alabaster-Woods]]  
+:: Alabaster-Woods
+--
+Dark Woods
+
+It is a moonless night. You are seldom frightened in these woods, but tonight is unusual.
+
+You know the trees in these parts well: a mix of pine and aspen. But all you can see in this light are the ghost-white trunks, and the shadows cast by the pine trees.
+
+Snow White is with you. Her wrists are bound behind her back. She has made as much of a nuisance of herself as she could, deliberately stumbling over every root in the dark, until you had to half-carry her this far.
+
+You carry a dagger, a lantern, and a heart-sized box.
+
+[if seen_alabaster_snow]
+*(seen: Snow White bound)*
+[continue]
+[if seen_alabaster_box]
+*(seen: the heart-sized box)*
+[continue]
+[if seen_alabaster_corpse]
+*(seen: the hart's corpse)*
+[continue]
+The forest waits for your next move.
+
+[[Confront Snow White|Alabaster-Snow]]  
+[[Examine the heart-sized box|Alabaster-Box]]  
+[[Examine the hart's corpse|Alabaster-Corpse]]  
+[if seen_alabaster_snow]
+[[Question her|Alabaster-Question]]  
+[if seen_alabaster_heart]
+[[Decide where to go|Alabaster-Choice-Castle]]  
+:: Alabaster-Snow
+seen_alabaster_snow: true
+--
+Her skin is whiter than the surface of the moon and her eyes are black and her breath is unappealing. At night she dances and she drinks red wine; she sleeps by day.
+
+She alone of all the court refuses to be brought before the Queen's magic mirror. She threw a rock at it once, and almost broke it. But she bites and scratches and will not be dragged in front of its face.
+
+Her wrists are bound with a silver chain. It has chafed her, oh, much more than you would expect possible in such a short time. But the Queen insisted that no mere rope would suffice.
+
+[[> |Alabaster-Woods]]  
+:: Alabaster-Box
+seen_alabaster_box: true
+--
+It is made of deep black wood, with a sequence of symbols burned across the top. You have no idea what they do. Your part is only to bring it back full.
+
+The surface is smoothly oiled except for the symbols burnt into it. It feels warmer than the night.
+
+It smells like cedar, and something else expensive and nameless. Some perfume or spice from a distant place.
+
+[[> |Alabaster-Woods]]  
+:: Alabaster-Corpse
+seen_alabaster_corpse: true
+--
+Earlier, you killed a hart and left it here. It was a preparation: you didn't want to have to hunt such an animal in the darkness.
+
+Now, you can't help wondering whether you should have spared the noble beast.
+
+It was a handsome creature, once. The antlers are still attached. It is dark and matted with dirt and blood: not a savory thing to look at.
+
+[[Cut out the hart's heart|Alabaster-Heart]]  
+[[> |Alabaster-Woods]]  
+:: Alabaster-Question
+--
+She watches you, waiting to see what you will ask. Much of what happens here is about conversation: you can ask about the Queen, the mirror, or what she is.
+
+[if seen_alabaster_vampire]
+*(seen: what she is)*
+[continue]
+[if seen_alabaster_possessed]
+*(seen: what possesses her)*
+[continue]
+The forest waits for your next move.
+
+[[Ask whether she is a vampire|Alabaster-Vampire]]  
+[[Ask what possesses her|Alabaster-Possessed]]  
+[[Raise the lantern against her|End-Alabaster-Burned-Dark]]  
+[if seen_alabaster_vampire]
+[[Press her about the mirror|Alabaster-Possessed]]  
+[[> |Alabaster-Woods]]  
+:: Alabaster-Vampire
+seen_alabaster_vampire: true
+--
+'Do you avoid the mirror because you're a vampire?' In a flash of insight, you remember an obscure fact from the tales of your youth.
+
+'That isn't why,' she says ambiguously.
+
+Her breath is sickly; you have smelled nothing extraordinary about the rest of her. She wears (unlike the Queen) no perfumes. Her teeth are even, white, and sharp. She has incisors; everyone does. You can see nothing absolutely abnormal.
+
+You consider it -- and then you consider your exsanguinated hounds. Bloodless. The rumors might be false. You've always tried to be a rational man.
+
+[[> |Alabaster-Question]]  
+:: Alabaster-Possessed
+seen_alabaster_possessed: true
+--
+Knowing what you know about her, you can barely take in the surface appearance, because you are trying too hard to make out the demon beneath that skin.
+
+As you look, Snow White becomes two women: one the princess, your daughter-that-was, who does not recognize you. The pink returns to her cheeks and she looks, again, like an ordinary girl.
+
+The other is stranger, older, an archaic face, framed in a tangle of nut-brown hair, and as Snow White was ice, this woman is a creation of fire.
+
+'I too was cut away from what was mine. I know,' she says, her gentle voice laying open old wounds.
+
+[[Cut out the hart's heart|Alabaster-Heart]]  
+[[Free her and join her|End-Alabaster-Lilith-Consort]]  
+[[> |Alabaster-Question]]  
+:: Alabaster-Heart
+seen_alabaster_heart: true
+--
+You slice the heart out of the dead animal. It is cold now, just like any ordinary sort of meat.
+
+You tuck the heart into its fitted box, where it fits exactly.
+
+[[Burn the box with the heart inside|Alabaster-Exorcise]]  
+[[Keep the heart for the Queen|Alabaster-Choice-Castle]]  
+[[Offer your own blood instead|Alabaster-Sundering]]  
+[[> |Alabaster-Woods]]  
+:: Alabaster-Exorcise
+seen_alabaster_exorcise: true
+--
+The box begins to smoulder, and then to burn. You hastily drop it, before it singes your fingers.
+
+As the heart within catches fire, it emits clouds of foul-smelling fumes, causing you to choke. But their effect on Snow White is even more dramatic: she tries to back away, but seemingly loses control of her limbs, flailing around like one demented.
+
+Suddenly, she lets out a loud scream that pierces the night like a screech of a thousand owls. A moment later a small cloud of black, oily smoke boils out of her mouth, and then dissipates into the fumes of the burning heart.
+
+For a moment Snow White looks on the point of fainting, then she recovers herself, swaying on her feet and staring around her like someone just woken from a long sleep. She staggers towards you and then falls sobbing into your arms, a lost, frightened girl.
+
+A pile of ashes is all that remains from the heart-sized box.
+
+[[Face the freed princess|Alabaster-Freed]]  
+:: Alabaster-Freed
+seen_alabaster_freed: true
+--
+Her appearance is not very much different than it was before, and yet all the coldness has gone out of it.
+
+She seems infinitely more vulnerable now. And childish. All the womanly knowledge has ebbed out of her and she is just a girl.
+
+She is truly the princess now: it would be treason to harm her, whatever the Queen might have said.
+
+[if seen_alabaster_sundering]
+[[> |Alabaster-Choice-Haven]]  
+[[Press her with questions|End-Alabaster-Mad]]  
+[[Lead her to safety|Alabaster-Choice-Haven]]  
+:: Alabaster-Sundering
+seen_alabaster_sundering: true
+--
+The box begins to smoulder, and then to burn. You hastily drop it, before it singes your fingers.
+
+As the heart within catches fire, it emits clouds of foul-smelling fumes. You start to choke and cough, and your eyes are full of bleary tears, and you remember --
+
+how the Queen begged you not to sunder yourself. Snow White sitting on her lap. Sunlight in the castle towers.
+
+When you saw them dying, because you had not been able to control your stupid dear bumbling awful people, you made a certain choice.
+
+And now you have unmade that choice.
+
+[[Wake as yourself|End-Alabaster-Sundering]]  
+:: Alabaster-Choice-Castle
+--
+To the south lies the castle, and the Queen waiting for her heart in a box. If you go on from here, you will have to lie to the Queen -- perhaps for the rest of your life. It is not something to undertake unless you are certain.
+
+But you will have to make a choice sooner or later. Perhaps now is the right time after all.
+
+[[Return with the hart's heart|End-Alabaster-Hart-Heart]]  
+[[Return empty-handed|End-Alabaster-Empty-Handed]]  
+[[Drag her back in chains|End-Alabaster-Chained-Castle]]  
+[if seen_alabaster_exorcise]
+[[Return with the freed princess|End-Alabaster-Chained-Castle]]  
+[if seen_alabaster_vampire]
+[[Strike her down|End-Alabaster-Vampire-Kill]]  
+[[> |Alabaster-Choice-Haven]]  
+:: Alabaster-Choice-Haven
+--
+To the north lies her safe haven: the tiny house she has had fitted, and the servants she hired, and the sealed coffin-bed that she had made for herself. She hasn't ever told you the exact direction, but she knows the path unerringly, though the land soon becomes more broken and hilly.
+
+You could go on, take Snow White to safety, and return alone. But afterward, you will have to lie to the Queen -- perhaps for the rest of your life.
+
+[if seen_alabaster_freed]
+*(seen: the freed princess)*
+[continue]
+
+[[Go on with her in chains|End-Alabaster-Haven-Chained]]  
+[[Free her and go together|End-Alabaster-Haven-Freed]]  
+[if seen_alabaster_exorcise]
+[[Take the exorcised princess north|End-Alabaster-Exorcised-Haven]]  
+:: End-Alabaster-Hart-Heart
+--
+'I'm going back now,' you tell her. 'You can go on on your own; I'll take my chances lying about this matter to the Queen.'
+
+You part ways. She is quickly gone to the north, her footsteps no longer audible. You make your way through a growing dawn back to the palace, where you present the Queen immediately with the heart in its box.
+
+For a time, everything is quiet. The mirror is heard less often in the halls. The Queen almost seems at peace. The winter solstice feasts are celebrated as gaily as you can remember.
+
+And so for most of the spring she stands in her tower looking down in thought, as the orchards fill with apple blossom.
+
+You survive -- for the time being.
+
+THE END.
+:: End-Alabaster-Empty-Handed
+--
+'You go on on your own,' you say. 'I'm returning to the Queen.'
+
+She looks skeptical. 'Without the box and a heart inside to show her? That seems foolish.'
+
+'I'm going,' you tell her anyway.
+
+So you part ways. She vanishes to the north, her footsteps quickly silenced by distance or cunning. You walk back toward the palace, eager to be out of the woods though they are normally a comfort to you.
+
+You are at the edge of the forest, almost back to the palace and daylight, when something catches you around the neck. You are conscious of constriction and startling pain. And then of nothing at all.
+
+THE END.
+:: End-Alabaster-Chained-Castle
+--
+'We're going back to the castle,' you announce, making up your mind. 'You're coming with me.'
+
+Snow White tries to run away in order to avoid being dragged back, but you catch her and carry her along. The Queen will just have to be faced, you tell yourself, though it is possible that the balance of your judgment has been upset by the long journey.
+
+But the Queen, it seems, is very determined not to have her stepdaughter back again: as soon as the two of you emerge from the woods, and in the bleak light of dawn approach the castle, archers appear on the battlements. Their expressions are grim, but they shoot you without compunction.
+
+You drop Snow White and the chains break: she scampers away into the woods again with a fleetness that seems not quite human. But this strange sight is your last on earth, and you die without knowing for certain whether the Queen is able to recapture her, or whether the princess escapes after all.
+
+THE END.
+:: End-Alabaster-Haven-Chained
+--
+'We go on,' you say. 'I'm going with you to your safe haven.'
+
+She pouts and fusses some about being forced through the woods in the current circumstances, but there is not much that she can do about it. Presently she gives you more precise directions to finding the cottage. It is well into the territory of the dwarrows, away from the land that your people inhabit.
+
+When you arrive, she shouts for the dwarrows, and they boil out of their little cottage and across the silty river to meet you. They are small, but there are many more of them: they quickly get her away from you and take off the chain that ties her wrists.
+
+'Is he friend or foe?' they ask her. They are carrying axes and daggers and small brutal hammers.
+
+She smiles nastily at you. 'He hasn't decided,' she says archly. 'Let him live for a few days, at least, while he considers it.'
+
+Your position is rather precarious.
+
+THE END.
+:: End-Alabaster-Haven-Freed
+--
+'We go on,' you say. 'I'm going with you to your safe haven.'
+
+If you must, she says -- and freed of her bonds she walks very quickly and quietly, so that it is not easy for you to keep up.
+
+Descending along the gorges, you come to a point where the water widens; and there you find the cottage: a low rambling barrow of earth built into the gorge face, with reeds up almost to its walls, and a rough-wrought door.
+
+Inside there are more dwarrows -- you are losing count -- and in the front room they show to Snow White the provisions they made for her coming. A box like a coffin, bedded with new dirt; wine, obviously bought or stolen from humans; stores of winter food, and a freshly-killed rabbit that no one has thought to clean.
+
+In the end you manage to barter for a day's rest and a little food to take away with you, when you go -- wherever you are going. To find the King, if you can.
+
+You have a quest that is unlikely to succeed.
+
+THE END.
+:: End-Alabaster-Exorcised-Haven
+--
+'I'm coming with you to your haven,' you say. 'I think that's safest.'
+
+She nods, obviously relieved. 'I do know the way, still,' she says. 'But Lilith did most of the negotiation with the dwarrows, and I am a bit nervous of them.'
+
+When you reach your destination, she draws closer to you and holds your hand. It is dawn now, but a cloudy, unhappy dawn.
+
+Inside, you find that they have made preparations for Snow White -- rather sordid ones. A coffin of dirt has a place of honor by the fire, and there is a fresh-killed rabbit, still bloody.
+
+You and she sink into different corners of the room and are silent for a little while, contemplating all the horror that is behind you and everything left to come. It is obvious you won't be able to stay here for long; you will have to go on, do something more.
+
+You are in exile.
+
+THE END.
+:: End-Alabaster-Burned-Dark
+--
+As you approach with the lantern, Snow White speaks a strange word. The flame in the lantern leaps up in response -- as though in joy -- and then it vanishes entirely.
+
+'Goodbye,' she says. 'Explain to the Queen as well as you can!' And from the nimble footsteps, you guess that her earlier trouble walking was all performed for your benefit. Soon you cannot even hear her moving.
+
+You are alone in the dark.
+
+THE END.
+:: End-Alabaster-Sundering
+--
+You wake. It is light. Snow White is bent over you -- rose-cheeked, innocent, a girl properly again. Your daughter.
+
+'Daddy.' She throws herself against your chest before you can even properly sit up, and sobs as though she were five years old, though she is nearly fifteen.
+
+'There was a demoness,' she says. 'In my head. She's gone now. I'm so sorry. I killed your hounds, I think.'
+
+You hold her tightly and try to think: but you, the King, sitting on the ground alone in the woods, have no more powers than you had as huntsman, and your problems are considerably more numerous.
+
+To prevent the outbreak of war again, and to keep the dwarrows safe, now that your sacrifice-magic is no longer holding everything in check.
+
+The sun rises in the sky and the air grows warmer. You sit like that for a long time, you and your daughter, and think on what to do.
+
+Now you are yourself again.
+
+THE END.
+:: End-Alabaster-Vampire-Kill
+--
+There is no reason to delay, now that you know what you know. You wait until her attention is elsewhere and you stab her swift, to the heart.
+
+Her scream is terrible. She struggles; she tries to bite you, with teeth suddenly sharper and longer than human teeth should be. But you are deft and practiced and you have taken the heart out of many a larger animal. When hers is cut entirely out, she dies and moves no more.
+
+The next business is to cut off her head. Kneeling beside her in the lamplight you recall how, when she was four years old, her mouth formed a tiny open triangle when she slept, not like a grown person's mouth at all; how diligently she learned to read; how her mother taught her to embroider with a tiny hoop and an outsized needle.
+
+But what is done is done, and none of you are yourselves any longer. As though to mark the point, her lips fall a little open, revealing those cruel incisors, and then you are able to remove her head.
+
+The Queen, when she receives the news, knows that you are not lying. She weeps, and for a little while she even lets you hold her. But as the grief passes so also does the knowledge.
+
+Soon this too will be a nightmare.
+
+THE END.
+:: End-Alabaster-Lilith-Consort
+--
+With trembling fingers you unwind the silver chain.
+
+She brings her hands around and chafes her wrists. Then she blurs, and steps beside herself, so that you are faced with two women. One is the princess, still beautiful but less fey, with roses in her cheeks and lips such as any girl might have. The other is Lilith of the nut brown hair, and her shadow-wings envelop her.
+
+Lilith turns to the princess. 'You will have to make the rest of the journey alone,' she says, neither kindly nor unkindly.
+
+Then Lilith holds out her hand to you. 'Come with me,' she says. 'I have a cavern in the dunes on the far side of the world, and there we will rest and speak and consider; and after sunset the air will be so warm that we can lie outside unclothed.'
+
+So you leave behind the hart's corpse, and the promise you made to that spirit, and the promise you made to Snow White, and the promise you made to the Queen: all those promises were made in ignorance.
+
+You are Lilith's consort now.
+
+THE END.
+:: End-Alabaster-Mad
+--
+This appears to be one question too many, because she flings herself on the forest floor, screaming and crying. What she says isn't very articulate, but you can pick out bits like 'leave me alone!' and 'go away' and 'I'm sorry I'm sorry.'
+
+Later her shouts change. 'Come back,' she says sometimes; and 'I'll have the apple then' and even once '...blood, blood. Hungry.'
+
+The sun rises and brings no greater degree of sanity. On the contrary, she scoots away from the filtering patches of light and huddles at the base of one of the larger pines, still crying and occasionally screaming.
+
+Finally, around midday, she is worn out enough to sleep. But you can go neither forward nor back, cannot take a damaged princess to the haven nor return her to the castle; you will have to find some third way.
+
+Snow White is mad.
+
+THE END.

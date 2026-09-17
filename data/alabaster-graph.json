@@ -1,0 +1,5 @@
+{
+  "rooms": ["Dark Woods", "Castle", "Safe Haven"],
+  "passages": ["Alabaster-Start", "Alabaster-Woods", "Alabaster-Snow", "Alabaster-Box", "Alabaster-Corpse", "Alabaster-Question", "Alabaster-Vampire", "Alabaster-Possessed", "Alabaster-Heart", "Alabaster-Exorcise", "Alabaster-Freed", "Alabaster-Sundering", "Alabaster-Choice-Castle", "Alabaster-Choice-Haven", "End-Alabaster-Hart-Heart", "End-Alabaster-Empty-Handed", "End-Alabaster-Chained-Castle", "End-Alabaster-Haven-Chained", "End-Alabaster-Haven-Freed", "End-Alabaster-Exorcised-Haven", "End-Alabaster-Burned-Dark", "End-Alabaster-Sundering", "End-Alabaster-Vampire-Kill", "End-Alabaster-Lilith-Consort", "End-Alabaster-Mad"],
+  "endings": ["End-Alabaster-Hart-Heart", "End-Alabaster-Empty-Handed", "End-Alabaster-Chained-Castle", "End-Alabaster-Haven-Chained", "End-Alabaster-Haven-Freed", "End-Alabaster-Exorcised-Haven", "End-Alabaster-Burned-Dark", "End-Alabaster-Sundering", "End-Alabaster-Vampire-Kill", "End-Alabaster-Lilith-Consort", "End-Alabaster-Mad"]
+}

@@ -19,20 +19,23 @@ build-landing:
     python3 tools/build-landing.py
     ls -la dist
 
-# Compile three stories + landing to dist/.
+# Compile four stories + landing to dist/.
 build: setup
-    mkdir -p dist dist/assets/glass dist/assets/bronze dist/assets/indigo
+    mkdir -p dist dist/assets/glass dist/assets/bronze dist/assets/indigo dist/assets/alabaster
     (cp src/glass/assets/*.webp dist/assets/glass/ 2>/dev/null || true)
     (cp src/bronze/assets/*.webp dist/assets/bronze/ 2>/dev/null || true)
     (cp src/indigo/assets/*.webp dist/assets/indigo/ 2>/dev/null || true)
+    (cp src/alabaster/assets/*.webp dist/assets/alabaster/ 2>/dev/null || true)
     {{tweego}} src/glass -o dist/glass.html
     node tools/patch-chapbook.js dist/glass.html
     {{tweego}} src/bronze -o dist/bronze.html
     node tools/patch-chapbook.js dist/bronze.html
     {{tweego}} src/indigo -o dist/indigo.html
     node tools/patch-chapbook.js dist/indigo.html
+    {{tweego}} src/alabaster -o dist/alabaster.html
+    node tools/patch-chapbook.js dist/alabaster.html
     python3 tools/build-landing.py
-    ls -la dist dist/assets/glass dist/assets/bronze dist/assets/indigo
+    ls -la dist dist/assets/glass dist/assets/bronze dist/assets/indigo dist/assets/alabaster
 
 # Run the full pytest suite (coverage, links, reachability, build, polish).
 test:
@@ -78,7 +81,7 @@ clean:
 
 # Format story sources: append two spaces after any line ending in ]] (Chapbook link rule).
 fmt:
-    @sed -i '' -E 's/\]\][ ]?$/]]  /' src/glass/glass.twee src/bronze/bronze.twee src/indigo/indigo.twee
+    @sed -i '' -E 's/\]\][ ]?$/]]  /' src/glass/glass.twee src/bronze/bronze.twee src/indigo/indigo.twee src/alabaster/alabaster.twee
 
 # Compile Glass story dir to dist/glass.html.
 build-glass: setup
@@ -100,3 +103,10 @@ build-indigo: setup
     (cp src/indigo/assets/*.webp dist/assets/indigo/ 2>/dev/null || true)
     {{tweego}} src/indigo -o dist/indigo.html
     node tools/patch-chapbook.js dist/indigo.html
+
+# Compile Alabaster story dir to dist/alabaster.html.
+build-alabaster: setup
+    mkdir -p dist dist/assets/alabaster
+    (cp src/alabaster/assets/*.webp dist/assets/alabaster/ 2>/dev/null || true)
+    {{tweego}} src/alabaster -o dist/alabaster.html
+    node tools/patch-chapbook.js dist/alabaster.html
