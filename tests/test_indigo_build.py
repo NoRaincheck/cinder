@@ -3,7 +3,8 @@ from pathlib import Path
 
 
 def test_indigo_builds():
-    subprocess.run(["tools/setup-tweego.sh"], capture_output=True, timeout=300)
+    s = subprocess.run(["tools/setup-tweego.sh"], capture_output=True, text=True, timeout=300)
+    assert s.returncode == 0, s.stderr[-2000:]
     Path("dist").mkdir(parents=True, exist_ok=True)
     r = subprocess.run(
         ["build/tweego/tweego", "src/indigo", "-o", "dist/indigo.html"],
