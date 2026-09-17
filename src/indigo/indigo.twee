@@ -17,6 +17,8 @@ seen_indigo_braid: false
 seen_indigo_millennium: false
 seen_indigo_window_aged: false
 --
+![Blue Tower turret with painted murals and barred window](assets/indigo/indigo-tower.webp)
+
 Years ago, a witch placed you in this tower and arranged for your upkeep, paying certain villagers well to keep you supplied with the most basic necessities, and no more.
 
 Your years in the tower have changed you. You are more or less a grown woman now, with hair nearly to the floor. Your skills have developed as far as solitude and tedium can take them. You are ready to leave.
@@ -28,6 +30,8 @@ After Emily Short's Indigo (TADS3, 2011). Choice adaptation, light polish, all p
 [[Climb down to the kitchen|Indigo-Kitchen]]  
 :: Indigo-Kitchen
 --
+![Stone kitchen with fireplace, apple and cauldron](assets/indigo/indigo-kitchen.webp)
+
 Kitchen
 
 A fire burns in the fireplace and a few basic kitchen things are still lying around. The plank staircase spirals up to the room above, while a much older, darker, stone staircase descends to the storeroom below.
@@ -56,6 +60,8 @@ The tower waits for your next move.
 :: Indigo-Month
 seen_indigo_month: true
 --
+![Stone kitchen with fireplace, apple and cauldron](assets/indigo/indigo-kitchen.webp)
+
 The skin has drawn in close and wrinkled; the flesh has turned to meal. A month of age clings to it, making it ugly and useless.
 
 You pluck the month away from the withered apple and gather it into a skein in your fingers.
@@ -64,6 +70,8 @@ You pluck the month away from the withered apple and gather it into a skein in y
 [[> |Indigo-Kitchen]]  
 :: Indigo-Cauldron
 --
+![Iron cauldron brewing with lavender steam](assets/indigo/indigo-cauldron.webp)
+
 A heavy iron cauldron, with a lid.
 
 Opening the cauldron reveals an unfinished potion. There's a strong smell of rotten eggs.
@@ -79,6 +87,8 @@ A potion with weeks of age on it. It is not done yet, however. Another month sho
 seen_indigo_potion: true
 seen_indigo_hair_strong: true
 --
+![Iron cauldron brewing with lavender steam](assets/indigo/indigo-cauldron.webp)
+
 Done. You get a whiff of fresh lavender. The rotten-egg smell diminishes.
 
 You drink the potion. It slides down slowly, but its effect is quick afterward. Your hair gleams, strong as spun silk. The lavender scent diminishes.
@@ -87,6 +97,8 @@ You drink the potion. It slides down slowly, but its effect is quick afterward. 
 :: Indigo-Lit
 seen_indigo_candle_lit: true
 --
+![Candle stub holding an hour of time](assets/indigo/indigo-candle.webp)
+
 You light the candle.
 
 The candle has burned away a few minutes. It's burning.
@@ -96,6 +108,8 @@ The candle has burned away a few minutes. It's burning.
 [[> |Indigo-Kitchen]]  
 :: Indigo-Blue-Tower
 --
+![Blue Tower turret with painted murals and barred window](assets/indigo/indigo-tower.webp)
+
 Blue Tower
 
 This compact turret has been your home for the last ten years, and the walls are covered and re-covered in the images you've painted there.
@@ -122,6 +136,8 @@ The tower waits for your next move.
 [[Study the painted walls|Indigo-Decade]]  
 :: Indigo-Box
 --
+![Blue Tower turret with painted murals and barred window](assets/indigo/indigo-tower.webp)
+
 Opening the small wooden box reveals a stub of candle, a comb, some shears, and a stained paintbrush.
 
 [[Take the candle stub|Indigo-Candle]]  
@@ -130,6 +146,8 @@ Opening the small wooden box reveals a stub of candle, a comb, some shears, and 
 seen_indigo_candle: true
 seen_indigo_hour: true
 --
+![Candle stub holding an hour of time](assets/indigo/indigo-candle.webp)
+
 Taken.
 
 The remains of a cheap candle. You rarely use such indulgences. It has burned down almost to nothing, however: an hour's use is enough to exhaust one of these things.
@@ -141,6 +159,8 @@ It takes several attempts, but in the end you manage to take the hour between yo
 [[> |Indigo-Box]]  
 :: Indigo-Hair
 --
+![Braiding the long blue-white hair rope](assets/indigo/indigo-hair.webp)
+
 Your hair grows down to your feet. Its natural color is blonde, nearly white, but you have dyed it a deep rippling blue.
 
 [if seen_indigo_decade]
@@ -151,6 +171,8 @@ Your hair grows down to your feet. Its natural color is blonde, nearly white, bu
 :: Indigo-Long
 seen_indigo_hair_long: true
 --
+![Braiding the long blue-white hair rope](assets/indigo/indigo-hair.webp)
+
 You lower the decade - carefully, carefully! - into your hair, touching nothing else. Your scalp crawls as though infested and there is a terrible feeling of urgent liveliness up there. (Does soil feel like this when the seeds work their way up in the spring?) But your hair grows and grows and grows, pooling around your feet in astounding lengths.
 
 Your hair grows so long that it trails behind you like a bridal train. Its last six feet are deep blue; the rest a gleaming white.
@@ -159,6 +181,8 @@ Your hair grows so long that it trails behind you like a bridal train. Its last 
 :: Indigo-Braid
 seen_indigo_braid: true
 --
+![Braiding the long blue-white hair rope](assets/indigo/indigo-hair.webp)
+
 You braid your hair deftly. It takes twice as long as it used to, and the new-grown hair is a bit unwieldy, but you've dealt with worse.
 
 (with the shears) You cut the whole lot through right at the base of your neck. The effect is dizzying. Your head feels light, like a bauble on a string. The braid hangs from your hand.
@@ -170,6 +194,8 @@ A long rope made of hair: half blue, half blonde. It is perhaps an inch in diame
 [[> |Indigo-Blue-Tower]]  
 :: Indigo-Window
 --
+![Blue Tower turret with painted murals and barred window](assets/indigo/indigo-tower.webp)
+
 Panes of clear glass set between iron bars. Only one pane can be opened, and it will be a long time before rust and the aging of glass make the rest of the thing fragile enough to break.
 
 The single pane opens and shuts, to be sure, but that does you little good at the moment. If you're leaving, you'll need to get the whole thing open.
@@ -182,6 +208,8 @@ The single pane opens and shuts, to be sure, but that does you little good at th
 :: Indigo-Decade
 seen_indigo_decade: true
 --
+![Blue Tower turret with painted murals and barred window](assets/indigo/indigo-tower.webp)
+
 Ten years of time and work. It's hard to separate the age itself from the effort you put into it.
 
 You stroke your fingers lightly over the wall, seeking purchase. Pinch. Pull. The decade pulls away, the mural rapidly cycling backward, showing again the layers in which it was painted: the sky overlies a forest, the forest is painted over a garden, the garden you drew when you first moved here in childish strokes of charcoal on the wall. Then it's all gone. The wall is whitewashed and pristine, and the decade hangs in your hands.
@@ -190,6 +218,8 @@ You stroke your fingers lightly over the wall, seeking purchase. Pinch. Pull. Th
 :: Indigo-Aged
 seen_indigo_window_aged: true
 --
+![Foot of the tower after escape at dawn](assets/indigo/indigo-escape.webp)
+
 The years pour through your fingers. The iron rusts and withers, the glass flows and thickens at the bottom. When you are done, all that remains is a rusty frame.
 
 Panes of clear glass set between iron bars. Only one pane can be opened, and it will be a long time before rust and the aging of glass make the rest of the thing fragile enough to break. It's open.
@@ -198,6 +228,8 @@ Panes of clear glass set between iron bars. Only one pane can be opened, and it 
 [[> |Indigo-Window]]  
 :: Indigo-Choice-Escape
 --
+![Foot of the tower after escape at dawn](assets/indigo/indigo-escape.webp)
+
 At the Foot of the Tower
 
 It's a perilous climb, but worthwhile.
@@ -211,6 +243,8 @@ Once, long ago, you went the opposite way by ladder; then the good townsfolk too
 [[> |Indigo-Blue-Tower]]  
 :: Indigo-Store-Room
 --
+![Store room with indigo cuttings and black millennium](assets/indigo/indigo-storeroom.webp)
+
 Store Room
 
 The clammy uncomfortable space under the stairs is not pleasant enough to live in, but it does keep roots and stores cool.
@@ -229,6 +263,8 @@ The tower waits for your next move.
 :: Indigo-Millennium
 seen_indigo_millennium: true
 --
+![Store room with indigo cuttings and black millennium](assets/indigo/indigo-storeroom.webp)
+
 You haul away. It is like dragging a tablecloth from a banquet table - if the tablecloth were made of chain mail, and the banquet table seated fifty.
 
 A deep black ball of time, dense as an anvil, too much for one body to absorb.
@@ -237,6 +273,8 @@ A deep black ball of time, dense as an anvil, too much for one body to absorb.
 [[> |Indigo-Store-Room]]  
 :: End-Indigo-Escape
 --
+![Foot of the tower after escape at dawn](assets/indigo/indigo-escape.webp)
+
 Folded on a nearby rock, neat as an old garment returned by the washerwoman, are the seventy years you put aside when you entered this tower.
 
 You have escaped.
@@ -244,6 +282,8 @@ You have escaped.
 THE END.
 :: End-Indigo-Spoiled
 --
+![Iron cauldron brewing with lavender steam](assets/indigo/indigo-cauldron.webp)
+
 You lay the decade over the potion and watch it thicken and curdle and then go sour, passing through a stage like flowery curds, then turning grey, and finally ending as nothing more than an encrusted residue on the surface of the cauldron. The rotten-egg smell diminishes.
 
 With the potion ruined, your preparation is spoiled, and the tower keeps you.
