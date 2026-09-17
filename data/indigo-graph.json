@@ -1,0 +1,5 @@
+{
+  "rooms": ["Kitchen", "Blue Tower", "Store Room", "At the Foot of the Tower"],
+  "passages": ["Indigo-Start", "Indigo-Kitchen", "Indigo-Month", "Indigo-Cauldron", "Indigo-Strong", "Indigo-Lit", "Indigo-Blue-Tower", "Indigo-Box", "Indigo-Candle", "Indigo-Hair", "Indigo-Long", "Indigo-Braid", "Indigo-Window", "Indigo-Decade", "Indigo-Aged", "Indigo-Choice-Escape", "Indigo-Store-Room", "Indigo-Millennium", "End-Indigo-Escape", "End-Indigo-Spoiled"],
+  "endings": ["End-Indigo-Escape", "End-Indigo-Spoiled"]
+}
