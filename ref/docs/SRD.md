@@ -1,11 +1,11 @@
 # SRD — Cinder (durable)
 
 **Status:** durable — default branch alone is sufficient to operate and recover the system.
-**Scope:** Choice-based Twine ports of Emily Short's Inform 7 games *Glass* and *Bronze*.
+**Scope:** Choice-based Twine ports of Emily Short's Inform 7 games *Glass*, *Bronze*, and *Indigo* (curated tower spine).
 Player steers drawing-room talk in Glass; free-text `mention [subject]` becomes
 clickable subject choices. Bronze is a curated castle spine.
 **Toolchain:** Chapbook 2.3.0 via Tweego 2.1.1 → static `dist/glass.html`,
-`dist/bronze.html`, landing `dist/index.html` (GitHub Pages). No custom JS.
+`dist/bronze.html`, `dist/indigo.html`, landing `dist/index.html` (GitHub Pages). No custom JS.
 **Date:** 2026-09-16
 
 > **Durability contract** (per `ref/docs/agentic-engineering.md` §6): this
@@ -20,9 +20,11 @@ clickable subject choices. Bronze is a curated castle spine.
 |---|---|
 | Glass source | `src/glass/glass.twee` (30 story passages + `StoryTitle`, `StoryData`) |
 | Bronze source | `src/bronze/bronze.twee` (28 story passages + `StoryTitle`, `StoryData`) |
+| Indigo source | `src/indigo/indigo.twee` (20 story passages + `StoryTitle`, `StoryData`) |
 | Canonical Inform sources | `ref/source/glass.ni`, `ref/source/bronze.ni` (committed renames of upstream `story.ni`; see `ref/source/README.md`) |
-| Extraction outputs | `data/graph.json`, `data/prune-list.json`, `data/extraction-report.json` (Glass); `data/bronze-graph.json`, `data/bronze-prune-list.json`, `data/bronze-extraction-report.json` (Bronze) |
-| Build artifacts (gitignored) | `dist/glass.html`, `dist/bronze.html`, `dist/index.html` (landing) |
+| TADS source | `ref/source/indigo.t3` (compiled image; manual transcription) |
+| Extraction outputs | `data/graph.json`, `data/prune-list.json`, `data/extraction-report.json` (Glass); `data/bronze-graph.json`, `data/bronze-prune-list.json`, `data/bronze-extraction-report.json` (Bronze); `data/indigo-graph.json`, `data/indigo-prune-list.json`, `data/indigo-extraction-report.json` (Indigo) |
+| Build artifacts (gitignored) | `dist/glass.html`, `dist/bronze.html`, `dist/indigo.html`, `dist/index.html` (landing) |
 | Tooling | `tools/extract.py`, `tools/curate3.py`, `tools/build-landing.py`, `tools/patch-chapbook.js`, `tools/setup-tweego.sh`, `tools/polish.md` |
 | Tests | `tests/` (`just test` runs the full suite; Pages deploys only on green) |
 | Delivery | `justfile`, `.github/workflows/pages.yml` |
@@ -162,17 +164,19 @@ meta-section, not a passage); `tests/test_build.py` asserts
 `End-Cinderella-Wed`, `End-Lucinda-Marriage`, `End-Cinderella-Executed`
 present in the built `dist/glass.html`.
 
-### D13 — Multi-story site (Glass + Bronze)
+### D13 — Multi-story site (Glass + Bronze + Indigo)
 
 Split-src, multi-compile, static landing. Each story keeps its own
 `StoryTitle` / `StoryData` (own IFID, own start passage: `Start` for Glass,
-`Bronze-Start` for Bronze); no shared passages; all Bronze passages are
+`Bronze-Start` for Bronze, `Indigo-Start` for Indigo); no shared passages; all Bronze passages are
 `Bronze-`-prefixed (28 story passages, 3 endings: `End-Bronze-Leave`,
-`End-Bronze-Stay`, `End-Bronze-Beast`). `tools/build-landing.py` (stdlib
-only) renders story cards into `dist/index.html` and fails if either story
+`End-Bronze-Stay`, `End-Bronze-Beast`); all Indigo passages are
+`Indigo-`-prefixed (20 story passages, 2 endings: `End-Indigo-Escape`,
+`End-Indigo-Spoiled`). `tools/build-landing.py` (stdlib
+only) renders story cards into `dist/index.html` and fails if any story
 artifact is missing (no dangling Play links). **Invariants:** Glass IFID
 `C67460F1-5CAD-42EC-AF08-E1A7249DBCE8` never changes; Bronze IFID is fixed at
-creation; `dist/index.html` is the landing, never a game (old `#passage`
+creation; Indigo IFID is fixed at creation; `dist/index.html` is the landing, never a game (old `#passage`
 deep links to the single-story index are retired — accepted, noted in
 `README.md`); `tests/test_build.py` asserts both artifacts >50KB with their
 titles/endings plus landing links.
@@ -218,12 +222,12 @@ titles/endings plus landing links.
 
 ## Key numbers
 
-| | Glass | Bronze |
-|---|---|---|
-| Story passages | 30 + 2 meta (`StoryTitle`, `StoryData`) in `src/glass/glass.twee` | 28 + 2 meta in `src/bronze/bronze.twee` |
-| Prologue lore leaves | 6 (`Prologue-*-Enchantment/Law/Beauty/Memory/Nature/Truth`) | n/a |
-| Endings | 5 (4 `End-*` + terminal `Theodora-Marriage`; D12) | 3 (`End-Bronze-Leave/Stay/Beast`) |
-| Build artifact | `dist/glass.html` | `dist/bronze.html` |
+| | Glass | Bronze | Indigo |
+|---|---|---|---|
+| Story passages | 30 + 2 meta (`StoryTitle`, `StoryData`) in `src/glass/glass.twee` | 28 + 2 meta in `src/bronze/bronze.twee` | 20 + 2 meta in `src/indigo/indigo.twee` |
+| Prologue lore leaves | 6 (`Prologue-*-Enchantment/Law/Beauty/Memory/Nature/Truth`) | n/a | n/a |
+| Endings | 5 (4 `End-*` + terminal `Theodora-Marriage`; D12) | 3 (`End-Bronze-Leave/Stay/Beast`) | 2 (`End-Indigo-Escape/Spoiled`) |
+| Build artifact | `dist/glass.html` | `dist/bronze.html` | `dist/indigo.html` |
 
 ## Open items
 
