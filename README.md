@@ -1,9 +1,9 @@
 # Cinder
 
-Choice-based Twine ports of Emily Short's Inform 7 games **Glass** and
-**Bronze** (originals: [I7-Examples/Glass](https://github.com/I7-Examples/Glass),
+Choice-based Twine ports of Emily Short's Inform 7 games **Glass**,
+**Bronze**, and **Indigo** (originals: [I7-Examples/Glass](https://github.com/I7-Examples/Glass),
 [I7-Examples/Bronze](https://github.com/I7-Examples/Bronze)).
-A landing page links both stories. In Glass you steer the drawing-room
+A landing page links all three stories. In Glass you steer the drawing-room
 talk: free-text `mention [subject]` from the parser original becomes
 clickable subject choices. All narrative paths are preserved — only
 looping filler and invalid-input handlers were pruned (audited in
@@ -30,33 +30,36 @@ conversation to one of 5 endings.
 
 Other recipes (`just` with no args lists them):
 
-| Recipe            | What it does                                                        |
-|-------------------|---------------------------------------------------------------------|
-| `just setup`      | Install pytest pins + fetch Tweego/Chapbook                         |
-| `just build`      | Compile both stories + landing → `dist/`                            |
-| `just build-glass`  | Compile Glass story dir → `dist/glass.html`                       |
-| `just build-bronze` | Compile Bronze story dir → `dist/bronze.html`                     |
-| `just build-landing`| Generate landing `dist/index.html` linking both stories           |
-| `just test`       | Run the full pytest suite (29 tests)                                |
-| `just extract [glass\|bronze\|all]` | Re-parse `ref/source/*.ni` → `data/*graph.json` + prune audits |
-| `just preview`    | Build + serve `dist/` locally for playtesting                       |
-| `just clean`      | Remove `dist/`, `build/`, caches                                    |
+| Recipe                              | What it does                                                                                            |
+|-------------------------------------|---------------------------------------------------------------------------------------------------------|
+| `just setup`                        | Install pytest pins + fetch Tweego/Chapbook                                                             |
+| `just build`                        | Compile all three stories + landing → `dist/`                                                           |
+| `just build-glass`                  | Compile Glass story dir → `dist/glass.html`                                                             |
+| `just build-bronze`                 | Compile Bronze story dir → `dist/bronze.html`                                                           |
+| `just build-indigo`                 | Compile Indigo story dir → `dist/indigo.html`                                                           |
+| `just build-landing`                | Generate landing `dist/index.html` linking all three stories                                            |
+| `just test`                         | Run the full pytest suite (46 tests)                                                                    |
+| `just extract [glass\|bronze\|all]` | Re-parse `ref/source/*.ni` → `data/*graph.json` + prune audits (glass/bronze only; indigo.t3 is manual) |
+| `just preview`                      | Build + serve `dist/` locally for playtesting                                                           |
+| `just clean`                        | Remove `dist/`, `build/`, caches                                                                        |
 
 ## Layout
 
 ```
 src/glass/glass.twee    Chapbook 2 source — 30 story passages + 2 meta, a curated linear spine
 src/bronze/bronze.twee  Chapbook 2 source — Bronze curated spine, all passages Bronze- prefixed
+src/indigo/indigo.twee  Chapbook 2 source — Indigo curated spine, all passages Indigo- prefixed
 tools/extract.py      Parses ref/source/glass.ni remark tables → data/graph.json;
                       scans ref/source/bronze.ni rooms/tables → data/bronze-graph.json
 tools/build-landing.py Renders story cards into dist/index.html landing page
 tools/setup-tweego.sh Fetches pinned Tweego + Chapbook binaries
 tools/polish.md       LLM rules: light polish only, verbatim kept, FLAG don't rewrite
 data/                 graph.json, prune-list.json, extraction-report.json
-                      (+ bronze-graph.json, bronze-prune-list.json, bronze-extraction-report.json)
+                       (+ bronze-graph.json, bronze-prune-list.json, bronze-extraction-report.json)
+                       (+ indigo-graph.json, indigo-prune-list.json, indigo-extraction-report.json)
 tests/                toolchain, extract, link integrity, reachability, build, polish,
                       bronze graph/source/extract/build, landing, multi-artifact patch
-dist/                 Build output (gitignored) — index.html landing + glass.html + bronze.html
+dist/                 Build output (gitignored) — index.html landing + glass.html + bronze.html + indigo.html
 ```
 
 ## How the port works

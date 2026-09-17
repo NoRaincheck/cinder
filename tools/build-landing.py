@@ -13,6 +13,12 @@ STORIES = [
         "headline": "A fractured fairy tale",
         "description": "A puzzle-oriented Beauty and the Beast: return to the castle in the forest and find what holds you there.",
     },
+    {
+        "file": "indigo.html",
+        "title": "Indigo",
+        "headline": "A fractured fairy tale",
+        "description": "A time-theft Rapunzel in one tower: steal years from old things to grow young ones, and climb down your own hair.",
+    },
 ]
 
 TEMPLATE = """<!doctype html>
@@ -22,7 +28,7 @@ TEMPLATE = """<!doctype html>
 <main>
 <h1>Cinder</h1>
 {cards}
-<footer><p>Glass and Bronze by Emily Short (2006), choice adaptations. Dialogue kept verbatim except parser artifacts.</p></footer>
+<footer><p>Glass, Bronze and Indigo by Emily Short (2006, 2006, 2011), choice adaptations. Dialogue kept verbatim except parser artifacts.</p></footer>
 </main>
 </body>
 </html>

@@ -1,0 +1,252 @@
+:: StoryTitle
+Indigo
+
+:: StoryData
+{"format": "Chapbook", "format-version": "2.3.0", "ifid": "F863DFC5-6FB0-460C-B654-1F2988F6E4BE", "start": "Indigo-Start"}
+
+:: Indigo-Start
+seen_indigo_month: false
+seen_indigo_potion: false
+seen_indigo_hair_strong: false
+seen_indigo_candle: false
+seen_indigo_hour: false
+seen_indigo_candle_lit: false
+seen_indigo_decade: false
+seen_indigo_hair_long: false
+seen_indigo_braid: false
+seen_indigo_millennium: false
+seen_indigo_window_aged: false
+--
+Years ago, a witch placed you in this tower and arranged for your upkeep, paying certain villagers well to keep you supplied with the most basic necessities, and no more.
+
+Your years in the tower have changed you. You are more or less a grown woman now, with hair nearly to the floor. Your skills have developed as far as solitude and tedium can take them. You are ready to leave.
+
+Take your time.
+
+After Emily Short's Indigo (TADS3, 2011). Choice adaptation, light polish, all paths preserved.
+
+[[Climb down to the kitchen|Indigo-Kitchen]]  
+:: Indigo-Kitchen
+--
+Kitchen
+
+A fire burns in the fireplace and a few basic kitchen things are still lying around. The plank staircase spirals up to the room above, while a much older, darker, stone staircase descends to the storeroom below.
+
+You see a withered apple and a cauldron here.
+
+[if seen_indigo_month]
+*(seen: the month plucked from the apple)*
+[continue]
+[if seen_indigo_hair_strong]
+*(seen: hair strong as spun silk)*
+[continue]
+[if seen_indigo_candle_lit]
+*(seen: the lit candle)*
+[continue]
+The tower waits for your next move.
+
+[[Pluck the month from the apple|Indigo-Month]]  
+[[Examine the cauldron|Indigo-Cauldron]]  
+[if seen_indigo_hair_strong]
+[[Clatter up the plank stairs|Indigo-Blue-Tower]]  
+[if seen_indigo_candle_lit]
+[[Descend the stone stairs|Indigo-Store-Room]]  
+[if seen_indigo_candle]
+[[Kindle the candle at the fire|Indigo-Lit]]  
+:: Indigo-Month
+seen_indigo_month: true
+--
+The skin has drawn in close and wrinkled; the flesh has turned to meal. A month of age clings to it, making it ugly and useless.
+
+You pluck the month away from the withered apple and gather it into a skein in your fingers.
+
+[[Carry the skein to the cauldron|Indigo-Cauldron]]  
+[[> |Indigo-Kitchen]]  
+:: Indigo-Cauldron
+--
+A heavy iron cauldron, with a lid.
+
+Opening the cauldron reveals an unfinished potion. There's a strong smell of rotten eggs.
+
+A potion with weeks of age on it. It is not done yet, however. Another month should finish it: its purpose is to fortify the hair, make it strong and glossy and unbreakable.
+
+[if seen_indigo_month]
+[[Stir the month in and drink|Indigo-Strong]]  
+[if seen_indigo_decade]
+[[Lay the decade over the brew|End-Indigo-Spoiled]]  
+[[> |Indigo-Kitchen]]  
+:: Indigo-Strong
+seen_indigo_potion: true
+seen_indigo_hair_strong: true
+--
+Done. You get a whiff of fresh lavender. The rotten-egg smell diminishes.
+
+You drink the potion. It slides down slowly, but its effect is quick afterward. Your hair gleams, strong as spun silk. The lavender scent diminishes.
+
+[[> |Indigo-Kitchen]]  
+:: Indigo-Lit
+seen_indigo_candle_lit: true
+--
+You light the candle.
+
+The candle has burned away a few minutes. It's burning.
+
+[if seen_indigo_hour]
+[[Descend the stone stairs by candlelight|Indigo-Store-Room]]  
+[[> |Indigo-Kitchen]]  
+:: Indigo-Blue-Tower
+--
+Blue Tower
+
+This compact turret has been your home for the last ten years, and the walls are covered and re-covered in the images you've painted there.
+
+There is a window in the curving south wall, and stone stairs spiral down into the body of the tower.
+
+Under the low bed are a small wooden box and a chamber pot.
+
+[if seen_indigo_candle]
+*(seen: the candle stub)*
+[continue]
+[if seen_indigo_braid]
+*(seen: the braided rope)*
+[continue]
+[if seen_indigo_window_aged]
+*(seen: the aged window)*
+[continue]
+The tower waits for your next move.
+
+[[Open the small wooden box|Indigo-Box]]  
+[[Study your hair|Indigo-Hair]]  
+[[Examine the window|Indigo-Window]]  
+[if seen_indigo_hair_strong]
+[[Study the painted walls|Indigo-Decade]]  
+:: Indigo-Box
+--
+Opening the small wooden box reveals a stub of candle, a comb, some shears, and a stained paintbrush.
+
+[[Take the candle stub|Indigo-Candle]]  
+[[> |Indigo-Blue-Tower]]  
+:: Indigo-Candle
+seen_indigo_candle: true
+seen_indigo_hour: true
+--
+Taken.
+
+The remains of a cheap candle. You rarely use such indulgences. It has burned down almost to nothing, however: an hour's use is enough to exhaust one of these things.
+
+It winds around the candle like a thread of hair.
+
+It takes several attempts, but in the end you manage to take the hour between your fingernails and tease it away from the candle with no tearing or disruption. What remains behind is a whole candle, unburnt.
+
+[[> |Indigo-Box]]  
+:: Indigo-Hair
+--
+Your hair grows down to your feet. Its natural color is blonde, nearly white, but you have dyed it a deep rippling blue.
+
+[if seen_indigo_decade]
+[[Lower the decade into your hair|Indigo-Long]]  
+[if seen_indigo_hair_long]
+[[Cut it all off|Indigo-Braid]]  
+[[> |Indigo-Blue-Tower]]  
+:: Indigo-Long
+seen_indigo_hair_long: true
+--
+You lower the decade - carefully, carefully! - into your hair, touching nothing else. Your scalp crawls as though infested and there is a terrible feeling of urgent liveliness up there. (Does soil feel like this when the seeds work their way up in the spring?) But your hair grows and grows and grows, pooling around your feet in astounding lengths.
+
+Your hair grows so long that it trails behind you like a bridal train. Its last six feet are deep blue; the rest a gleaming white.
+
+[[> |Indigo-Hair]]  
+:: Indigo-Braid
+seen_indigo_braid: true
+--
+You braid your hair deftly. It takes twice as long as it used to, and the new-grown hair is a bit unwieldy, but you've dealt with worse.
+
+(with the shears) You cut the whole lot through right at the base of your neck. The effect is dizzying. Your head feels light, like a bauble on a string. The braid hangs from your hand.
+
+A long rope made of hair: half blue, half blonde. It is perhaps an inch in diameter, but should be strong enough to bear your weight.
+
+[if seen_indigo_potion]
+[[Carry the rope to the window|Indigo-Window]]  
+[[> |Indigo-Blue-Tower]]  
+:: Indigo-Window
+--
+Panes of clear glass set between iron bars. Only one pane can be opened, and it will be a long time before rust and the aging of glass make the rest of the thing fragile enough to break.
+
+The single pane opens and shuts, to be sure, but that does you little good at the moment. If you're leaving, you'll need to get the whole thing open.
+
+[if seen_indigo_millennium]
+[[Pour the millennium through your fingers|Indigo-Aged]]  
+[if seen_indigo_window_aged]
+[[Climb out through the frame|Indigo-Choice-Escape]]  
+[[> |Indigo-Blue-Tower]]  
+:: Indigo-Decade
+seen_indigo_decade: true
+--
+Ten years of time and work. It's hard to separate the age itself from the effort you put into it.
+
+You stroke your fingers lightly over the wall, seeking purchase. Pinch. Pull. The decade pulls away, the mural rapidly cycling backward, showing again the layers in which it was painted: the sky overlies a forest, the forest is painted over a garden, the garden you drew when you first moved here in childish strokes of charcoal on the wall. Then it's all gone. The wall is whitewashed and pristine, and the decade hangs in your hands.
+
+[[> |Indigo-Blue-Tower]]  
+:: Indigo-Aged
+seen_indigo_window_aged: true
+--
+The years pour through your fingers. The iron rusts and withers, the glass flows and thickens at the bottom. When you are done, all that remains is a rusty frame.
+
+Panes of clear glass set between iron bars. Only one pane can be opened, and it will be a long time before rust and the aging of glass make the rest of the thing fragile enough to break. It's open.
+
+[[Climb out through the rusty frame|Indigo-Choice-Escape]]  
+[[> |Indigo-Window]]  
+:: Indigo-Choice-Escape
+--
+At the Foot of the Tower
+
+It's a perilous climb, but worthwhile.
+
+Once, long ago, you went the opposite way by ladder; then the good townsfolk took the ladder away and left you behind. And they kept your secret for you well, saying nothing to the lord seeking you.
+
+(He had desired to take his wife to bed a virgin every night.)
+
+[if seen_indigo_braid]
+[[Tie the braid fast and climb down|End-Indigo-Escape]]  
+[[> |Indigo-Blue-Tower]]  
+:: Indigo-Store-Room
+--
+Store Room
+
+The clammy uncomfortable space under the stairs is not pleasant enough to live in, but it does keep roots and stores cool.
+
+Under the stone stairs are some indigo cuttings.
+
+It grows by your tower, and you've convinced a few of your suppliers to bring you quantities of the stuff. To make dye of this stuff requires another supply you have in plenty: stale piss. No need to make another batch today, but you have used up many days with the occupation.
+
+[if seen_indigo_millennium]
+*(seen: the millennium)*
+[continue]
+The tower waits for your next move.
+
+[[Haul the millennium from the stairs|Indigo-Millennium]]  
+[[> |Indigo-Kitchen]]  
+:: Indigo-Millennium
+seen_indigo_millennium: true
+--
+You haul away. It is like dragging a tablecloth from a banquet table - if the tablecloth were made of chain mail, and the banquet table seated fifty.
+
+A deep black ball of time, dense as an anvil, too much for one body to absorb.
+
+[[Carry it up to the window|Indigo-Window]]  
+[[> |Indigo-Store-Room]]  
+:: End-Indigo-Escape
+--
+Folded on a nearby rock, neat as an old garment returned by the washerwoman, are the seventy years you put aside when you entered this tower.
+
+You have escaped.
+
+THE END.
+:: End-Indigo-Spoiled
+--
+You lay the decade over the potion and watch it thicken and curdle and then go sour, passing through a stage like flowery curds, then turning grey, and finally ending as nothing more than an encrusted residue on the surface of the cauldron. The rotten-egg smell diminishes.
+
+With the potion ruined, your preparation is spoiled, and the tower keeps you.
+<!-- FLAG: invented closer, no source line — needs transcript check -->
+
+THE END.

@@ -1,0 +1,7 @@
+[
+  {"table": "parser guess-the-verb variants", "reason": "invalid-input", "detail": "take month from apple vs take month, put month on vs in, light vs burn vs kindle: one canonical choice link each"},
+  {"table": "scenery stubs", "reason": "user-cut", "detail": "comb, paintbrush, chamber pot, indigo cuttings, bed: kept as flavor lines inside Box/Tower/Store-Room bodies, no dedicated passages"},
+  {"table": "hour idle branch", "reason": "user-cut", "detail": "the hour has no puzzle use; folded into Indigo-Candle body instead of a dedicated passage"},
+  {"table": "hint menu", "reason": "user-cut", "detail": "original about-text hints were never implemented upstream; no hint passages"},
+  {"table": "travel filler", "reason": "loop", "detail": "repeated u/d stair climbs collapsed: each hub-to-hub move is a single link"}
+]

@@ -7,14 +7,15 @@ from pathlib import Path
 TWEEGO = Path("build/tweego/tweego")
 
 
-def test_tweego_builds_both_stories_and_landing():
+def test_tweego_builds_all_three_stories_and_landing():
     setup = subprocess.run(["tools/setup-tweego.sh"],
                            capture_output=True, text=True, timeout=300)
     assert setup.returncode == 0, setup.stderr[-2000:]
     assert TWEEGO.exists(), "tweego binary missing after setup"
     Path("dist").mkdir(parents=True, exist_ok=True)
     for src, out in [("src/glass", "dist/glass.html"),
-                     ("src/bronze", "dist/bronze.html")]:
+                     ("src/bronze", "dist/bronze.html"),
+                     ("src/indigo", "dist/indigo.html")]:
         r = subprocess.run([str(TWEEGO), src, "-o", out],
                            capture_output=True, text=True, timeout=120)
         assert r.returncode == 0, r.stderr[-2000:]
@@ -43,9 +44,17 @@ def test_tweego_builds_both_stories_and_landing():
     assert "Bronze-Start" in btext
     assert "End-Bronze-Leave" in btext
 
+    indigo = Path("dist/indigo.html")
+    assert indigo.exists() and indigo.stat().st_size > 50_000
+    itext = indigo.read_text(errors="replace")
+    assert "Indigo" in itext
+    assert "Indigo-Start" in itext
+    assert "End-Indigo-Escape" in itext
+
     landing = Path("dist/index.html").read_text(errors="replace")
     assert 'href="glass.html"' in landing
     assert 'href="bronze.html"' in landing
+    assert 'href="indigo.html"' in landing
 
     # Scene art: every generated asset must exist in src/ and survive
     # Tweego compilation into the built HTML (imported as Twine.image
