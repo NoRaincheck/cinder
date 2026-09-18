@@ -19,6 +19,12 @@ STORIES = [
         "headline": "A fractured fairy tale",
         "description": "A time-theft Rapunzel in one tower: steal years from old things to grow young ones, and climb down your own hair.",
     },
+    {
+        "file": "alabaster.html",
+        "title": "Alabaster",
+        "headline": "A fractured fairy tale",
+        "description": "A Snow White in one dark wood: question the bound princess, cut out the hart's heart, and choose the castle or the haven.",
+    },
 ]
 
 TEMPLATE = """<!doctype html>
@@ -28,7 +34,7 @@ TEMPLATE = """<!doctype html>
 <main>
 <h1>Cinder</h1>
 {cards}
-<footer><p>Glass, Bronze and Indigo by Emily Short (2006, 2006, 2011), choice adaptations. Dialogue kept verbatim except parser artifacts.</p></footer>
+<footer><p>Glass, Bronze, Indigo and Alabaster by Emily Short and collaborators (2006, 2006, 2011, 2008), choice adaptations. Dialogue kept verbatim except parser artifacts.</p></footer>
 </main>
 </body>
 </html>

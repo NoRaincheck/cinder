@@ -1,0 +1,8 @@
+[
+  {"table": "conversation quip forest (1000+ quips)", "reason": "user-cut", "detail": "full threaded-conversation tree collapsed to a curated spine: Question hub with vampire/possession beats plus Heart/Exorcise/Sundering progression; one canonical choice link per beat"},
+  {"table": "18 recorded endings", "reason": "user-cut", "detail": "18 source endings collapsed to 11 representative end passages: hart-heart, empty-handed, chained-castle (covers both chained variants), haven-chained, haven-freed, exorcised-haven, burned-dark, sundering, vampire-kill, lilith-consort (covers both consort variants + promise variant), mad (exorcised-then-mad); ashes variants folded into hart-heart/empty-handed"},
+  {"table": "parser guess-the-verb variants", "reason": "invalid-input", "detail": "take/cut/put/burn/light/ignite phrasings, show/give/ask/tell variants: one canonical choice link each"},
+  {"table": "scenery stubs", "reason": "user-cut", "detail": "roots, trees, undergrowth, aspen, pine, embroidery, body-part refusals: kept as flavor lines inside Woods/Snow bodies, no dedicated passages"},
+  {"table": "tutorial and help menus", "reason": "user-cut", "detail": "about-text, hint-text, phys/endings/collab/graphics/license help: folded into Start attribution footer, no hint passages"},
+  {"table": "travel filler", "reason": "loop", "detail": "repeated north/south warnings (destiny/haven warnings) collapsed: each hub-to-hub move is a single link"}
+]
