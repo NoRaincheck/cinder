@@ -32,6 +32,8 @@ After Alabaster by John Cater, Rob Dubbin, Eric Eve, Elizabeth Heller, Jayzee, K
 [[Enter the dark woods|Alabaster-Woods]]  
 :: Alabaster-Woods
 --
+![Dark moonless forest, ghost-white trunks, huntsman and bound Snow White walking together](assets/alabaster/alabaster-woods.webp)
+
 Dark Woods
 
 It is a moonless night. You are seldom frightened in these woods, but tonight is unusual.
@@ -63,6 +65,8 @@ The forest waits for your next move.
 :: Alabaster-Snow
 seen_alabaster_snow: true
 --
+![Snow White at night, skin whiter than moon, eyes black, bound with silver chain](assets/alabaster/alabaster-snow.webp)
+
 Her skin is whiter than the surface of the moon and her eyes are black and her breath is unappealing. At night she dances and she drinks red wine; she sleeps by day.
 
 She alone of all the court refuses to be brought before the Queen's magic mirror. She threw a rock at it once, and almost broke it. But she bites and scratches and will not be dragged in front of its face.
@@ -73,6 +77,8 @@ Her wrists are bound with a silver chain. It has chafed her, oh, much more than 
 :: Alabaster-Box
 seen_alabaster_box: true
 --
+![Heart-sized box of deep black wood with burnt symbols, held in weathered hands](assets/alabaster/alabaster-box.webp)
+
 It is made of deep black wood, with a sequence of symbols burned across the top. You have no idea what they do. Your part is only to bring it back full.
 
 The surface is smoothly oiled except for the symbols burnt into it. It feels warmer than the night.
@@ -83,6 +89,8 @@ It smells like cedar, and something else expensive and nameless. Some perfume or
 :: Alabaster-Corpse
 seen_alabaster_corpse: true
 --
+![Fallen hart on forest floor, antlers attached, huntsman kneeling beside it](assets/alabaster/alabaster-hart.webp)
+
 Earlier, you killed a hart and left it here. It was a preparation: you didn't want to have to hunt such an animal in the darkness.
 
 Now, you can't help wondering whether you should have spared the noble beast.
@@ -124,6 +132,8 @@ You consider it -- and then you consider your exsanguinated hounds. Bloodless. T
 :: Alabaster-Possessed
 seen_alabaster_possessed: true
 --
+![Double vision of Snow White: rose-cheeked princess and archaic stranger with nut-brown hair and shadow-wings](assets/alabaster/alabaster-possession.webp)
+
 Knowing what you know about her, you can barely take in the surface appearance, because you are trying too hard to make out the demon beneath that skin.
 
 As you look, Snow White becomes two women: one the princess, your daughter-that-was, who does not recognize you. The pink returns to her cheeks and she looks, again, like an ordinary girl.
@@ -149,6 +159,8 @@ You tuck the heart into its fitted box, where it fits exactly.
 :: Alabaster-Exorcise
 seen_alabaster_exorcise: true
 --
+![Heart-sized box burning, black smoke boiling from Snow White's mouth, huntsman recoiling with lantern](assets/alabaster/alabaster-exorcism.webp)
+
 The box begins to smoulder, and then to burn. You hastily drop it, before it singes your fingers.
 
 As the heart within catches fire, it emits clouds of foul-smelling fumes, causing you to choke. But their effect on Snow White is even more dramatic: she tries to back away, but seemingly loses control of her limbs, flailing around like one demented.
@@ -203,6 +215,8 @@ But you will have to make a choice sooner or later. Perhaps now is the right tim
 [[> |Alabaster-Choice-Haven]]  
 :: Alabaster-Choice-Haven
 --
+![Tiny earth cottage built into a gorge face at dawn, Snow White at the door looking back](assets/alabaster/alabaster-haven.webp)
+
 To the north lies her safe haven: the tiny house she has had fitted, and the servants she hired, and the sealed coffin-bed that she had made for herself. She hasn't ever told you the exact direction, but she knows the path unerringly, though the land soon becomes more broken and hilly.
 
 You could go on, take Snow White to safety, and return alone. But afterward, you will have to lie to the Queen -- perhaps for the rest of your life.
@@ -308,6 +322,8 @@ You are alone in the dark.
 THE END.
 :: End-Alabaster-Sundering
 --
+![Dawn forest, the King sitting on the ground as Snow White throws herself into his arms, rose-cheeked and innocent](assets/alabaster/alabaster-reunion.webp)
+
 You wake. It is light. Snow White is bent over you -- rose-cheeked, innocent, a girl properly again. Your daughter.
 
 'Daddy.' She throws herself against your chest before you can even properly sit up, and sobs as though she were five years old, though she is nearly fifteen.
