@@ -103,3 +103,16 @@ def test_tweego_builds_all_four_stories_and_landing():
     for name in indigo_art:
         assert (Path("src/indigo/assets") / name).exists(), f"missing src art: {name}"
         assert f"assets/indigo/{name}" in itext, f"art missing from indigo build: {name}"
+    alabaster_art = [
+        "alabaster-woods.webp",
+        "alabaster-snow.webp",
+        "alabaster-box.webp",
+        "alabaster-hart.webp",
+        "alabaster-possession.webp",
+        "alabaster-exorcism.webp",
+        "alabaster-haven.webp",
+        "alabaster-reunion.webp",
+    ]
+    for name in alabaster_art:
+        assert (Path("src/alabaster/assets") / name).exists(), f"missing src art: {name}"
+        assert f"assets/alabaster/{name}" in atext, f"art missing from alabaster build: {name}"
